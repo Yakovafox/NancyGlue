@@ -8,7 +8,14 @@ using UnityEngine;
 public class mouseTrack : MonoBehaviour
 {
     Vector3 worldPos;
-    
+    public Inventory inv;
+
+    private void Start()
+    {
+        inv = GameObject.Find("Player").GetComponent<Inventory>();
+    }
+
+
     void Update()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -28,6 +35,7 @@ public class mouseTrack : MonoBehaviour
                 {
                     case ("Evidence"):
                         Debug.Log("Clicked evidence");
+                        inv.GiveItem(0);
                         break;
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
@@ -36,7 +44,7 @@ public class mouseTrack : MonoBehaviour
                         Debug.Log("Clicked Interactable");
                         break;
                     case ("Untagged"):
-                        Debug.Log("Other object hit");
+                        Debug.Log("Untagged - ignored");
                         break;
                 }
             }
