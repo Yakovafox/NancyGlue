@@ -40,10 +40,7 @@ public class Inventory : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            //open inventory (ui)
-        }
+        
     }
 
     public void GiveItem(int id)
