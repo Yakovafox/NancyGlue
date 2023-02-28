@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -211,6 +211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb6940d24700d14286a39c7311684d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inv: {fileID: 0}
+  evid0: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca501fd6256db54597a2f6d5f1df574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savedIDs: 
   itemDatabase: {fileID: 319865330}
 --- !u!4 &733506627
 Transform:
@@ -559,8 +562,8 @@ GameObject:
   - component: {fileID: 1620792362}
   - component: {fileID: 1620792361}
   m_Layer: 0
-  m_Name: Evidence
-  m_TagString: Evidence
+  m_Name: Evidence0
+  m_TagString: Evidence id0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

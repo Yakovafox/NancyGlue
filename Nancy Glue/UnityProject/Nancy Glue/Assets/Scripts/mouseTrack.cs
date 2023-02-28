@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//simple script to check mouse over any 3d game object collider 
-//need to add 
+
 
 public class mouseTrack : MonoBehaviour
 {
     Vector3 worldPos;
     public Inventory inv;
-
+    public GameObject evid0;
     private void Start()
     {
         inv = GameObject.Find("Player").GetComponent<Inventory>();
+        evid0 = GameObject.Find("Evidence0");
     }
 
 
@@ -33,9 +33,11 @@ public class mouseTrack : MonoBehaviour
 
                 switch (hitData.transform.tag)
                 {
-                    case ("Evidence"):
+                    case ("Evidence id0"):
                         Debug.Log("Clicked evidence");
                         inv.GiveItem(0);
+                        //destroy object 
+                        Destroy(evid0);
                         break;
                     case ("NPC"):
                         Debug.Log("Clicked NPC");

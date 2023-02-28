@@ -17,6 +17,9 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
+
+        /*
+        INV LOADING NEEDS TO GO IN UI
         //read inv ids from file 
         string[] lines = File.ReadAllLines("Inv.txt");
         int[] idsToLoad = Array.ConvertAll(lines, int.Parse);
@@ -28,7 +31,7 @@ public class Inventory : MonoBehaviour
             Debug.Log("loaded inventory, added item with id: " + idsToLoad[i]);
         }
 
-
+        */
 
 
 

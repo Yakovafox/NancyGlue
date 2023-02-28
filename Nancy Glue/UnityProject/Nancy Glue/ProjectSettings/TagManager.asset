@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
+  - Evidence
+  - Interactable
+  - Evidence id0
   layers:
   - Default
   - TransparentFX
