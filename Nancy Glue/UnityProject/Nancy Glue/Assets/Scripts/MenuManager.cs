@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private GameObject AccessibilityMenu;
+    [SerializeField] private GameObject _accessibilityMenu;
+    [SerializeField] private bool _isActive;
 
     private void Awake()
     {
-        AccessibilityMenu.SetActive(false);
+        _isActive = _accessibilityMenu.activeSelf;
+        _accessibilityMenu.SetActive(_isActive);
     }
 
     public void AccessibilitySettings()
     {
-        if(AccessibilityMenu.activeSelf == false)
-        {
-            AccessibilityMenu.SetActive(true);
-        }
-        else AccessibilityMenu.SetActive(false);
+        _isActive = !_isActive;
+        _accessibilityMenu.SetActive(_isActive);
     }
 }
