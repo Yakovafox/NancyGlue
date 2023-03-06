@@ -4,40 +4,49 @@ using UnityEngine;
 
 public class invUI : MonoBehaviour
 {
-    private bool open;
-    public GameObject canvas;
+    public GameObject testPrefab;
+    public ItemDB ItemDB;
+    public GameObject grid;
     // Start is called before the first frame update
     void Start()
     {
-        open = false;
-        canvas = GameObject.Find("UICanvas");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.I))
-        {
-            Debug.Log("Checking if inv open");
-            if (open)
-            {
-                Debug.Log("inv open - closing inv");
-                canvas.SetActive(false);
-                open = false;
-            }
-            else
-            {
-                Debug.Log("inv closed - openeing inv");
-                canvas.SetActive(true);
-                open = true;
-            }
-            //if its open else close inv screeen
-
-            //else open inventory
-
-
-
-
-        }
+        
     }
+
+    public void addItemToUI(Item itemToAdd)
+    {
+        //check if item is already in inventory UI
+
+
+
+        
+        //if not, add item to inventory
+
+        
+
+        GameObject itemOBJ = Instantiate(testPrefab, transform.position, Quaternion.identity, grid.transform);
+        Debug.Log("itemOBJ: " + itemOBJ);
+        
+        itemOBJ.GetComponent<ItemManager>().id = itemToAdd.id;
+        Debug.Log("itemOBJ id: " + itemOBJ.GetComponent<ItemManager>().id);
+        itemOBJ.GetComponent<ItemManager>().title = itemToAdd.title;
+        itemOBJ.GetComponent<ItemManager>().description = itemToAdd.description;
+        itemOBJ.GetComponent<ItemManager>().icon = itemToAdd.icon;
+        
+        //testrun basic prefab 
+        //add nested prefab to canvas
+
+    }
+    /*
+    public void removeItemFromUI(int itemId)
+    {
+        Destroy(
+        
+    }*/
 }
