@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class MenuManager : MonoBehaviour
     private void Awake()
     {
         //Find AccessibilityMenu and disable it. 
-        _mainMenu = GameObject.Find("Main");
-        _accessibilityMenu = GameObject.Find("AccessibilityMenu");
+        _mainMenu = GameObject.Find("Main"); 
+        _accessibilityMenu = GameObject.Find("AccessibilityMenu"); //Accessibility Menu needs to be enabled in Editor before startup.
         _isActive = false;
         _accessibilityMenu.SetActive(_isActive);
     }
@@ -23,5 +24,15 @@ public class MenuManager : MonoBehaviour
         _isActive = !_isActive;
         _accessibilityMenu.SetActive(_isActive);
         _mainMenu.SetActive(!_isActive);
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
