@@ -15,6 +15,10 @@ public class MenuManager : MonoBehaviour
         //Find AccessibilityMenu and disable it. 
         _mainMenu = GameObject.Find("Main"); 
         _accessibilityMenu = GameObject.Find("AccessibilityMenu"); //Accessibility Menu needs to be enabled in Editor before startup.
+    }
+
+    private void Start()
+    {
         _isActive = false;
         _accessibilityMenu.SetActive(_isActive);
     }
