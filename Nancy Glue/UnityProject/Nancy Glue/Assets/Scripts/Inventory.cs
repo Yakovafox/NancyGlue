@@ -13,7 +13,14 @@ public class Inventory : MonoBehaviour
     public List<Item> characterItems = new List<Item>();
     public int[] savedIDs;
     public ItemDB itemDatabase;
+    public invUI invUI;
     //public UIInventory inventoryUI;
+
+    private void Awake()
+    {
+        invUI = GameObject.Find("UICanvas").GetComponent<invUI>();
+    }
+
 
     void Start()
     {
@@ -32,25 +39,23 @@ public class Inventory : MonoBehaviour
         }
 
         */
-
-
+        
+        
 
 
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            //open inventory (ui)
-        }
+        
     }
 
     public void GiveItem(int id)
     {
         Item itemToAdd = itemDatabase.GetItem(id);
         characterItems.Add(itemToAdd);
-        //inventoryUI.AddNewItem(itemToAdd);
+        Debug.Log("added item to characterItems");
+        invUI.addItemToUI(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
     }
 
@@ -58,7 +63,7 @@ public class Inventory : MonoBehaviour
     {
         Item itemToAdd = itemDatabase.GetItem(itemName);
         characterItems.Add(itemToAdd);
-        //inventoryUI.AddNewItem(itemToAdd);
+        invUI.addItemToUI(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
     }
 
@@ -73,7 +78,7 @@ public class Inventory : MonoBehaviour
         if (itemToRemove != null)
         {
             characterItems.Remove(itemToRemove);
-            //inventoryUI.RemoveItem(itemToRemove);
+            //invUI.addItemToUI(itemToAdd);
             Debug.Log("Removed item: " + itemToRemove.title);
         }
     }

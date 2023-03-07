@@ -21,11 +21,15 @@ public class ItemDB : MonoBehaviour
         return items.Find(item => item.title == itemName);
     }
 
+    
+
+
+    
     void BuildDB()
     {
         items = new List<Item>() {
-            new Item(0, "Test_Item", "TEST DESCRIPTION")
-            
+            new Item(0, "Test_Item", "TEST DESCRIPTION"),
+            new Item(1,"Test_Item_2", "TEST DESCRIPTION 2")
             
         };
     }

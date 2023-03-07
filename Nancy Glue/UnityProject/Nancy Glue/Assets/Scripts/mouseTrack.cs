@@ -9,10 +9,19 @@ public class mouseTrack : MonoBehaviour
     Vector3 worldPos;
     public Inventory inv;
     public GameObject evid0;
+    public GameObject evid1;
+    private bool UIOpen;
+    public GameObject canvas;
+    //public 
     private void Start()
     {
+        UIOpen = false;
+        canvas.SetActive(false);
+
+
+
         inv = GameObject.Find("Player").GetComponent<Inventory>();
-        evid0 = GameObject.Find("Evidence0");
+       // evid0 = GameObject.Find("Evidence0");
     }
 
 
@@ -20,9 +29,7 @@ public class mouseTrack : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hitData;
-        //Vector3 start = new Vector3(0, 1, -10);
-        //Vector3 dir = new Vector3(0, 0, 1);
-        //Debug.DrawRay(start, dir, Color.blue);
+        
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -36,9 +43,22 @@ public class mouseTrack : MonoBehaviour
                     case ("Evidence id0"):
                         Debug.Log("Clicked evidence");
                         inv.GiveItem(0);
+                        
                         //destroy object 
                         Destroy(evid0);
+                        
                         break;
+                    case ("Evidence id1"):
+                        Debug.Log("Clicked evidence");
+                        inv.GiveItem(1);
+
+                        //destroy object 
+                        Destroy(evid1);
+
+                        break;
+
+
+
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
                         break;
@@ -51,5 +71,27 @@ public class mouseTrack : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            Debug.Log("Checking if inv open");
+            if (UIOpen)
+            {
+                Debug.Log("inv open - closing inv");
+                canvas.SetActive(false);
+                UIOpen = false;
+            }
+            else
+            {
+                Debug.Log("inv closed - openeing inv");
+                canvas.SetActive(true);
+                UIOpen = true;
+            }
+
+        }
+
+
+
+
     }
 }
