@@ -9,6 +9,7 @@ public class mouseTrack : MonoBehaviour
     Vector3 worldPos;
     public Inventory inv;
     public GameObject evid0;
+    public GameObject evid1;
     private bool UIOpen;
     public GameObject canvas;
     //public 
@@ -47,6 +48,17 @@ public class mouseTrack : MonoBehaviour
                         Destroy(evid0);
                         
                         break;
+                    case ("Evidence id1"):
+                        Debug.Log("Clicked evidence");
+                        inv.GiveItem(1);
+
+                        //destroy object 
+                        Destroy(evid1);
+
+                        break;
+
+
+
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
                         break;
