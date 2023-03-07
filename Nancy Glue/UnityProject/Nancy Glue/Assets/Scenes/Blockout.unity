@@ -74562,6 +74562,7 @@ GameObject:
   - component: {fileID: 1433975696}
   - component: {fileID: 1433975699}
   - component: {fileID: 1433975700}
+  - component: {fileID: 1433975701}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -74627,8 +74628,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.614426, y: 2.7543588, z: 7.520006}
+  m_LocalRotation: {x: 0, y: -0.42261827, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 6.1500793, y: 0.19291973, z: -0.43881035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74683,6 +74684,20 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1433975701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433975695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb6940d24700d14286a39c7311684d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: {fileID: 0}
+  evid0: {fileID: 0}
 --- !u!43 &1435105499
 Mesh:
   m_ObjectHideFlags: 0
@@ -84197,7 +84212,7 @@ GameObject:
   - component: {fileID: 1692487204}
   - component: {fileID: 1692487203}
   m_Layer: 0
-  m_Name: a
+  m_Name: Projector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
