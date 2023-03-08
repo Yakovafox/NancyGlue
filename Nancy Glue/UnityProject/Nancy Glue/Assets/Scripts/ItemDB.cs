@@ -28,7 +28,7 @@ public class ItemDB : MonoBehaviour
     void BuildDB()
     {
         items = new List<Item>() {
-            new Item(0, "item_chalkline", "Chalkline"),
+            new Item(0, "item_chalkline", "Chalkline desc"),
             new Item(1,"item_crown", "It's a crown!"),
             new Item(2,"item_reel", "It's a reel!"),
             new Item(3,"item_slime_2", "It's slime!"),

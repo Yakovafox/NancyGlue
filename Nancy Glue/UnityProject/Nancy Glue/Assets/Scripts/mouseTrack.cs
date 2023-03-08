@@ -12,6 +12,10 @@ public class mouseTrack : MonoBehaviour
     public Inventory inv;
     public GameObject evid0;
     public GameObject evid1;
+    public GameObject evid2;
+    public GameObject evid3;
+
+
     private bool UIOpen;
     public GameObject canvas;
     [Range(0,1000)][SerializeField]private float _range;
@@ -67,6 +71,26 @@ public class mouseTrack : MonoBehaviour
                         Destroy(evid1);
 
                         break;
+                    case ("Evidence id2"):
+                        Debug.Log("Clicked evidence");
+                        inv.GiveItem(2);
+
+                        //destroy object 
+                        Destroy(evid2);
+
+                        break;
+
+                    case ("Evidence id3"):
+                        Debug.Log("Clicked evidence");
+                        inv.GiveItem(3);
+
+                        //destroy object 
+                        Destroy(evid3);
+
+                        break;
+
+
+
 
 
 
