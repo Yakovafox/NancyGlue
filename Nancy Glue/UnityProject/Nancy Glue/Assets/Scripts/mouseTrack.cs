@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class mouseTrack : MonoBehaviour
     private bool UIOpen;
     public GameObject canvas;
     [Range(0,1000)][SerializeField]private float _range;
+
     //public 
     private void Start()
     {
@@ -71,9 +73,11 @@ public class mouseTrack : MonoBehaviour
                         Debug.Log("Untagged - ignored");
                         break;
                     case ("Finish"):
-                        Debug.Log("Hit Camera Location");
+                        var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+                        var oldCam = GameObject.Find(oldCamName).transform.parent.parent;
+                        oldCam.GetComponent<CameraSwitch>().SwitchActiveCam();
+                        hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
                         break;
-
                 }
             }
         }
