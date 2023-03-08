@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56d59ef5188341a4a8ef84b449406648, type: 3}
-  m_Name: Start
+  m_Name: ThirdDialogue
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: Start
+  <dialogueName>k__BackingField: ThirdDialogue
   <characterName>k__BackingField: Big Ted
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7d62a8ce6f1b3764f98129cda734e8bd, type: 2}
-  <dialogueText>k__BackingField: I'm big Ted. This is a test run for Nancy Glue!
+    <NextDialogue>k__BackingField: {fileID: 0}
+  <dialogueText>k__BackingField: 'Use the purple cubes to get around and look for
+    those items. '
   <dialogueSpriteAssetPath>k__BackingField: Textures/ToyBear
   <dialogueAudioAssetPath>k__BackingField: sfx/dialogue/speaking.mp3
-  <isStartingDialogue>k__BackingField: 1
+  <isStartingDialogue>k__BackingField: 0

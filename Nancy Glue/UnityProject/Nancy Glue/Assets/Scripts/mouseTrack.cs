@@ -3,8 +3,7 @@ using Dialogue;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.SceneManagement;
 
 public class mouseTrack : MonoBehaviour
 {
@@ -120,6 +119,10 @@ public class mouseTrack : MonoBehaviour
                         hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
                         break;
                 }
+            }
+            if (inv.characterItems.Count == 4)
+            {
+                SceneManager.LoadScene("MenuScene");
             }
         }
 

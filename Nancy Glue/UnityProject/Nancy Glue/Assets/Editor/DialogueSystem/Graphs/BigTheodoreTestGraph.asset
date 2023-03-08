@@ -17,9 +17,8 @@ MonoBehaviour:
   <nodes>k__BackingField:
   - <ID>k__BackingField: 14afd4b8-a6bb-4d68-91e0-527ec0ea7f3c
     <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Massive Theodore
-    <text>k__BackingField: I'm Massive Theodore, bit of a lie as I'm not actually
-      massive... I'm Large....
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: I'm big Ted. This is a test run for Nancy Glue!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: a45c1795-1e76-49fa-97cc-d84845950472
@@ -30,19 +29,34 @@ MonoBehaviour:
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   - <ID>k__BackingField: a45c1795-1e76-49fa-97cc-d84845950472
     <dialogueName>k__BackingField: SecondDialogue
-    <characterName>k__BackingField: Massive Theodore
-    <text>k__BackingField: Big Even!
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: Can you find me 4 items? Fluff, Crown, Slime and a Film
+      Reel.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: e2780c81-1a11-414f-b338-42ba5560795b
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1185, y: 124}
+    <spritePath>k__BackingField: Textures/ToyBear
+    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
+  - <ID>k__BackingField: e2780c81-1a11-414f-b338-42ba5560795b
+    <dialogueName>k__BackingField: ThirdDialogue
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: 'Use the purple cubes to get around and look for those
+      items. '
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1254, y: 216}
+    <position>k__BackingField: {x: 1926, y: 124}
     <spritePath>k__BackingField: Textures/ToyBear
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start
   - SecondDialogue
+  - ThirdDialogue
   <oldGroupedNames>k__BackingField:
     list: []

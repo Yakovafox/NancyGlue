@@ -55313,7 +55313,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53732
+  m_Name: pb_Mesh47608
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -99169,7 +99169,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863781715}
   m_LocalRotation: {x: 0.7069197, y: -0.016265452, z: 0.7069197, w: -0.016265452}
-  m_LocalPosition: {x: 6.434, y: 0.006422557, z: 1.964}
+  m_LocalPosition: {x: 6.33, y: 0.006422557, z: 1.931}
   m_LocalScale: {x: 0.27735806, y: 0.27735806, z: 0.27735806}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106648,7 +106648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueContainers:
-  - {fileID: 11400000, guid: 4e7e3b1ab92a5f8418cae8f85b968269, type: 2}
+  - {fileID: 11400000, guid: 3c567c0a721e3ce46bb62a68e6c0b12d, type: 2}
 --- !u!65 &2042471531
 BoxCollider:
   m_ObjectHideFlags: 0
