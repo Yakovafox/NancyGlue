@@ -8,6 +8,10 @@ TagManager:
   - Evidence
   - Interactable
   - Evidence id0
+  - Evidence id1
+  - Evidence id2
+  - Evidence id3
+  - Evidence id4
   layers:
   - Default
   - TransparentFX

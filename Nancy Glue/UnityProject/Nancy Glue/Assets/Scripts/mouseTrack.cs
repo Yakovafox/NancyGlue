@@ -14,7 +14,7 @@ public class mouseTrack : MonoBehaviour
     public GameObject evid1;
     public GameObject evid2;
     public GameObject evid3;
-
+    public GameObject evid4;
 
     private bool UIOpen;
     public GameObject canvas;
@@ -88,7 +88,14 @@ public class mouseTrack : MonoBehaviour
                         Destroy(evid3);
 
                         break;
+                    case ("Evidence id4"):
+                        Debug.Log("Clicked evidence");
+                        inv.GiveItem(4);
 
+                        //destroy object 
+                        Destroy(evid4);
+
+                        break;
 
 
 
