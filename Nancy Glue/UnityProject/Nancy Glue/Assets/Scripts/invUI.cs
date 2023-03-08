@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 public class invUI : MonoBehaviour
 {
     public GameObject testPrefab;
     public ItemDB ItemDB;
     public GameObject grid;
+    public static Dictionary<int, ItemManager> itemsDict = new Dictionary<int, ItemManager>();
     // public SpriteRenderer spriteRenderer;
     
     // Start is called before the first frame update
@@ -52,12 +54,17 @@ public class invUI : MonoBehaviour
         itemOBJ.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>().text = itemToAdd.description;
         //testrun basic prefab 
         //add nested prefab to canvas
+        //save to dict
+        itemsDict.Add(itemOBJ.GetComponent<ItemManager>().id, itemOBJ.GetComponent<ItemManager>());
+    }
+
+    public void removeItemFromUI(int targetId)
+    {
+        ItemManager target;
+        itemsDict.TryGetValue(targetId, out target);
+
+        Destroy(target.GameObject());
+        itemsDict.Remove(targetId);
 
     }
-    /*
-    public void removeItemFromUI(int itemId)
-    {
-        Destroy(
-        
-    }*/
 }

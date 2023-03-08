@@ -12,6 +12,7 @@ public class mouseTrack : MonoBehaviour
     public GameObject evid1;
     private bool UIOpen;
     public GameObject canvas;
+    [Range(0,1000)][SerializeField]private float _range;
     //public 
     private void Start()
     {
@@ -27,13 +28,14 @@ public class mouseTrack : MonoBehaviour
 
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitData;
+        
         
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics.Raycast(ray, out hitData, 1000))
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitData;
+            if (Physics.Raycast(ray, out hitData, _range))
             {
                 worldPos = hitData.point;
 
@@ -68,6 +70,10 @@ public class mouseTrack : MonoBehaviour
                     case ("Untagged"):
                         Debug.Log("Untagged - ignored");
                         break;
+                    case ("Finish"):
+                        Debug.Log("Hit Camera Location");
+                        break;
+
                 }
             }
         }

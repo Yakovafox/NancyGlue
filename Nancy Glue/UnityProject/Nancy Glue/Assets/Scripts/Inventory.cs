@@ -78,7 +78,7 @@ public class Inventory : MonoBehaviour
         if (itemToRemove != null)
         {
             characterItems.Remove(itemToRemove);
-            //invUI.addItemToUI(itemToAdd);
+            invUI.removeItemFromUI(id);
             Debug.Log("Removed item: " + itemToRemove.title);
         }
     }
