@@ -33,18 +33,6 @@ MonoBehaviour:
     <position>k__BackingField: {x: 3186, y: 548}
     <spritePath>k__BackingField: Textures/missing_texture
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
-  - <ID>k__BackingField: 1bc8d420-7477-4d46-9a04-b17e6aed1ca0
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Big Ted
-    <text>k__BackingField: Hello, I'm Big Ted. Nice to meet you!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 4d6fd2fe-c795-4c1f-bf41-88a920e1b9d5
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 643, y: 251}
-    <spritePath>k__BackingField: Textures/ToyBear
-    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   - <ID>k__BackingField: 4d6fd2fe-c795-4c1f-bf41-88a920e1b9d5
     <dialogueName>k__BackingField: Questions
     <characterName>k__BackingField: Big Ted
@@ -100,13 +88,25 @@ MonoBehaviour:
     <position>k__BackingField: {x: 2415, y: 1493}
     <spritePath>k__BackingField: Textures/missing_texture
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
+  - <ID>k__BackingField: 1bc8d420-7477-4d46-9a04-b17e6aed1ca0
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: Hello, I'm Big Ted. Nice to meet you!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 4d6fd2fe-c795-4c1f-bf41-88a920e1b9d5
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 422, y: -115}
+    <spritePath>k__BackingField: UI/Sprites/Ted
+    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   <oldGroupNames>k__BackingField:
   - WhoAreYou
   - WhereWereYou
   <oldUngroupedNames>k__BackingField:
-  - Start
   - Questions
   - Leaving
+  - Start
   <oldGroupedNames>k__BackingField:
     list:
     - Key: WhereWereYou

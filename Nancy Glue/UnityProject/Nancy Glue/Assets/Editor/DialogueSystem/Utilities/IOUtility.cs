@@ -35,7 +35,7 @@ namespace Dialogue.Utilities
             graphView = dialogueGraphView;
 
             graphFileName = graphName;
-            containerFolderPath = $"Assets/DialogueSystem/Dialogues/{graphFileName}";
+            containerFolderPath = $"Assets/Resources/Dialogues/{graphFileName}";
 
             groups = new List<DialogueGroup>();
             nodes = new List<DialogueNode>();
@@ -313,9 +313,9 @@ namespace Dialogue.Utilities
             CreateFolder("Assets/Editor/DialogueSystem", "Graphs");
 
             CreateFolder("Assets", "DialogueSystem");
-            CreateFolder("Assets/DialogueSystem", "Dialogues");
+            CreateFolder("Assets/Resources", "Dialogues");
 
-            CreateFolder("Assets/DialogueSystem/Dialogues", graphFileName);
+            CreateFolder("Assets/Resources/Dialogues", graphFileName);
             CreateFolder(containerFolderPath, "Global");
             CreateFolder(containerFolderPath, "Groups");
             CreateFolder($"{containerFolderPath}/Global", "Dialogues");

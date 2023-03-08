@@ -106648,7 +106648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueContainers:
-  - {fileID: 11400000, guid: 4e7e3b1ab92a5f8418cae8f85b968269, type: 2}
+  - {fileID: 11400000, guid: 384b319117f04464092b2a6ff8f10a12, type: 2}
 --- !u!65 &2042471531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111480,7 +111480,7 @@ PrefabInstance:
     - target: {fileID: 7351887079313779369, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
       propertyPath: dialogueContainer
       value: 
-      objectReference: {fileID: 11400000, guid: 3c567c0a721e3ce46bb62a68e6c0b12d, type: 2}
+      objectReference: {fileID: 11400000, guid: 384b319117f04464092b2a6ff8f10a12, type: 2}
     - target: {fileID: 9145485965046034087, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
       propertyPath: m_IsActive
       value: 1

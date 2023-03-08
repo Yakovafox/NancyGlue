@@ -35,13 +35,6 @@ namespace Dialogue
 
         private DialogueSO currentDialogue;
 
-        private void Awake()
-        {
-            currentDialogue = dialogue;
-
-            ShowText();
-        }
-
         private void ShowText()
         {
             characterNameUI.text = currentDialogue.characterName;
@@ -62,8 +55,6 @@ namespace Dialogue
 
         private void OnOptionChosen(int choiceIndex)
         {
-            Debug.Log($"{currentDialogue.dialogueChoices}");
-
             DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
             if (nextDialogue == null)
@@ -113,9 +104,34 @@ namespace Dialogue
                 }
             }
         }
-        private void OnEnable()
+
+        private void findStartingNode()
         {
-            currentDialogue = dialogue;
+            foreach (DialogueSO node in dialogueContainer.ungroupedDialogues)
+            {
+                if (node.isStartingDialogue)
+                {
+                    currentDialogue = node;
+                }
+            }
+
+            foreach (List<DialogueSO> group in dialogueContainer.dialogueGroups.Values)
+            {
+                foreach (DialogueSO node in group)
+                {
+                    if (node.isStartingDialogue)
+                    {
+                        currentDialogue = node;
+                    }
+                }
+            }
+        }
+
+        public void setContainer(string containerName)
+        {
+            dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");
+
+            findStartingNode();
 
             ShowText();
         }
