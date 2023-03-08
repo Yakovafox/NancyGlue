@@ -30,11 +30,12 @@ public class mouseTrack : MonoBehaviour
 
     void Update()
     {
-        
+
         
 
         if (Input.GetMouseButtonDown(0))
         {
+            if (UIOpen) return;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitData;
             if (Physics.Raycast(ray, out hitData, _range))
@@ -65,6 +66,8 @@ public class mouseTrack : MonoBehaviour
 
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
+
+
                         break;
                     case ("Interactable"):
                         Debug.Log("Clicked Interactable");
