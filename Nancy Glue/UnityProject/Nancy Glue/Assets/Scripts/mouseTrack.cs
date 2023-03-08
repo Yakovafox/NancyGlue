@@ -1,4 +1,5 @@
 using Cinemachine;
+using Dialogue;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,14 +15,19 @@ public class mouseTrack : MonoBehaviour
     private bool UIOpen;
     public GameObject canvas;
     [Range(0,1000)][SerializeField]private float _range;
-
+    [SerializeField] private GameObject _dialogueBox;
+    [SerializeField] private DialogueSystem _dialogueSystemScript;
     //public 
+    private void Awake()
+    {
+        _dialogueBox = GameObject.Find("DialogueBox");
+        _dialogueSystemScript = _dialogueBox.GetComponent<DialogueSystem>();
+    }
     private void Start()
     {
         UIOpen = false;
         canvas.SetActive(false);
-
-
+        _dialogueBox.SetActive(false);
 
         inv = GameObject.Find("Player").GetComponent<Inventory>();
        // evid0 = GameObject.Find("Evidence0");
@@ -66,8 +72,9 @@ public class mouseTrack : MonoBehaviour
 
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
-
-
+                        var npcScript = hitData.transform.GetComponent<npcScript>();
+                        _dialogueSystemScript.DialogueContainer = npcScript.DialogueContainers[0];
+                        _dialogueBox.gameObject.SetActive(true);
                         break;
                     case ("Interactable"):
                         Debug.Log("Clicked Interactable");

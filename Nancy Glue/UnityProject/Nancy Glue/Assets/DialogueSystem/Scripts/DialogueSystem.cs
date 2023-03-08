@@ -8,11 +8,13 @@ namespace Dialogue
 {
     using ScriptableObjects;
     using Enumerators;
+    using UnityEngine.Rendering;
 
     public class DialogueSystem : MonoBehaviour
     {
         // Scriptable Objects
         [SerializeField] private DialogueContainerSO dialogueContainer;
+        public DialogueContainerSO DialogueContainer { set => dialogueContainer = value; }
         [SerializeField] private DialogueGroupSO dialogueGroup;
         [SerializeField] private DialogueSO dialogue;
 
@@ -22,7 +24,8 @@ namespace Dialogue
 
         // Indexes
         [SerializeField] private int selectedDialogueGroupIndex;
-        [SerializeField] private int selectedDialogueIndex;[SerializeField] private DialogueSO startingDialogue;
+        [SerializeField] private int selectedDialogueIndex;
+        [SerializeField] private DialogueSO startinagDialogue;
 
         // Interactables
         [SerializeField] private Image characterPortrait;
@@ -65,7 +68,8 @@ namespace Dialogue
 
             if (nextDialogue == null)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                this.gameObject.SetActive(false);
 
                 return;
             }
@@ -108,6 +112,12 @@ namespace Dialogue
                     OnOptionChosen(4);
                 }
             }
+        }
+        private void OnEnable()
+        {
+            currentDialogue = dialogue;
+
+            ShowText();
         }
     }
 }

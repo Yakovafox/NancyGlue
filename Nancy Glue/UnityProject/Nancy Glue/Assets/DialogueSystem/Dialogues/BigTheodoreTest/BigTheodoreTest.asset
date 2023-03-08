@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301af934f2df7474b91c2e715f664530, type: 3}
+  m_Name: BigTheodoreTest
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: BigTheodoreTest
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 603a8927242b9ff4e8a29397d7ed44e0, type: 2}
+  - {fileID: 11400000, guid: 7d62a8ce6f1b3764f98129cda734e8bd, type: 2}
