@@ -45,6 +45,8 @@ public class mouseTrack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (UIOpen) return;
+            //if(diaOpen) return;
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitData;
             if (Physics.Raycast(ray, out hitData, _range))
@@ -81,18 +83,20 @@ public class mouseTrack : MonoBehaviour
 
                     case ("Evidence id3"):
                         Debug.Log("Clicked evidence");
+                        Destroy(evid3);
                         inv.GiveItem(3);
 
                         //destroy object 
-                        Destroy(evid3);
+                        
 
                         break;
                     case ("Evidence id4"):
                         Debug.Log("Clicked evidence");
+                        Destroy(evid4);
                         inv.GiveItem(4);
 
                         //destroy object 
-                        Destroy(evid4);
+                        
 
                         break;
 
@@ -123,6 +127,8 @@ public class mouseTrack : MonoBehaviour
             if (inv.characterItems.Count == 4)
             {
                 SceneManager.LoadScene("MenuScene");
+                //reset character items here
+                inv.resetInv();
             }
         }
 
