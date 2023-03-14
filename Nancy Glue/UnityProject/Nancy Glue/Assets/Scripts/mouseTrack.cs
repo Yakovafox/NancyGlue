@@ -117,10 +117,7 @@ public class mouseTrack : MonoBehaviour
                         Debug.Log("Untagged - ignored");
                         break;
                     case ("Finish"):
-                        var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
-                        var oldCam = GameObject.Find(oldCamName).transform.parent.parent;
-                        oldCam.GetComponent<CameraSwitch>().SwitchActiveCam();
-                        hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
+                        SwitchToBranchCamera(hitData.transform);
                         break;
                 }
             }
@@ -149,9 +146,28 @@ public class mouseTrack : MonoBehaviour
             }
 
         }
+        BackToRootCamera();
+    }
 
+    private void BackToRootCamera()
+    {
+        if(Input.GetMouseButtonDown(1))
+        {
+            var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+            var oldCam = GameObject.Find(oldCamName).transform.parent.parent;
+            if (oldCam.GetComponent<CameraSwitch>().IsRoot) return;
+            oldCam.GetComponent<CameraSwitch>().SwitchActiveCam();
+            var rootCam = oldCam.GetComponent<CameraSwitch>().RootCamera;
+            rootCam.GetComponent<CameraSwitch>().SwitchActiveCam();
+        }
+    }
 
-
-
+    private void SwitchToBranchCamera(Transform hitData)
+    {
+        var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+        var oldCam = GameObject.Find(oldCamName).transform.parent.parent;
+        if (!oldCam.GetComponent<CameraSwitch>().CanSwitch) return;
+        oldCam.GetComponent<CameraSwitch>().SwitchActiveCam();
+        hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
     }
 }
