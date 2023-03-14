@@ -15,19 +15,33 @@ MonoBehaviour:
   <fileName>k__BackingField: DialogueFileName
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 29f4ea98-294e-471b-8a07-43be2feb3b30
-    <dialogueName>k__BackingField: DialogueName
+  - <ID>k__BackingField: 0c6d296d-70c6-4cad-ba7b-9e432e207e7c
+    <dialogueName>k__BackingField: Evidence1
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: Dialogue Text.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 61a70a6d-d883-4a4c-9d7a-95655ac4dd35
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 334, y: 167}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 61a70a6d-d883-4a4c-9d7a-95655ac4dd35
+    <dialogueName>k__BackingField: Evidence2
     <characterName>k__BackingField: Character Name
     <text>k__BackingField: Dialogue Text.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: -29, y: 37}
-    <spritePath>k__BackingField: Textures/ToyBear.png
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 1269, y: 187}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - DialogueName
+  - Evidence1
+  - Evidence2
   <oldGroupedNames>k__BackingField:
     list: []

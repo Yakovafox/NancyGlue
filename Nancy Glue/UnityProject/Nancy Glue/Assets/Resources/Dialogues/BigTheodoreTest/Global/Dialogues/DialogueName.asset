@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: Can you help me, by finding 4 items. Slime, Crown,
     Stuffing and film Reel.
-  <dialogueSpriteAssetPath>k__BackingField: Textures/ToyBear
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Ted
   <dialogueAudioAssetPath>k__BackingField: sfx/dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

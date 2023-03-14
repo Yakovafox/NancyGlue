@@ -37,7 +37,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1449, y: 137}
-    <spritePath>k__BackingField: Textures/ToyBear
+    <spritePath>k__BackingField: UI/Sprites/Ted
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   - <ID>k__BackingField: a1568497-0748-422a-824c-36d2074c4132
     <dialogueName>k__BackingField: DialogueName
@@ -50,7 +50,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 2255, y: 137}
-    <spritePath>k__BackingField: Textures/ToyBear
+    <spritePath>k__BackingField: UI/Sprites/Ted
     <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:

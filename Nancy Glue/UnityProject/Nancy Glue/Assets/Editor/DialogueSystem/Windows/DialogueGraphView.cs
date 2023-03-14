@@ -100,6 +100,7 @@ namespace Dialogue.Windows
         {
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DialogueType.SingleChoice));
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DialogueType.MultiChoice));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (Evidence Node)", DialogueType.Evidence));
 
             this.AddManipulator(new ContentZoomer());
             this.AddManipulator(new ContentDragger());
@@ -175,19 +176,30 @@ namespace Dialogue.Windows
         }
 
         // Create a new node
-        public DialogueNode CreateNode(string nodeName, DialogueType type, Vector2 pos, bool shouldDraw = true)
+        public DialogueNode CreateNode(string nodeName, DialogueType type, Vector2 pos, bool shouldDraw = true, bool shouldScalePosition = true)
         {
             Type nodeType = Type.GetType($"Dialogue.Elements.Dialogue{type}");
-            Type defaultNode = typeof(DialogueNode);
 
             DialogueNode node = (DialogueNode) Activator.CreateInstance(nodeType);
 
-            Vector2 viewPos = new Vector2(viewTransform.position.x, viewTransform.position.y);
-            node.Init(nodeName, this, (pos - viewPos)/viewTransform.scale);
+            if (shouldScalePosition)
+            {
+                Vector2 viewPos = new Vector2(viewTransform.position.x, viewTransform.position.y);
+                node.Init(nodeName, this, (pos - viewPos) / viewTransform.scale);
+            }
+            else
+            {
+                node.Init(nodeName, this, pos);
+            }
 
             if (shouldDraw)
             {
                 node.Draw();
+            }
+
+            if (type == DialogueType.Evidence)
+            {
+                //node.extensionContainer.style.backgroundColor = new Color(49f / 255f, 49f / 255f, 120f / 255f);
             }
 
             AddElement(node);

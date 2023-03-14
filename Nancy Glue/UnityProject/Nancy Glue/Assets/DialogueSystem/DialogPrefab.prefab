@@ -30,13 +30,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7450506231417707321}
+  m_Father: {fileID: 5600002711150150326}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 160}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 386, y: -41.5}
+  m_SizeDelta: {x: 400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7064020473511360387
 CanvasRenderer:
@@ -377,6 +377,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8908656235373659986}
   - {fileID: 7450506231417707321}
   m_Father: {fileID: 3655599110155730542}
   m_RootOrder: -1
@@ -512,7 +513,6 @@ RectTransform:
   m_Children:
   - {fileID: 727865173507735416}
   - {fileID: 8525231949754051371}
-  - {fileID: 8908656235373659986}
   m_Father: {fileID: 5600002711150150326}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
   startingDialogueOnly: 0
   selectedDialogueGroupIndex: 0
   selectedDialogueIndex: 0
-  startingDialogue: {fileID: 0}
+  startinagDialogue: {fileID: 0}
   characterPortrait: {fileID: 6148382017937621937}
   characterNameUI: {fileID: 3283369352466957933}
   bodyTextUI: {fileID: 1593297125214363471}

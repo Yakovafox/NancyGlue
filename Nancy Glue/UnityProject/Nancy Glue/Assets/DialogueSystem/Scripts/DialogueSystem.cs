@@ -72,7 +72,7 @@ namespace Dialogue
 
         private void Update()
         {
-            // On click progress dialogue if the node is single choice
+            // On any key press progress dialogue if the node is single choice
             if (currentDialogue.dialogueType == DialogueType.SingleChoice)
             {
                 if (Input.anyKeyDown)
@@ -80,7 +80,9 @@ namespace Dialogue
                     OnOptionChosen(0);
                 }
             }
-            else
+
+            // Register choice through numeric input
+            else if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
                 if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -103,18 +105,34 @@ namespace Dialogue
                     OnOptionChosen(4);
                 }
             }
+
+            // Allow progression through any key press and add dialogue to register
+            else if (currentDialogue.dialogueType == DialogueType.Evidence)
+            {
+                // TODO: Add evidence
+                // evidence.Add(currentDialogue.dialogueText);
+
+                if (Input.anyKeyDown)
+                {
+                    OnOptionChosen(0);
+                }
+            }
         }
 
+        // Find the starting node in the dialogue container
         private void findStartingNode()
         {
+            // Check each ungrouped node to see if it is the starting node
             foreach (DialogueSO node in dialogueContainer.ungroupedDialogues)
             {
                 if (node.isStartingDialogue)
                 {
                     currentDialogue = node;
+                    return;
                 }
             }
 
+            // Check each grouped node to see if it is the starting node
             foreach (List<DialogueSO> group in dialogueContainer.dialogueGroups.Values)
             {
                 foreach (DialogueSO node in group)
@@ -122,11 +140,14 @@ namespace Dialogue
                     if (node.isStartingDialogue)
                     {
                         currentDialogue = node;
+                        return;
                     }
                 }
             }
         }
-
+        
+        // Setter for the dialogue continer
+        // Used when dialogue is called to choose a graph
         public void setContainer(string containerName)
         {
             dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");

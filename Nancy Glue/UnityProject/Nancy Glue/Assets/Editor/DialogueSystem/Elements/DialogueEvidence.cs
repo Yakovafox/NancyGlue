@@ -2,30 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.UI;
+using System;
+using System.Linq;
+using UnityEngine.UIElements;
 
 namespace Dialogue.Elements
 {
     using Enumerators;
     using Utilities;
-    using Windows;
     using Data.Save;
-    using UnityEngine.UIElements;
+    using Windows;
 
-    public class DialogueSingleChoice : DialogueNode
+    public class DialogueEvidence : DialogueNode
     {
         public override void Init(string nodeName, DialogueGraphView dialogueGraphView, Vector2 pos)
         {
             base.Init(nodeName, dialogueGraphView, pos);
 
-            type = DialogueType.SingleChoice;
+            type = DialogueType.Evidence;
 
             ChoiceSaveData optionData = new ChoiceSaveData()
             {
                 Text = "Next Dialogue..."
             };
 
-            //extensionContainer.style.backgroundColor = new Color(29f / 255f, 79f / 255f, 30f / 255f);
+            extensionContainer.style.backgroundColor = new Color(49f / 255f, 49f / 255f, 120f / 255f);
 
             Options.Add(optionData);
         }

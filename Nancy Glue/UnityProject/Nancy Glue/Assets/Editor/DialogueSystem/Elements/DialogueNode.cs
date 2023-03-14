@@ -18,10 +18,9 @@ namespace Dialogue.Elements
     {
         // Variables contained in a node
         public string ID { get; set; }
-
         public string DialogueName { get; set; }
         public string CharacterName { get; set; }
-        public Texture2D CharacterPortrait { get; set; }
+        public Sprite CharacterPortrait { get; set; }
         public List<ChoiceSaveData> Options { get; set; }
         public string SpritePath { get; set; }
         public string AudioPath { get; set; }
@@ -31,7 +30,7 @@ namespace Dialogue.Elements
 
         protected DialogueGraphView graphView;
 
-        private Color defaultBackgroundColor;
+        protected Color defaultBackgroundColor;
 
         // Initialisation
         public virtual void Init(string name, DialogueGraphView dialogueGraphView, Vector2 pos)
@@ -39,9 +38,9 @@ namespace Dialogue.Elements
             ID = Guid.NewGuid().ToString();
             DialogueName = name;
             CharacterName = "Character Name";
-            SpritePath = "Textures/missing_texture";
-            AudioPath = "sfx/dialogue/speaking.mp3";
-            CharacterPortrait = (Texture2D)EditorGUIUtility.Load(SpritePath);
+            SpritePath = "UI/Sprites/missing_texture";
+            AudioPath = "Sfx/Dialogue/speaking.mp3";
+            CharacterPortrait = Resources.Load<Sprite>(SpritePath);
             Options = new List<ChoiceSaveData>();
             Text = "Dialogue Text.";
 
@@ -138,14 +137,16 @@ namespace Dialogue.Elements
             // Character Image Field
             Image characterPortrait = new Image
             {
-                image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png")
+                image = Resources.Load<Texture2D>(SpritePath)
+                //image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png")
             };
 
             // Sprite Asset Path Field
             TextField spriteAssetPathTextField = DialogueElementUtility.CreateTextField(SpritePath, null, callback =>
             {
                 SpritePath = callback.newValue;
-                characterPortrait.image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png");
+                characterPortrait.image = Resources.Load<Texture2D>(callback.newValue);
+                //characterPortrait.image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png");
                 RefreshExpandedState();
             });
             

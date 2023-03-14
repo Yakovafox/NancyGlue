@@ -240,9 +240,10 @@ namespace Dialogue.Utilities
             {
                 List<ChoiceSaveData> options = CloneNodeOptions(nodeData.options);
 
-                DialogueNode node = graphView.CreateNode(nodeData.dialogueName, nodeData.type, nodeData.position, false);
+                DialogueNode node = graphView.CreateNode(nodeData.dialogueName, nodeData.type, nodeData.position, false, false);
 
                 node.ID = nodeData.ID;
+                node.type = nodeData.type;
                 node.Options = options;
                 node.CharacterName = nodeData.characterName;
                 node.Text = nodeData.text;
