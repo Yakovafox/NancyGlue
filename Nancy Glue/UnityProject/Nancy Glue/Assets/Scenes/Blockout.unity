@@ -13691,6 +13691,12 @@ MonoBehaviour:
   _activeCam: 0
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
+  _isRoot: 0
+  _rootCameraTransform: {fileID: 0}
+  _switchableCameras:
+  - {fileID: 1207765256}
+  - {fileID: 1183920121}
+  _canSwitch: 0
 --- !u!1 &346753321
 GameObject:
   m_ObjectHideFlags: 0
@@ -57956,6 +57962,10 @@ MonoBehaviour:
   _activeCam: 0
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
+  _isRoot: 0
+  _rootCameraTransform: {fileID: 344092680}
+  _switchableCameras: []
+  _canSwitch: 0
 --- !u!65 &1183920123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59238,6 +59248,10 @@ MonoBehaviour:
   _activeCam: 1
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
+  _isRoot: 0
+  _rootCameraTransform: {fileID: 344092680}
+  _switchableCameras: []
+  _canSwitch: 0
 --- !u!65 &1207765258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77316,7 +77330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  showDifference: 0
+  showDifference: 1
 --- !u!114 &1433975700
 MonoBehaviour:
   m_ObjectHideFlags: 0
