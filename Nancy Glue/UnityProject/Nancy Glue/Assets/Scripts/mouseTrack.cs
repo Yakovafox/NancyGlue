@@ -45,7 +45,7 @@ public class mouseTrack : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (UIOpen) return;
-            //if(diaOpen) return;
+            if (DialogueOpenCheck()) return;
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitData;
@@ -131,6 +131,7 @@ public class mouseTrack : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.I))
         {
+            if (DialogueOpenCheck()) return;
             Debug.Log("Checking if inv open");
             if (UIOpen)
             {
@@ -169,5 +170,10 @@ public class mouseTrack : MonoBehaviour
         if (!oldCam.GetComponent<CameraSwitch>().CanSwitch) return;
         oldCam.GetComponent<CameraSwitch>().SwitchActiveCam();
         hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
+    }
+
+    private bool DialogueOpenCheck()
+    {
+        return _dialogueBox.activeSelf;
     }
 }
