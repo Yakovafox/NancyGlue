@@ -52,6 +52,16 @@ public class Inventory : MonoBehaviour
 
     public void GiveItem(int id)
     {
+        //check if item is already in inv
+
+        foreach (Item item in characterItems)
+        {
+            if (item.id == id)
+            {
+                return;
+            }
+        }
+        //if not
         Item itemToAdd = itemDatabase.GetItem(id);
         characterItems.Add(itemToAdd);
         Debug.Log("added item to characterItems");
@@ -61,6 +71,16 @@ public class Inventory : MonoBehaviour
 
     public void GiveItem(string itemName)
     {
+        //check if item is already in inv
+        foreach (Item item in characterItems)
+        {
+            if (item.title == itemName)
+            {
+                return;
+            }
+        }
+
+
         Item itemToAdd = itemDatabase.GetItem(itemName);
         characterItems.Add(itemToAdd);
         invUI.addItemToUI(itemToAdd);
@@ -82,6 +102,15 @@ public class Inventory : MonoBehaviour
             Debug.Log("Removed item: " + itemToRemove.title);
         }
     }
+
+    public void resetInv()
+    {
+        characterItems.Clear();
+        invUI.resetInvUi();
+    }
+
+
+
     //save inv on quit
     private void OnApplicationQuit()
     {

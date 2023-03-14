@@ -67,4 +67,8 @@ public class invUI : MonoBehaviour
         itemsDict.Remove(targetId);
 
     }
+    public void resetInvUi()
+    {
+        itemsDict.Clear();
+    }
 }
