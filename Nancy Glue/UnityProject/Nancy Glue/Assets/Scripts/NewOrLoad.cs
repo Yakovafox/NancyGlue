@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewOrLoad 
+public static class NewOrLoad
 {
     // Start is called before the first frame update
-    public bool isLoad { get; set; }
+    public static bool isLoad { get; set; }
 
 
 }

@@ -15,12 +15,14 @@ public class Inventory : MonoBehaviour
     public ItemDB itemDatabase;
     public invUI invUI;
     public SaveLoadGameState SLGS;
+    
     //public UIInventory inventoryUI;
 
     private void Awake()
     {
         invUI = GameObject.Find("UICanvas").GetComponent<invUI>();
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
+        
     }
 
 
@@ -41,14 +43,21 @@ public class Inventory : MonoBehaviour
         }
 
         */
-
-        SLGS.Load();
-        //go through savedIDs
-        for (int i = 0; i < savedIDs.Length; i++)
+        Debug.Log("check for load");
+        if (NewOrLoad.isLoad == true)
         {
-            GiveItem(savedIDs[i]);
-            Debug.Log(savedIDs[i]);
+            Debug.Log("loading");
+            SLGS.Load();
+            //go through savedIDs
+            for (int i = 0; i < savedIDs.Length; i++)
+            {
+                GiveItem(savedIDs[i]);
+                Debug.Log(savedIDs[i]);
+            }
         }
+        else
+            resetInv();
+            Debug.Log("new game");
 
 
     }
@@ -115,7 +124,7 @@ public class Inventory : MonoBehaviour
     {
         characterItems.Clear();
         invUI.resetInvUi();
-        //if load - load
+        
         
         
 
