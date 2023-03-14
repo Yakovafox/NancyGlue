@@ -15369,11 +15369,12 @@ MonoBehaviour:
   _switchableCameras:
   - {fileID: 911804536}
   - {fileID: 960804059}
-  _yRotLimit: 10
-  _xRotLimit: 10
+  _yRotLimit: 45
+  _xRotLimit: 20
+  _turnSpeed: 30
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 50
+  _screenBuffer: 100
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -15381,9 +15382,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -19688,7 +19688,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -32405,6 +32405,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 10
   _xRotLimit: 10
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 50
@@ -32415,9 +32416,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -39340,6 +39340,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 45
   _xRotLimit: 10
+  _turnSpeed: 30
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 100
@@ -39350,9 +39351,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -54685,6 +54685,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 40
   _xRotLimit: 40
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 50
@@ -54695,9 +54696,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -75190,6 +75190,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 0
   _xRotLimit: 0
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 0
@@ -75200,9 +75201,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -77336,8 +77336,8 @@ MonoBehaviour:
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
-    m_Style: 0
-    m_Time: 2
+    m_Style: 2
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -78520,6 +78520,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 0
   _xRotLimit: 0
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 0
@@ -78530,9 +78531,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -104123,6 +104123,7 @@ MonoBehaviour:
   _switchableCameras: []
   _yRotLimit: 40
   _xRotLimit: 40
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 50
@@ -104133,9 +104134,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
@@ -108787,6 +108787,7 @@ MonoBehaviour:
   - {fileID: 1464966502}
   _yRotLimit: 45
   _xRotLimit: 45
+  _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
   _screenBuffer: 50
@@ -108797,9 +108798,8 @@ MonoBehaviour:
   _initialRotation: {x: 0, y: 0, z: 0}
   _cameraXMin: 0
   _cameraXMax: 0
-  _parentYMin: 0
-  _parentYMax: 0
-  _parent: {fileID: 0}
+  _cameraYMin: 0
+  _cameraYMax: 0
   _hitBoxTransform: {fileID: 0}
   _angleX: 0
   _angleY: 0
