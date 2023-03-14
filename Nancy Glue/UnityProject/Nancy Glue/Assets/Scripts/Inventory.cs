@@ -14,11 +14,15 @@ public class Inventory : MonoBehaviour
     public int[] savedIDs;
     public ItemDB itemDatabase;
     public invUI invUI;
+    public SaveLoadGameState SLGS;
+    
     //public UIInventory inventoryUI;
 
     private void Awake()
     {
         invUI = GameObject.Find("UICanvas").GetComponent<invUI>();
+        SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
+        
     }
 
 
@@ -39,8 +43,21 @@ public class Inventory : MonoBehaviour
         }
 
         */
-        
-        
+        Debug.Log("check for load");
+        if (NewOrLoad.isLoad == true)
+        {
+            Debug.Log("loading");
+            SLGS.Load();
+            //go through savedIDs
+            for (int i = 0; i < savedIDs.Length; i++)
+            {
+                GiveItem(savedIDs[i]);
+                Debug.Log(savedIDs[i]);
+            }
+        }
+        else
+            resetInv();
+            Debug.Log("new game");
 
 
     }
@@ -107,6 +124,11 @@ public class Inventory : MonoBehaviour
     {
         characterItems.Clear();
         invUI.resetInvUi();
+        
+        
+        
+
+
     }
 
 
@@ -118,21 +140,8 @@ public class Inventory : MonoBehaviour
 
 
         savedIDs = characterItems.Select(x => x.id).ToArray();
-
-
-
-        //write the savedIDs list to a text file
-        using (TextWriter tw = new StreamWriter("Inv.txt"))
-        {
-            foreach (int n in savedIDs)
-                tw.WriteLine(n);
-
-        }
-        Debug.Log("saved item ids:");
-        foreach (var x in savedIDs)
-        {
-            Debug.Log(x.ToString());
-
-        }
+        //call the save
+        SLGS.SaveGame();
+        Debug.Log("game saved to " + Application.persistentDataPath);
     }
 }
