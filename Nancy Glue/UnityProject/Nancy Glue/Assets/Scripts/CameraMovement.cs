@@ -7,23 +7,21 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform _rootCamera; //transform for the root camera.
     [SerializeField] private Transform _cameraTransform; //transform for the current camera.
     [SerializeField] private List<Transform> _switchableCameras; //transforms for cameras that can be switched to.
-    [SerializeField] [Range(0,45)]private float _yRotLimit;
-    [SerializeField] [Range(0,45)]private float _xRotLimit;
+    [SerializeField] [Range(0,45)]private float _yRotLimit; //Limit rotation on the Y Axis
+    [SerializeField] [Range(0,45)]private float _xRotLimit; //Limit Rotation on the X Axis
+    [SerializeField] [Range(20,50)]private float _turnSpeed;
     [SerializeField] private Vector3 _mousePos;
     [SerializeField] private Vector2 _screenBounds;
-    [SerializeField][Range(0, 50)] private int _screenBuffer;
+    [SerializeField][Range(50, 100)] private int _screenBuffer = 100;
     [SerializeField] private bool _lookLeft, _lookRight, _lookUp, _lookDown;
-    [SerializeField] private Quaternion _initialRotation;
-    [SerializeField] private Quaternion _maxRotation;
-    [SerializeField] private Quaternion _minRotation;
-    [SerializeField] private Transform _parent;
+    [SerializeField] private Vector3 _initialRotation;
+    [SerializeField] private float _cameraXMin, _cameraXMax, _cameraYMin, _cameraYMax;
     [SerializeField] private Transform _hitBoxTransform;
-  
+    [SerializeField] private float _angleX, _angleY;
 
     private void Awake()
     {
         _cameraTransform = GetComponent<Transform>();
-        _parent = _cameraTransform.parent;
     }
 
     // Start is called before the first frame update
@@ -31,9 +29,13 @@ public class CameraMovement : MonoBehaviour
     {
         _screenBounds = new Vector2(Screen.width - _screenBuffer, Screen.height - _screenBuffer);
         _isRoot = _rootCamera == null;
-        _yRotLimit = 45f;
-        _xRotLimit = 45f;
-        _initialRotation = _cameraTransform.rotation;
+        _initialRotation = new Vector3(_cameraTransform.rotation.eulerAngles.x, _cameraTransform.rotation.eulerAngles.y, 0);
+        _cameraXMin = _initialRotation.x - _xRotLimit;
+        _cameraXMax = _initialRotation.x + _xRotLimit;
+        _cameraYMin = _initialRotation.y - _yRotLimit;
+        _cameraYMax = _initialRotation.y + _yRotLimit;
+        _angleX = _initialRotation.x;
+        _angleY = _initialRotation.y;
     }
 
     // Update is called once per frame
@@ -45,54 +47,60 @@ public class CameraMovement : MonoBehaviour
     private void CheckBounds()
     {
         _mousePos = Input.mousePosition;
-        _lookLeft = _mousePos.x < _screenBuffer ? true : false;
-        _lookRight = _mousePos.x > _screenBounds.x ? true : false;
-        _lookUp = _mousePos.y < _screenBuffer ? true : false;
-        _lookDown = _mousePos.y > _screenBounds.y ? true : false;
-        RotateX();
-        RotateY();
+        _lookLeft = _mousePos.x < _screenBuffer || Input.GetKey(KeyCode.A) ? true : false;
+        _lookRight = _mousePos.x > _screenBounds.x || Input.GetKey(KeyCode.D) ? true : false;
+        _lookUp = _mousePos.y > _screenBounds.y || Input.GetKey(KeyCode.W) ? true : false;
+        _lookDown =  _mousePos.y < _screenBuffer || Input.GetKey(KeyCode.S) ? true : false;
+        RotateLeftRight();
+        RotateUpDown();
     }
 
-    private void RotateY()
+    private void RotateLeftRight()
     {
         if (!_lookLeft && !_lookRight) return;
         switch(_lookLeft)
         {
             case true:
-                Rotate(1 * -(int)_yRotLimit,0,0);
+                Rotate(0,-1);
                 break;
             case false when _lookRight:
-                Rotate(1 * (int)_yRotLimit, 0, 0);
+                Rotate(0, 1);
                 break;
             case false:
                 break;
         }
     }
 
-    private void RotateX()
+    private void RotateUpDown()
     {
         if (!_lookUp && !_lookDown) return;
         switch (_lookUp)
         {
             case true:
-                Rotate(0, 1 * (int)_xRotLimit, 0);
+                Rotate(-1, 0);
                 break;
             case false when _lookDown:
-                Rotate(0, 1 * -(int)_xRotLimit, 0);
+                Rotate(1, 0);
                 break;
             case false:
                 break;
         }
     }
 
-    private void Rotate(int x, int y, int z)
+    private void Rotate(int x, int y)
     {
-        _maxRotation = new Quaternion(_initialRotation.x + x, _initialRotation.y + y, 0, 0);
-        _minRotation = new Quaternion(_initialRotation.x - x, _initialRotation.y - y, 0, 0);
-        if (_cameraTransform.rotation != _maxRotation || _cameraTransform.rotation != _minRotation)
-        {
-            _cameraTransform.Rotate((Vector3.left * -y) * Time.deltaTime);
-            _parent.Rotate((Vector3.up * x)* Time.deltaTime);
-        }
+        if (x != 0)
+            _angleX = AngleClamp(x, _angleX, _cameraXMin, _cameraXMax);
+        
+        if (y != 0)
+            _angleY = AngleClamp(y, _angleY, _cameraYMin, _cameraYMax);
+        _cameraTransform.eulerAngles = new Vector3(_angleX, _angleY, 0);
+    }
+
+    private float AngleClamp(int axisDirection, float axisAngle, float clampMin, float clampMax)
+    {
+        axisAngle += (axisDirection * _turnSpeed) * Time.deltaTime;
+        axisAngle = Mathf.Clamp(axisAngle, clampMin, clampMax);
+        return axisAngle;
     }
 }
