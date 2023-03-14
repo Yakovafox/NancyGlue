@@ -29,12 +29,12 @@ namespace Dialogue.Elements
         public DialogueGroup group { get; set; }
 
         protected DialogueGraphView graphView;
-
         protected Color defaultBackgroundColor;
 
         // Initialisation
         public virtual void Init(string name, DialogueGraphView dialogueGraphView, Vector2 pos)
         {
+            // Initialise values
             ID = Guid.NewGuid().ToString();
             DialogueName = name;
             CharacterName = "Character Name";
