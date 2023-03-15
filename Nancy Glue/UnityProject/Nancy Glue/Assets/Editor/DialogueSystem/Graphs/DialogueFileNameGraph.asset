@@ -9,25 +9,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf447c0201809014399cdcb357dc6658, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
   m_Name: DialogueFileNameGraph
   m_EditorClassIdentifier: 
   <fileName>k__BackingField: DialogueFileName
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 29f4ea98-294e-471b-8a07-43be2feb3b30
+  - <ID>k__BackingField: f2b51e3d-96b4-484a-bcae-74082f22c4f7
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Character Name
     <text>k__BackingField: Dialogue Text.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 385c27ff-f195-4770-9fe2-2ee5b982a7ab
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: -29, y: 37}
-    <spritePath>k__BackingField: Textures/ToyBear.png
+    <position>k__BackingField: {x: 276, y: 251}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 385c27ff-f195-4770-9fe2-2ee5b982a7ab
+    <dialogueName>k__BackingField: DialogueName2
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: Dialogue Text.
+    <options>k__BackingField:
+    - <Text>k__BackingField: New Option
+      <NodeID>k__BackingField: 76571ec7-8ac1-49f0-8ece-3fdb542d84b0
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 1
+    <position>k__BackingField: {x: 1086, y: 235}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 76571ec7-8ac1-49f0-8ece-3fdb542d84b0
+    <dialogueName>k__BackingField: DialogueName3
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: Dialogue Text.
+    <options>k__BackingField:
+    - <Text>k__BackingField: New Option
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 1
+    <position>k__BackingField: {x: 2014, y: 397}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - DialogueName
+  - DialogueName2
+  - DialogueName3
   <oldGroupedNames>k__BackingField:
     list: []

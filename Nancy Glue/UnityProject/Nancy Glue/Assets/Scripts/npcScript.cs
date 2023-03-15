@@ -6,15 +6,14 @@ using UnityEngine;
 public class npcScript : MonoBehaviour
 {
     public List<DialogueContainerSO> DialogueContainers;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int ActiveContainer = 0;
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeActiveContainer()
     {
-        
+        //ActiveContainer = ActiveContainer > DialogueContainers.Count ? ActiveContainer++ : 0;
+        ActiveContainer++;
+        if (ActiveContainer > DialogueContainers.Count - 1)
+            ActiveContainer = 0;
+        Debug.Log("Current Active Container: " + ActiveContainer);
     }
 }

@@ -25,12 +25,18 @@ namespace Dialogue.Elements
         public void SetErrorStyle(Color color)
         {
             contentContainer.style.borderBottomColor = color;
+            contentContainer.style.borderTopColor = color;
+            contentContainer.style.borderLeftColor = color;
+            contentContainer.style.borderRightColor = color;
             contentContainer.style.borderBottomWidth = 2f;
         }
 
         public void ResetStyle()
         {
             contentContainer.style.borderBottomColor = defaultBorderColor;
+            contentContainer.style.borderTopColor = defaultBorderColor;
+            contentContainer.style.borderLeftColor = defaultBorderColor;
+            contentContainer.style.borderRightColor = defaultBorderColor;
             contentContainer.style.borderBottomWidth = defaultBorderWidth;
         }
     }

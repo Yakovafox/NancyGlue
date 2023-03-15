@@ -47,6 +47,7 @@ namespace Dialogue.Windows
 
             saveButton = DialogueElementUtility.CreateButton("Save", () => Save());
 
+            Button newGraphButton = DialogueElementUtility.CreateButton("New", () => NewGraph());
             Button loadButton = DialogueElementUtility.CreateButton("Load", () => Load());
             Button clearButton = DialogueElementUtility.CreateButton("Clear", () => Clear());
             Button resetButton = DialogueElementUtility.CreateButton("Reset", () => ResetGraph());
@@ -56,8 +57,15 @@ namespace Dialogue.Windows
             toolbar.Add(loadButton);
             toolbar.Add(clearButton);
             toolbar.Add(resetButton);
+            toolbar.Add(newGraphButton);
 
             rootVisualElement.Add(toolbar);
+        }
+
+        private void NewGraph()
+        {
+            Clear();
+            fileName.value = defaultFileName;
         }
 
         private void Save()

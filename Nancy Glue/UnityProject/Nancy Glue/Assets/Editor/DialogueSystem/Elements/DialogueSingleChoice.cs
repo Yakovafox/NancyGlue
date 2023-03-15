@@ -25,6 +25,8 @@ namespace Dialogue.Elements
                 Text = "Next Dialogue..."
             };
 
+            //extensionContainer.style.backgroundColor = new Color(29f / 255f, 79f / 255f, 30f / 255f);
+
             Options.Add(optionData);
         }
 

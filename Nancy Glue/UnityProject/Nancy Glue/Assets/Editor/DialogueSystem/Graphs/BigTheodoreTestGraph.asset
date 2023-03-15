@@ -9,54 +9,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf447c0201809014399cdcb357dc6658, type: 3}
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
   m_Name: BigTheodoreTestGraph
   m_EditorClassIdentifier: 
   <fileName>k__BackingField: BigTheodoreTest
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 14afd4b8-a6bb-4d68-91e0-527ec0ea7f3c
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Big Ted
-    <text>k__BackingField: I'm big Ted. This is a test run for Nancy Glue!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: a45c1795-1e76-49fa-97cc-d84845950472
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 359, y: 137}
-    <spritePath>k__BackingField: Textures/ToyBear
-    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
-  - <ID>k__BackingField: a45c1795-1e76-49fa-97cc-d84845950472
-    <dialogueName>k__BackingField: SecondDialogue
-    <characterName>k__BackingField: Big Ted
-    <text>k__BackingField: Can you find me 4 items? Fluff, Crown, Slime and a Film
-      Reel.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: e2780c81-1a11-414f-b338-42ba5560795b
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1185, y: 124}
-    <spritePath>k__BackingField: Textures/ToyBear
-    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
-  - <ID>k__BackingField: e2780c81-1a11-414f-b338-42ba5560795b
-    <dialogueName>k__BackingField: ThirdDialogue
-    <characterName>k__BackingField: Big Ted
-    <text>k__BackingField: 'Use the purple cubes to get around and look for those
-      items. '
+  - <ID>k__BackingField: dad3bf17-b699-4724-b298-435497577f7c
+    <dialogueName>k__BackingField: BigTedEnd
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: Fuck off bruv!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1926, y: 124}
-    <spritePath>k__BackingField: Textures/ToyBear
-    <audioPath>k__BackingField: sfx/dialogue/speaking.mp3
+    <position>k__BackingField: {x: 922, y: 179}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 3252ad37-e0f5-4924-b78f-fcc110388a6a
+    <dialogueName>k__BackingField: BigTedStart
+    <characterName>k__BackingField: Big Theodore
+    <text>k__BackingField: What's goood dog, big ted and that innit!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: dad3bf17-b699-4724-b298-435497577f7c
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 128, y: 148}
+    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - Start
-  - SecondDialogue
-  - ThirdDialogue
+  - BigTedEnd
+  - BigTedStart
   <oldGroupedNames>k__BackingField:
     list: []

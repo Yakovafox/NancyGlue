@@ -24,6 +24,8 @@ namespace Dialogue.Elements
                 Text = "New Option"
             };
 
+            //extensionContainer.style.backgroundColor = new Color(79f / 255f, 29f / 255f, 80f / 255f);
+
             Options.Add(optionData);
         }
 
