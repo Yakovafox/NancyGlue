@@ -19,6 +19,12 @@ namespace Dialogue.Elements
         {
             base.Init(nodeName, dialogueGraphView, pos);
 
+            DialogueName = "NotesName";
+
+            Text = "Note Added: ";
+
+            CharacterName = "Note Name";
+
             type = DialogueType.Evidence;
 
             ChoiceSaveData optionData = new ChoiceSaveData()
@@ -33,7 +39,99 @@ namespace Dialogue.Elements
 
         public override void Draw()
         {
-            base.Draw();
+            // Title Container
+            TextField dialogueNameTextField = DialogueElementUtility.CreateTextField(DialogueName, null, callback =>
+            {
+                TextField target = (TextField)callback.target;
+
+                target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
+
+                if (string.IsNullOrEmpty(target.value))
+                {
+                    if (!string.IsNullOrEmpty(name))
+                    {
+                        graphView.RepeatedNames++;
+                    }
+                }
+                else
+                {
+                    if (string.IsNullOrEmpty(name))
+                    {
+                        graphView.RepeatedNames--;
+                    }
+                }
+
+                if (group == null)
+                {
+                    graphView.RemoveUngroupedNode(this);
+
+                    DialogueName = target.value;
+
+                    graphView.AddUngroupedNode(this);
+
+                    return;
+                }
+
+                DialogueGroup currentGroup = group;
+
+                graphView.RemoveGroupedNode(this, group);
+
+                DialogueName = target.value;
+
+                graphView.AddGroupedNode(this, currentGroup);
+            });
+
+            dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden");
+            dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden:textfield");
+            dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden:hidden");
+
+            titleContainer.Insert(0, dialogueNameTextField);
+
+            VisualElement characterNameContainer = new VisualElement();
+
+            characterNameContainer.AddToClassList("dialogue-node__custom-data-container");
+
+            // Character Name Field
+            TextField characterNameTextField = DialogueElementUtility.CreateTextField(CharacterName, null, callback =>
+            {
+                CharacterName = callback.newValue;
+            });
+
+            characterNameTextField.AddToClassList("dialogue-node__textfield");
+
+            characterNameContainer.Insert(0, characterNameTextField);
+
+            extensionContainer.Add(characterNameTextField);
+
+            // Input Container
+            Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(bool));
+
+            inputPort.portName = "Input Pin";
+
+            inputContainer.Add(inputPort);
+
+            // Extension Container
+            VisualElement textDataContainer = new VisualElement();
+
+            textDataContainer.AddToClassList("dialogue-node__custom-data-container");
+
+            Foldout textFoldout = DialogueElementUtility.CreateFoldout("Note Text");
+
+            TextField textInputField = DialogueElementUtility.CreateTextArea(Text, null, callback =>
+            {
+                Text = callback.newValue;
+            });
+
+            textInputField.AddToClassList("dialogue-node__textfield");
+            textInputField.AddToClassList("dialogue-node__quote-textfield");
+
+            textFoldout.Add(textInputField);
+
+            textDataContainer.Add(textFoldout);
+
+            extensionContainer.Add(textDataContainer);
+
+
 
             // Output container
             foreach (ChoiceSaveData option in Options)

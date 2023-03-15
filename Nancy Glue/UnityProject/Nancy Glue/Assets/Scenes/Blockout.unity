@@ -6457,17 +6457,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &160215985 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1593297125214363471, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
-  m_PrefabInstance: {fileID: 2131559980}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &160278473
 Mesh:
   m_ObjectHideFlags: 0
@@ -9567,17 +9556,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &222617345 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3283369352466957933, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
-  m_PrefabInstance: {fileID: 2131559980}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &227908302
 GameObject:
   m_ObjectHideFlags: 0
@@ -31949,17 +31927,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &888418955 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6148382017937621937, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
-  m_PrefabInstance: {fileID: 2131559980}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &891525070
 GameObject:
   m_ObjectHideFlags: 0
@@ -106912,6 +106879,7 @@ MonoBehaviour:
   DialogueContainers:
   - {fileID: 11400000, guid: e22b75ededbb4494fb64c29865031d77, type: 2}
   - {fileID: 11400000, guid: 3c270b7274770ce469326291a75d06e4, type: 2}
+  - {fileID: 11400000, guid: b68e8edab53e46948a29baa6e160047b, type: 2}
   ActiveContainer: 0
 --- !u!65 &2042471531
 BoxCollider:
@@ -111560,35 +111528,6 @@ PrefabInstance:
     - {fileID: 7351887079313779369, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
---- !u!1 &2131559981 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9145485965046034087, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
-  m_PrefabInstance: {fileID: 2131559980}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2131559982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131559981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea66385273ec8de438c4ad11ce672045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: e22b75ededbb4494fb64c29865031d77, type: 2}
-  dialogueGroup: {fileID: 0}
-  dialogue: {fileID: 0}
-  groupedDialogues: 0
-  startingDialogueOnly: 1
-  selectedDialogueGroupIndex: 0
-  selectedDialogueIndex: 0
-  startinagDialogue: {fileID: 0}
-  characterPortrait: {fileID: 888418955}
-  characterNameUI: {fileID: 222617345}
-  bodyTextUI: {fileID: 160215985}
-  optionGridUI: {fileID: 0}
 --- !u!1 &2131687812
 GameObject:
   m_ObjectHideFlags: 0

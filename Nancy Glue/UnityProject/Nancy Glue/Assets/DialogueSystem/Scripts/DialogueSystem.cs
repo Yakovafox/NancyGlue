@@ -73,8 +73,6 @@ namespace Dialogue
 
         private void Update()
         {
-            Debug.Log(currentDialogue);
-
             // On any key press progress dialogue if the node is single choice
             if (currentDialogue.dialogueType == DialogueType.SingleChoice)
             {
@@ -113,12 +111,13 @@ namespace Dialogue
             else if (currentDialogue.dialogueType == DialogueType.Evidence)
             {
                 // TODO: Add evidence
-                // evidence.Add(currentDialogue.dialogueText);
 
-                if (Input.anyKeyDown)
-                {
+                Debug.Log(currentDialogue.dialogueText);
+
+                //if (Input.anyKeyDown)
+                //{
                     OnOptionChosen(0);
-                }
+                //}
             }
         }
 

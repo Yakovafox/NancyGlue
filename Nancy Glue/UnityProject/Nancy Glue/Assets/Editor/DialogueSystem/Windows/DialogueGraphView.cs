@@ -100,7 +100,7 @@ namespace Dialogue.Windows
         {
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Single Choice)", DialogueType.SingleChoice));
             this.AddManipulator(CreateNodeContextualMenu("Add Node (Multiple Choice)", DialogueType.MultiChoice));
-            this.AddManipulator(CreateNodeContextualMenu("Add Node (Evidence Node)", DialogueType.Evidence));
+            this.AddManipulator(CreateNodeContextualMenu("Add Node (Note Node)", DialogueType.Evidence));
 
             this.AddManipulator(new ContentZoomer());
             this.AddManipulator(new ContentDragger());

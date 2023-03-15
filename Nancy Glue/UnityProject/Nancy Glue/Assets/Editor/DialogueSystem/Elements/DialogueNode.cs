@@ -138,7 +138,6 @@ namespace Dialogue.Elements
             Image characterPortrait = new Image
             {
                 image = Resources.Load<Texture2D>(SpritePath)
-                //image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png")
             };
 
             // Sprite Asset Path Field
@@ -146,7 +145,6 @@ namespace Dialogue.Elements
             {
                 SpritePath = callback.newValue;
                 characterPortrait.image = Resources.Load<Texture2D>(callback.newValue);
-                //characterPortrait.image = (Texture2D)EditorGUIUtility.Load(SpritePath + ".png");
                 RefreshExpandedState();
             });
             
@@ -173,7 +171,7 @@ namespace Dialogue.Elements
             // Input Container
             Port inputPort = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(bool));
 
-            inputPort.portName = "Start Flag";
+            inputPort.portName = "Input Pin";
 
             inputContainer.Add(inputPort);
 

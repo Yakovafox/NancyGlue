@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: BigTedEvidenceGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: BigTedEvidence
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 484634a8-108f-4a8d-bdbf-b476c2e3b2a2
+    <dialogueName>k__BackingField: BigTedStart
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: Oi, I got something for you.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 7e2d6d6f-257e-4128-8c04-3cadd8458761
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 210, y: 152}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 24c43d5d-0e18-4497-8be6-7335285b77d8
+    <dialogueName>k__BackingField: BigTedEnd
+    <characterName>k__BackingField: Big Ted
+    <text>k__BackingField: Now fuck off will you?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1732, y: 136}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 7e2d6d6f-257e-4128-8c04-3cadd8458761
+    <dialogueName>k__BackingField: NotesName
+    <characterName>k__BackingField: Nancy
+    <text>k__BackingField: 'Note Added: so Ted has hairy balls.'
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 24c43d5d-0e18-4497-8be6-7335285b77d8
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 962, y: 143}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - BigTedStart
+  - BigTedEnd
+  - NotesName
+  <oldGroupedNames>k__BackingField:
+    list: []
