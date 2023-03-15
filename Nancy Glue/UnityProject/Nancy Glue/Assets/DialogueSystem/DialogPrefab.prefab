@@ -30,13 +30,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7450506231417707321}
+  m_Father: {fileID: 5600002711150150326}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 160}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: 395, y: -12}
+  m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7064020473511360387
 CanvasRenderer:
@@ -377,6 +377,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8908656235373659986}
   - {fileID: 7450506231417707321}
   m_Father: {fileID: 3655599110155730542}
   m_RootOrder: -1
@@ -512,7 +513,6 @@ RectTransform:
   m_Children:
   - {fileID: 727865173507735416}
   - {fileID: 8525231949754051371}
-  - {fileID: 8908656235373659986}
   m_Father: {fileID: 5600002711150150326}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -568,7 +568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3655599110155730542}
-  - component: {fileID: 7351887079313779369}
+  - component: {fileID: 3305818566640606952}
   m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -592,7 +592,7 @@ Transform:
   m_Father: {fileID: 1114402883610488422}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7351887079313779369
+--- !u!114 &3305818566640606952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -601,17 +601,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 9145485965046034087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d19cdac3bb11ba14ebf6bf7f54cd7a3d, type: 3}
+  m_Script: {fileID: 11500000, guid: ea66385273ec8de438c4ad11ce672045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: 4e7e3b1ab92a5f8418cae8f85b968269, type: 2}
-  dialogueGroup: {fileID: 11400000, guid: b6f7bd8fc8d1cdc40b976e936989dcd3, type: 2}
-  dialogue: {fileID: 11400000, guid: ec87b6f6587075543abda9ba90150772, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: 3c270b7274770ce469326291a75d06e4, type: 2}
+  dialogueGroup: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: baf1d4cd7f1748940abe141442b9258d, type: 2}
   groupedDialogues: 0
   startingDialogueOnly: 0
   selectedDialogueGroupIndex: 0
   selectedDialogueIndex: 0
-  startingDialogue: {fileID: 0}
+  startinagDialogue: {fileID: 0}
   characterPortrait: {fileID: 6148382017937621937}
   characterNameUI: {fileID: 3283369352466957933}
   bodyTextUI: {fileID: 1593297125214363471}

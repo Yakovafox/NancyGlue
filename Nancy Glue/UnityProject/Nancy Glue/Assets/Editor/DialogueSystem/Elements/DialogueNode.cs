@@ -38,7 +38,7 @@ namespace Dialogue.Elements
             ID = Guid.NewGuid().ToString();
             DialogueName = name;
             CharacterName = "Character Name";
-            SpritePath = "UI/Sprites/missing_texture";
+            SpritePath = "UI/Sprites/Dialogue/missing_texture";
             AudioPath = "Sfx/Dialogue/speaking.mp3";
             CharacterPortrait = Resources.Load<Sprite>(SpritePath);
             Options = new List<ChoiceSaveData>();

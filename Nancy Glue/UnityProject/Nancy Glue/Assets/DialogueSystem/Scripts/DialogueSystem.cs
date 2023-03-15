@@ -37,6 +37,7 @@ namespace Dialogue
 
         private void ShowText()
         {
+            Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
             bodyTextUI.text = currentDialogue.dialogueText;
 

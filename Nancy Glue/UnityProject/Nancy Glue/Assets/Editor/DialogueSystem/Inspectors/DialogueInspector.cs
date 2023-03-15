@@ -70,7 +70,7 @@ namespace Dialogue.Inspectors
 
             List<string> dialogueNames;
 
-            string dialogueFolderPath = $"Assets/DialogueSystem/Dialogues/{dialogueContainer.fileName}";
+            string dialogueFolderPath = $"Assets/Resources/Dialogues/{dialogueContainer.fileName}";
 
             string dialogueInfoMessage;
 
@@ -156,7 +156,7 @@ namespace Dialogue.Inspectors
 
             string selectedDialogueGroupName = dialogueGroupNames[selectedDialogueGroupIndexProperty.intValue];
 
-            DialogueGroupSO selectedGroup = IOUtility.LoadAsset<DialogueGroupSO>($"Assets/DialogueSystem/Dialogues/{dialogueContainer.fileName}/Groups/{selectedDialogueGroupName}", selectedDialogueGroupName);
+            DialogueGroupSO selectedGroup = IOUtility.LoadAsset<DialogueGroupSO>($"Assets/Resources/Dialogues/{dialogueContainer.fileName}/Groups/{selectedDialogueGroupName}", selectedDialogueGroupName);
 
             dialogueGroupProperty.objectReferenceValue = selectedGroup;
 
