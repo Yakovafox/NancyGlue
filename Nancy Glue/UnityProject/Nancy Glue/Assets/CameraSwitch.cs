@@ -19,11 +19,10 @@ public class CameraSwitch : MonoBehaviour
         _myMeshRenderer = GetComponent<MeshRenderer>();
         _cameraTransform = transform.GetChild(0);
     }
-    // Start is called before the first frame update
     void Start()
     {
-        _isRoot = _rootCameraTransform != null ? false: true;
-        _canSwitch = _switchableCameras.Count != 0 ? true : false;
+        _isRoot = _rootCameraTransform != null ? false: true; //Used to set Root camera in hierarchy
+        _canSwitch = _switchableCameras.Count != 0 ? true : false; //assigning switchable cameras in the list sets this to true, false if empty
         EnableDisableCam();
     }
 

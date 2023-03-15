@@ -15,13 +15,17 @@ public class CameraMovement : MonoBehaviour
     [SerializeField][Range(50, 100)] private int _screenBuffer = 100;
     [SerializeField] private bool _lookLeft, _lookRight, _lookUp, _lookDown;
     [SerializeField] private Vector3 _initialRotation;
+    public Vector3 InitialRotation { get => _initialRotation; }
     [SerializeField] private float _cameraXMin, _cameraXMax, _cameraYMin, _cameraYMax;
     [SerializeField] private Transform _hitBoxTransform;
     [SerializeField] private float _angleX, _angleY;
+    public float AngleX { get => _angleX; set => _angleX = value; }
+    public float AngleY { get => _angleY; set => _angleY = value; }
 
     private void Awake()
     {
         _cameraTransform = GetComponent<Transform>();
+        _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
     }
 
     // Start is called before the first frame update
@@ -29,7 +33,6 @@ public class CameraMovement : MonoBehaviour
     {
         _screenBounds = new Vector2(Screen.width - _screenBuffer, Screen.height - _screenBuffer);
         _isRoot = _rootCamera == null;
-        _initialRotation = new Vector3(_cameraTransform.rotation.eulerAngles.x, _cameraTransform.rotation.eulerAngles.y, 0);
         _cameraXMin = _initialRotation.x - _xRotLimit;
         _cameraXMax = _initialRotation.x + _xRotLimit;
         _cameraYMin = _initialRotation.y - _yRotLimit;
@@ -102,5 +105,12 @@ public class CameraMovement : MonoBehaviour
         axisAngle += (axisDirection * _turnSpeed) * Time.deltaTime;
         axisAngle = Mathf.Clamp(axisAngle, clampMin, clampMax);
         return axisAngle;
+    }
+
+    private void OnEnable()
+    {
+        _angleX = _initialRotation.x;
+        _angleY = _initialRotation.y;
+        _cameraTransform.eulerAngles = InitialRotation;
     }
 }
