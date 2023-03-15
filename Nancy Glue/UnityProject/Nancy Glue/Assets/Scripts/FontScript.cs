@@ -27,6 +27,14 @@ public class FontScript : MonoBehaviour
         ChangeText();
     }
 
+    public void ChangeTextColour(Color newcolor)
+    {
+        for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+        {
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = newcolor;
+        }
+    }
+
     private void ChangeText()
     {
         var text = _FontEnableButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
