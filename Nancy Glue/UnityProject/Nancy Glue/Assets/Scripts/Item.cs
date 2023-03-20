@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.U2D;
 using UnityEngine;
 
 public class Item 
@@ -8,7 +9,8 @@ public class Item
     public string title;
     public string description;
     public Sprite icon;
-    
+
+    [SerializeField] private ItemScriptableObject _evidenceItem;
 
     public Item(int id, string title, string description)
     {
@@ -24,5 +26,13 @@ public class Item
         this.title = item.title;
         this.description = item.description;
         this.icon = Resources.Load<Sprite>("UI/Sprites/" + item.title);
+    }
+
+    public Item(ItemScriptableObject evidenceItem)
+    {
+        id = evidenceItem.ItemID;
+        title = evidenceItem.Title;
+        description = evidenceItem.Description;
+        icon = evidenceItem.Icon;
     }
 }

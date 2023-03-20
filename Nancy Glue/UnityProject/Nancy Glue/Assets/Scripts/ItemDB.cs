@@ -11,6 +11,11 @@ public class ItemDB : MonoBehaviour
         BuildDB();
     }
 
+    void Start()
+    {
+        BuildDB();
+    }
+
     public Item GetItem(int id)
     {
         return items.Find(item => item.id == id);
@@ -27,6 +32,20 @@ public class ItemDB : MonoBehaviour
     
     void BuildDB()
     {
+        items = new List<Item>();
+        var newItems2 = FindObjectsOfType<ItemData>();
+        foreach (var data in newItems2)
+        {
+            items.Add(new Item(data.EvidenceItem));
+        }
+        /*
+        var newItems = GameObject.FindGameObjectsWithTag("Evidence");
+        foreach (var item in newItems)
+        {
+            var itemScript = item.GetComponent<ItemData>();
+            items.Add(new Item(itemScript.EvidenceItem));
+        }
+        
         items = new List<Item>() {
             new Item(0, "item_chalkline", "Chalkline desc"),
             new Item(1,"item_crown", "It's a crown!"),
@@ -35,5 +54,6 @@ public class ItemDB : MonoBehaviour
             new Item(4,"item_stuffing", "It's stuffing!")
             
         };
+        */
     }
 }
