@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FontScript : MonoBehaviour
 {
     [SerializeField] private TMP_FontAsset[] _fonts = new TMP_FontAsset[2];
     [SerializeField] private int _activeFontIndex;
     [SerializeField] private GameObject[] _TMPGameObjectsGUI;
+    [SerializeField] private GameObject[] _BackGroundGameObjectsGUI;
     [SerializeField] private bool _dyslexiaTextSelected;
     [SerializeField] private GameObject _FontEnableButton;
 
@@ -13,7 +15,13 @@ public class FontScript : MonoBehaviour
     {
         _activeFontIndex = 0;
         _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Respawn");
+        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("Finish");
         _FontEnableButton = GameObject.Find("FontEnableButton");
+
+        for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+        {
+            _BackGroundGameObjectsGUI[i].SetActive(false); 
+        }
     }
 
     public void ChangeFonts()
@@ -32,6 +40,15 @@ public class FontScript : MonoBehaviour
         for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
         {
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = newcolor;
+        }
+    }
+
+    public void ChangeBGColour(Color newcolor)
+    {
+        for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+        {
+            _BackGroundGameObjectsGUI[i].SetActive(true);
+            _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = newcolor;
         }
     }
 
