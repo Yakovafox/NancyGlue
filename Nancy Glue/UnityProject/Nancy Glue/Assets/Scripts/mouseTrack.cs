@@ -56,6 +56,14 @@ public class mouseTrack : MonoBehaviour
 
                 switch (hitData.transform.tag)
                 {
+                    case ("Evidence"):
+                        var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
+                        Debug.Log("Clicked " + item.Title + ":"
+                         + "\n " + item.Description + "\n Item ID: " + item.ItemID);
+                        inv.GiveItem(item.ItemID);
+
+                        Destroy(hitData.transform.gameObject);
+                        break;
                     case ("Evidence id0"):
                         Debug.Log("Clicked evidence");
                         inv.GiveItem(0);
