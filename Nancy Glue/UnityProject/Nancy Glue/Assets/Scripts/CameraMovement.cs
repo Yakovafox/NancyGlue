@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Dialogue;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -19,6 +20,9 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private float _cameraXMin, _cameraXMax, _cameraYMin, _cameraYMax;
     [SerializeField] private Transform _hitBoxTransform;
     [SerializeField] private float _angleX, _angleY;
+    [SerializeField] private GameObject _dialogueBox;
+    [SerializeField] private GameObject _invUI;
+
     public float AngleX { get => _angleX; set => _angleX = value; }
     public float AngleY { get => _angleY; set => _angleY = value; }
 
@@ -26,6 +30,8 @@ public class CameraMovement : MonoBehaviour
     {
         _cameraTransform = GetComponent<Transform>();
         _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
+        _dialogueBox = FindObjectOfType<DialogueSystem>().gameObject;
+        _invUI = FindObjectOfType<invUI>().gameObject;
     }
 
     // Start is called before the first frame update
@@ -49,6 +55,7 @@ public class CameraMovement : MonoBehaviour
 
     private void CheckBounds()
     {
+        if (LockMovement()) return;
         _mousePos = Input.mousePosition;
         _lookLeft = _mousePos.x < _screenBuffer || Input.GetKey(KeyCode.A) ? true : false;
         _lookRight = _mousePos.x > _screenBounds.x || Input.GetKey(KeyCode.D) ? true : false;
@@ -105,6 +112,13 @@ public class CameraMovement : MonoBehaviour
         axisAngle += (axisDirection * _turnSpeed) * Time.deltaTime;
         axisAngle = Mathf.Clamp(axisAngle, clampMin, clampMax);
         return axisAngle;
+    }
+
+    private bool LockMovement()
+    {
+        var uiOpen = _invUI.activeSelf || _dialogueBox.activeSelf;
+        
+        return uiOpen;
     }
 
     private void OnEnable()
