@@ -11,8 +11,8 @@ public class SaveLoadSettings : MonoBehaviour
     public Color fontColour;
     public int sensitivity;
     public Color backgroundColour;
-    public string fontStyle;
-
+    public int fontStyle;
+    public int isBackgroundEnabled;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +31,12 @@ public class SaveLoadSettings : MonoBehaviour
         PlayerPrefs.SetInt("sfxVolume", sfxVolume);
         PlayerPrefs.SetInt("musicVolume",musicVolume);
         PlayerPrefs.SetString("fontColour", ColorUtility.ToHtmlStringRGB(fontColour));
-        PlayerPrefs.SetString("fontStyle", fontStyle);
+        PlayerPrefs.SetInt("fontStyle", fontStyle);
         PlayerPrefs.SetString("backgroundColour", ColorUtility.ToHtmlStringRGB(backgroundColour));
+        PlayerPrefs.SetInt("isBackgroundEnabled",isBackgroundEnabled);
         PlayerPrefs.SetInt("sensitivity", sensitivity);
         PlayerPrefs.Save();
-        Debug.Log("saved to");//write path later
+        Debug.Log("saved settings");//write path later
     }
     public void load()
     {
@@ -43,9 +44,10 @@ public class SaveLoadSettings : MonoBehaviour
         musicVolume = PlayerPrefs.GetInt("musicVolume");
         ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("fontColour"), out fontColour);
         
-        fontStyle = PlayerPrefs.GetString("fontStyle");
+        fontStyle = PlayerPrefs.GetInt("fontStyle");
         
         ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("backgroundColour"),out backgroundColour);
+        isBackgroundEnabled = PlayerPrefs.GetInt("isBackgroundEnabled");
         sensitivity = PlayerPrefs.GetInt("sensitivity");
     }
     public void Default()

@@ -11,7 +11,7 @@ public class FontScript : MonoBehaviour
     [SerializeField] private bool _dyslexiaTextSelected;
     [SerializeField] private GameObject _FontEnableButton;
     [SerializeField] private TMP_Dropdown _dropDown;
-
+    public SaveLoadSettings SLS;
     private void Awake()
     {
         _activeFontIndex = 0;
@@ -19,10 +19,14 @@ public class FontScript : MonoBehaviour
         _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("Finish");
         _FontEnableButton = GameObject.Find("FontEnableButton");
         _dropDown = FindObjectOfType<TMP_Dropdown>();
+
         for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
         {
             _BackGroundGameObjectsGUI[i].SetActive(false); 
         }
+
+        SLS = FindObjectOfType<SaveLoadSettings>();
+        //SLS.isBackgroundEnabled = 0;
     }
 
     public void ChangeFonts()
@@ -43,7 +47,17 @@ public class FontScript : MonoBehaviour
         {
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[_dropDown.value]; //specifically for TMP UI text component. 
         }
-        ChangeText();
+        //ChangeText();
+        if (_dyslexiaTextSelected)
+        {
+            SLS.fontStyle = 1;
+        }
+        else
+        {
+            SLS.fontStyle = 0;
+        }
+
+
     }
 
     public void ChangeTextColour(Color newcolor)
@@ -52,6 +66,7 @@ public class FontScript : MonoBehaviour
         {
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = newcolor;
         }
+        SLS.fontColour = newcolor;
     }
 
     public void ChangeBGColour(Color newcolor)
@@ -61,11 +76,54 @@ public class FontScript : MonoBehaviour
             _BackGroundGameObjectsGUI[i].SetActive(true);
             _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = newcolor;
         }
+        SLS.backgroundColour = newcolor;
+        SLS.isBackgroundEnabled = 1;
     }
 
-    private void ChangeText()
+    /*private void ChangeText()
     {
         var text = _FontEnableButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         text.text = _dyslexiaTextSelected ? "Enabled" : "Disabled";
+
+    }*/
+
+    public void loadSettings()
+    {
+        if(SLS.fontStyle == 1)
+        {
+            for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+            {
+                _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[1];
+                _dropDown.value = 1;
+            }
+        }else if(SLS.fontStyle == 0)
+        {
+            for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+            {
+                _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[0];
+            }
+        }
+
+
+
+        for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+        {
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
+        }
+
+        //background colour is more complex
+        if (SLS.isBackgroundEnabled == 1)
+        {
+            for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+            {
+                _BackGroundGameObjectsGUI[i].SetActive(true);
+                _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
+                Debug.Log("setting background");
+            }
+        }
     }
+
+
+
+
 }

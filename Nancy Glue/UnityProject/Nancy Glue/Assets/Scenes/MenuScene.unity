@@ -3147,6 +3147,7 @@ GameObject:
   - component: {fileID: 767248365}
   - component: {fileID: 767248369}
   - component: {fileID: 767248370}
+  - component: {fileID: 767248371}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3276,6 +3277,26 @@ MonoBehaviour:
   _dyslexiaTextSelected: 0
   _FontEnableButton: {fileID: 0}
   _dropDown: {fileID: 0}
+  SLS: {fileID: 0}
+--- !u!114 &767248371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767248364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3037d1084ac0175478667abcbc709a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxVolume: 0
+  musicVolume: 0
+  fontColour: {r: 0, g: 0, b: 0, a: 0}
+  sensitivity: 0
+  backgroundColour: {r: 0, g: 0, b: 0, a: 0}
+  fontStyle: 0
+  isBackgroundEnabled: 0
 --- !u!1 &842341169
 GameObject:
   m_ObjectHideFlags: 0
@@ -5593,6 +5614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1694922729}
+  - component: {fileID: 1694922730}
   m_Layer: 5
   m_Name: AccessibilityMenu
   m_TagString: Untagged
@@ -5625,6 +5647,20 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -30}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1694922730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694922728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4e6bbe99e0f53469c51d4592039523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  back: {fileID: 577913409}
+  SLS: {fileID: 0}
 --- !u!1 &1696966253
 GameObject:
   m_ObjectHideFlags: 0
