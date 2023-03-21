@@ -11,11 +11,11 @@ public class AccesiMenuManager : MonoBehaviour
     void Start()
     {
         back.onClick.AddListener(saveSettings);
-        SLS=FindObjectOfType<SaveLoadSettings>();
+        
     }
     private void Awake()
     {
-        
+        SLS = FindObjectOfType<SaveLoadSettings>();
     }
     // Update is called once per frame
     void Update()
