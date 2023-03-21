@@ -30,6 +30,7 @@ namespace Dialogue
         [SerializeField] private DialogueSO startinagDialogue;
 
         // Interactables
+        [SerializeField] private Image nancyPortrait;
         [SerializeField] private Image characterPortrait;
         [SerializeField] private TextMeshProUGUI characterNameUI;
         [SerializeField] private TextMeshProUGUI bodyTextUI;
@@ -54,9 +55,11 @@ namespace Dialogue
             if (currentDialogue.characterName == "Nancy Glue")
             {
                 characterPortrait.color = fadeColor;
+                nancyPortrait.color = focusColor;
             }
             else
             {
+                nancyPortrait.color = fadeColor;
                 characterPortrait.color = focusColor;
             }
 

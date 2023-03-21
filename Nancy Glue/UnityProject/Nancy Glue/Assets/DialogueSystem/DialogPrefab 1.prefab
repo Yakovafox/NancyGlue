@@ -766,6 +766,7 @@ MonoBehaviour:
   selectedDialogueGroupIndex: 0
   selectedDialogueIndex: 0
   startinagDialogue: {fileID: 0}
+  nancyPortrait: {fileID: 380593607387587007}
   characterPortrait: {fileID: 6148382017937621937}
   characterNameUI: {fileID: 3283369352466957933}
   bodyTextUI: {fileID: 1593297125214363471}

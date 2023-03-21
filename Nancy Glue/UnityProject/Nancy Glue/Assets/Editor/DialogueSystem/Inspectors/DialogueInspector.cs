@@ -26,6 +26,7 @@ namespace Dialogue.Inspectors
         private SerializedProperty selectedDialogueIndexProperty;
 
         // Interactables
+        private SerializedProperty nancyPortraitUIProperty;
         private SerializedProperty portraitUIProperty;
         private SerializedProperty nameUIProperty;
         private SerializedProperty bodyTextUIProperty;
@@ -44,6 +45,7 @@ namespace Dialogue.Inspectors
             selectedDialogueIndexProperty = serializedObject.FindProperty("selectedDialogueIndex");
 
             portraitUIProperty = serializedObject.FindProperty("characterPortrait");
+            nancyPortraitUIProperty = serializedObject.FindProperty("nancyPortrait");
             nameUIProperty = serializedObject.FindProperty("characterNameUI");
             bodyTextUIProperty = serializedObject.FindProperty("bodyTextUI");
             gridUIProperty = serializedObject.FindProperty("optionGridUI");
@@ -201,6 +203,7 @@ namespace Dialogue.Inspectors
             InspectorUtility.DrawHeader("UI Elements");
 
             portraitUIProperty.DrawPropertyField();
+            nancyPortraitUIProperty.DrawPropertyField();
             nameUIProperty.DrawPropertyField();
             bodyTextUIProperty.DrawPropertyField();
             gridUIProperty.DrawPropertyField();
