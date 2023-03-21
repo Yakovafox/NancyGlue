@@ -10,6 +10,7 @@ namespace Dialogue
     using ScriptableObjects;
     using Enumerators;
     using UnityEngine.Rendering;
+    using System;
 
     public class DialogueSystem : MonoBehaviour
     {
@@ -35,12 +36,25 @@ namespace Dialogue
         [SerializeField] private Grid optionGridUI;
 
         private DialogueSO currentDialogue;
+        private bool scrollingText = false;
+        private string displayedText = "";
+        private float scrollSpeed = 0.025f;
 
         private void ShowText()
         {
+            if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
+
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
-            bodyTextUI.text = currentDialogue.dialogueText;
+            characterPortrait.sprite = Resources.Load<Sprite>(currentDialogue.dialogueSpriteAssetPath);
+
+            //bodyTextUI.text = currentDialogue.dialogueText;
+            scrollingText = true;
+
+            if (this.isActiveAndEnabled)
+            {
+                StartCoroutine(TypewriterText(currentDialogue.dialogueText));
+            }
 
             // Create buttons if dialogue is multiple choice
             if (currentDialogue.dialogueType == DialogueType.MultiChoice)
@@ -51,8 +65,23 @@ namespace Dialogue
                 }
             }
 
-            characterPortrait.sprite = Resources.Load<Sprite>(currentDialogue.dialogueSpriteAssetPath);
+        }
 
+        IEnumerator TypewriterText(string text)
+        {
+            foreach (char letter in text.ToCharArray())
+            {
+                if (!scrollingText) break;
+
+                displayedText += letter;
+                bodyTextUI.text = displayedText;
+
+                yield return new WaitForSeconds(scrollSpeed);
+            }
+
+            bodyTextUI.text = text;
+            displayedText = "";
+            scrollingText = false;
         }
 
         private void OnOptionChosen(int choiceIndex)
@@ -74,57 +103,60 @@ namespace Dialogue
 
         private void Update()
         {
-            // On any key press progress dialogue if the node is single choice
-            if (currentDialogue.dialogueType == DialogueType.SingleChoice)
+            if (scrollingText && Input.anyKeyDown)
             {
-                if (Input.anyKeyDown)
+                scrollingText = false;
+            }
+            else
+            {
+                // On any key press progress dialogue if the node is single choice
+                if (currentDialogue.dialogueType == DialogueType.SingleChoice)
                 {
+                    if (Input.anyKeyDown)
+                    {
+                        OnOptionChosen(0);
+                    }
+                }
+
+                // Register choice through numeric input
+                else if (currentDialogue.dialogueType == DialogueType.MultiChoice)
+                {
+                    if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
+                    {
+                        OnOptionChosen(0);
+                    }
+                    else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2)) && currentDialogue.dialogueChoices.Count >= 2)
+                    {
+                        OnOptionChosen(1);
+                    }
+                    else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3)) && currentDialogue.dialogueChoices.Count >= 3)
+                    {
+                        OnOptionChosen(2);
+                    }
+                    else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentDialogue.dialogueChoices.Count >= 4)
+                    {
+                        OnOptionChosen(3);
+                    }
+                    else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha1)) && currentDialogue.dialogueChoices.Count >= 5)
+                    {
+                        OnOptionChosen(4);
+                    }
+                }
+
+                // Allow progression through any key press and add dialogue to register
+                else if (currentDialogue.dialogueType == DialogueType.Evidence)
+                {
+                    // TODO: Add evidence
+
+                    Debug.Log(currentDialogue.dialogueText);
                     OnOptionChosen(0);
                 }
-            }
 
-            // Register choice through numeric input
-            else if (currentDialogue.dialogueType == DialogueType.MultiChoice)
-            {
-                if (Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
+                else if (currentDialogue.dialogueType == DialogueType.Location)
                 {
+                    Debug.Log(currentDialogue.dialogueText);
                     OnOptionChosen(0);
                 }
-                else if ((Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2)) && currentDialogue.dialogueChoices.Count >= 2)
-                {
-                    OnOptionChosen(1);
-                }
-                else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3)) && currentDialogue.dialogueChoices.Count >= 3)
-                {
-                    OnOptionChosen(2);
-                }
-                else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha4)) && currentDialogue.dialogueChoices.Count >= 4)
-                {
-                    OnOptionChosen(3);
-                }
-                else if ((Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha1)) && currentDialogue.dialogueChoices.Count >= 5)
-                {
-                    OnOptionChosen(4);
-                }
-            }
-
-            // Allow progression through any key press and add dialogue to register
-            else if (currentDialogue.dialogueType == DialogueType.Evidence)
-            {
-                // TODO: Add evidence
-
-                Debug.Log(currentDialogue.dialogueText);
-
-                //if (Input.anyKeyDown)
-                //{
-                    OnOptionChosen(0);
-                //}
-            }
-
-            else if (currentDialogue.dialogueType == DialogueType.Location)
-            {
-                Debug.Log(currentDialogue.dialogueText);
-                OnOptionChosen(0);
             }
         }
 
@@ -175,12 +207,17 @@ namespace Dialogue
             Debug.Log("Showing Text");
             ShowText();
             EnableGameObj();
+            StartCoroutine(TypewriterText(currentDialogue.dialogueText));
         }
 
         private void EnableGameObj()
         {
             Debug.Log("Enable Dialogue");
             transform.gameObject.SetActive(true);
+        }
+
+        private void OnEnable()
+        {
         }
     }
 }
