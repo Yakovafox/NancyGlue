@@ -7945,6 +7945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 271541590}
   - component: {fileID: 271541591}
+  - component: {fileID: 271541592}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -7983,8 +7984,26 @@ MonoBehaviour:
   _npcScripts: []
   _dialogueSystem: {fileID: 0}
   _introStarted: 0
-  _invIDs: 
-  _evidenceGameObjectIDs: 
+  _evidenceGameObjects: []
+  _animator: {fileID: 1531487961}
+  _zoneManager: {fileID: 0}
+--- !u!114 &271541592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271541589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6227902086f6f6b4da4fe288b96d9946, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _driveInCam: {fileID: 344092684}
+  _officeCam: {fileID: 1464748122}
+  _alleyCam: {fileID: 0}
+  _evidenceBoardCam: {fileID: 0}
+  _basementCam: {fileID: 0}
 --- !u!1 &296249106
 GameObject:
   m_ObjectHideFlags: 0
@@ -11064,7 +11083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a171de4b6c06fb248858aef420b270fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeCam: 1
+  _activeCam: 0
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
   _isRoot: 0
@@ -11847,7 +11866,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400434660}
-  m_LocalRotation: {x: 0.11161888, y: -0.7544066, z: 0.1330222, w: 0.63302225}
+  m_LocalRotation: {x: 0.09960048, y: -0.80670726, z: 0.14224425, w: 0.5648625}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11855,7 +11874,7 @@ Transform:
   - {fileID: 1177530575}
   m_Father: {fileID: 344092680}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: -110, z: 0}
 --- !u!114 &400434662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11912,7 +11931,7 @@ MonoBehaviour:
   _switchableCameras:
   - {fileID: 911804536}
   - {fileID: 960804059}
-  _yRotLimit: 80
+  _yRotLimit: 90
   _xRotLimit: 20
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
@@ -38527,7 +38546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1075989921
 Transform:
   m_ObjectHideFlags: 0
@@ -53745,8 +53764,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0.11161886, y: -0.7544066, z: 0.13302219, w: 0.63302225}
-  m_LocalPosition: {x: 6.381925, y: 2.1502004, z: 4.673341}
+  m_LocalRotation: {x: 0, y: 0.9063079, z: 0, w: 0.42261827}
+  m_LocalPosition: {x: 1.803278, y: 3.4329758, z: -5.501091}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -53845,6 +53864,7 @@ MonoBehaviour:
   itemDatabase: {fileID: 518935342}
   invUI: {fileID: 609257718}
   SLGS: {fileID: 1433975704}
+  gameManager: {fileID: 0}
 --- !u!82 &1433975703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -54405,7 +54425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a171de4b6c06fb248858aef420b270fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeCam: 0
+  _activeCam: 1
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
   _isRoot: 0
@@ -56117,6 +56137,8 @@ GameObject:
   - component: {fileID: 1531487957}
   - component: {fileID: 1531487959}
   - component: {fileID: 1531487958}
+  - component: {fileID: 1531487960}
+  - component: {fileID: 1531487961}
   m_Layer: 5
   m_Name: Transition
   m_TagString: Untagged
@@ -56139,10 +56161,10 @@ RectTransform:
   m_Father: {fileID: 1583506058}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531487958
 MonoBehaviour:
@@ -56182,6 +56204,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531487956}
   m_CullTransparentMesh: 1
+--- !u!225 &1531487960
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531487956}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &1531487961
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531487956}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5aa3a1923fbbb824287746a22c698896, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &1559786178
 Mesh:
   m_ObjectHideFlags: 0
@@ -56819,11 +56873,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1531487957}
   - {fileID: 609257715}
   - {fileID: 671116657}
-  - {fileID: 1531487957}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -71697,7 +71751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1114402883610488422, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1114402883610488422, guid: f03eae1eec2af674d9ff8b4f2f2b4416, type: 3}
       propertyPath: m_LocalPosition.x

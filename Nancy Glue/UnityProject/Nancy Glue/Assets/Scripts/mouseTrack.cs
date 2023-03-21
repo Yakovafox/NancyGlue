@@ -65,7 +65,7 @@ public class mouseTrack : MonoBehaviour
                          + "\n " + item.Description + "\n Item ID: " + item.ItemID);
                         inv.GiveItem(item.ItemID);
 
-                        Destroy(hitData.transform.gameObject);
+                        //Destroy(hitData.transform.gameObject);
                         break;
                         /*
                     case ("Evidence id0"):

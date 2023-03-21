@@ -21,32 +21,51 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private bool _introStarted;
 
-    [SerializeField] private List<int> _invIDs;
-    [SerializeField] private List<int> _evidenceGameObjectIDs;
+    [SerializeField] private List<GameObject> _evidenceGameObjects;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Coroutine _zoneTransitionCoroutine;
+
+    [SerializeField] private ZoneManager _zoneManager;
 
     void Awake()
     {
+
+#if UNITY_EDITOR
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+#else
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
+#endif
         _npcScripts = FindObjectsOfType<npcScript>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
-        /*
-        var evidence = GameObject.FindGameObjectsWithTag("Evidence").ToList();
-        foreach(var e in evidence)
-        {
-           var id = e.GetComponent<ItemData>().EvidenceItem.ItemID;
-            _evidenceGameObjectIDs.Add(id);
-        }
-        */
-
+        
+        _evidenceGameObjects = GameObject.FindGameObjectsWithTag("Evidence").ToList();
+        _zoneManager = GetComponent<ZoneManager>(); 
     }
 
     // Start is called before the first frame update
     void Start()
     {
         _gameState = GameState.Introduction;
-        SetIntroDialogue();
+        NewStateSetup();
+    }
+    
+
+    public void UpdateScene(int target)
+    {
+        for(var i = 0; i < _evidenceGameObjects.Count; i++)
+        {
+            var eviId = _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID;
+            if(target == eviId)
+            {
+                Destroy(_evidenceGameObjects[i]);
+                Debug.Log("destroyed item" + _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID);
+                _evidenceGameObjects.RemoveAt(i);
+                break;
+            }
+        }
     }
 
     void FixedUpdate()
@@ -71,13 +90,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    #region IntroductionSegment
+#region IntroductionSegment
     private void IntroductionUpdate()
     {
         if (_dialogueSystem.gameObject.activeSelf) return;
-        SetIntroDialogue();
+        _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(_zoneManager.OfficeCam, _zoneManager.DriveInCam));
+        _gameState = GameState.DriveInInvestigation;
     }
-    #endregion
+#endregion
     private void DriveInUpdate1()
     {
 
@@ -120,7 +140,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    #region gameState Setups
+#region gameState Setups
     private void SetIntroDialogue()
     {
 
@@ -154,5 +174,14 @@ public class GameManager : MonoBehaviour
 
     }
 
-    #endregion
+    IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
+    {
+        _animator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(1);
+        oldCam.SwitchActiveCam();
+        newCam.SwitchActiveCam();
+        yield return new WaitForSeconds(1);
+        _animator.SetTrigger("FadeOut");
+    }
+#endregion
 }
