@@ -48,12 +48,14 @@ namespace Dialogue
             characterNameUI.text = currentDialogue.characterName;
             characterPortrait.sprite = Resources.Load<Sprite>(currentDialogue.dialogueSpriteAssetPath);
 
-            //bodyTextUI.text = currentDialogue.dialogueText;
-            scrollingText = true;
-
             if (this.isActiveAndEnabled)
             {
+                scrollingText = true;
                 StartCoroutine(TypewriterText(currentDialogue.dialogueText));
+            }
+            else 
+            {
+                bodyTextUI.text = currentDialogue.dialogueText;
             }
 
             // Create buttons if dialogue is multiple choice
@@ -82,6 +84,7 @@ namespace Dialogue
             bodyTextUI.text = text;
             displayedText = "";
             scrollingText = false;
+            StopCoroutine(TypewriterText(text));
         }
 
         private void OnOptionChosen(int choiceIndex)
@@ -189,25 +192,22 @@ namespace Dialogue
         
         // Setter for the dialogue continer
         // Used when dialogue is called to choose a graph
-        public void setContainer(string containerName)
+        public void SetContainer(string containerName)
         {
             dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");
 
             findStartingNode();
-
+            EnableGameObj();
             ShowText();
         }
 
         public void SetContainer(DialogueContainerSO dialogue)
         {
-            Debug.Log("Container Set");
             dialogueContainer = dialogue;
-            Debug.Log("Finding Start Node");
+
             findStartingNode();
-            Debug.Log("Showing Text");
-            ShowText();
             EnableGameObj();
-            StartCoroutine(TypewriterText(currentDialogue.dialogueText));
+            ShowText();
         }
 
         private void EnableGameObj()
@@ -218,6 +218,13 @@ namespace Dialogue
 
         private void OnEnable()
         {
+
+        }
+
+        private void OnDisable()
+        {
+            dialogueContainer = null;
+            currentDialogue = null;
         }
     }
 }

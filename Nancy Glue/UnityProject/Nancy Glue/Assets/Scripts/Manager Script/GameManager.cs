@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _gameState = GameState.Introduction;
-        NewStateSetup();
+        _zoneTransitionCoroutine = StartCoroutine(FadeTransition());
     }
     
 
@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
 #region IntroductionSegment
     private void IntroductionUpdate()
     {
+        if (!_introStarted) return;
         if (_dialogueSystem.gameObject.activeSelf) return;
         _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(_zoneManager.OfficeCam, _zoneManager.DriveInCam));
         _gameState = GameState.DriveInInvestigation;
@@ -182,6 +183,12 @@ public class GameManager : MonoBehaviour
         newCam.SwitchActiveCam();
         yield return new WaitForSeconds(1);
         _animator.SetTrigger("FadeOut");
+    }
+
+    IEnumerator FadeTransition()
+    {
+        yield return new WaitForSeconds(2);
+        SetIntroDialogue();
     }
 #endregion
 }

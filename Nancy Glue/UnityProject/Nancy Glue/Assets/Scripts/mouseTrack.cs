@@ -119,11 +119,13 @@ public class mouseTrack : MonoBehaviour
                     case ("NPC"):
                         Debug.Log("Clicked NPC");
                         var npcScript = hitData.transform.GetComponent<npcScript>();
+                        Debug.Log("NPC Found");
                         var ActiveContainer = npcScript.ActiveContainer;
-                        _dialogueSystemScript.setContainer(npcScript.DialogueContainers[ActiveContainer].name);
+                        Debug.Log("Active Container Found");
+                        _dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
+                        Debug.Log("Changing Set Container");
                         npcScript.ChangeActiveContainer();
                         //_dialogueSystemScript.setContainer("BigTheodoreTest");
-                        _dialogueBox.gameObject.SetActive(true);
                         break;
                     case ("Interactable"):
                         Debug.Log("Clicked Interactable");
