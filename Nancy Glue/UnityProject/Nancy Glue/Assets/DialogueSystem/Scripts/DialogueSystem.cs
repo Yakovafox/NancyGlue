@@ -40,6 +40,9 @@ namespace Dialogue
         private string displayedText = "";
         private float scrollSpeed = 0.025f;
 
+        private Color fadeColor = new Color(110f / 255f, 110f / 255f, 110f / 255f);
+        private Color focusColor = new Color(255f / 255f, 255f / 255f, 255f / 255f);
+
         private void ShowText()
         {
             if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
@@ -47,6 +50,15 @@ namespace Dialogue
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
             characterPortrait.sprite = Resources.Load<Sprite>(currentDialogue.dialogueSpriteAssetPath);
+
+            if (currentDialogue.characterName == "Nancy Glue")
+            {
+                characterPortrait.color = fadeColor;
+            }
+            else
+            {
+                characterPortrait.color = focusColor;
+            }
 
             if (this.isActiveAndEnabled)
             {
