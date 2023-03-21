@@ -21,12 +21,16 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private bool _introStarted;
 
-    [SerializeField] private List<int> _invIDs;
-    [SerializeField] private List<int> _evidenceGameObjectIDs;
+    [SerializeField] private List<GameObject> _evidenceGameObjects;
 
     void Awake()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+
+#if UNITY_EDITOR
+        Cursor.lockState = CursorLockMode.None;
+#else
+        Cursor.LockState = CursorLockMode.Confined;
+#endif
         Cursor.visible = false;
         _npcScripts = FindObjectsOfType<npcScript>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
@@ -71,13 +75,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    #region IntroductionSegment
+#region IntroductionSegment
     private void IntroductionUpdate()
     {
         if (_dialogueSystem.gameObject.activeSelf) return;
         SetIntroDialogue();
     }
-    #endregion
+#endregion
     private void DriveInUpdate1()
     {
 
@@ -120,7 +124,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    #region gameState Setups
+#region gameState Setups
     private void SetIntroDialogue()
     {
 
@@ -154,5 +158,5 @@ public class GameManager : MonoBehaviour
 
     }
 
-    #endregion
+#endregion
 }
