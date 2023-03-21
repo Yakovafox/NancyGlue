@@ -19,12 +19,6 @@ namespace Dialogue.Elements
         {
             base.Init(nodeName, dialogueGraphView, pos);
 
-            DialogueName = "NotesName";
-
-            Text = "Note Added: ";
-
-            CharacterName = "Note Name";
-
             type = DialogueType.Evidence;
 
             ChoiceSaveData optionData = new ChoiceSaveData()

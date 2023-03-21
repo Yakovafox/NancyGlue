@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        invUI = GameObject.Find("UICanvas").GetComponent<invUI>();
+        invUI = GameObject.Find("UIGridPanel").GetComponent<invUI>();
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
         
     }

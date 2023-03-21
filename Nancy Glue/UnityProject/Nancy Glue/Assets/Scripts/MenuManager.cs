@@ -50,7 +50,7 @@ public class MenuManager : MonoBehaviour
     {
         NewOrLoad.isLoad = true;
         Debug.Log("set to true");
+        SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
         //_loadGameState.Load();
-        //SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
     }
 }

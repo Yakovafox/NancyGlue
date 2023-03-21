@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Dialogue
@@ -119,6 +120,12 @@ namespace Dialogue
                     OnOptionChosen(0);
                 //}
             }
+
+            else if (currentDialogue.dialogueType == DialogueType.Location)
+            {
+                Debug.Log(currentDialogue.dialogueText);
+                OnOptionChosen(0);
+            }
         }
 
         // Find the starting node in the dialogue container
@@ -157,6 +164,23 @@ namespace Dialogue
             findStartingNode();
 
             ShowText();
+        }
+
+        public void SetContainer(DialogueContainerSO dialogue)
+        {
+            Debug.Log("Container Set");
+            dialogueContainer = dialogue;
+            Debug.Log("Finding Start Node");
+            findStartingNode();
+            Debug.Log("Showing Text");
+            ShowText();
+            EnableGameObj();
+        }
+
+        private void EnableGameObj()
+        {
+            Debug.Log("Enable Dialogue");
+            transform.gameObject.SetActive(true);
         }
     }
 }

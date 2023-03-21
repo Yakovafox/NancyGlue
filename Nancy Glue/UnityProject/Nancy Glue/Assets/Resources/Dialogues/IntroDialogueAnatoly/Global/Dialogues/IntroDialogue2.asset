@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
+  m_Name: IntroDialogue2
+  m_EditorClassIdentifier: 
+  <dialogueName>k__BackingField: IntroDialogue2
+  <characterName>k__BackingField: Nancy Glue
+  <dialogueType>k__BackingField: 0
+  <dialogueChoices>k__BackingField:
+  - <text>k__BackingField: Next Dialogue...
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: be21be95489a04b4fb46df99ad5dedfd, type: 2}
+  <dialogueText>k__BackingField: Speaking. Who's calling?
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <isStartingDialogue>k__BackingField: 0

@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class mouseTrack : MonoBehaviour
 {
@@ -17,20 +18,23 @@ public class mouseTrack : MonoBehaviour
 
     private bool UIOpen;
     public GameObject canvas;
-    [Range(0,1000)][SerializeField]private float _range;
+    [Range(5,6)][SerializeField]private float _range;
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private DialogueSystem _dialogueSystemScript;
+
+    [SerializeField] private Image _cursor;
+    [SerializeField] private List<Sprite> _sprites;
     //public 
     private void Awake()
     {
         _dialogueBox = GameObject.Find("DialogueBox");
-        _dialogueSystemScript = _dialogueBox.GetComponent<DialogueSystem>();
+        _dialogueSystemScript = FindObjectOfType<DialogueSystem>();
+        _dialogueBox.SetActive(false);
     }
     private void Start()
     {
         UIOpen = false;
         canvas.SetActive(false);
-        _dialogueBox.SetActive(false);
 
         inv = GameObject.Find("Player").GetComponent<Inventory>();
        // evid0 = GameObject.Find("Evidence0");
@@ -39,15 +43,14 @@ public class mouseTrack : MonoBehaviour
 
     void Update()
     {
-
-        
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        CursorChange(ray);
 
         if (Input.GetMouseButtonDown(0))
         {
             if (UIOpen) return;
             if (DialogueOpenCheck()) return;
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitData;
             if (Physics.Raycast(ray, out hitData, _range))
             {
@@ -64,6 +67,7 @@ public class mouseTrack : MonoBehaviour
 
                         Destroy(hitData.transform.gameObject);
                         break;
+                        /*
                     case ("Evidence id0"):
                         Debug.Log("Clicked evidence");
                         inv.GiveItem(0);
@@ -107,7 +111,7 @@ public class mouseTrack : MonoBehaviour
                         
 
                         break;
-
+                        */
 
 
 
@@ -159,6 +163,27 @@ public class mouseTrack : MonoBehaviour
 
         }
         BackToRootCamera();
+    }
+
+    private void CursorChange(Ray ray)
+    {
+        _cursor.transform.position = Input.mousePosition;
+
+        if (!Physics.Raycast(ray, out var hitData, _range))
+        {
+            _cursor.sprite = _sprites[0];
+            return;
+        }
+
+        switch (hitData.transform.tag)
+        {
+            case "Finish":
+                _cursor.sprite = _sprites[1];
+                break;
+            case "NPC":
+                _cursor.sprite = _sprites[2];
+                break;
+        }
     }
 
     private void BackToRootCamera()
