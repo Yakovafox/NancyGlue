@@ -29,6 +29,7 @@ public class npcScript : MonoBehaviour, IEvidenceCheck
                 if (item.id == _itemSOs[i].ItemID)
                 {
                     _itemSOs.RemoveAt(i);
+                    break;
                 }
             }
         }

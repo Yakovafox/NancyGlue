@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private bool _introStarted;
 
     [SerializeField] private List<GameObject> _evidenceGameObjects;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private Coroutine _zoneTransitionCoroutine;
+
+    [SerializeField] private ZoneManager _zoneManager;
 
     void Awake()
     {
@@ -38,16 +42,14 @@ public class GameManager : MonoBehaviour
 
         
         _evidenceGameObjects = GameObject.FindGameObjectsWithTag("Evidence").ToList();
-        
-        
-
+        _zoneManager = GetComponent<ZoneManager>(); 
     }
 
     // Start is called before the first frame update
     void Start()
     {
         _gameState = GameState.Introduction;
-        SetIntroDialogue();
+        NewStateSetup();
     }
     
 
@@ -92,7 +94,8 @@ public class GameManager : MonoBehaviour
     private void IntroductionUpdate()
     {
         if (_dialogueSystem.gameObject.activeSelf) return;
-        SetIntroDialogue();
+        _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(_zoneManager.OfficeCam, _zoneManager.DriveInCam));
+        _gameState = GameState.DriveInInvestigation;
     }
 #endregion
     private void DriveInUpdate1()
@@ -171,5 +174,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
+    {
+        _animator.SetTrigger("FadeIn");
+        yield return new WaitForSeconds(1);
+        oldCam.SwitchActiveCam();
+        newCam.SwitchActiveCam();
+        yield return new WaitForSeconds(1);
+        _animator.SetTrigger("FadeOut");
+    }
 #endregion
 }
