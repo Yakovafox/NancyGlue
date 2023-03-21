@@ -10,6 +10,7 @@ public class FontScript : MonoBehaviour
     [SerializeField] private GameObject[] _BackGroundGameObjectsGUI;
     [SerializeField] private bool _dyslexiaTextSelected;
     [SerializeField] private GameObject _FontEnableButton;
+    [SerializeField] private TMP_Dropdown _dropDown;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class FontScript : MonoBehaviour
         _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Respawn");
         _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("Finish");
         _FontEnableButton = GameObject.Find("FontEnableButton");
-
+        _dropDown = FindObjectOfType<TMP_Dropdown>();
         for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
         {
             _BackGroundGameObjectsGUI[i].SetActive(false); 
@@ -26,11 +27,21 @@ public class FontScript : MonoBehaviour
 
     public void ChangeFonts()
     {
-        _dyslexiaTextSelected = !_dyslexiaTextSelected; //flip boolean
+        
+        switch(_dropDown.value)
+        {
+            case 1:
+                _dyslexiaTextSelected = true;
+                break;
+            case 0:
+                _dyslexiaTextSelected = false;
+                break;
+        }
+        //_dyslexiaTextSelected = _dropDown.value ; //flip boolean
         _activeFontIndex = _dyslexiaTextSelected ? 1 : 0; //switch index value
         for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
         {
-            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[_activeFontIndex]; //specifically for TMP UI text component. 
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[_dropDown.value]; //specifically for TMP UI text component. 
         }
         ChangeText();
     }
