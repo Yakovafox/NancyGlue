@@ -38,6 +38,7 @@ namespace Dialogue
 
         private void ShowText()
         {
+            if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
             bodyTextUI.text = currentDialogue.dialogueText;

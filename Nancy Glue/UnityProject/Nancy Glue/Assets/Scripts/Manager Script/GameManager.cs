@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DialogueSystem _dialogueSystem;
 
     [SerializeField] private bool _introStarted;
-    
+
     [SerializeField] private List<GameObject> _evidenceGameObjects;
 
     void Awake()
