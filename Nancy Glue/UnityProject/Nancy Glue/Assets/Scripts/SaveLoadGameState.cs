@@ -8,11 +8,11 @@ using UnityEngine;
 
 public class SaveLoadGameState : MonoBehaviour
 {
-    //public int[] invToSave;
+    
     //string gameStageToSave;
     //int camToSave;
     public Inventory inv;
-
+    
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 

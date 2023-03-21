@@ -10,14 +10,15 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _settingsMenu; //Drop in settings menu;
     [SerializeField] private bool _isActive;
     //SaveLoadGameState _loadGameState;
-    
+    SaveLoadSettings SLS;
+    FontScript FS;
     private void Awake()
     {
         //Find AccessibilityMenu and disable it. 
         _mainMenu = GameObject.Find("Main"); 
         _accessibilityMenu = GameObject.Find("AccessibilityMenu"); //Accessibility Menu needs to be enabled in Editor before startup.
-        
-        
+        SLS= FindObjectOfType<SaveLoadSettings>();
+        FS = FindObjectOfType<FontScript>();
     }
 
     private void Start()
@@ -26,6 +27,10 @@ public class MenuManager : MonoBehaviour
         _accessibilityMenu.SetActive(_isActive);
         NewOrLoad.isLoad = false;
         Debug.Log("initd to false");
+
+        SLS.load();
+        FS.loadSettings();
+        Debug.Log("loaded settings");
     }
 
     public void AccessibilitySettings()
@@ -33,6 +38,7 @@ public class MenuManager : MonoBehaviour
         _isActive = !_isActive;
         _accessibilityMenu.SetActive(_isActive);
         _mainMenu.SetActive(!_isActive);
+
     }
 
     public void NewGame()
@@ -53,4 +59,5 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
         //_loadGameState.Load();
     }
+    
 }
