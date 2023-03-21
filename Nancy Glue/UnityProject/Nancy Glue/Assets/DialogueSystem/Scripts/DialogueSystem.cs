@@ -168,14 +168,18 @@ namespace Dialogue
 
         public void SetContainer(DialogueContainerSO dialogue)
         {
+            Debug.Log("Container Set");
             dialogueContainer = dialogue;
+            Debug.Log("Finding Start Node");
             findStartingNode();
+            Debug.Log("Showing Text");
             ShowText();
             EnableGameObj();
         }
 
         private void EnableGameObj()
         {
+            Debug.Log("Enable Dialogue");
             transform.gameObject.SetActive(true);
         }
     }

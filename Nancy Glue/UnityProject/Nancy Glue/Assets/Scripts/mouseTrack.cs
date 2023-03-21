@@ -67,6 +67,7 @@ public class mouseTrack : MonoBehaviour
 
                         Destroy(hitData.transform.gameObject);
                         break;
+                        /*
                     case ("Evidence id0"):
                         Debug.Log("Clicked evidence");
                         inv.GiveItem(0);
@@ -110,7 +111,7 @@ public class mouseTrack : MonoBehaviour
                         
 
                         break;
-
+                        */
 
 
 

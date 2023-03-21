@@ -35,4 +35,5 @@ public class npcScript : MonoBehaviour, IEvidenceCheck
 
         _canBeQuestioned = _itemSOs.Count > 0;
     }
+
 }

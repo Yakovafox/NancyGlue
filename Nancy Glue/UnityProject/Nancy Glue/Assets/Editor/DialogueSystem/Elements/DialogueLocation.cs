@@ -19,12 +19,6 @@ namespace Dialogue.Elements
         {
             base.Init(nodeName, dialogueGraphView, pos);
 
-            DialogueName = "LocationName";
-
-            Text = "Location Added: ";
-
-            CharacterName = "Location Name";
-
             type = DialogueType.Location;
 
             ChoiceSaveData optionData = new ChoiceSaveData()
