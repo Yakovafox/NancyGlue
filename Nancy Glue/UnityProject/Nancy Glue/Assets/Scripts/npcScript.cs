@@ -16,7 +16,7 @@ public class npcScript : MonoBehaviour, IEvidenceCheck
         ActiveContainer++;
         if (ActiveContainer > _dialogueContainers.Count - 1)
             ActiveContainer = 0;
-        Debug.Log("Current Active Container: " + ActiveContainer);
+        //Debug.Log("Current Active Container: " + ActiveContainer);
     }
 
     public void EvidenceCheck(Inventory inventory)
