@@ -15,14 +15,14 @@ public class Inventory : MonoBehaviour
     public ItemDB itemDatabase;
     public invUI invUI;
     public SaveLoadGameState SLGS;
-    
+    public GameManager gameManager;
     //public UIInventory inventoryUI;
 
     private void Awake()
     {
         invUI = GameObject.Find("UIGridPanel").GetComponent<invUI>();
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
-        
+        gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
 
@@ -84,6 +84,10 @@ public class Inventory : MonoBehaviour
         Debug.Log("added item to characterItems");
         invUI.addItemToUI(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
+        Debug.Log("remove item from scene");
+        gameManager.UpdateScene(id);
+
+
     }
 
     public void GiveItem(string itemName)
