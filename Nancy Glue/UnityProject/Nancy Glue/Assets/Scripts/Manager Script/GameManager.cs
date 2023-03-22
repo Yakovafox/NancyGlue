@@ -24,9 +24,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> _evidenceGameObjects;
     [SerializeField] private Animator _animator;
     [SerializeField] private Coroutine _zoneTransitionCoroutine;
-
     [SerializeField] private ZoneManager _zoneManager;
-
     void Awake()
     {
 
@@ -95,13 +93,23 @@ public class GameManager : MonoBehaviour
     {
         if (!_introStarted) return;
         if (_dialogueSystem.gameObject.activeSelf) return;
-        _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(_zoneManager.OfficeCam, _zoneManager.DriveInCam));
-        _gameState = GameState.DriveInInvestigation;
+        StateSwitch(GameState.DriveInInvestigation);
     }
 #endregion
     private void DriveInUpdate1()
     {
-
+        foreach(var npc in _npcScripts)
+        {
+            if(npc.gameObject.name == "Teddy")
+            {
+                if(npc.CanBeQuestioned)
+                {
+                    _zoneManager.ConfrontedTed = true;
+                    StateSwitch(GameState.GrizzlyInterrogation);
+                }
+                break;
+            }
+        }
     }
 
     private void GrizzlyInterrogation()
@@ -159,7 +167,9 @@ public class GameManager : MonoBehaviour
 
     private void SetupDriveIn1()
     {
-
+        var driveInRootCam = _zoneManager.DriveInCam;
+        var projRoomcam = driveInRootCam.SwitchableCameras[1];
+        projRoomcam.gameObject.SetActive(false);
     }
     private void SetupGrizzlyInt()
     {
@@ -173,6 +183,22 @@ public class GameManager : MonoBehaviour
     private void SetupReelFound()
     {
 
+    }
+
+    private void StateSwitch(GameState gameState)
+    {
+        _gameState = gameState;
+        _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(_zoneManager.OfficeCam, _zoneManager.DriveInCam));
+        NewStateSetup();
+    }
+
+    public void EvidenceChecker(Inventory inv)
+    {
+        foreach(var npc in _npcScripts)
+        {
+            Debug.Log(npc.name);
+            npc.EvidenceCheck(inv);
+        }
     }
 
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
