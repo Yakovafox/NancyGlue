@@ -7988,6 +7988,7 @@ MonoBehaviour:
   _animator: {fileID: 1531487961}
   _zoneManager: {fileID: 0}
   ReelFound: 0
+  InterogationFinished: 0
 --- !u!114 &271541592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14200,7 +14201,7 @@ GameObject:
   - component: {fileID: 577185415}
   - component: {fileID: 577185414}
   m_Layer: 0
-  m_Name: OutsideProjRoomCam
+  m_Name: UnderCouchCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54183,8 +54184,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0.09960049, y: -0.80670726, z: 0.14224426, w: 0.5648625}
-  m_LocalPosition: {x: 6.381925, y: 2.1502004, z: 4.673341}
+  m_LocalRotation: {x: 0, y: 0.9063079, z: 0, w: 0.42261827}
+  m_LocalPosition: {x: 1.803278, y: 3.4329758, z: -5.501091}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -55016,7 +55017,7 @@ GameObject:
   - component: {fileID: 1479091516}
   - component: {fileID: 1479091515}
   m_Layer: 0
-  m_Name: UnderCouchCam
+  m_Name: UnderCouchHitBox
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68903,7 +68904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogueContainers:
-  - {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
+  - {fileID: 11400000, guid: 90ed75603c84a2644be4c37eaa6595a5, type: 2}
   - {fileID: 11400000, guid: b2237136ab20da944ae3a9819ada9d09, type: 2}
   - {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
   ActiveContainer: 0

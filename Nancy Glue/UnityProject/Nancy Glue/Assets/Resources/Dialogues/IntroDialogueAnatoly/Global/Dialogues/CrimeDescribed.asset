@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6278747d473a67042a13ee8ec33cbd41, type: 2}
   <dialogueText>k__BackingField: The reel was stolen. Now I don't want the police
     involved. But I need you to find out who took it.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/NestingDollBoss
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

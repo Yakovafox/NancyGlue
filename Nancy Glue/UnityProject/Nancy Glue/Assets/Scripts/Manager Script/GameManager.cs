@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using Dialogue;
 using Dialogue.ScriptableObjects;
 using UnityEngine;
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ZoneManager _zoneManager;
 
     public bool ReelFound;
+    public bool InterogationFinished;
     void Awake()
     {
 
@@ -109,7 +111,11 @@ public class GameManager : MonoBehaviour
                 if(npc.CanBeQuestioned)
                 {
                     _zoneManager.ConfrontedTed = true;
-                    StateSwitch(GameState.GrizzlyInterrogation, _zoneManager.DriveInCam, _zoneManager.OfficeCam);
+                    var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+                    Debug.Log(oldCam);
+                    var oldCamObj = GameObject.Find(oldCam);
+                    var camSwitch = oldCamObj.transform.parent.transform.GetComponent<CameraSwitch>();
+                    StateSwitch(GameState.GrizzlyInterrogation, camSwitch, _zoneManager.OfficeCam);
                 }
                 break;
             }
@@ -119,19 +125,25 @@ public class GameManager : MonoBehaviour
     private void GrizzlyInterrogation()
     {
         if (_dialogueSystem.gameObject.activeSelf) return;
-        StateSwitch(GameState.SecondDriveInVisit, _zoneManager.DriveInCam, _zoneManager.OfficeCam);
+        if (InterogationFinished)
+            StateSwitch(GameState.SecondDriveInVisit, _zoneManager.OfficeCam, _zoneManager.DriveInCam);
     }
 
     private void DriveInUpdate2()
     {
         if (!ReelFound) return;
-        StateSwitch(GameState.FilmReelFound, _zoneManager.OfficeCam, _zoneManager.OfficeCam);
+        var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+        Debug.Log(oldCam);
+        var oldCamObj = GameObject.Find(oldCam);
+        var camSwitch = oldCamObj.transform.parent.transform.GetComponent<CameraSwitch>();
+        StateSwitch(GameState.FilmReelFound, camSwitch, _zoneManager.OfficeCam);
     }
 
     private void FoundReelUpdate()
     {
         if (_dialogueSystem.gameObject.activeSelf) return;
-        _zoneTransitionCoroutine = StartCoroutine(GameEnd());
+        if(InterogationFinished)
+            _zoneTransitionCoroutine = StartCoroutine(GameEnd());
     }
 
     private void NewStateSetup()
@@ -193,7 +205,8 @@ public class GameManager : MonoBehaviour
     {
         var driveInRootCam = _zoneManager.DriveInCam;
         var underCouchCam = driveInRootCam.SwitchableCameras[2];
-        underCouchCam.gameObject.SetActive(false);
+        underCouchCam.gameObject.SetActive(true);
+        InterogationFinished = false;
     }
     private void SetupReelFound()
     {
@@ -217,21 +230,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ReelPickUp(Inventory inv)
+    public void ReelPickUp(string title)
     {
-        foreach (var item in inv.characterItems) //3 nests deep. Remember and change this.
-        {
-            Debug.Log(item.title);
-            if (item.title == "Film Reel")
-                ReelFound = true;
-            break;
-        }
+        if (title == "Film Reel")
+            ReelFound = true;
     }
 
     IEnumerator DialogueStartup(DialogueContainerSO dialogueContainer)
     {
         yield return new WaitForSeconds(3f);
         _dialogueSystem.SetContainer(dialogueContainer);
+        InterogationFinished = true;
     }
 
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
