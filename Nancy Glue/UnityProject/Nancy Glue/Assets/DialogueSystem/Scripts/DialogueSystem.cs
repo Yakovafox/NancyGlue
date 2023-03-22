@@ -78,10 +78,8 @@ namespace Dialogue
             if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
                 for (int i = 0; i < currentDialogue.dialogueChoices.Count; i++)
-                {
-                    //bodyTextUI.text += $"\n{i + 1}. {currentDialogue.dialogueChoices[i].text}";
-
-                    if (buttons[i] != null)
+                {                                    
+                    try
                     {
                         buttons[i].enabled = true; 
                         buttons[i].image.enabled = true;
@@ -108,8 +106,10 @@ namespace Dialogue
                         {
                             buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
                         }
-
-                        Debug.Log($"OnClick: {i}");
+                    }
+                    catch
+                    {
+                        bodyTextUI.text += $"\n{i + 1}. {currentDialogue.dialogueChoices[i].text}";
                     }
                 }
             }
