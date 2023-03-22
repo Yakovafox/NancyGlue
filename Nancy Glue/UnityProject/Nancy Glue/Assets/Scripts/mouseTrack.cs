@@ -159,8 +159,12 @@ public class mouseTrack : MonoBehaviour
             else
             {
                 Debug.Log("inv closed - openeing inv");
+                
+                
                 canvas.SetActive(true);
                 UIOpen = true;
+                var text = FindObjectOfType<FontManager>();
+                text.InitList();
             }
 
         }

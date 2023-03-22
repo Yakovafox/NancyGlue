@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
     public SaveLoadGameState SLGS;
     public GameManager gameManager;
     //public UIInventory inventoryUI;
-
+    
     private void Awake()
     {
         invUI = GameObject.Find("UIGridPanel").GetComponent<invUI>();

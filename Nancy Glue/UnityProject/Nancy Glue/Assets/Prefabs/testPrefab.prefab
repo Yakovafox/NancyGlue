@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8760482181299920078}
   m_Layer: 5
   m_Name: PostIt
-  m_TagString: Untagged
+  m_TagString: TextBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 476050903243759433}
   m_Layer: 5
   m_Name: Name
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 124708421185250636}
   m_Layer: 5
   m_Name: Description
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
