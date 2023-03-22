@@ -78,14 +78,38 @@ namespace Dialogue
             if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
                 for (int i = 0; i < currentDialogue.dialogueChoices.Count; i++)
-                {
-                    bodyTextUI.text += $"\n{i + 1}. {currentDialogue.dialogueChoices[i].text}";
-
-                    if (buttons[i] != null)
+                {                                    
+                    try
                     {
-                        buttons[i].enabled = true;
-                        buttons[i].GetComponentInChildren<Text>().text = $"{i + 1}. " + currentDialogue.dialogueChoices[i].text;
-                        buttons[i].onClick.AddListener(() => OnOptionChosen(i));
+                        buttons[i].enabled = true; 
+                        buttons[i].image.enabled = true;
+                        buttons[i].GetComponentInChildren<TMP_Text>().enabled = true;
+                        buttons[i].GetComponentInChildren<TMP_Text>().text = $"{i + 1}. " + currentDialogue.dialogueChoices[i].text;
+
+                        if (i == 0)
+                        {
+                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(0); });
+                        }
+                        else if (i == 1)
+                        {
+                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(1); });
+                        }
+                        else if (i == 2)
+                        {
+                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(2); });
+                        }
+                        else if (i == 3)
+                        {
+                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(3); });
+                        }
+                        else if (i == 4)
+                        {
+                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
+                        }
+                    }
+                    catch
+                    {
+                        bodyTextUI.text += $"\n{i + 1}. {currentDialogue.dialogueChoices[i].text}";
                     }
                 }
             }
@@ -116,10 +140,13 @@ namespace Dialogue
             {
                 foreach (Button button in buttons)
                 {
-                    button.enabled = false;
+                    button.enabled = false; 
+                    button.image.enabled = false;
+                    button.GetComponentInChildren<TMP_Text>().enabled = false;
                 }
             }
 
+            Debug.Log(choiceIndex);
             DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
             if (nextDialogue == null)
@@ -243,6 +270,13 @@ namespace Dialogue
 
         private void EnableGameObj()
         {
+            foreach (Button button in buttons)
+            {
+                button.enabled = false;
+                button.image.enabled = false;
+                button.GetComponentInChildren<TMP_Text>().enabled = false;
+            }
+
             Debug.Log("Enable Dialogue");
             transform.gameObject.SetActive(true);
         }
