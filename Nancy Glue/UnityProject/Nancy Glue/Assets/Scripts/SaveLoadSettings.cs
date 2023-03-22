@@ -51,8 +51,14 @@ public class SaveLoadSettings : MonoBehaviour
         sensitivity = PlayerPrefs.GetInt("sensitivity");
     }
     public void Default()
-    { 
-        //revert to default settings
+    {
+        //revert to default accesibility settings
+        backgroundColour = Color.white;
+        isBackgroundEnabled = 0;
+        fontStyle = 0;
+        fontColour = Color.black;
+
+
     }
 
 }

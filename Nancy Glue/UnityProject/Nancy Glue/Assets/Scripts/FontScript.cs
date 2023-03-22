@@ -122,7 +122,26 @@ public class FontScript : MonoBehaviour
             }
         }
     }
+    public void reset()
+    {
+        _dropDown.value = 0;
+        for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+        {
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[0];
+        }
+        for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+        {
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
+        }
 
+        for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+        {
+            
+            _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
+            _BackGroundGameObjectsGUI[i].SetActive(false);
+            Debug.Log("resetting background");
+        }
+    }
 
 
 

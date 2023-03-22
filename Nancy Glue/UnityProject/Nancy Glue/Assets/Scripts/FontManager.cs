@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FontManager : MonoBehaviour
 {
@@ -13,10 +14,12 @@ public class FontManager : MonoBehaviour
     private void Awake()
     {
         SLS=FindObjectOfType<SaveLoadSettings>();
+        _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Text");
+        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
     }
     void Start()
     {
-        
+        load();
     }
     // Update is called once per frame
     void Update()
@@ -26,7 +29,49 @@ public class FontManager : MonoBehaviour
 
     public void load()
     {
-        //SLS.load();
+        Debug.Log("loading settings into dialogue");
+        SLS.load();
+        //font set
+        if (SLS.fontStyle == 1)
+        {
+            for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+            {
+                _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[1]; //specifically for TMP UI text component. 
+            }
+        }else if(SLS.fontStyle == 0)
+        {
+            for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+            {
+                _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[0]; //specifically for TMP UI text component. 
+            }
+        }
+        //colour set
+        for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
+        {
+            Debug.Log("target colour" + SLS.fontColour);
+            _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
+            Debug.Log("setting colour to" + _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color);
+        }
+        //background set
+        if (SLS.isBackgroundEnabled == 1)
+        {
+            for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+            {
+                _BackGroundGameObjectsGUI[i].SetActive(true);
+                _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
+            }
+        }
+
+
+    }
+
+    public void InitList()
+    {
+
+        _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Text");
+        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
+        //Debug.Log("1");
+        load();
     }
 
 
