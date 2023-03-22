@@ -42,7 +42,11 @@ public class SaveLoadSettings : MonoBehaviour
     {
         sfxVolume = PlayerPrefs.GetInt("sfxVolume");
         musicVolume = PlayerPrefs.GetInt("musicVolume");
-        ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("fontColour"), out fontColour);
+        if (!ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("fontColour"), out fontColour))
+        {
+            Default();
+            return;
+        }
         
         fontStyle = PlayerPrefs.GetInt("fontStyle");
         
