@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: BearlyIntro
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: BearlyIntro
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: b18acf888e2510945b51346cb74c2fe9, type: 2}
+  - {fileID: 11400000, guid: a58c61d3f12976c4f90920cff61a35c4, type: 2}
+  - {fileID: 11400000, guid: b4dfe530c625c644c8b0ff34492191b8, type: 2}
+  - {fileID: 11400000, guid: 1b1045779e2f67a44abb252ede0eb192, type: 2}
+  - {fileID: 11400000, guid: 4722e99af394ae9458869fe076ee9478, type: 2}
+  - {fileID: 11400000, guid: f3d09ab40a4996e4496eb2efdf8650b0, type: 2}
+  - {fileID: 11400000, guid: 9ce4f8cccc581b14195092cc71d0684a, type: 2}
+  - {fileID: 11400000, guid: 60094bbae095a184781e99c832187714, type: 2}
+  - {fileID: 11400000, guid: 98e92c10c12a33449a674e06919dc741, type: 2}
+  - {fileID: 11400000, guid: eb6084c31d57b724daf8efd95a874ef2, type: 2}
+  - {fileID: 11400000, guid: 72d5bb8c11b4a304e8aba3ab72a88a53, type: 2}

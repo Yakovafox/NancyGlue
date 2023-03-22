@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: TedGrizzlyReturnOfFilmReel
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedGrizzlyReturnOfFilmReel
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: a65dd06364c5f5d42a0a721e5d3bec91, type: 2}
+  - {fileID: 11400000, guid: e5b8331110798724583da02896a101d3, type: 2}
+  - {fileID: 11400000, guid: 00eb9a65aaf5e094b97a9496e6de0499, type: 2}
+  - {fileID: 11400000, guid: 64ca8407ef02def469deb38f5c597d99, type: 2}

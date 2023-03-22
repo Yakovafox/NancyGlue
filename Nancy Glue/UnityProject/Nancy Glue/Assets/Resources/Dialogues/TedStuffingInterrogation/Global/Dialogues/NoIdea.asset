@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: NancyClosesOutDialogue
+  m_Name: NoIdea
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: NancyClosesOutDialogue
-  <characterName>k__BackingField: Nancy Glue
+  <dialogueName>k__BackingField: NoIdea
+  <characterName>k__BackingField: Ted Grizzly
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/NestingDollBoss
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 984fa8ee044650349bb4c288ae394ce8, type: 2}
+  <dialogueText>k__BackingField: I have no idea what you mean, My stuffin' couldnt
+    possibly be on the projector.
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
