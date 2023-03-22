@@ -73,6 +73,8 @@ public class mouseTrack : MonoBehaviour
                         var ActiveContainer = npcScript.ActiveContainer;
                         _dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
                         npcScript.ChangeActiveContainer();
+                        var text = FindObjectOfType<FontManager>();
+                        text.InitList();
                         //npcScript.EvidenceCheck(inv);
                         var zoneManager = FindObjectOfType<ZoneManager>();
                         zoneManager.SpeakToNPC(hitData.transform.name);
