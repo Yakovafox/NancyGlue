@@ -24,9 +24,10 @@ public class mouseTrack : MonoBehaviour
 
     [SerializeField] private Image _cursor;
     [SerializeField] private List<Sprite> _sprites;
-    //public 
+    [SerializeField] private ZoneManager _zoneManager;
     private void Awake()
     {
+        _zoneManager = FindObjectOfType<ZoneManager>();
         _dialogueBox = GameObject.Find("DialogueBox");
         _dialogueSystemScript = FindObjectOfType<DialogueSystem>();
         _dialogueBox.SetActive(false);
@@ -60,72 +61,21 @@ public class mouseTrack : MonoBehaviour
                 switch (hitData.transform.tag)
                 {
                     case ("Evidence"):
+                        var gm = FindObjectOfType<GameManager>();
                         var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
-                        Debug.Log("Clicked " + item.Title + ":"
-                         + "\n " + item.Description + "\n Item ID: " + item.ItemID);
+                        //Debug.Log("Clicked " + item.Title + ":"
+                         //+ "\n " + item.Description + "\n Item ID: " + item.ItemID);
                         inv.GiveItem(item.ItemID);
-
-                        //Destroy(hitData.transform.gameObject);
+                        gm.EvidenceChecker(inv);
                         break;
-                        /*
-                    case ("Evidence id0"):
-                        Debug.Log("Clicked evidence");
-                        inv.GiveItem(0);
-                        
-                        //destroy object 
-                        Destroy(evid0);
-                        
-                        break;
-                    case ("Evidence id1"):
-                        Debug.Log("Clicked evidence");
-                        inv.GiveItem(1);
-
-                        //destroy object 
-                        Destroy(evid1);
-
-                        break;
-                    case ("Evidence id2"):
-                        Debug.Log("Clicked evidence");
-                        inv.GiveItem(2);
-
-                        //destroy object 
-                        Destroy(evid2);
-
-                        break;
-
-                    case ("Evidence id3"):
-                        Debug.Log("Clicked evidence");
-                        Destroy(evid3);
-                        inv.GiveItem(3);
-
-                        //destroy object 
-                        
-
-                        break;
-                    case ("Evidence id4"):
-                        Debug.Log("Clicked evidence");
-                        Destroy(evid4);
-                        inv.GiveItem(4);
-
-                        //destroy object 
-                        
-
-                        break;
-                        */
-
-
-
-
                     case ("NPC"):
-                        Debug.Log("Clicked NPC");
                         var npcScript = hitData.transform.GetComponent<npcScript>();
-                        Debug.Log("NPC Found");
                         var ActiveContainer = npcScript.ActiveContainer;
-                        Debug.Log("Active Container Found");
                         _dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
-                        Debug.Log("Changing Set Container");
                         npcScript.ChangeActiveContainer();
-                        //_dialogueSystemScript.setContainer("BigTheodoreTest");
+                        //npcScript.EvidenceCheck(inv);
+                        var zoneManager = FindObjectOfType<ZoneManager>();
+                        zoneManager.SpeakToNPC(hitData.transform.name);
                         break;
                     case ("Interactable"):
                         Debug.Log("Clicked Interactable");
