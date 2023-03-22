@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: TedInter1
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedInter1
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 06ff43e586d13244392f8a5fdef84a0b, type: 2}
+  - {fileID: 11400000, guid: d0f9e80c7d6cbb6438f1f4ce1553ea26, type: 2}
+  - {fileID: 11400000, guid: b52a20ce4c392ba4cb2abc8aec28267f, type: 2}
+  - {fileID: 11400000, guid: a47bc16e06cc53640b88bfe1c0cdecc4, type: 2}
+  - {fileID: 11400000, guid: eed0aad66b960844bbd676494a9f8d0f, type: 2}
+  - {fileID: 11400000, guid: 42ad854cb2caa2444b9b168955a4c309, type: 2}

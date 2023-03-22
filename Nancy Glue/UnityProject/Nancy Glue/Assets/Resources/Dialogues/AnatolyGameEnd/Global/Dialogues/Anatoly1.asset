@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: CoolDown
+  m_Name: Anatoly1
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: CoolDown
-  <characterName>k__BackingField: Ted Grizzly
+  <dialogueName>k__BackingField: Anatoly1
+  <characterName>k__BackingField: Anatoly
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: a74786956c30dce498b1a294b17adf58, type: 2}
-  <dialogueText>k__BackingField: I suggest you go find this film reel and let me
-    calm down...
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e9424a5000e6bd34fbedc8e5f2b2963f, type: 2}
+  <dialogueText>k__BackingField: 'Thank you Nancy. That bear needs to be more careful.
+    We don''t need any accidents in future. '
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
