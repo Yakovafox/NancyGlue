@@ -112,12 +112,15 @@ namespace Dialogue
 
         private void OnOptionChosen(int choiceIndex)
         {
-            DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
-
-            foreach (Button button in buttons)
+            if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
-                button.enabled = false;
+                foreach (Button button in buttons)
+                {
+                    button.enabled = false;
+                }
             }
+
+            DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
             if (nextDialogue == null)
             {
