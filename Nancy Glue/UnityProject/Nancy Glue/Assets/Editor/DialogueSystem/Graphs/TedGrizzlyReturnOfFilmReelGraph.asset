@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: TedGrizzlyReturnOfFilmReelGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedGrizzlyReturnOfFilmReel
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 370791ba-46cb-47a6-876c-29fa5fd7a0a9
+    <dialogueName>k__BackingField: HelloThere
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hello again Ted.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: f44a9e64-38e4-419c-a785-2f7b191de1b6
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3704.8, y: 701.60004}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: f44a9e64-38e4-419c-a785-2f7b191de1b6
+    <dialogueName>k__BackingField: DidYouFindIt
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Nancy! Did you find it?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ce92cf4c-d788-4dfc-a901-29507988e158
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4416, y: 702.4}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 8c685ef9-2031-4e9c-be49-3fbf8a96eec0
+    <dialogueName>k__BackingField: IwontDoItAgain
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Oh thank you so much! I am in your debt! I wont do it
+      again I promise!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5852, y: 707.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: ce92cf4c-d788-4dfc-a901-29507988e158
+    <dialogueName>k__BackingField: IHaveItHere
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I did Indeed! I have it here
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 8c685ef9-2031-4e9c-be49-3fbf8a96eec0
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5124.8, y: 704.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - HelloThere
+  - DidYouFindIt
+  - IwontDoItAgain
+  - IHaveItHere
+  <oldGroupedNames>k__BackingField:
+    list: []

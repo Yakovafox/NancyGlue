@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: NancyClosesOutDialogue
+  m_Name: DontMakeMeDNATest
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: NancyClosesOutDialogue
+  <dialogueName>k__BackingField: DontMakeMeDNATest
   <characterName>k__BackingField: Nancy Glue
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/NestingDollBoss
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1218d8eb535f85b49a04c1d58d44a768, type: 2}
+  <dialogueText>k__BackingField: Dont make me run a DNA test on it...
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

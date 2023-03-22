@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: TedStuffingInterrogation
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedStuffingInterrogation
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 66755943d97d4504dadd77ae8fc09c2d, type: 2}
+  - {fileID: 11400000, guid: 79957a32f50e9bf40b525119618c02c9, type: 2}
+  - {fileID: 11400000, guid: 46ef5e7968345aa40b89556fb0b904c1, type: 2}
+  - {fileID: 11400000, guid: 84204fae3ab245b4cbb50d8f5dc55b9c, type: 2}
+  - {fileID: 11400000, guid: d205a57d71b9ee24fa9565ee87594876, type: 2}
+  - {fileID: 11400000, guid: 1218d8eb535f85b49a04c1d58d44a768, type: 2}
+  - {fileID: 11400000, guid: 279aede29e6d82244b4d7b8f2e014968, type: 2}
+  - {fileID: 11400000, guid: 5f26f78189338864f885117480c7ad3b, type: 2}
+  - {fileID: 11400000, guid: 2d845a80d0921ee4284ddf594d59ad34, type: 2}
+  - {fileID: 11400000, guid: 984fa8ee044650349bb4c288ae394ce8, type: 2}
+  - {fileID: 11400000, guid: 58e1f55bea80277468d3658b1d7bbeea, type: 2}
+  - {fileID: 11400000, guid: fd009b1bc132158418072c9b0c16b11e, type: 2}
+  - {fileID: 11400000, guid: 6f9e115534cf6a84a882179179be24a1, type: 2}
+  - {fileID: 11400000, guid: a74786956c30dce498b1a294b17adf58, type: 2}
+  - {fileID: 11400000, guid: c5ddacda4d779cb4bb07a6d2730b4612, type: 2}
+  - {fileID: 11400000, guid: c3a8fbab6da4d0f488bff63bb1cf4f72, type: 2}
+  - {fileID: 11400000, guid: ed59edfbd2908454b98be585b21ce50d, type: 2}
