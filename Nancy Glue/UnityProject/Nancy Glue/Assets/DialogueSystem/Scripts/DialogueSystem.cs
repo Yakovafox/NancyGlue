@@ -34,12 +34,13 @@ namespace Dialogue
         [SerializeField] private Image characterPortrait;
         [SerializeField] private TextMeshProUGUI characterNameUI;
         [SerializeField] private TextMeshProUGUI bodyTextUI;
-        [SerializeField] private Grid optionGridUI;
 
         private DialogueSO currentDialogue;
         private bool scrollingText = false;
         private string displayedText = "";
         private float scrollSpeed = 0.025f;
+
+        [SerializeField] private Button[] buttons;
 
         private Color fadeColor = new Color(110f / 255f, 110f / 255f, 110f / 255f);
         private Color focusColor = new Color(255f / 255f, 255f / 255f, 255f / 255f);
@@ -78,7 +79,14 @@ namespace Dialogue
             {
                 for (int i = 0; i < currentDialogue.dialogueChoices.Count; i++)
                 {
-                    bodyTextUI.text += $"\n{i+1}. {currentDialogue.dialogueChoices[i].text}";
+                    bodyTextUI.text += $"\n{i + 1}. {currentDialogue.dialogueChoices[i].text}";
+
+                    if (buttons[i] != null)
+                    {
+                        buttons[i].enabled = true;
+                        buttons[i].GetComponentInChildren<Text>().text = $"{i + 1}. " + currentDialogue.dialogueChoices[i].text;
+                        buttons[i].onClick.AddListener(() => OnOptionChosen(i));
+                    }
                 }
             }
 
@@ -104,6 +112,14 @@ namespace Dialogue
 
         private void OnOptionChosen(int choiceIndex)
         {
+            if (currentDialogue.dialogueType == DialogueType.MultiChoice)
+            {
+                foreach (Button button in buttons)
+                {
+                    button.enabled = false;
+                }
+            }
+
             DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
             if (nextDialogue == null)

@@ -30,7 +30,7 @@ namespace Dialogue.Inspectors
         private SerializedProperty portraitUIProperty;
         private SerializedProperty nameUIProperty;
         private SerializedProperty bodyTextUIProperty;
-        private SerializedProperty gridUIProperty;
+        private SerializedProperty buttonsUIProperty;
 
         private void OnEnable()
         {
@@ -48,7 +48,7 @@ namespace Dialogue.Inspectors
             nancyPortraitUIProperty = serializedObject.FindProperty("nancyPortrait");
             nameUIProperty = serializedObject.FindProperty("characterNameUI");
             bodyTextUIProperty = serializedObject.FindProperty("bodyTextUI");
-            gridUIProperty = serializedObject.FindProperty("optionGridUI");
+            buttonsUIProperty = serializedObject.FindProperty("buttons");
         }
 
         public override void OnInspectorGUI()
@@ -206,7 +206,7 @@ namespace Dialogue.Inspectors
             nancyPortraitUIProperty.DrawPropertyField();
             nameUIProperty.DrawPropertyField();
             bodyTextUIProperty.DrawPropertyField();
-            gridUIProperty.DrawPropertyField();
+            buttonsUIProperty.DrawPropertyField();
 
         }
 
