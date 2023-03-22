@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: AnatolyGameEndGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: AnatolyGameEnd
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 20320ad9-25ba-48cc-ab8a-7417c2ad73dd
+    <dialogueName>k__BackingField: EndDiaStart
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Anatoly, it's Nancy.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 7dbb2010-f56d-478c-bf52-95acabd32b65
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1489, y: 1080}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 7dbb2010-f56d-478c-bf52-95acabd32b65
+    <dialogueName>k__BackingField: NancyCont1
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I found the reel, Ted dropped it when he was setting it
+      up. So he's gonna set the reel up properly.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 2e8ddbd4-88e2-43da-b1cc-eca7863ab2cd
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2245, y: 1048}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 2e8ddbd4-88e2-43da-b1cc-eca7863ab2cd
+    <dialogueName>k__BackingField: Anatoly1
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: 'Thank you Nancy. That bear needs to be more careful.
+      We don''t need any accidents in future. '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: c4a0ed78-048a-40a5-8dfb-c75bda867623
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3000, y: 1064}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c4a0ed78-048a-40a5-8dfb-c75bda867623
+    <dialogueName>k__BackingField: AnatolyEnd
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: 'I''m sure I''ll need your services again soon. '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 011813d6-e2a6-4ab3-b865-51d111767bb1
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3707, y: 1067}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 011813d6-e2a6-4ab3-b865-51d111767bb1
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: 'Bye. '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4511, y: 924}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - EndDiaStart
+  - NancyCont1
+  - Anatoly1
+  - AnatolyEnd
+  - DialogueName
+  <oldGroupedNames>k__BackingField:
+    list: []

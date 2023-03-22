@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: TedDismissGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedDismiss
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 513464fe-0ba8-4cec-958e-38aa40a47840
+    <dialogueName>k__BackingField: TedDismiss
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Didn't I already tell you?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 8bde194d-0c89-4969-ac18-a586902f7fad
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4869, y: 494}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 8bde194d-0c89-4969-ac18-a586902f7fad
+    <dialogueName>k__BackingField: TedDismissEnd
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Go check the projector room. can't miss it. top of the
+      couch. Leave me alone!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5589, y: 498}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - TedDismiss
+  - TedDismissEnd
+  <oldGroupedNames>k__BackingField:
+    list: []
