@@ -67,6 +67,7 @@ public class mouseTrack : MonoBehaviour
                          //+ "\n " + item.Description + "\n Item ID: " + item.ItemID);
                         inv.GiveItem(item.ItemID);
                         gm.EvidenceChecker(inv);
+                        gm.ReelPickUp(item.Title);
                         break;
                     case ("NPC"):
                         var npcScript = hitData.transform.GetComponent<npcScript>();

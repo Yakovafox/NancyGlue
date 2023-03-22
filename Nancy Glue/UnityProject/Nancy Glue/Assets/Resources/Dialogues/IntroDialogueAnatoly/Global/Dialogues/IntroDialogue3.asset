@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f9a571c4645c0a24095b4b7dcc555565, type: 2}
   <dialogueText>k__BackingField: This is Anatoly Drugovich, I'd like to hire you
     for a job.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/NestingDollBoss
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
