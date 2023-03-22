@@ -38,10 +38,10 @@ public class invUI : MonoBehaviour
         
 
         GameObject itemOBJ = Instantiate(testPrefab, grid.transform);
-        Debug.Log("itemOBJ: " + itemOBJ);
+        //Debug.Log("itemOBJ: " + itemOBJ);
         
         itemOBJ.GetComponent<ItemManager>().id = itemToAdd.id;
-        Debug.Log("itemOBJ id: " + itemOBJ.GetComponent<ItemManager>().id);
+        //Debug.Log("itemOBJ id: " + itemOBJ.GetComponent<ItemManager>().id);
         itemOBJ.GetComponent<ItemManager>().title = itemToAdd.title;
         itemOBJ.GetComponent<ItemManager>().description = itemToAdd.description;
         //icon can be set here directly
