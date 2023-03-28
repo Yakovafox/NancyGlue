@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class NPCTracker : MonoBehaviour
 {
+
+    
     public enum ProgressTriggers
     {
         talking,
@@ -16,11 +18,16 @@ public class NPCTracker : MonoBehaviour
     // Tracking
     [SerializeField] private Dictionary<DialogueContainerSO, ProgressTriggers> Dialogues;
     [SerializeField] private int CanQuestionAt;
+    [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
     // Saved
     public int dialogueIterator = 0;
-    private string attachedNPC = "";
+    public string attachedNPC = "";
+    private void Awake()
+    {
+
+    }
 
     public void Reset()
     {
@@ -52,12 +59,23 @@ public class NPCTracker : MonoBehaviour
         Debug.LogWarning("NPC does not have container at filepath " + dialogue.fileName);
     }
 
-    // FUNCTION FOR ADAM xoxo
-    private void Save()
+    
+    public void OnSaveGame()
     {
         // Save dialogueIterator
 
-        attachedNPC = transform.name;
+        //attachedNPC = transform.name;
+
+
         // Save attachedNPC
     }
+
+    public void OnLoadGame()
+    {
+
+    }
+
+
+
+
 }

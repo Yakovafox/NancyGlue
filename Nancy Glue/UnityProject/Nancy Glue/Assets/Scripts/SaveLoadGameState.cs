@@ -13,10 +13,12 @@ public class SaveLoadGameState : MonoBehaviour
     //int camToSave;
     public Inventory inv;
     public CameraTrack CameraTracker;
+    public NPCTracker NPCTrack;
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 
         CameraTracker=FindObjectOfType<CameraTrack>();
+        NPCTrack=FindObjectOfType<NPCTracker>();
     }
 
 
@@ -48,8 +50,11 @@ public class SaveLoadGameState : MonoBehaviour
         save.inventoryTS = inv.savedIDs;
         CameraTracker.OnSaveGame();
         save.SavedCameraName = CameraTracker.CameraName;
-        
 
+        NPCTrack.OnSaveGame();
+
+        save.dialogueIteratorsToSave= null;
+        save.NPCname= null;
         return save;
     }
     public void Load()

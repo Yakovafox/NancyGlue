@@ -27,7 +27,6 @@ public class CameraTrack : MonoBehaviour
         var target = _cameraScripts.FirstOrDefault(obj => obj.name == targetName);
         target.SwitchActiveCam();
     }
-
     public void OnSaveGame()
     {
         //Pull what camera is currently active.
