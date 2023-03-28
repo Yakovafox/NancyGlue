@@ -30,12 +30,17 @@ public class NPCTracker : MonoBehaviour
 
     public void ProgressDialogue(DialogueContainerSO dialogue, ProgressTriggers trigger)
     {
+        int i = 0;
         foreach (KeyValuePair<DialogueContainerSO, ProgressTriggers> container in Dialogues)
         {
             // Search until we find the container we want
-            if (dialogue.fileName != container.Key.fileName) continue;
+            if (dialogue.fileName != container.Key.fileName)
+            {
+                i++;
+                continue;
+            }
 
-            if (container.Value == trigger) dialogueIterator++;
+            if (container.Value == trigger && i == dialogueIterator) dialogueIterator++;
 
             if (dialogueIterator == CanQuestionAt) canBeQuestioned = true;
             
