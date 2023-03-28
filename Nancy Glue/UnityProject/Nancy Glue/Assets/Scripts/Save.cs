@@ -6,7 +6,7 @@ using UnityEngine;
 public class Save
 {
     public int[] inventoryTS;
-    
+    public string SavedCameraName;
 
     
 }
