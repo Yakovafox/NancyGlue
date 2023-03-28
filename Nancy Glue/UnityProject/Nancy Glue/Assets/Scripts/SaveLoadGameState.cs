@@ -12,10 +12,11 @@ public class SaveLoadGameState : MonoBehaviour
     //string gameStageToSave;
     //int camToSave;
     public Inventory inv;
-    
+    public CameraTrack CameraTracker;
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 
+        CameraTracker=FindObjectOfType<CameraTrack>();
     }
 
 
@@ -45,7 +46,8 @@ public class SaveLoadGameState : MonoBehaviour
         Save save = new Save();
 
         save.inventoryTS = inv.savedIDs;
-
+        CameraTracker.OnSaveGame();
+        save.SavedCameraName = CameraTracker.CameraName;
         
 
         return save;
@@ -66,6 +68,8 @@ public class SaveLoadGameState : MonoBehaviour
             file.Close();
             
             inv.savedIDs = save.inventoryTS;
+            CameraTracker.OnLoadGame(save.SavedCameraName);
+
             //this needs to be loaded into inv/ui after this
 
             

@@ -4,6 +4,7 @@ using UnityEngine;
 public class CameraSwitch : MonoBehaviour
 {
     [SerializeField] private bool _activeCam;
+    public bool ActiveCam => _activeCam;
     [SerializeField] private Transform _cameraTransform;
     [SerializeField] private MeshRenderer _myMeshRenderer;
     [SerializeField] private bool _isRoot;
