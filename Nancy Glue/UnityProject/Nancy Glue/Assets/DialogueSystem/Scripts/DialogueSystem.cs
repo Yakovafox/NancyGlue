@@ -40,6 +40,8 @@ namespace Dialogue
         private string displayedText = "";
         private float scrollSpeed = 0.025f;
 
+        private NPCTracker tracker;
+
         [SerializeField] private Button[] buttons;
 
         private Color fadeColor = new Color(110f / 255f, 110f / 255f, 110f / 255f);
@@ -207,9 +209,8 @@ namespace Dialogue
                 // Allow progression through any key press and add dialogue to register
                 else if (currentDialogue.dialogueType == DialogueType.Evidence)
                 {
-                    // TODO: Add evidence
+                    tracker.AddNote(currentDialogue.dialogueText);
 
-                    Debug.Log(currentDialogue.dialogueText);
                     OnOptionChosen(0);
                 }
 
@@ -250,18 +251,20 @@ namespace Dialogue
         
         // Setter for the dialogue continer
         // Used when dialogue is called to choose a graph
-        public void SetContainer(string containerName)
+        public void SetContainer(string containerName, NPCTracker attachedNPC = null)
         {
             dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");
+            tracker = attachedNPC;
 
             findStartingNode();
             EnableGameObj();
             ShowText();
         }
 
-        public void SetContainer(DialogueContainerSO dialogue)
+        public void SetContainer(DialogueContainerSO dialogue, NPCTracker attachedNPC = null)
         {
             dialogueContainer = dialogue;
+            tracker = attachedNPC;
 
             findStartingNode();
             EnableGameObj();

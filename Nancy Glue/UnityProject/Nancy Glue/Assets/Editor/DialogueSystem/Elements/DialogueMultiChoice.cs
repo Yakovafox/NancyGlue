@@ -91,8 +91,9 @@ namespace Dialogue.Elements
 
             deleteOption.AddToClassList("dialogue-node__button");
 
-            TextField optionText = DialogueElementUtility.CreateTextField(choiceData.Text, null, callback => 
+            TextField optionText = DialogueElementUtility.CreateTextField(choiceData.Text, 15, null, callback => 
             {
+                if (callback.newValue.Length >= 15) callback.newValue.Substring(0,15);
                 choiceData.Text = callback.newValue;
             });
 

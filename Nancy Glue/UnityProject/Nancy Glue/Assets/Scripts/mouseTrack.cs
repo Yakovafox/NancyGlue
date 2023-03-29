@@ -72,7 +72,7 @@ public class mouseTrack : MonoBehaviour
                     case ("NPC"):
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.evidence);
-                        _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer());
+                        _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
                         //var npcScript = hitData.transform.GetComponent<npcScript>();
                         //var ActiveContainer = npcScript.ActiveContainer;

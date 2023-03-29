@@ -30,9 +30,9 @@ namespace Dialogue.Utilities
             return foldout;
         }
 
-        public static TextField CreateTextField(string value = null, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
+        public static TextField CreateTextField(string value = null, int limit = 0, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
         {
-            TextField textField = new TextField()
+            TextField textField = new TextField(limit, true, false, '\x0000')
             {
                 value = value,
                 label = label
@@ -46,9 +46,9 @@ namespace Dialogue.Utilities
             return textField;
         }
 
-        public static TextField CreateTextArea(string value = null, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
+        public static TextField CreateTextArea(string value = null, int limit = 0, string label = null, EventCallback<ChangeEvent<string>> onValueChanged = null)
         {
-            TextField textArea = CreateTextField(value, label, onValueChanged);
+            TextField textArea = CreateTextField(value, limit, label, onValueChanged);
 
             textArea.multiline = true;
 

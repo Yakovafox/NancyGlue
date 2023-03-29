@@ -33,7 +33,7 @@ public class NPCTracker : MonoBehaviour
     // Saved
     public int dialogueIterator = 0;
     public string attachedNPC = "";
-
+    private List<string> notes = new List<string>();
 
 
     private void Awake()
@@ -76,16 +76,20 @@ public class NPCTracker : MonoBehaviour
                 }
             }
         }
-        
 
         if (dialogueIterator == CanQuestionAt)
         {
             canBeQuestioned = true;
         }
     }
-  
 
-    
+    public void AddNote(string note)
+    {
+        if (!notes.Contains(note))
+        {
+            notes.Add(note);
+        }
+    }
 
     public void onLoadGame(string name, int iterator)
     {
@@ -101,8 +105,6 @@ public class NPCTracker : MonoBehaviour
         }
 
     }
-
-    
 
     public DialogueContainerSO GetCurrentContainer()
     {
