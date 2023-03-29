@@ -14,6 +14,8 @@ public class MenuManager : MonoBehaviour
     FontScript FS;
     private void Awake()
     {
+        Cursor.visible = true;
+
         //Find AccessibilityMenu and disable it. 
         _mainMenu = GameObject.Find("Main"); 
         _accessibilityMenu = GameObject.Find("AccessibilityMenu"); //Accessibility Menu needs to be enabled in Editor before startup.

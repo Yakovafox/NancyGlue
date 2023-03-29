@@ -23,6 +23,8 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private GameObject _invUI;
 
+    [SerializeField] private bool _onDolly;
+
     public float AngleX { get => _angleX; set => _angleX = value; }
     public float AngleY { get => _angleY; set => _angleY = value; }
 

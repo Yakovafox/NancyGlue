@@ -34,7 +34,7 @@ public class CameraSwitch : MonoBehaviour
         EnableDisableCam();
     }
 
-    private void EnableDisableCam()
+    public void EnableDisableCam()
     {
         _cameraTransform.gameObject.SetActive(_activeCam);
         _myMeshRenderer.enabled = !_activeCam;
