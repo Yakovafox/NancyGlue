@@ -26,7 +26,7 @@ public class NPCTracker : MonoBehaviour
     public string attachedNPC = "";
     private void Awake()
     {
-
+        
     }
 
     public void Reset()
@@ -57,20 +57,30 @@ public class NPCTracker : MonoBehaviour
 
         // Debug if we get here as it means the NPC doesn't have the script we are refering to
         Debug.LogWarning("NPC does not have container at filepath " + dialogue.fileName);
+        
+        
+
+    }
+
+
+
+
+    public void onLoadGame(string name, int iterator)
+    {
+        if (name == attachedNPC)
+        {
+            dialogueIterator = iterator;
+        }
+        else
+        {
+            Debug.Log("NPC not found in dataSet");
+
+
+        }
+
     }
 
     
-    public void OnSaveGame()
-    {
-        NPCsaveData.diaData.Add(attachedNPC, dialogueIterator);
-
-        
-    }
-
-    public void OnLoadGame()
-    {
-
-    }
 
 
 

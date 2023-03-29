@@ -14,12 +14,16 @@ public class SaveLoadGameState : MonoBehaviour
     //int camToSave;
     public Inventory inv;
     public CameraTrack CameraTracker;
-    public NPCTracker NPCTrack;
+    public NPCTracker[] NPCTrackers;
+    
+    
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 
         CameraTracker=FindObjectOfType<CameraTrack>();
-        NPCTrack=FindObjectOfType<NPCTracker>();
+        NPCTrackers = FindObjectsOfType<NPCTracker>();
+
+
     }
 
 
@@ -51,19 +55,27 @@ public class SaveLoadGameState : MonoBehaviour
         save.inventoryTS = inv.savedIDs;
         CameraTracker.OnSaveGame();
         save.SavedCameraName = CameraTracker.CameraName;
+        Debug.Log("attempting to save dialogue data");
+        //NPCTrack.OnSaveGame();
+        int[] tempIterators=new int[NPCTrackers.Length];
+        string[] tempNames = new string[NPCTrackers.Length];
 
-        NPCTrack.OnSaveGame();
-
-
-        for (int i = 0; i < NPCsaveData.diaData.Count; i++)
+        
+        for (int i = 0; i < NPCTrackers.Length; i++)
         {
-            save.dialogueIteratorsToSave[i] = NPCsaveData.diaData.ElementAt(i).Value;
-            save.NPCnames[i] = NPCsaveData.diaData.ElementAt(i).Key;
             
+            Debug.Log(NPCTrackers[i].attachedNPC);
+            Debug.Log(NPCTrackers[i].dialogueIterator);
+            tempIterators[i] = NPCTrackers[i].dialogueIterator;
+            tempNames[i] = NPCTrackers[i].attachedNPC;
+
+
         }
 
+        save.dialogueIteratorsToSave = tempIterators;
+        save.NPCnames = tempNames;
         
-        
+
         return save;
     }
     public void Load()
@@ -83,12 +95,18 @@ public class SaveLoadGameState : MonoBehaviour
             
             inv.savedIDs = save.inventoryTS;
             CameraTracker.OnLoadGame(save.SavedCameraName);
+            
+            //load dialogue data
+            for (int i = 0; i < NPCTrackers.Length; i++)
+            {
+                NPCTrackers[i].onLoadGame(save.NPCnames[i], save.dialogueIteratorsToSave[i]);
+            }
 
-            //this needs to be loaded into inv/ui after this
+            
 
-            
-            
-            
+
+
+
             Debug.Log("Game Loaded");
 
             
