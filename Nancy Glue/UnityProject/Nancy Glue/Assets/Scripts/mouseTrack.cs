@@ -70,10 +70,14 @@ public class mouseTrack : MonoBehaviour
                         gm.ReelPickUp(item.Title);
                         break;
                     case ("NPC"):
-                        var npcScript = hitData.transform.GetComponent<npcScript>();
-                        var ActiveContainer = npcScript.ActiveContainer;
-                        _dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
-                        npcScript.ChangeActiveContainer();
+                        NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
+                        tracker.ProgressDialogue(NPCTracker.ProgressTriggers.evidence);
+                        _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer());
+                        tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
+                        //var npcScript = hitData.transform.GetComponent<npcScript>();
+                        //var ActiveContainer = npcScript.ActiveContainer;
+                        //_dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
+                        //npcScript.ChangeActiveContainer();
                         var text = FindObjectOfType<FontManager>();
                         text.InitList();
                         //npcScript.EvidenceCheck(inv);
