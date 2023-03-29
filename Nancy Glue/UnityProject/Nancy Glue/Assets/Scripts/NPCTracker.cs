@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class NPCTracker : MonoBehaviour
 {
+
+    
     public enum ProgressTriggers
     {
         talking,
@@ -25,11 +27,14 @@ public class NPCTracker : MonoBehaviour
     // Tracking
     [SerializeField] private List<DialogueInformation> Dialogues;
     [SerializeField] private int CanQuestionAt;
+    [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
     // Saved
     public int dialogueIterator = 0;
     public string attachedNPC = "";
+
+
 
     private void Awake()
     {
@@ -37,6 +42,7 @@ public class NPCTracker : MonoBehaviour
         {
             canBeQuestioned = true;
         }
+
     }
 
     public void Reset()
@@ -77,6 +83,26 @@ public class NPCTracker : MonoBehaviour
             canBeQuestioned = true;
         }
     }
+  
+
+    
+
+    public void onLoadGame(string name, int iterator)
+    {
+        if (name == attachedNPC)
+        {
+            dialogueIterator = iterator;
+        }
+        else
+        {
+            Debug.Log("NPC not found in dataSet");
+
+
+        }
+
+    }
+
+    
 
     public DialogueContainerSO GetCurrentContainer()
     {
@@ -90,12 +116,6 @@ public class NPCTracker : MonoBehaviour
 
 
     }
-
-    public void OnLoadGame()
-    {
-
-    }
-
 
 
 

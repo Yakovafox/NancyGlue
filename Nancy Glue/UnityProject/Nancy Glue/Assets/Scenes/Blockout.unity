@@ -48108,6 +48108,23 @@ MonoBehaviour:
   _canBeQuestioned: 0
   normalDialogueLimit: 0
   _spokenTo: 0
+--- !u!114 &1277874638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277874632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904f378feef423548b824f9d335f708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanQuestionAt: 0
+  npcScripts: []
+  canBeQuestioned: 0
+  dialogueIterator: 0
+  attachedNPC: Car
 --- !u!1 &1299615262
 GameObject:
   m_ObjectHideFlags: 3
@@ -54397,6 +54414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
   CameraTracker: {fileID: 0}
+  NPCTrack: {fileID: 0}
 --- !u!114 &1433975705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68941,6 +68959,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.33464587, y: 0.28893614, z: 0.41602048}
   m_Center: {x: -0.0000000025403457, y: 0.02045115, z: 0.0556818}
+--- !u!114 &2042471532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042471526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904f378feef423548b824f9d335f708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanQuestionAt: 0
+  npcScripts: []
+  canBeQuestioned: 0
+  dialogueIterator: 0
+  attachedNPC: Teddy
 --- !u!1 &2042926355
 GameObject:
   m_ObjectHideFlags: 0

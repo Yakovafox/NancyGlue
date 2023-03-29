@@ -7,6 +7,7 @@ public class Save
 {
     public int[] inventoryTS;
     public string SavedCameraName;
-
+    public int[] dialogueIteratorsToSave;
+    public string[] NPCnames;
     
 }
