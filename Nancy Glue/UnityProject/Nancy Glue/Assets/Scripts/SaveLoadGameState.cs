@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -53,8 +54,16 @@ public class SaveLoadGameState : MonoBehaviour
 
         NPCTrack.OnSaveGame();
 
-        save.dialogueIteratorsToSave= null;
-        save.NPCname= null;
+
+        for (int i = 0; i < NPCsaveData.diaData.Count; i++)
+        {
+            save.dialogueIteratorsToSave[i] = NPCsaveData.diaData.ElementAt(i).Value;
+            save.NPCnames[i] = NPCsaveData.diaData.ElementAt(i).Key;
+            
+        }
+
+        
+        
         return save;
     }
     public void Load()

@@ -8,6 +8,6 @@ public class Save
     public int[] inventoryTS;
     public string SavedCameraName;
     public int[] dialogueIteratorsToSave;
-    public string[] NPCname;
+    public string[] NPCnames;
     
 }

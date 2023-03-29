@@ -62,12 +62,9 @@ public class NPCTracker : MonoBehaviour
     
     public void OnSaveGame()
     {
-        // Save dialogueIterator
+        NPCsaveData.diaData.Add(attachedNPC, dialogueIterator);
 
-        //attachedNPC = transform.name;
-
-
-        // Save attachedNPC
+        
     }
 
     public void OnLoadGame()
