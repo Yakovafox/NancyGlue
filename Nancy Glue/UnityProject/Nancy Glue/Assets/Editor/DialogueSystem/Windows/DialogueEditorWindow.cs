@@ -40,7 +40,7 @@ namespace Dialogue.Windows
         {
             Toolbar toolbar = new Toolbar();
 
-            fileName = DialogueElementUtility.CreateTextField(defaultFileName, "File Name:", callback => 
+            fileName = DialogueElementUtility.CreateTextField(defaultFileName, 30, "File Name:", callback => 
             {
                 fileName.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
             });
