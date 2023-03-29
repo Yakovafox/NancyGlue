@@ -9,5 +9,5 @@ public class Save
     public string SavedCameraName;
     public int[] dialogueIteratorsToSave;
     public string[] NPCnames;
-    
+    public int gameStage;
 }

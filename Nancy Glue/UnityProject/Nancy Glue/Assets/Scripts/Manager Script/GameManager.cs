@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    enum GameState
+    public enum GameState
     {
         Introduction,
         DriveInInvestigation,
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         FilmReelFound,
     }
 
-    [SerializeField] private GameState _gameState;
+    [SerializeField] public GameState _gameState;
     [SerializeField] private npcScript[] _npcScripts;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     public bool ReelFound;
     public bool InterogationFinished;
+
+    //public int currentGS;
+    
     void Awake()
     {
 
@@ -52,8 +55,16 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _gameState = GameState.Introduction;
-        _zoneTransitionCoroutine = StartCoroutine(FadeTransition());
+        if (NewOrLoad.isLoad)
+        {
+            //set in save load
+        }
+        else
+        {
+            _gameState = GameState.Introduction;
+            _zoneTransitionCoroutine = StartCoroutine(FadeTransition());
+        }
+        
     }
     
 
