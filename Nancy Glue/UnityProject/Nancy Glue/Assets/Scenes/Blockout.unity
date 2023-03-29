@@ -48089,25 +48089,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.113781765, y: 0.17971173, z: 0.05649959}
   m_Center: {x: 0.000000173226, y: -0.0055553853, z: 0.02050291}
---- !u!114 &1277874637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277874632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16620694bc358e249b03656d3fc20427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogueContainers:
-  - {fileID: 11400000, guid: 50d59641bb9435b418a554a8043acb6c, type: 2}
-  ActiveContainer: 0
-  _itemSOs: []
-  _canBeQuestioned: 0
-  normalDialogueLimit: 0
-  _spokenTo: 0
 --- !u!114 &1277874638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48120,6 +48101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904f378feef423548b824f9d335f708a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dialogues:
+  - Container: {fileID: 11400000, guid: 50d59641bb9435b418a554a8043acb6c, type: 2}
+    Trigger: 3
+    EvidenceRequired: {fileID: 0}
   CanQuestionAt: 0
   npcScripts: []
   canBeQuestioned: 0
@@ -54414,7 +54399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
   CameraTracker: {fileID: 0}
-  NPCTrack: {fileID: 0}
+  NPCTrackers: []
 --- !u!114 &1433975705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68925,27 +68910,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c6b31a1960748794483dbd0911542d06, type: 3}
   m_PrefabInstance: {fileID: 2042471525}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2042471527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042471526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16620694bc358e249b03656d3fc20427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogueContainers:
-  - {fileID: 11400000, guid: 90ed75603c84a2644be4c37eaa6595a5, type: 2}
-  - {fileID: 11400000, guid: b2237136ab20da944ae3a9819ada9d09, type: 2}
-  - {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
-  ActiveContainer: 0
-  _itemSOs: []
-  _canBeQuestioned: 0
-  normalDialogueLimit: 1
-  _spokenTo: 0
 --- !u!65 &2042471531
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68971,6 +68935,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904f378feef423548b824f9d335f708a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Dialogues:
+  - Container: {fileID: 11400000, guid: 90ed75603c84a2644be4c37eaa6595a5, type: 2}
+    Trigger: 0
+    EvidenceRequired: {fileID: 0}
+  - Container: {fileID: 11400000, guid: b2237136ab20da944ae3a9819ada9d09, type: 2}
+    Trigger: 1
+    EvidenceRequired: {fileID: 1196556232}
+  - Container: {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
+    Trigger: 3
+    EvidenceRequired: {fileID: 0}
   CanQuestionAt: 0
   npcScripts: []
   canBeQuestioned: 0
