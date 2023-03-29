@@ -10,17 +10,34 @@ public class NPCTracker : MonoBehaviour
     {
         talking,
         evidence,
-        sceneChange
+        sceneChange,
+        END
+    }
+
+    [Serializable]
+    public struct DialogueInformation
+    {
+        public DialogueContainerSO Container;
+        public ProgressTriggers Trigger;
+        public GameObject EvidenceRequired;
     }
 
     // Tracking
-    [SerializeField] private Dictionary<DialogueContainerSO, ProgressTriggers> Dialogues;
+    [SerializeField] private List<DialogueInformation> Dialogues;
     [SerializeField] private int CanQuestionAt;
     public bool canBeQuestioned;
 
     // Saved
     public int dialogueIterator = 0;
-    private string attachedNPC = "";
+    public string attachedNPC = "";
+
+    private void Awake()
+    {
+        if (dialogueIterator >= CanQuestionAt)
+        {
+            canBeQuestioned = true;
+        }
+    }
 
     public void Reset()
     {
@@ -28,36 +45,58 @@ public class NPCTracker : MonoBehaviour
         attachedNPC = transform.name;
     }
 
-    public void ProgressDialogue(DialogueContainerSO dialogue, ProgressTriggers trigger)
+    public void ProgressDialogue(ProgressTriggers trigger)
     {
-        int i = 0;
-        foreach (KeyValuePair<DialogueContainerSO, ProgressTriggers> container in Dialogues)
+        if (Dialogues[dialogueIterator].Trigger == trigger)
         {
-            // Search until we find the container we want
-            if (dialogue.fileName != container.Key.fileName)
+            if (trigger == ProgressTriggers.evidence)
             {
-                i++;
-                continue;
+                ItemData[] itemsArray = (ItemData[]) FindSceneObjectsOfType(typeof(ItemData));
+
+                bool itemCollected = true;
+                foreach (ItemData item in itemsArray)
+                {
+                    Debug.Log("Searching items");
+                    if (item.transform.gameObject == Dialogues[dialogueIterator].EvidenceRequired) itemCollected = false;
+                }
+
+                if (itemCollected) dialogueIterator++;
             }
-
-            if (container.Value == trigger && i == dialogueIterator) dialogueIterator++;
-
-            if (dialogueIterator == CanQuestionAt) canBeQuestioned = true;
-            
-            // Return as we have found the container
-            return;
+            else
+            {
+                if (Dialogues[dialogueIterator].Trigger == trigger)
+                {
+                    dialogueIterator++;
+                }
+            }
         }
+        
 
-        // Debug if we get here as it means the NPC doesn't have the script we are refering to
-        Debug.LogWarning("NPC does not have container at filepath " + dialogue.fileName);
+        if (dialogueIterator == CanQuestionAt)
+        {
+            canBeQuestioned = true;
+        }
     }
 
-    // FUNCTION FOR ADAM xoxo
-    private void Save()
+    public DialogueContainerSO GetCurrentContainer()
     {
-        // Save dialogueIterator
-
-        attachedNPC = transform.name;
-        // Save attachedNPC
+        return Dialogues[dialogueIterator].Container;
     }
+
+
+    public void OnSaveGame()
+    {
+        //NPCsaveData.diaData.Add(attachedNPC, dialogueIterator);
+
+
+    }
+
+    public void OnLoadGame()
+    {
+
+    }
+
+
+
+
 }

@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Dialogue.ScriptableObjects
 {
+    [Serializable]
     public class DialogueContainerSO : ScriptableObject
     {
         [field: SerializeField] public string fileName { get; set; }
