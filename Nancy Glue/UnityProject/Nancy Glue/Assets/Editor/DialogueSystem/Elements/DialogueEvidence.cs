@@ -34,7 +34,7 @@ namespace Dialogue.Elements
         public override void Draw()
         {
             // Title Container
-            TextField dialogueNameTextField = DialogueElementUtility.CreateTextField(DialogueName, 0, null, callback =>
+            TextField dialogueNameTextField = DialogueElementUtility.CreateTextField(DialogueName, 30, null, callback =>
             {
                 TextField target = (TextField)callback.target;
 
@@ -86,7 +86,7 @@ namespace Dialogue.Elements
             characterNameContainer.AddToClassList("dialogue-node__custom-data-container");
 
             // Character Name Field
-            TextField characterNameTextField = DialogueElementUtility.CreateTextField(CharacterName, 0, null, callback =>
+            TextField characterNameTextField = DialogueElementUtility.CreateTextField(CharacterName, 20, null, callback =>
             {
                 CharacterName = callback.newValue;
             });

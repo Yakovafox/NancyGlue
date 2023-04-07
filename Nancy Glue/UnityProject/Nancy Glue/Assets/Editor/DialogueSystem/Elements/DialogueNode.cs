@@ -66,7 +66,7 @@ namespace Dialogue.Elements
         public virtual void Draw()
         {
             // Title Container
-            TextField dialogueNameTextField = DialogueElementUtility.CreateTextField(DialogueName, 0, null, callback =>
+            TextField dialogueNameTextField = DialogueElementUtility.CreateTextField(DialogueName, 30, null, callback =>
             {
                 TextField target = (TextField)callback.target;
 
@@ -118,7 +118,7 @@ namespace Dialogue.Elements
             characterNameContainer.AddToClassList("dialogue-node__custom-data-container");
 
             // Character Name Field
-            TextField characterNameTextField = DialogueElementUtility.CreateTextField(CharacterName, 0, null, callback => 
+            TextField characterNameTextField = DialogueElementUtility.CreateTextField(CharacterName, 20, null, callback => 
             {
                 CharacterName = callback.newValue;
             });
@@ -141,7 +141,7 @@ namespace Dialogue.Elements
             };
 
             // Sprite Asset Path Field
-            TextField spriteAssetPathTextField = DialogueElementUtility.CreateTextField(SpritePath, 0, null, callback =>
+            TextField spriteAssetPathTextField = DialogueElementUtility.CreateTextField(SpritePath, 50, null, callback =>
             {
                 SpritePath = callback.newValue;
                 characterPortrait.image = Resources.Load<Texture2D>(callback.newValue);
@@ -149,7 +149,7 @@ namespace Dialogue.Elements
             });
             
             // Audio Asset Path Field
-            TextField audioAssetPathTextField = DialogueElementUtility.CreateTextField(AudioPath, 0, null, callback =>
+            TextField audioAssetPathTextField = DialogueElementUtility.CreateTextField(AudioPath, 50, null, callback =>
             {
                 AudioPath = callback.newValue;
             });
@@ -182,7 +182,7 @@ namespace Dialogue.Elements
 
             Foldout textFoldout = DialogueElementUtility.CreateFoldout("Dialogue Text");
 
-            TextField textInputField = DialogueElementUtility.CreateTextArea(Text, 0, null, callback => 
+            TextField textInputField = DialogueElementUtility.CreateTextArea(Text, 50, null, callback => 
             {
                 Text = callback.newValue;
             });
