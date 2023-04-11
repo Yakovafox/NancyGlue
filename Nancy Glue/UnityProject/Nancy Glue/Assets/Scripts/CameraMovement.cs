@@ -22,7 +22,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private float _angleX, _angleY;
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private GameObject _invUI;
-
+    [SerializeField] private OpenCloseUI _uiScript;
     [SerializeField] private bool _onDolly;
 
     public float AngleX { get => _angleX; set => _angleX = value; }
@@ -34,6 +34,7 @@ public class CameraMovement : MonoBehaviour
         _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
         _dialogueBox = FindObjectOfType<DialogueSystem>().gameObject;
         _invUI = FindObjectOfType<invUI>().gameObject;
+        _uiScript = FindObjectOfType<OpenCloseUI>();
     }
 
     // Start is called before the first frame update
@@ -118,7 +119,7 @@ public class CameraMovement : MonoBehaviour
 
     private bool LockMovement()
     {
-        var uiOpen = _invUI.activeSelf || _dialogueBox.activeSelf;
+        var uiOpen = _uiScript.IsOpen || _dialogueBox.activeSelf;
         
         return uiOpen;
     }
