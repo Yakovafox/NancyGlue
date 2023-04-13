@@ -16,10 +16,13 @@ public class CameraSwitch : MonoBehaviour
     [SerializeField] private bool _canSwitch;
     public bool CanSwitch { get => _canSwitch; }
 
+    public GameObject _returnTooltip;
+
     private void Awake()
     {
         _myMeshRenderer = GetComponent<MeshRenderer>();
         _cameraTransform = transform.GetChild(0);
+        _returnTooltip = GameObject.Find("CameraReturnPrompt");
     }
     void Start()
     {
@@ -32,11 +35,17 @@ public class CameraSwitch : MonoBehaviour
     {
         _activeCam = !_activeCam;
         EnableDisableCam();
+        EnableReturnTooltip();
     }
 
     public void EnableDisableCam()
     {
         _cameraTransform.gameObject.SetActive(_activeCam);
         _myMeshRenderer.enabled = !_activeCam;
+    }
+
+    public void EnableReturnTooltip()
+    {
+        _returnTooltip.SetActive(!_isRoot); //Enable the tooltip if the camera is not a root camera.
     }
 }
