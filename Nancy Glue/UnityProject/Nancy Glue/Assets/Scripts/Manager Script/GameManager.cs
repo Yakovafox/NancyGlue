@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] public GameState _gameState;
-    [SerializeField] private npcScript[] _npcScripts;
+    [SerializeField] private NPCTracker[] _npcScripts;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
     [SerializeField] private bool _introStarted;
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
 #endif
-        _npcScripts = FindObjectsOfType<npcScript>();
+        _npcScripts = FindObjectsOfType<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
         
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         switch (_gameState)
         {
@@ -117,9 +117,9 @@ public class GameManager : MonoBehaviour
     {
         foreach(var npc in _npcScripts)
         {
-            if(npc.gameObject.name == "Teddy")
+            if(npc.name == "Teddy")
             {
-                if(npc.CanBeQuestioned)
+                if(npc.canBeQuestioned)
                 {
                     _zoneManager.ConfrontedTed = true;
                     var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
@@ -188,7 +188,7 @@ public class GameManager : MonoBehaviour
         {
             if (_npcScripts[i].name.Contains("Anatoly"))
             {
-                _dialogueSystem.SetContainer(_npcScripts[i].DialogueContainers[0]);
+                _dialogueSystem.SetContainer(_npcScripts[i].GetCurrentContainer(), _npcScripts[i]);
                 break;
             }
         }
@@ -209,7 +209,7 @@ public class GameManager : MonoBehaviour
         var InterrogationSeat = GameObject.Find("SeatLocation").transform;
         Teddy.transform.position = InterrogationSeat.position;
         Teddy.transform.eulerAngles = new Vector3(Teddy.eulerAngles.x, InterrogationSeat.eulerAngles.y, Teddy.eulerAngles.z);
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<npcScript>().DialogueContainers[2]));
+        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<NPCTracker>().GetCurrentContainer()));
     }
 
     private void SetupDriveIn2()
@@ -222,7 +222,7 @@ public class GameManager : MonoBehaviour
     private void SetupReelFound()
     {
         var anatoly = GameObject.Find("AnatolyDialogue");
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(anatoly.GetComponent<npcScript>().DialogueContainers[1]));
+        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(anatoly.GetComponent<NPCTracker>().GetCurrentContainer()));
     }
 
     private void StateSwitch(GameState gameState, CameraSwitch oldCam, CameraSwitch newCam)
@@ -237,7 +237,7 @@ public class GameManager : MonoBehaviour
         foreach(var npc in _npcScripts)
         {
             Debug.Log(npc.name);
-            npc.EvidenceCheck(inv);
+            //npc.EvidenceCheck(inv);
         }
     }
 

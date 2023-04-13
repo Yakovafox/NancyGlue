@@ -211,6 +211,7 @@ namespace Dialogue
                 {
                     if (tracker != null)
                     {
+                        Debug.Log("Note Added: " + currentDialogue.dialogueText);
                         tracker.AddNote(currentDialogue.dialogueText);
                     }
 

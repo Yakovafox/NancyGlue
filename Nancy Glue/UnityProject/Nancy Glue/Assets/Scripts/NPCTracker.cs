@@ -25,9 +25,8 @@ public class NPCTracker : MonoBehaviour
     }
 
     // Tracking
-    [SerializeField] private List<DialogueInformation> Dialogues=new List<DialogueInformation>();
+    [SerializeField] private List<DialogueInformation> Dialogues = new List<DialogueInformation>();
     [SerializeField] private int CanQuestionAt;
-    [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
     // Saved
