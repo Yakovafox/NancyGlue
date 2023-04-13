@@ -209,6 +209,7 @@ namespace Dialogue
                 // Allow progression through any key press and add dialogue to register
                 else if (currentDialogue.dialogueType == DialogueType.Evidence)
                 {
+                    if (tracker == null) return;
                     tracker.AddNote(currentDialogue.dialogueText);
 
                     OnOptionChosen(0);
