@@ -30,6 +30,11 @@ public class NPCTracker : MonoBehaviour
     [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
+    [field: Header("Data For UI")]
+    [field: SerializeField] public string CharName { get; private set; }
+    [field: SerializeField] public bool SpokenTo { get; set; }
+    [field: SerializeField] public Sprite CharacterSprite { get; private set; }
+
     // Saved
     public int dialogueIterator = 0;
     public string attachedNPC = "";

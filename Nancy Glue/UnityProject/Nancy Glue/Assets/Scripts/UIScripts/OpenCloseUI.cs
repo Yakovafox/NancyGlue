@@ -42,7 +42,6 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
-
     }
 
     public void LocationClicked()
@@ -80,6 +79,8 @@ public class OpenCloseUI : MonoBehaviour
         if (IsOpen) return;
         _animator.SetTrigger("OpenClose");
         IsOpen = !IsOpen;
+        var text = FindObjectOfType<FontManager>();
+        text.InitList();
     }
 
     public void CloseUI()
@@ -87,10 +88,10 @@ public class OpenCloseUI : MonoBehaviour
         if (!IsOpen) return;
         _animator.SetTrigger("OpenClose");
         IsOpen = !IsOpen;
-        _inventoryUIPage.SetActive(false);
-        _suspectsUIPage.SetActive(false);
-        _locationsUIPage.SetActive(false);
-        _settingsUIPage.SetActive(false);
+        _inventoryUIPage.SetActive(true);
+        _suspectsUIPage.SetActive(true);
+        _locationsUIPage.SetActive(true);
+        _settingsUIPage.SetActive(true);
         _blankPage.SetActive(true);
     }
 

@@ -49,9 +49,9 @@ public class invUI : MonoBehaviour
         
         itemOBJ.GetComponent<ItemManager>().icon = itemToAdd.icon;
 
-        itemOBJ.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = itemToAdd.icon;
-        itemOBJ.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = itemToAdd.title;
-        itemOBJ.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>().text = itemToAdd.description;
+        itemOBJ.transform.GetChild(0).GetComponent<Image>().sprite = itemToAdd.icon;
+        itemOBJ.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = itemToAdd.title;
+        itemOBJ.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>().text = itemToAdd.description;
         //testrun basic prefab 
         //add nested prefab to canvas
         //save to dict
