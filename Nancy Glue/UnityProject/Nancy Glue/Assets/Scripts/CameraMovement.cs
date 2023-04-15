@@ -42,7 +42,8 @@ public class CameraMovement : MonoBehaviour
         _virtualCam = GetComponent<CinemachineVirtualCamera>();
         _dollyCam = _virtualCam.GetCinemachineComponent<CinemachineTrackedDolly>();
         _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
-        _dialogueBox = FindObjectOfType<DialogueSystem>().gameObject;
+        var dialogue = FindObjectOfType<DialogueSystem>(true);
+        _dialogueBox = dialogue.gameObject;
         _invUI = FindObjectOfType<invUI>().gameObject;
         _uiScript = FindObjectOfType<OpenCloseUI>();
     }

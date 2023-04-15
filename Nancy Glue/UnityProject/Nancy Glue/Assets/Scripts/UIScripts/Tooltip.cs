@@ -1,41 +1,55 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using System.Net.Mime;
+using TMPro;
 using UnityEngine;
 
 public class Tooltip : MonoBehaviour
 {
-    private float timer = 0;
-    private float lifespan = 5;
-    private float opacity = 0;
+    [SerializeField]private float _timer;
+    [SerializeField][Range(0,5)]private const int LIFESPAN = 5;
+    [SerializeField]private bool _open;
+    [SerializeField]private Animator _animator;
 
-    private CanvasGroup canvasGroup;
+    private int _switchHash;
+    [SerializeField] private TextMeshProUGUI _toolTipText;
 
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+        _toolTipText = GetComponentInChildren<TextMeshProUGUI>();
+    }
+    private void Start()
+    {
+        _switchHash = Animator.StringToHash("Switch");
+        _timer = 0;
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (opacity < 1 && timer < 1)
-        {
-            // Fade in
-            opacity += Time.deltaTime;
-            canvasGroup.alpha = opacity;
-        }
-        else if (opacity > 0 && timer == lifespan - 1)
-        {
-            //Fade out
-            opacity -= Time.deltaTime;
-            canvasGroup.alpha = opacity;
-        }
-        else if (timer > lifespan)
-        {
-            // Destroy once faded out
-            Destroy(this);
-        }
-
-        timer += Time.deltaTime;
+        if(_open)
+            IncreaseTimer();
     }
 
-    private void OnEnable()
+    private void IncreaseTimer()
     {
-        canvasGroup = GetComponentInChildren<CanvasGroup>();
+        if (!(_timer >= LIFESPAN)) //if timer not at threshold, increase and return.
+        {
+            _timer += 1f * Time.deltaTime;
+            return;
+        }
+        _timer = 0; //reset the timer and close the tooltip
+        CloseTooltip();
+    }
+    public void OpenTooltip(String tooltipText)
+    {
+        _toolTipText.text = tooltipText;
+        _animator.SetTrigger(_switchHash);
+        _open = true;
+    }
+
+    private void CloseTooltip()
+    {
+        _animator.SetTrigger(_switchHash);
+        _open = false;
     }
 }

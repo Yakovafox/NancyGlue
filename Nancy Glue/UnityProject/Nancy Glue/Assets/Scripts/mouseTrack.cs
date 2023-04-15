@@ -2,6 +2,7 @@ using Cinemachine;
 using Dialogue;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -25,17 +26,20 @@ public class mouseTrack : MonoBehaviour
     [SerializeField] private Image _cursor;
     [SerializeField] private List<Sprite> _sprites;
     [SerializeField] private ZoneManager _zoneManager;
+    [SerializeField] private Tooltip _toolTip;
+    [SerializeField] private SuspectPage _suspects;
     private void Awake()
     {
         _zoneManager = FindObjectOfType<ZoneManager>();
         _dialogueBox = GameObject.Find("DialogueBox");
         _dialogueSystemScript = FindObjectOfType<DialogueSystem>();
         _dialogueBox.SetActive(false);
+        _toolTip = FindObjectOfType<Tooltip>();
     }
     private void Start()
     {
         UIOpen = false;
-        canvas.SetActive(false);
+        canvas.SetActive(true);
 
         inv = GameObject.Find("Player").GetComponent<Inventory>();
        // evid0 = GameObject.Find("Evidence0");
@@ -68,19 +72,24 @@ public class mouseTrack : MonoBehaviour
                         inv.GiveItem(item.ItemID);
                         gm.EvidenceChecker(inv);
                         gm.ReelPickUp(item.Title);
+                        _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
                         break;
                     case ("NPC"):
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.evidence);
                         _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
-                        //var npcScript = hitData.transform.GetComponent<npcScript>();
-                        //var ActiveContainer = npcScript.ActiveContainer;
-                        //_dialogueSystemScript.SetContainer(npcScript.DialogueContainers[ActiveContainer]);
-                        //npcScript.ChangeActiveContainer();
+                        if (!tracker.SpokenTo)
+                        {
+                            _toolTip.OpenTooltip("New Suspect:\n" + tracker.CharName);
+                            //add new Entry to the Suspect list
+                            var Suspect = Instantiate(_suspects.SuspectPrefab, _suspects.transform.GetChild(0));
+                            Suspect.GetComponent<SuspectMugshot>().SetData(tracker.CharName,tracker.CharacterSprite);
+                            Suspect.name = Suspect.GetComponent<SuspectMugshot>().Name;
+                            tracker.SpokenTo = true;
+                        }
                         var text = FindObjectOfType<FontManager>();
                         text.InitList();
-                        //npcScript.EvidenceCheck(inv);
                         var zoneManager = FindObjectOfType<ZoneManager>();
                         zoneManager.SpeakToNPC(hitData.transform.name);
                         break;
@@ -103,6 +112,7 @@ public class mouseTrack : MonoBehaviour
             }
         }
 
+        /*
         if (Input.GetKeyUp(KeyCode.I))
         {
             if (DialogueOpenCheck()) return;
@@ -125,6 +135,7 @@ public class mouseTrack : MonoBehaviour
             }
 
         }
+        */
         BackToRootCamera();
     }
 
