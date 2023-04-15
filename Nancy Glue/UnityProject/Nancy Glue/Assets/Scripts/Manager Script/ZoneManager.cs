@@ -9,10 +9,12 @@ public class ZoneManager : MonoBehaviour
     [Header("Alley")]
     [SerializeField] private CameraSwitch _alleyCam;
     public CameraSwitch AlleyCam => _alleyCam;
+    [field: SerializeField] public bool AlleyUnlocked { get; set; }
 
     [Header("Evidence Board")]
     [SerializeField] private CameraSwitch _evidenceBoardCam;
     public CameraSwitch EvidenceBoardCam => _evidenceBoardCam;
+    [field: SerializeField] public bool BoardUnlocked { get; set; }
 
     [Header("Basement")]
     [SerializeField] private CameraSwitch _basementCam;
@@ -21,6 +23,7 @@ public class ZoneManager : MonoBehaviour
     [Header("Drive-In")]
     [SerializeField] private CameraSwitch _driveInCam;
     public CameraSwitch DriveInCam => _driveInCam;
+    [field: SerializeField]public bool DriveInUnlocked { get; set; }
 
     [Header("Drive-In Investigation")]
     [SerializeField] private bool _spokeToTed;

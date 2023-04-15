@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e96e32569dbdecc43a3dfd1e509eabde, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: b95eb33d71835c149b3aae97aee87be7, type: 2}
   <dialogueText>k__BackingField: My Daughter's movie was supposed to play down at
     the drive-in, but...
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B

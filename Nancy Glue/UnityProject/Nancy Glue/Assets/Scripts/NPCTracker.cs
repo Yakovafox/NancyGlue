@@ -33,7 +33,7 @@ public class NPCTracker : MonoBehaviour
     // Saved
     public int dialogueIterator = 0;
     public string attachedNPC = "";
-    private List<string> notes = new List<string>();
+    [SerializeField] private List<string> notes = new List<string>();
 
 
     private void Awake()
