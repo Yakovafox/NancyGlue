@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public GameState _gameState;
     [SerializeField] private npcScript[] _npcScripts;
+    [SerializeField] private NPCTracker _AnatolyTracker;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
     [SerializeField] private bool _introStarted;
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
 #endif
         _npcScripts = FindObjectsOfType<npcScript>();
+        _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
         
@@ -184,7 +186,9 @@ public class GameManager : MonoBehaviour
     {
 
         if (_introStarted) return;
-        for (var i = 0; i < _npcScripts.Length; i++)
+        _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer());
+        /*
+         for (var i = 0; i < _npcScripts.Length; i++)
         {
             if (_npcScripts[i].name.Contains("Anatoly"))
             {
@@ -192,6 +196,7 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+        */
         _introStarted = true;
     }
 
@@ -221,8 +226,8 @@ public class GameManager : MonoBehaviour
     }
     private void SetupReelFound()
     {
-        var anatoly = GameObject.Find("AnatolyDialogue");
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(anatoly.GetComponent<npcScript>().DialogueContainers[1]));
+        _AnatolyTracker.dialogueIterator++;
+        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(_AnatolyTracker.GetCurrentContainer()));
     }
 
     private void StateSwitch(GameState gameState, CameraSwitch oldCam, CameraSwitch newCam)
@@ -260,7 +265,11 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         oldCam.SwitchActiveCam();
         newCam.SwitchActiveCam();
-        yield return new WaitForSeconds(1);
+        while (Camera.main.GetComponent<CinemachineBrain>().IsBlending)
+        {
+            yield return null;
+
+        }
         _animator.SetTrigger("FadeOut");
     }
 

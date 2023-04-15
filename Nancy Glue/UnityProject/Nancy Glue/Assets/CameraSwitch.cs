@@ -7,6 +7,7 @@ public class CameraSwitch : MonoBehaviour
     public bool ActiveCam => _activeCam;
     [SerializeField] private Transform _cameraTransform;
     [SerializeField] private MeshRenderer _myMeshRenderer;
+    [SerializeField] private Collider _myCollider;
     [SerializeField] private bool _isRoot;
     public bool IsRoot { get => _isRoot; }
     [SerializeField] private Transform _rootCameraTransform; //add root camera in Unity Editor.
@@ -21,6 +22,7 @@ public class CameraSwitch : MonoBehaviour
     private void Awake()
     {
         _myMeshRenderer = GetComponent<MeshRenderer>();
+        _myCollider = GetComponent<Collider>();
         _cameraTransform = transform.GetChild(0);
         _returnTooltip = GameObject.Find("CameraReturnPrompt");
     }
@@ -42,6 +44,7 @@ public class CameraSwitch : MonoBehaviour
     {
         _cameraTransform.gameObject.SetActive(_activeCam);
         _myMeshRenderer.enabled = !_activeCam;
+        _myCollider.enabled = !_activeCam;
     }
 
     public void EnableReturnTooltip()

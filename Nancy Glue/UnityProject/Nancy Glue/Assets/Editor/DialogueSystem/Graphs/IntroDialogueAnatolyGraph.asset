@@ -15,33 +15,6 @@ MonoBehaviour:
   <fileName>k__BackingField: IntroDialogueAnatoly
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
-    <dialogueName>k__BackingField: SetupCrime
-    <characterName>k__BackingField: Anatoly
-    <text>k__BackingField: My Daughter's movie was supposed to play down at the drive-in,
-      but...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 72b6b928-28d7-45c9-97a3-819928849f6e
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: -29, y: 875}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 72b6b928-28d7-45c9-97a3-819928849f6e
-    <dialogueName>k__BackingField: DaughterNote
-    <characterName>k__BackingField: Anatoly
-    <text>k__BackingField: 'Note Added: I saw the last one, she''s not much of an
-      actor. Probably just takes the old man''s money to make films that he has to
-      front. '
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: c6a5c1c3-5761-46e8-bdca-aea888d1b437
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: -29, y: 1770}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: c6a5c1c3-5761-46e8-bdca-aea888d1b437
     <dialogueName>k__BackingField: CrimeDescribed
     <characterName>k__BackingField: Anatoly
@@ -74,7 +47,7 @@ MonoBehaviour:
       let you have a look around the place.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: c4f1f8eb-45b4-4172-9389-23a02a4c3ffa
+      <NodeID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1314, y: 875}
@@ -99,36 +72,11 @@ MonoBehaviour:
       job.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: e98a5c0b-8ab3-415a-aa6e-5d020998d9b3
+      <NodeID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1314, y: -285}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: e98a5c0b-8ab3-415a-aa6e-5d020998d9b3
-    <dialogueName>k__BackingField: AnatolyRumor
-    <characterName>k__BackingField: Anatoly Drugovich
-    <text>k__BackingField: 'Note Added: There''s been rumors around town that he
-      runs a protection racket.'
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 1314, y: 610}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: c4f1f8eb-45b4-4172-9389-23a02a4c3ffa
-    <dialogueName>k__BackingField: AnatolyNote
-    <characterName>k__BackingField: Note Name
-    <text>k__BackingField: 'Note Added: He has a lot of influence.'
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 1314, y: 1770}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
     <dialogueName>k__BackingField: NancyClosesOutDialogue
@@ -154,18 +102,28 @@ MonoBehaviour:
     <position>k__BackingField: {x: 644, y: -285}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
+    <dialogueName>k__BackingField: SetupCrime
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: My Daughter's movie was supposed to play down at the drive-in,
+      but...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: c6a5c1c3-5761-46e8-bdca-aea888d1b437
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: -72, y: 875}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - SetupCrime
-  - DaughterNote
   - CrimeDescribed
   - BearlyPicturesAdded
   - ObjectiveGiven
   - IntroDialogueStart
   - IntroDialogue3
-  - AnatolyRumor
-  - AnatolyNote
   - NancyClosesOutDialogue
   - IntroDialogue2
+  - SetupCrime
   <oldGroupedNames>k__BackingField:
     list: []

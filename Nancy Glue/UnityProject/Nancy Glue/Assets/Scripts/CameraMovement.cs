@@ -1,5 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.Text;
+using Cinemachine;
 using Dialogue;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -24,6 +28,10 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private GameObject _invUI;
     [SerializeField] private OpenCloseUI _uiScript;
     [SerializeField] private bool _onDolly;
+    [SerializeField] private bool HorizontalDolly;
+    [SerializeField] private CinemachineVirtualCamera _virtualCam;
+    [SerializeField] private CinemachineTrackedDolly _dollyCam;
+    [SerializeField] private float _dollyMax, _dollyMin, _dollyCurrent, _targetOffsetZ, _targetOffsetY, _targetOffsetX;
 
     public float AngleX { get => _angleX; set => _angleX = value; }
     public float AngleY { get => _angleY; set => _angleY = value; }
@@ -31,6 +39,8 @@ public class CameraMovement : MonoBehaviour
     private void Awake()
     {
         _cameraTransform = GetComponent<Transform>();
+        _virtualCam = GetComponent<CinemachineVirtualCamera>();
+        _dollyCam = _virtualCam.GetCinemachineComponent<CinemachineTrackedDolly>();
         _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
         _dialogueBox = FindObjectOfType<DialogueSystem>().gameObject;
         _invUI = FindObjectOfType<invUI>().gameObject;
@@ -48,6 +58,12 @@ public class CameraMovement : MonoBehaviour
         _cameraYMax = _initialRotation.y + _yRotLimit;
         _angleX = _initialRotation.x;
         _angleY = _initialRotation.y;
+        if (_dollyCam != null)
+        {
+            _dollyMin = _dollyCam.m_Path.MinPos;
+            _dollyMax = _dollyCam.m_Path.MaxPos;
+            _dollyCurrent = _dollyCam.m_PathPosition;
+        }
     }
 
     // Update is called once per frame
@@ -64,10 +80,68 @@ public class CameraMovement : MonoBehaviour
         _lookRight = _mousePos.x > _screenBounds.x || Input.GetKey(KeyCode.D) ? true : false;
         _lookUp = _mousePos.y > _screenBounds.y || Input.GetKey(KeyCode.W) ? true : false;
         _lookDown =  _mousePos.y < _screenBuffer || Input.GetKey(KeyCode.S) ? true : false;
+        switch (_onDolly)
+        {
+            case true when HorizontalDolly:
+                LeftRightTrack();
+                break;
+            case true when !HorizontalDolly:
+                ForwardBackTrack();
+                RotateLeftRight();
+                break;
+            case false:
+                RotateLeftRight();
+                RotateUpDown();
+                break;
+        }
         RotateLeftRight();
         RotateUpDown();
     }
 
+    private float SetOffset(float offset, float modifier) //input camera offset, used with Cinemachine composer for camera's with a look at target.
+    {
+        offset += modifier * Time.deltaTime;
+        offset = Math.Clamp(offset, -1, 1);
+        return offset;
+    }
+
+    private void LeftRightTrack()
+    {
+        if (_lookLeft && !_lookRight)
+        {
+            _dollyCurrent -= 1 * Time.deltaTime;
+            _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
+            _dollyCam.m_PathPosition = _dollyCurrent;
+        }
+        else if (!_lookLeft && _lookRight)
+        {
+            _dollyCurrent += 1 * Time.deltaTime;
+            _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
+            _dollyCam.m_PathPosition = _dollyCurrent;
+        }
+        Debug.Log(_targetOffsetZ);
+        if (_lookUp)
+            _targetOffsetZ = SetOffset(_targetOffsetZ, 1);
+        else if (_lookDown)
+            _targetOffsetZ = SetOffset(_targetOffsetZ, -1);
+        _virtualCam.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.z = _targetOffsetZ;
+    }
+
+    private void ForwardBackTrack()
+    {
+        if (_lookUp && !_lookDown)
+        {
+            _dollyCurrent -= 1 * Time.deltaTime;
+            _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
+            _dollyCam.m_PathPosition = _dollyCurrent;
+        }
+        else if (!_lookUp && _lookDown)
+        {
+            _dollyCurrent += 1 * Time.deltaTime;
+            _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
+            _dollyCam.m_PathPosition = _dollyCurrent;
+        }
+    }
     private void RotateLeftRight()
     {
         if (!_lookLeft && !_lookRight) return;
