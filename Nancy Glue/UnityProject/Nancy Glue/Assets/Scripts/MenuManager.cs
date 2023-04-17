@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour
     public void NewGame()
     {
         
-        SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
+        SceneManager.LoadScene("NewPlayingScene", LoadSceneMode.Single);
     }
 
     public void ExitGame()
@@ -58,7 +58,7 @@ public class MenuManager : MonoBehaviour
     {
         NewOrLoad.isLoad = true;
         Debug.Log("set to true");
-        SceneManager.LoadScene("Blockout", LoadSceneMode.Single);
+        SceneManager.LoadScene("NewPlayingScene", LoadSceneMode.Single);
         //_loadGameState.Load();
     }
     
