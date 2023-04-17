@@ -40,8 +40,9 @@ public class ZoneManager : MonoBehaviour
              *          turn on the camera for projector room
              *          set bool to true
              */
-            case "Teddy" when !_spokeToTed:
+            case "TedGrizzly" when !_spokeToTed:
                 _driveInCam.SwitchableCameras[1].gameObject.SetActive(true);
+                _driveInCam.SwitchableCameras[1].GetComponent<CameraSwitch>().SwitchableCameras[0].gameObject.SetActive(true);
                 _spokeToTed = true;
                 break;
         }

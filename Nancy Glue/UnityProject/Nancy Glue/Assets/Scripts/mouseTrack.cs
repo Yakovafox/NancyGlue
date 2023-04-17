@@ -19,17 +19,19 @@ public class mouseTrack : MonoBehaviour
 
     private bool UIOpen;
     public GameObject canvas;
+    [SerializeField] private OpenCloseUI _uiScript;
     [Range(5,6)][SerializeField]private float _range;
     [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private DialogueSystem _dialogueSystemScript;
 
     [SerializeField] private Image _cursor;
-    [SerializeField] private List<Sprite> _sprites;
+    [SerializeField] private List<Texture2D> _sprites;
     [SerializeField] private ZoneManager _zoneManager;
     [SerializeField] private Tooltip _toolTip;
     [SerializeField] private SuspectPage _suspects;
     private void Awake()
     {
+        _uiScript = FindObjectOfType<OpenCloseUI>();
         _zoneManager = FindObjectOfType<ZoneManager>();
         _dialogueBox = GameObject.Find("DialogueBox");
         _dialogueSystemScript = FindObjectOfType<DialogueSystem>();
@@ -48,11 +50,11 @@ public class mouseTrack : MonoBehaviour
 
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        CursorChange(ray);
-
+        UIOpen = _uiScript.IsOpen;
         if (Input.GetMouseButtonDown(0))
         {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
             if (UIOpen) return;
             if (DialogueOpenCheck()) return;
 
@@ -139,23 +141,33 @@ public class mouseTrack : MonoBehaviour
         BackToRootCamera();
     }
 
+    private void FixedUpdate()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        CursorChange(ray);
+    }
+
     private void CursorChange(Ray ray)
     {
         _cursor.transform.position = Input.mousePosition;
-
         if (!Physics.Raycast(ray, out var hitData, _range))
         {
-            _cursor.sprite = _sprites[0];
+            Cursor.SetCursor(_sprites[0],Vector2.zero,CursorMode.ForceSoftware);
             return;
         }
-
         switch (hitData.transform.tag)
         {
-            case "Finish":
-                _cursor.sprite = _sprites[1];
+            case "Finish" when !UIOpen || !DialogueOpenCheck():
+                Cursor.SetCursor(_sprites[1], Vector2.zero, CursorMode.ForceSoftware);
                 break;
-            case "NPC":
-                _cursor.sprite = _sprites[2];
+            case "NPC" when !UIOpen || !DialogueOpenCheck():
+                Cursor.SetCursor(_sprites[2], Vector2.zero, CursorMode.ForceSoftware);
+                break;
+            case "Evidence" when !UIOpen || !DialogueOpenCheck():
+                Cursor.SetCursor(_sprites[3], Vector2.zero, CursorMode.ForceSoftware);
+                break;
+            default:
+                Cursor.SetCursor(_sprites[0],Vector2.zero, CursorMode.ForceSoftware);
                 break;
         }
     }
@@ -173,13 +185,19 @@ public class mouseTrack : MonoBehaviour
         }
     }
 
-    private void SwitchToBranchCamera(Transform hitData)
+    private void SwitchToBranchCamera(Transform newCam)
     {
-        var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
-        var oldCamParent = GameObject.Find(oldCamName).transform.parent;
-        if (!oldCamParent.GetComponent<CameraSwitch>().CanSwitch) return;
-        oldCamParent.GetComponent<CameraSwitch>().SwitchActiveCam();
-        hitData.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
+        var currentCameraName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+        Debug.Log(currentCameraName);
+        var currentCameraParent = GameObject.Find(currentCameraName).transform.parent;
+        Debug.Log(currentCameraParent.transform);
+        if (!currentCameraParent.GetComponent<CameraSwitch>().CanSwitch) return;
+        foreach (var branch in currentCameraParent.GetComponent<CameraSwitch>().SwitchableCameras)
+        {
+            if (newCam != branch) continue;
+            currentCameraParent.GetComponent<CameraSwitch>().SwitchActiveCam();
+            newCam.transform.GetComponent<CameraSwitch>().SwitchActiveCam();
+        }
     }
 
     private bool DialogueOpenCheck()
