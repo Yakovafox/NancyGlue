@@ -29,12 +29,15 @@ public class SaveLoadSettings : MonoBehaviour
     public void save()
     {
         PlayerPrefs.SetInt("sfxVolume", sfxVolume);
+        Debug.Log("sfx vol to save to file "+ sfxVolume);
         PlayerPrefs.SetInt("musicVolume",musicVolume);
+        Debug.Log("Music vol to save to file " + musicVolume);
         PlayerPrefs.SetString("fontColour", ColorUtility.ToHtmlStringRGB(fontColour));
         PlayerPrefs.SetInt("fontStyle", fontStyle);
         PlayerPrefs.SetString("backgroundColour", ColorUtility.ToHtmlStringRGB(backgroundColour));
         PlayerPrefs.SetInt("isBackgroundEnabled",isBackgroundEnabled);
         PlayerPrefs.SetInt("sensitivity", sensitivity);
+        Debug.Log("sens to file "+sensitivity);
         PlayerPrefs.Save();
         Debug.Log("saved settings");//write path later
     }
@@ -64,5 +67,11 @@ public class SaveLoadSettings : MonoBehaviour
 
 
     }
-
+    public void defaultSettings()
+    {
+        //revert to default settings
+        sfxVolume = 50;
+        musicVolume = 50;
+        sensitivity = 0; 
+    }
 }

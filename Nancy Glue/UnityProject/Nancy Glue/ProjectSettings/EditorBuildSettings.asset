@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: e66953519890378409d2383593d6fac8
   - enabled: 1
+    path: Assets/Scenes/NewPlayingScene.unity
+    guid: 30dd295321ce37547ab1f793dea3586f
+  - enabled: 0
     path: Assets/Scenes/Blockout.unity
     guid: 603db2cdbac302a4c878e9a03d8f83f6
   m_configObjects: {}
