@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
     {
         foreach(var npc in _npcScripts)
         {
-            if(npc.gameObject.name == "Teddy")
+            if(npc.gameObject.name == "TedGrizzly")
             {
                 if(npc.canBeQuestioned)
                 {
@@ -210,7 +210,7 @@ public class GameManager : MonoBehaviour
     }
     private void SetupGrizzlyInt()
     {
-        var Teddy = GameObject.Find("Teddy").transform;
+        var Teddy = GameObject.Find("TedGrizzly").transform;
         var InterrogationSeat = GameObject.Find("SeatLocation").transform;
         Teddy.transform.position = InterrogationSeat.position;
         Teddy.transform.eulerAngles = new Vector3(Teddy.eulerAngles.x, InterrogationSeat.eulerAngles.y, Teddy.eulerAngles.z);

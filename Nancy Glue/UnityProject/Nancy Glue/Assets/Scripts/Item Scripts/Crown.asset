@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemID: 1
   _title: Crown
-  _description: A gold crown. There's something scratched on the inside.
+  _description: A Crown, But why is there a photo of the owner?
   _icon: {fileID: 21300000, guid: dfdcdee9ca5778346b715a65e250c0ca, type: 3}

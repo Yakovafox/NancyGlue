@@ -90,13 +90,11 @@ public class CameraMovement : MonoBehaviour
                 ForwardBackTrack();
                 RotateLeftRight();
                 break;
-            case false:
+            default:
                 RotateLeftRight();
                 RotateUpDown();
                 break;
         }
-        RotateLeftRight();
-        RotateUpDown();
     }
 
     private float SetOffset(float offset, float modifier) //input camera offset, used with Cinemachine composer for camera's with a look at target.
@@ -132,13 +130,13 @@ public class CameraMovement : MonoBehaviour
     {
         if (_lookUp && !_lookDown)
         {
-            _dollyCurrent -= 1 * Time.deltaTime;
+            _dollyCurrent += 1 * Time.deltaTime;
             _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
             _dollyCam.m_PathPosition = _dollyCurrent;
         }
         else if (!_lookUp && _lookDown)
         {
-            _dollyCurrent += 1 * Time.deltaTime;
+            _dollyCurrent -= 1 * Time.deltaTime;
             _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
             _dollyCam.m_PathPosition = _dollyCurrent;
         }

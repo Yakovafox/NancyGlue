@@ -42,8 +42,10 @@ public class NPCTracker : MonoBehaviour
     public int dialogueIterator = 0;
     public int interregationIterator = 0;
     public string attachedNPC = "";
-    [SerializeField] private List<string> notes { get; } = new List<string>();
-
+    
+    [SerializeField] private List<string> notes = new List<string>();
+    public List<string> Notes { get => notes; }
+    
     public void Reset()
     {
         dialogueIterator = 0;

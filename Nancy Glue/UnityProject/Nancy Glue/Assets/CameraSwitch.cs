@@ -51,4 +51,6 @@ public class CameraSwitch : MonoBehaviour
     {
         _returnTooltip.SetActive(!_isRoot); //Enable the tooltip if the camera is not a root camera.
     }
+
+
 }
