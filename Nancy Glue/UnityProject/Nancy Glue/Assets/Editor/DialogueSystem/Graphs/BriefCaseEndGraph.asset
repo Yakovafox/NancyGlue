@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: BriefCaseEndGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: BriefCaseEnd
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 63eba462-49e6-464f-95d5-1ba8d7854f57
+    <dialogueName>k__BackingField: WrongChoice
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Huh, mustnt be that...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d02cf865-6a26-46fe-85fc-f9220ece65ed
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2225.6, y: 811.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: a4511e2c-9cf5-4c48-9d5e-9b31a615224a
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Finally.. Another case solved!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d02cf865-6a26-46fe-85fc-f9220ece65ed
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1416, y: -268}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: d02cf865-6a26-46fe-85fc-f9220ece65ed
+    <dialogueName>k__BackingField: WhatNumber
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: Now what was the code?
+    <options>k__BackingField:
+    - <Text>k__BackingField: 1625
+      <NodeID>k__BackingField: 149d0ced-5ad1-456d-b685-d9527a5fc1c3
+    - <Text>k__BackingField: 1679
+      <NodeID>k__BackingField: 63eba462-49e6-464f-95d5-1ba8d7854f57
+    - <Text>k__BackingField: 6116
+      <NodeID>k__BackingField: 63eba462-49e6-464f-95d5-1ba8d7854f57
+    - <Text>k__BackingField: 1634
+      <NodeID>k__BackingField: 63eba462-49e6-464f-95d5-1ba8d7854f57
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 1
+    <position>k__BackingField: {x: 2203.2, y: -267.19998}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 149d0ced-5ad1-456d-b685-d9527a5fc1c3
+    <dialogueName>k__BackingField: CorrectChoice
+    <characterName>k__BackingField: NancyGlue
+    <text>k__BackingField: Hmmm... I think this...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 2f02abf6-d091-4917-9b75-fbe0a050b3d8
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3035.2, y: -242.40001}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 2f02abf6-d091-4917-9b75-fbe0a050b3d8
+    <dialogueName>k__BackingField: Click
+    <characterName>k__BackingField: Briefcase
+    <text>k__BackingField: '*CLICK*'
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 0317462c-4344-46ec-b863-f72ed02f343b
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3927.2, y: -249.6}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 0317462c-4344-46ec-b863-f72ed02f343b
+    <dialogueName>k__BackingField: BriefcaseOpen
+    <characterName>k__BackingField: Briefcase
+    <text>k__BackingField: '*THUNK*'
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 8dba0d84-713e-4b92-ad42-255da3f55ffd
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4769.6, y: -247.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 8dba0d84-713e-4b92-ad42-255da3f55ffd
+    <dialogueName>k__BackingField: GASP
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: '*GASP* ...'
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 0ca14582-f7b8-43f6-8419-424f576661b7
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5524.8, y: -244.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 0ca14582-f7b8-43f6-8419-424f576661b7
+    <dialogueName>k__BackingField: NotExpected
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Well, thats rather unexpected...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: c99a6400-d169-4e58-bf99-37766c98c0ec
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6288, y: -247.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: ced0cb83-c0c0-4be9-a9c6-b4f7dfdc45e3
+    <dialogueName>k__BackingField: Explaining
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: You have some explaining Anatoly, however I have solved
+      the mystery of the film reel.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 628baa35-eeb7-4f9c-883b-7d2facac00e6
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 7784.8, y: -244.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 628baa35-eeb7-4f9c-883b-7d2facac00e6
+    <dialogueName>k__BackingField: NotAsExpected
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Not as I had expected unfortunately. It seems the film
+      reel was stolen, again...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 9ef56a4a-66ed-4b15-9918-bd51a1101627
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8498.4, y: -246.40001}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 9ef56a4a-66ed-4b15-9918-bd51a1101627
+    <dialogueName>k__BackingField: ByWho
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: By who..?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 393fbe13-3dae-493c-ad69-8ca4e68d0677
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 9196.8, y: -247.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 393fbe13-3dae-493c-ad69-8ca4e68d0677
+    <dialogueName>k__BackingField: MilkyTheMartian
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: ... Milky The Martian!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 9961.6, y: -252.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c99a6400-d169-4e58-bf99-37766c98c0ec
+    <dialogueName>k__BackingField: AnatolyIntroduction
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: What? Is rather unexpected? You here!?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ced0cb83-c0c0-4be9-a9c6-b4f7dfdc45e3
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 7080, y: -244.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Anatoly_sprite_B
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - WrongChoice
+  - Start
+  - WhatNumber
+  - CorrectChoice
+  - Click
+  - BriefcaseOpen
+  - GASP
+  - NotExpected
+  - Explaining
+  - NotAsExpected
+  - ByWho
+  - MilkyTheMartian
+  - AnatolyIntroduction
+  <oldGroupedNames>k__BackingField:
+    list: []

@@ -18,8 +18,7 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ed59edfbd2908454b98be585b21ce50d, type: 2}
-  <dialogueText>k__BackingField: I wanted the day off work, so I took the film reel
-    out of the projector, I cut my stitching on a sharp corner.
+  <dialogueText>k__BackingField: Im embarrased, but I passed out from fluff loss...
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

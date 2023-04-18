@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
+  m_Name: FinMonAIntrodction
+  m_EditorClassIdentifier: 
+  <dialogueName>k__BackingField: FinMonAIntrodction
+  <characterName>k__BackingField: Finger Monster A
+  <dialogueType>k__BackingField: 1
+  <dialogueChoices>k__BackingField:
+  - <text>k__BackingField: Uhm...
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60794545781f4b74ba1ec1d0f1bcc5fb, type: 2}
+  - <text>k__BackingField: Can anyone translate?
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60794545781f4b74ba1ec1d0f1bcc5fb, type: 2}
+  - <text>k__BackingField: I have no idea what you said, sorry
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60794545781f4b74ba1ec1d0f1bcc5fb, type: 2}
+  <dialogueText>k__BackingField: pkodaji esyguf ben WKPDETH ODIAEF NIS;BHUE SGID
+    !!!!!!
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <isStartingDialogue>k__BackingField: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: NancyInternalDialogue
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: NancyInternalDialogue
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: e4299fa03eddbfd49be156348dcf6801, type: 2}
+  - {fileID: 11400000, guid: 0dbc73b111b241f43b8be3031329379d, type: 2}
+  - {fileID: 11400000, guid: 7e53647cb57a4334cb05ba3a791dd3d6, type: 2}
+  - {fileID: 11400000, guid: 6c58d82d81ccf1041b24d5ad8659fd10, type: 2}
+  - {fileID: 11400000, guid: 6c58d82d81ccf1041b24d5ad8659fd10, type: 2}
+  - {fileID: 11400000, guid: 2b4f459b3ad69d74cb38da86c353c761, type: 2}
+  - {fileID: 11400000, guid: 6c46d5343f02aa544baef6015582d33e, type: 2}
+  - {fileID: 11400000, guid: 447f6530bc80cbd4183c8706f6db4c3e, type: 2}
+  - {fileID: 11400000, guid: e03397d592da3b648acaee705f75b4fc, type: 2}
