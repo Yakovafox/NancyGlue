@@ -6,13 +6,9 @@ using UnityEngine;
 
 public class NPCTracker : MonoBehaviour
 {
-
-    
     public enum ProgressTriggers
     {
         talking,
-        evidence,
-        sceneChange,
         END
     }
 
@@ -21,12 +17,19 @@ public class NPCTracker : MonoBehaviour
     {
         public DialogueContainerSO Container;
         public ProgressTriggers Trigger;
-        public GameObject EvidenceRequired;
+    }
+
+    [Serializable]
+    public struct InterrigationInformation
+    {
+        public DialogueContainerSO Container;
+        public ItemScriptableObject[] EvidenceRequired;
+        public int ProgressTo;
     }
 
     // Tracking
-    [SerializeField] private List<DialogueInformation> Dialogues=new List<DialogueInformation>();
-    [SerializeField] private int CanQuestionAt;
+    [SerializeField] private List<DialogueInformation> Dialogues = new List<DialogueInformation>();
+    [SerializeField] private List<InterrigationInformation> Interrigations = new List<InterrigationInformation>();
     [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
@@ -37,19 +40,12 @@ public class NPCTracker : MonoBehaviour
 
     // Saved
     public int dialogueIterator = 0;
+    public int interregationIterator = 0;
     public string attachedNPC = "";
+    
     [SerializeField] private List<string> notes = new List<string>();
     public List<string> Notes { get => notes; }
-
-    private void Awake()
-    {
-        if (dialogueIterator >= CanQuestionAt)
-        {
-            canBeQuestioned = true;
-        }
-
-    }
-
+    
     public void Reset()
     {
         dialogueIterator = 0;
@@ -60,32 +56,26 @@ public class NPCTracker : MonoBehaviour
     {
         if (Dialogues[dialogueIterator].Trigger == trigger)
         {
-            if (trigger == ProgressTriggers.evidence)
-            {
-                ItemData[] itemsArray = (ItemData[]) FindSceneObjectsOfType(typeof(ItemData));
+            dialogueIterator++;
+        }
+    }
 
-                bool itemCollected = true;
-                foreach (ItemData item in itemsArray)
-                {
-                    Debug.Log("Searching items");
-                    if (item.transform.gameObject == Dialogues[dialogueIterator].EvidenceRequired) itemCollected = false;
-                }
+    public void EvidenceCheck()
+    {
+        ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
-                if (itemCollected) dialogueIterator++;
-            }
-            else
+        bool itemCollected = true;
+        for (int i = 0; i < Interrigations[interregationIterator].EvidenceRequired.Length; i++)
+        { 
+            foreach (ItemData item in itemsArray)
             {
-                if (Dialogues[dialogueIterator].Trigger == trigger)
-                {
-                    dialogueIterator++;
-                }
+                var itemId = item.EvidenceItem.ItemID;
+                Debug.Log("Searching items");
+                if (itemId == Interrigations[interregationIterator].EvidenceRequired[i].ItemID) itemCollected = false;
             }
         }
 
-        if (dialogueIterator == CanQuestionAt)
-        {
-            canBeQuestioned = true;
-        }
+        if (itemCollected) canBeQuestioned = true;
     }
 
     public void AddNote(string note)
@@ -105,10 +95,7 @@ public class NPCTracker : MonoBehaviour
         else
         {
             Debug.Log("NPC not found in dataSet");
-
-
         }
-
     }
 
     public DialogueContainerSO GetCurrentContainer()
@@ -116,14 +103,8 @@ public class NPCTracker : MonoBehaviour
         return Dialogues[dialogueIterator].Container;
     }
 
-
-    public void OnSaveGame()
+    public DialogueContainerSO GetCurrentInterContainer()
     {
-        //NPCsaveData.diaData.Add(attachedNPC, dialogueIterator);
-
-
+        return Interrigations[interregationIterator].Container;
     }
-
-
-
 }

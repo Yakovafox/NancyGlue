@@ -78,7 +78,7 @@ public class mouseTrack : MonoBehaviour
                         break;
                     case ("NPC"):
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
-                        tracker.ProgressDialogue(NPCTracker.ProgressTriggers.evidence);
+                        tracker.EvidenceCheck();
                         _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
                         if (!tracker.SpokenTo)
