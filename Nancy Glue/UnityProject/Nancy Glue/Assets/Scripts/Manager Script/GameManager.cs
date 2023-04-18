@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] public GameState _gameState;
-    [SerializeField] private npcScript[] _npcScripts;
+    [SerializeField] private NPCTracker[] _npcScripts;
     [SerializeField] private NPCTracker _AnatolyTracker;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
 #endif
-        _npcScripts = FindObjectsOfType<npcScript>();
+        _npcScripts = FindObjectsOfType<NPCTracker>();
         _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
         {
             if(npc.gameObject.name == "Teddy")
             {
-                if(npc.CanBeQuestioned)
+                if(npc.canBeQuestioned)
                 {
                     _zoneManager.ConfrontedTed = true;
                     var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
@@ -242,7 +242,7 @@ public class GameManager : MonoBehaviour
         foreach(var npc in _npcScripts)
         {
             Debug.Log(npc.name);
-            npc.EvidenceCheck(inv);
+            //npc.EvidenceCheck(inv);
         }
     }
 
