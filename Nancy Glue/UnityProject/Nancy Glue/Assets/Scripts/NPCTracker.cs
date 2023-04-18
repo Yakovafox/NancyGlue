@@ -20,7 +20,7 @@ public class NPCTracker : MonoBehaviour
     }
 
     [Serializable]
-    public struct InterrigationInformation
+    public struct InterrogationInformation
     {
         public DialogueContainerSO Container;
         public ItemScriptableObject[] EvidenceRequired;
@@ -29,7 +29,7 @@ public class NPCTracker : MonoBehaviour
 
     // Tracking
     [SerializeField] private List<DialogueInformation> Dialogues = new List<DialogueInformation>();
-    [SerializeField] private List<InterrigationInformation> Interrigations = new List<InterrigationInformation>();
+    [SerializeField] private List<InterrogationInformation> Interrogations = new List<InterrogationInformation>();
     public bool canBeQuestioned;
 
     [field: Header("Data For UI")]
@@ -39,7 +39,7 @@ public class NPCTracker : MonoBehaviour
 
     // Saved
     public int dialogueIterator = 0;
-    public int interregationIterator = 0;
+    public int interrogationIterator = 0;
     public string attachedNPC = "";
     
     [SerializeField] private List<string> notes = new List<string>();
@@ -64,13 +64,13 @@ public class NPCTracker : MonoBehaviour
         ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
         bool itemCollected = true;
-        for (int i = 0; i < Interrigations[interregationIterator].EvidenceRequired.Length; i++)
+        for (int i = 0; i < Interrogations[interrogationIterator].EvidenceRequired.Length; i++)
         { 
             foreach (ItemData item in itemsArray)
             {
                 var itemId = item.EvidenceItem.ItemID;
                 Debug.Log("Searching items");
-                if (itemId == Interrigations[interregationIterator].EvidenceRequired[i].ItemID) itemCollected = false;
+                if (itemId == Interrogations[interrogationIterator].EvidenceRequired[i].ItemID) itemCollected = false;
             }
         }
 
@@ -104,6 +104,6 @@ public class NPCTracker : MonoBehaviour
 
     public DialogueContainerSO GetCurrentInterContainer()
     {
-        return Interrigations[interregationIterator].Container;
+        return Interrogations[interrogationIterator].Container;
     }
 }

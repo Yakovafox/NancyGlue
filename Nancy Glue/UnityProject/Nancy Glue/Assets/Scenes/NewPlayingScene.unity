@@ -45183,17 +45183,15 @@ MonoBehaviour:
   Dialogues:
   - Container: {fileID: 11400000, guid: 29d03d80a10412c428f273e8532e8839, type: 2}
     Trigger: 0
-    EvidenceRequired: {fileID: 0}
   - Container: {fileID: 11400000, guid: 4948e3e9bacb4544fbbdefd938dd2228, type: 2}
     Trigger: 3
-    EvidenceRequired: {fileID: 0}
-  CanQuestionAt: 0
-  npcScripts: []
+  Interrigations: []
   canBeQuestioned: 0
   <CharName>k__BackingField: 
   <SpokenTo>k__BackingField: 0
   <CharacterSprite>k__BackingField: {fileID: 0}
   dialogueIterator: 0
+  interregationIterator: 0
   attachedNPC: AnatolyDialogue
   notes: []
 --- !u!1 &1207487497
@@ -51703,6 +51701,14 @@ PrefabInstance:
       value: TedGrizzly
       objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Interrigations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[1].Trigger
       value: 1
       objectReference: {fileID: 0}
@@ -51715,6 +51721,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 18e751bd51ae47a43891d75babd2725e, type: 2}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Interrigations.Array.data[0].Container
+      value: 
+      objectReference: {fileID: 11400000, guid: 18e751bd51ae47a43891d75babd2725e, type: 2}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Interrigations.Array.data[0].ProgressTo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[1].EvidenceRequired
       value: 
       objectReference: {fileID: 1280193977}
@@ -51722,6 +51736,14 @@ PrefabInstance:
       propertyPath: Dialogues.Array.data[2].EvidenceRequired
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Interrigations.Array.data[0].EvidenceRequired.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Interrigations.Array.data[0].EvidenceRequired.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 25af4c5111781b244a0d1738bb2e93da, type: 2}
     - target: {fileID: 5186491372779563868, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -52700,14 +52722,13 @@ MonoBehaviour:
   Dialogues:
   - Container: {fileID: 11400000, guid: 50d59641bb9435b418a554a8043acb6c, type: 2}
     Trigger: 3
-    EvidenceRequired: {fileID: 0}
-  CanQuestionAt: 0
-  npcScripts: []
+  Interrigations: []
   canBeQuestioned: 0
   <CharName>k__BackingField: 
   <SpokenTo>k__BackingField: 0
   <CharacterSprite>k__BackingField: {fileID: 0}
   dialogueIterator: 0
+  interregationIterator: 0
   attachedNPC: Car
   notes: []
 --- !u!1001 &1278857958
@@ -97783,20 +97804,17 @@ MonoBehaviour:
   Dialogues:
   - Container: {fileID: 11400000, guid: 90ed75603c84a2644be4c37eaa6595a5, type: 2}
     Trigger: 0
-    EvidenceRequired: {fileID: 0}
   - Container: {fileID: 11400000, guid: b2237136ab20da944ae3a9819ada9d09, type: 2}
     Trigger: 0
-    EvidenceRequired: {fileID: 0}
   - Container: {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
     Trigger: 1
-    EvidenceRequired: {fileID: 0}
-  CanQuestionAt: 2
-  npcScripts: []
+  Interrigations: []
   canBeQuestioned: 0
   <CharName>k__BackingField: Ted Grizzly
   <SpokenTo>k__BackingField: 0
   <CharacterSprite>k__BackingField: {fileID: 21300000, guid: 70a7171062a1ed844acbb2f62a061f6e, type: 3}
   dialogueIterator: 0
+  interregationIterator: 0
   attachedNPC: Teddy
   notes: []
 --- !u!1 &2054548864

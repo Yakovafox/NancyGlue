@@ -57,7 +57,8 @@ public class SaveLoadGameState : MonoBehaviour
         save.SavedCameraName = CameraTracker.CameraName;
         Debug.Log("attempting to save dialogue data");
         //NPCTrack.OnSaveGame();
-        int[] tempIterators=new int[NPCTrackers.Length];
+        int[] tempDiaIterators=new int[NPCTrackers.Length];
+        int[] tempIntIterators=new int[NPCTrackers.Length];
         string[] tempNames = new string[NPCTrackers.Length];
 
         
@@ -66,13 +67,15 @@ public class SaveLoadGameState : MonoBehaviour
             
             Debug.Log(NPCTrackers[i].attachedNPC);
             Debug.Log(NPCTrackers[i].dialogueIterator);
-            tempIterators[i] = NPCTrackers[i].dialogueIterator;
+            tempDiaIterators[i] = NPCTrackers[i].dialogueIterator;
+            tempIntIterators[i] = NPCTrackers[i].dialogueIterator;
             tempNames[i] = NPCTrackers[i].attachedNPC;
 
 
         }
 
-        save.dialogueIteratorsToSave = tempIterators;
+        save.dialogueDiaIteratorsToSave = tempDiaIterators;
+        save.dialogueIntIteratorsToSave = tempIntIterators;
         save.NPCnames = tempNames;
         save.gameStage = (int)gameManager._gameState;
 
@@ -99,7 +102,8 @@ public class SaveLoadGameState : MonoBehaviour
             //load dialogue data
             for (int i = 0; i < NPCTrackers.Length; i++)
             {
-                NPCTrackers[i].onLoadGame(save.NPCnames[i], save.dialogueIteratorsToSave[i]);
+                NPCTrackers[i].onLoadGame(save.NPCnames[i], save.dialogueDiaIteratorsToSave[i]);
+                NPCTrackers[i].onLoadGame(save.NPCnames[i], save.dialogueIntIteratorsToSave[i]);
             }
 
             //load game state
