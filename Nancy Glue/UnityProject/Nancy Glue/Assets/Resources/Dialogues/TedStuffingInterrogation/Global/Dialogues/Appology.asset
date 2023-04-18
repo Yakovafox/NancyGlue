@@ -18,8 +18,8 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6f9e115534cf6a84a882179179be24a1, type: 2}
-  <dialogueText>k__BackingField: I know I did wrong, Im really sorry Nancy... Could
-    you get it for me please, im scared of the dark...
+  <dialogueText>k__BackingField: It's not probably related and I was feeling woozy
+    but could be related.
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

@@ -18,7 +18,8 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: If you retrieve it ill put it back on. I promise!
+  <dialogueText>k__BackingField: I wasn't gonna report it, it's an extra day off
+    for me!
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
