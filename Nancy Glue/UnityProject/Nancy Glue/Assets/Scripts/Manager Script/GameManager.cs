@@ -214,7 +214,7 @@ public class GameManager : MonoBehaviour
         var InterrogationSeat = GameObject.Find("SeatLocation").transform;
         Teddy.transform.position = InterrogationSeat.position;
         Teddy.transform.eulerAngles = new Vector3(Teddy.eulerAngles.x, InterrogationSeat.eulerAngles.y, Teddy.eulerAngles.z);
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<npcScript>().DialogueContainers[2]));
+        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<NPCTracker>().GetCurrentInterContainer()));
     }
 
     private void SetupDriveIn2()

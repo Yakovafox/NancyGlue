@@ -47,6 +47,34 @@ namespace Dialogue
         private Color fadeColor = new Color(110f / 255f, 110f / 255f, 110f / 255f);
         private Color focusColor = new Color(255f / 255f, 255f / 255f, 255f / 255f);
 
+        private void Awake()
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                // Set up buttons
+                if (i == 0)
+                {
+                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(0); });
+                }
+                else if (i == 1)
+                {
+                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(1); });
+                }
+                else if (i == 2)
+                {
+                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(2); });
+                }
+                else if (i == 3)
+                {
+                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(3); });
+                }
+                else if (i == 4)
+                {
+                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
+                }
+            }
+        }
+
         private void ShowText()
         {
             if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
@@ -87,27 +115,6 @@ namespace Dialogue
                         buttons[i].image.enabled = true;
                         buttons[i].GetComponentInChildren<TMP_Text>().enabled = true;
                         buttons[i].GetComponentInChildren<TMP_Text>().text = $"{i + 1}. " + currentDialogue.dialogueChoices[i].text;
-
-                        if (i == 0)
-                        {
-                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(0); });
-                        }
-                        else if (i == 1)
-                        {
-                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(1); });
-                        }
-                        else if (i == 2)
-                        {
-                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(2); });
-                        }
-                        else if (i == 3)
-                        {
-                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(3); });
-                        }
-                        else if (i == 4)
-                        {
-                            buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
-                        }
                     }
                     catch
                     {
@@ -148,7 +155,6 @@ namespace Dialogue
                 }
             }
 
-            Debug.Log(choiceIndex);
             DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
             if (nextDialogue == null)
