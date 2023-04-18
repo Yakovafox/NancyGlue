@@ -30,7 +30,6 @@ public class NPCTracker : MonoBehaviour
     // Tracking
     [SerializeField] private List<DialogueInformation> Dialogues = new List<DialogueInformation>();
     [SerializeField] private List<InterrigationInformation> Interrigations = new List<InterrigationInformation>();
-    [SerializeField] private npcScript[] npcScripts;
     public bool canBeQuestioned;
 
     [field: Header("Data For UI")]
