@@ -88,6 +88,7 @@ public class mouseTrack : MonoBehaviour
                             var Suspect = Instantiate(_suspects.SuspectPrefab, _suspects.transform.GetChild(0));
                             Suspect.GetComponent<SuspectMugshot>().SetData(tracker.CharName,tracker.CharacterSprite);
                             Suspect.name = Suspect.GetComponent<SuspectMugshot>().Name;
+                            Suspect.GetComponent<SuspectMugshot>()._npcTracker = tracker;
                             tracker.SpokenTo = true;
                         }
                         var text = FindObjectOfType<FontManager>();
