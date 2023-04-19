@@ -47,10 +47,8 @@ public class GameManager1 : MonoBehaviour
 
 #if UNITY_EDITOR
         Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
 #else
         Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = false;
 #endif
         _npcTrackers = FindObjectsOfType<NPCTracker>();
         _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
@@ -262,7 +260,7 @@ public class GameManager1 : MonoBehaviour
             _gameState = GameState.Intro;
         }
         // Drive In
-        if (stateTracker[1] == 0)
+        else if (stateTracker[1] == 0)
         {
             if (stateTracker[0] == 1)
             {
