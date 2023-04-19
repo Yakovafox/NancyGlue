@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
                 IntroductionUpdate();
                 break;
             case GameState.DriveInInvestigation:
-                DriveInUpdate1();
+                //DriveInUpdate1();
                 break;
             case GameState.GrizzlyInterrogation:
                 GrizzlyInterrogation();
@@ -186,7 +186,7 @@ public class GameManager : MonoBehaviour
     {
 
         if (_introStarted) return;
-        _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer());
+        _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer(), _AnatolyTracker);
         /*
          for (var i = 0; i < _npcScripts.Length; i++)
         {
@@ -214,7 +214,7 @@ public class GameManager : MonoBehaviour
         var InterrogationSeat = GameObject.Find("SeatLocation").transform;
         Teddy.transform.position = InterrogationSeat.position;
         Teddy.transform.eulerAngles = new Vector3(Teddy.eulerAngles.x, InterrogationSeat.eulerAngles.y, Teddy.eulerAngles.z);
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<NPCTracker>().GetCurrentInterContainer()));
+        //_zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<NPCTracker>().GetCurrentInterContainer()));
     }
 
     private void SetupDriveIn2()
@@ -227,7 +227,7 @@ public class GameManager : MonoBehaviour
     private void SetupReelFound()
     {
         _AnatolyTracker.dialogueIterator++;
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(_AnatolyTracker.GetCurrentContainer()));
+        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(_AnatolyTracker.GetCurrentContainer(), _AnatolyTracker));
     }
 
     private void StateSwitch(GameState gameState, CameraSwitch oldCam, CameraSwitch newCam)
@@ -252,10 +252,10 @@ public class GameManager : MonoBehaviour
             ReelFound = true;
     }
 
-    IEnumerator DialogueStartup(DialogueContainerSO dialogueContainer)
+    IEnumerator DialogueStartup(DialogueContainerSO dialogueContainer, NPCTracker tracker)
     {
         yield return new WaitForSeconds(3f);
-        _dialogueSystem.SetContainer(dialogueContainer);
+        _dialogueSystem.SetContainer(dialogueContainer, tracker);
         InterogationFinished = true;
     }
 
