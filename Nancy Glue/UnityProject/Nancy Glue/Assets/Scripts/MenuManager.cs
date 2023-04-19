@@ -23,6 +23,13 @@ public class MenuManager : MonoBehaviour
         _settingsMenu = GameObject.Find("SettingsMenu");
         SLS= FindObjectOfType<SaveLoadSettings>();
         FS = FindObjectOfType<FontScript>();
+
+        //settings temp 
+        tempSettingsLoader.musivVol = 50;
+        tempSettingsLoader.sens = 0;
+        tempSettingsLoader.sfxVol = 50;
+
+
     }
 
     private void Start()
