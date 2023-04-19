@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ZoneManager : MonoBehaviour
 {
+    [field: SerializeField] public CameraSwitch CurrentCamera { get; set; }
+
     [Header("Introduction")]
     [SerializeField] private CameraSwitch _officeCam;
     public CameraSwitch OfficeCam => _officeCam;

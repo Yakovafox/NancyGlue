@@ -38,6 +38,11 @@ public class CameraSwitch : MonoBehaviour
         _activeCam = !_activeCam;
         EnableDisableCam();
         EnableReturnTooltip();
+        if (_activeCam)
+        {
+            var zoneManager = FindObjectOfType<ZoneManager>();
+            zoneManager.CurrentCamera = this;
+        }
     }
 
     public void EnableDisableCam()

@@ -19,6 +19,7 @@ public class SuspectMugshot : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _detailNote2;
     [SerializeField] private TextMeshProUGUI _detailNote3;
     [SerializeField] private GameObject _interrogateButton; 
+    [SerializeField] private InterrogateButtonScript _interrogateButtonScript; 
 
     [field: SerializeField] public NPCTracker _npcTracker { get; set; }
 
@@ -29,6 +30,7 @@ public class SuspectMugshot : MonoBehaviour
         _detailMugshot = transform.parent.parent.parent.GetChild(0).GetChild(1);
         _detailPage = transform.parent.parent.parent.GetChild(0).gameObject; //this is gross and I hate myself
         _interrogateButton = _detailPage.transform.GetChild(3).gameObject;
+        _interrogateButtonScript = _interrogateButton.GetComponent<InterrogateButtonScript>();
 
         for (int i = 1; i < 4; i++)
         {
@@ -56,6 +58,7 @@ public class SuspectMugshot : MonoBehaviour
         if (_npcTracker.canBeQuestioned)
         {
             _interrogateButton.SetActive(true);
+            _interrogateButtonScript.SetNpc(_npcTracker);
         }
         else
         {
