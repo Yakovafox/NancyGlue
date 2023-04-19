@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9ce4f8cccc581b14195092cc71d0684a, type: 2}
   <dialogueText>k__BackingField: I have left the projector booth open for you to
     access. Please enjoy to your hearts content.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

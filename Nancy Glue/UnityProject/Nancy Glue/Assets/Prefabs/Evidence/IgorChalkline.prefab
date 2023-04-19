@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7906565202548825749}
   - component: {fileID: 607506922390331722}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ChalkBillboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 98f72a56a3a80214ea0f7c1cdaf001be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bd284b0ef54d5b4bb436a4a81457731, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,5 +114,5 @@ Transform:
   m_Children:
   - {fileID: 7906565202548825749}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

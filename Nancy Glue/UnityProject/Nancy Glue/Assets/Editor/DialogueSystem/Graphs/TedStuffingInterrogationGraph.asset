@@ -28,20 +28,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 29cb5d30-3206-43ee-bcd2-a6a4af466b30
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
-    <position>k__BackingField: {x: 2710.4, y: 622.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 29cb5d30-3206-43ee-bcd2-a6a4af466b30
-    <dialogueName>k__BackingField: WhereDidYouFindThat
-    <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: I, Uh, Where did you find that?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: be49f709-cc6c-4077-a516-cf846d399bd1
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3428.8, y: 1604}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 2710, y: 622}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 0f99a674-aca5-4a96-a8ec-fbfa4dbe625b
     <dialogueName>k__BackingField: YouCantProveItsMine
@@ -52,20 +40,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 8524b361-88f4-44db-9a00-46a26bec82a8
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4883.2, y: 1605.6}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: f8ad3a0e-e000-4729-a834-9b50bffc1be9
-    <dialogueName>k__BackingField: Confession
-    <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: Im embarrased, but I passed out from fluff loss...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6c10e5f0-84d7-4761-a9ea-f5040b9419c3
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 7184.8, y: 746.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4883, y: 1606}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 425f05ff-30c7-4a0f-931e-3da32aa54ff1
     <dialogueName>k__BackingField: Breadsticks
@@ -76,8 +52,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: f8ad3a0e-e000-4729-a834-9b50bffc1be9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6456.8, y: 748}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 6457, y: 748}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 16ef9718-9828-44ad-9a86-e88377dcfe3c
     <dialogueName>k__BackingField: Appology
@@ -89,8 +65,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 3c6e9a14-1fb1-4db6-9eeb-666c365c7c46
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8630.4, y: 749.60004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 8630, y: 750}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 03d685e3-732c-42fa-b4a9-f12bcbcac15b
     <dialogueName>k__BackingField: Confront
@@ -102,20 +78,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: dc375d3b-429b-4b00-886f-b0ede0270ccd
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3442.4, y: 665.60004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 8524b361-88f4-44db-9a00-46a26bec82a8
-    <dialogueName>k__BackingField: DontMakeMeDNATest
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Dont make me run a DNA test on it...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 425f05ff-30c7-4a0f-931e-3da32aa54ff1
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5578.4, y: 1604}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 3442, y: 666}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: b0e4f0a5-b977-462c-80ba-d00374f35da7
     <dialogueName>k__BackingField: IHaveItRightHere
@@ -127,8 +91,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 425f05ff-30c7-4a0f-931e-3da32aa54ff1
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4890.4, y: 664}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4890, y: 664}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: dc375d3b-429b-4b00-886f-b0ede0270ccd
     <dialogueName>k__BackingField: NoIdea
@@ -140,8 +104,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: b0e4f0a5-b977-462c-80ba-d00374f35da7
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4158.4, y: 666.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4158, y: 666}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: e3d3ea77-e068-4ec6-bae7-be93db1c0f9f
     <dialogueName>k__BackingField: CoolDown
@@ -152,8 +116,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: db18ca53-7c7f-465c-9d12-ff7435a52c2f
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4899.2, y: -284}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4899, y: -284}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: db18ca53-7c7f-465c-9d12-ff7435a52c2f
     <dialogueName>k__BackingField: HowDareYouStealThatCar
@@ -166,21 +130,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: e3d3ea77-e068-4ec6-bae7-be93db1c0f9f
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
-    <position>k__BackingField: {x: 4164, y: -285.59998}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 13c46b66-f002-4dd4-bea2-3db1ddba7217
-    <dialogueName>k__BackingField: Question
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: 'Why was your stuffing scattered and stuck all in the
-      projector?? '
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: db18ca53-7c7f-465c-9d12-ff7435a52c2f
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3435.2, y: -266.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4164, y: -286}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: be49f709-cc6c-4077-a516-cf846d399bd1
     <dialogueName>k__BackingField: SoTellMeWhy
@@ -192,20 +143,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 0f99a674-aca5-4a96-a8ec-fbfa4dbe625b
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4158.4, y: 1605.6}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: b2d4f6fe-af7f-40f9-a3ae-7a30578391b2
-    <dialogueName>k__BackingField: WhatNow
-    <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: So what is it now?!?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 1c0de79a-5924-4849-b1c4-3040f104c645
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1951.2, y: 647.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 4158, y: 1606}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 35bde5e9-786d-4799-bf8f-d61b4f8a5763
     <dialogueName>k__BackingField: DialogueName
@@ -216,8 +155,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: b2d4f6fe-af7f-40f9-a3ae-7a30578391b2
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1136.8, y: 646.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 1137, y: 646}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 6c10e5f0-84d7-4761-a9ea-f5040b9419c3
     <dialogueName>k__BackingField: WhatHappened
@@ -229,8 +168,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 16ef9718-9828-44ad-9a86-e88377dcfe3c
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 7910.4, y: 749.60004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 7910, y: 750}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 3c6e9a14-1fb1-4db6-9eeb-666c365c7c46
     <dialogueName>k__BackingField: MakeUp
@@ -241,28 +180,89 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 9361.6, y: 747.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 9362, y: 747}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: b2d4f6fe-af7f-40f9-a3ae-7a30578391b2
+    <dialogueName>k__BackingField: WhatNow
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: So what is it now?!?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 1c0de79a-5924-4849-b1c4-3040f104c645
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1951, y: 647}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 29cb5d30-3206-43ee-bcd2-a6a4af466b30
+    <dialogueName>k__BackingField: WhereDidYouFindThat
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: I, Uh, Where did you find that?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: be49f709-cc6c-4077-a516-cf846d399bd1
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3429, y: 1604}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 8524b361-88f4-44db-9a00-46a26bec82a8
+    <dialogueName>k__BackingField: DontMakeMeDNATest
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Dont make me run a DNA test on it...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 425f05ff-30c7-4a0f-931e-3da32aa54ff1
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5578, y: 1604}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: f8ad3a0e-e000-4729-a834-9b50bffc1be9
+    <dialogueName>k__BackingField: Confession
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Im embarrased, but I passed out from fluff loss...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6c10e5f0-84d7-4761-a9ea-f5040b9419c3
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 7185, y: 746}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 13c46b66-f002-4dd4-bea2-3db1ddba7217
+    <dialogueName>k__BackingField: Question
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: 'Why was your stuffing scattered and stuck all in the
+      projector?? '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: db18ca53-7c7f-465c-9d12-ff7435a52c2f
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3435, y: -266}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - DidYouFindItMultiChoice
-  - WhereDidYouFindThat
   - YouCantProveItsMine
-  - Confession
   - Breadsticks
   - Appology
   - Confront
-  - DontMakeMeDNATest
   - IHaveItRightHere
   - NoIdea
   - CoolDown
   - HowDareYouStealThatCar
-  - Question
   - SoTellMeWhy
-  - WhatNow
   - DialogueName
   - WhatHappened
   - MakeUp
+  - WhatNow
+  - WhereDidYouFindThat
+  - DontMakeMeDNATest
+  - Confession
+  - Question
   <oldGroupedNames>k__BackingField:
     list: []
