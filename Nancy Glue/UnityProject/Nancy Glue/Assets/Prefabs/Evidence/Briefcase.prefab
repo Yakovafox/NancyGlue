@@ -62,9 +62,11 @@ GameObject:
   - component: {fileID: 2797473178123704124}
   - component: {fileID: 2616020901405030633}
   - component: {fileID: 3320013991942675689}
+  - component: {fileID: 4091006218035925482}
+  - component: {fileID: 1600587508452336972}
   m_Layer: 0
   m_Name: BriefcaseBillboard
-  m_TagString: Untagged
+  m_TagString: Evidence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,3 +156,29 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+--- !u!114 &4091006218035925482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043052586208535475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4685acef9651674db106e7914834370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _evidenceItem: {fileID: 11400000, guid: 2a15598fa290a324fbe45d9ade2b1291, type: 2}
+--- !u!65 &1600587508452336972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3043052586208535475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.479998, y: 20.479998, z: 0.19999999}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0}
