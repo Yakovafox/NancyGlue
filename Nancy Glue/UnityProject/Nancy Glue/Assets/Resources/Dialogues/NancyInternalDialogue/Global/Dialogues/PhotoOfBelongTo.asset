@@ -17,9 +17,9 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6c58d82d81ccf1041b24d5ad8659fd10, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9541661eb47983e43b569663e01425c7, type: 2}
   <dialogueText>k__BackingField: Hmm... There appearsr to be a photo of who it belongs
     to.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Item_Crown
+  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Crown_with_photo
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

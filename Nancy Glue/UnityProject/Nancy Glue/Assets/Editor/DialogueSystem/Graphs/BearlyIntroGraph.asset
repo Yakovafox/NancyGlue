@@ -25,8 +25,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 58e307ee-5e71-43ad-ba88-88e8f0317548
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2692, y: 844.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 2692, y: 845}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: e469eea4-9732-4c79-ba00-07cd70565974
     <dialogueName>k__BackingField: MyNameIsTed
@@ -38,8 +38,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 365c1a8d-100f-47b5-a2d0-db3106fec48b
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2692, y: -89.600006}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 2692, y: -90}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: b70f93a8-43ce-4c4a-974a-a38eda30a183
     <dialogueName>k__BackingField: XToDoubt
@@ -50,8 +50,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 58e307ee-5e71-43ad-ba88-88e8f0317548
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2696, y: 1774.3999}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 2696, y: 1774}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 58e307ee-5e71-43ad-ba88-88e8f0317548
     <dialogueName>k__BackingField: MyNameIsTed2
@@ -64,7 +64,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 3436, y: 1288}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: b73eb55f-e9c2-417f-b7e8-55c5c5d246fc
     <dialogueName>k__BackingField: WhatYouWantChoice
@@ -80,8 +80,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: b70f93a8-43ce-4c4a-974a-a38eda30a183
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
-    <position>k__BackingField: {x: 1943.2, y: 779.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 1943, y: 779}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 9b8356c2-67a4-4818-b09a-d2af9d09ec49
     <dialogueName>k__BackingField: End
@@ -93,19 +93,19 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6260.8, y: 483.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 6261, y: 483}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 8bca8fe5-73d0-49b0-a022-4339e409e264
     <dialogueName>k__BackingField: UnderCouchLocal
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: 'New Location: Under the couch'
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: 'New Location: Projector Booth'
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 9b8356c2-67a4-4818-b09a-d2af9d09ec49
     <groupID>k__BackingField: 
     <type>k__BackingField: 3
-    <position>k__BackingField: {x: 5556.8, y: 489.6}
+    <position>k__BackingField: {x: 5557, y: 490}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 5496cf8e-6960-4e5e-b515-d2463de7d466
@@ -118,20 +118,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 8bca8fe5-73d0-49b0-a022-4339e409e264
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4897.6, y: 491.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 365c1a8d-100f-47b5-a2d0-db3106fec48b
-    <dialogueName>k__BackingField: TedPersonalityNote
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: Ted is rather grumpy and mean.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5496cf8e-6960-4e5e-b515-d2463de7d466
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 4142.4, y: 493.60004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 4898, y: 491}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 606b4765-4a5e-486d-b840-941d716c86e1
     <dialogueName>k__BackingField: Startled
@@ -142,8 +130,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: b73eb55f-e9c2-417f-b7e8-55c5c5d246fc
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1224, y: 803.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 1224, y: 803}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 2dd4389f-bac6-44f3-a3f1-d12e1eb6fec2
     <dialogueName>k__BackingField: Start
@@ -154,8 +142,20 @@ MonoBehaviour:
       <NodeID>k__BackingField: 606b4765-4a5e-486d-b840-941d716c86e1
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 440.8, y: 801.60004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+    <position>k__BackingField: {x: 441, y: 802}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 365c1a8d-100f-47b5-a2d0-db3106fec48b
+    <dialogueName>k__BackingField: TedPersonalityNote
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Ted is rather grumpy and mean.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 5496cf8e-6960-4e5e-b515-d2463de7d466
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 4142, y: 494}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
@@ -167,8 +167,8 @@ MonoBehaviour:
   - End
   - UnderCouchLocal
   - ProjectorBoothOpen
-  - TedPersonalityNote
   - Startled
   - Start
+  - TedPersonalityNote
   <oldGroupedNames>k__BackingField:
     list: []

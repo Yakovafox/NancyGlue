@@ -25,7 +25,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 4869, y: 494}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 8bde194d-0c89-4969-ac18-a586902f7fad
     <dialogueName>k__BackingField: TedDismissEnd
@@ -38,7 +38,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 5589, y: 498}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:

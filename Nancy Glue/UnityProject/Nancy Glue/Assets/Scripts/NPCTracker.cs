@@ -37,6 +37,8 @@ public class NPCTracker : MonoBehaviour
     [field: SerializeField] public bool SpokenTo { get; set; }
     [field: SerializeField] public Sprite CharacterSprite { get; private set; }
 
+    public Vector3 originalPosition;
+
     // Saved
     public int dialogueIterator = 0;
     public int interrogationIterator = 0;
@@ -44,7 +46,13 @@ public class NPCTracker : MonoBehaviour
     
     [SerializeField] private List<string> notes = new List<string>();
     public List<string> Notes { get => notes; }
-    
+
+    private void Awake()
+    {
+        originalPosition = transform.position;
+        attachedNPC = transform.name;
+    }
+
     public void Reset()
     {
         dialogueIterator = 0;
@@ -61,6 +69,8 @@ public class NPCTracker : MonoBehaviour
 
     public void EvidenceCheck()
     {
+        if (Interrogations.Count == 0) return;
+
         ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
         bool itemCollected = true;
@@ -104,6 +114,10 @@ public class NPCTracker : MonoBehaviour
 
     public DialogueContainerSO GetCurrentInterContainer()
     {
-        return Interrogations[interrogationIterator].Container;
+        int currentItterator = interrogationIterator;
+        interrogationIterator++;
+        dialogueIterator = Interrogations[currentItterator].ProgressTo;
+        canBeQuestioned = false;
+        return Interrogations[currentItterator].Container;
     }
 }

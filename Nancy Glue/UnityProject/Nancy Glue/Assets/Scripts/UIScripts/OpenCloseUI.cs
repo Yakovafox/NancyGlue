@@ -16,6 +16,8 @@ public class OpenCloseUI : MonoBehaviour
     [SerializeField] private GameObject _settingsUIPage;
     [SerializeField] private GameObject _blankPage;
     [SerializeField] private GameObject _dialogueUI;
+    [SerializeField] private GameObject _detailsPage;
+    [SerializeField] private GameObject _mugshotPage;
 
     private void Awake()
     {
@@ -92,6 +94,8 @@ public class OpenCloseUI : MonoBehaviour
         _suspectsUIPage.SetActive(true);
         _locationsUIPage.SetActive(true);
         _settingsUIPage.SetActive(true);
+        _detailsPage.SetActive(false);
+        _mugshotPage.SetActive(true);
         _blankPage.SetActive(true);
     }
 
