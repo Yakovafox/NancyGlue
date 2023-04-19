@@ -72,7 +72,7 @@ public class GameManager1 : MonoBehaviour
         {
             _gameState = GameState.Intro;
             IntroInit();
-            _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer());
+            _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer(), _AnatolyTracker);
             _zoneTransitionCoroutine = StartCoroutine(FadeTransition());
         }
         
@@ -163,13 +163,13 @@ public class GameManager1 : MonoBehaviour
 
     private void UnlockHiddenLairInit()
     {
-        // Unlock the alley camera
+        _zoneManager.AlleyCam.gameObject.SetActive(true);
         stateTracker[4] = 1;
     }
 
     private void FingerInterrogate1Init()
     {
-        // Unlock briefcase camera
+        _zoneManager.AlleyCam.SwitchableCameras[0].gameObject.SetActive(true);
         stateTracker[5] = 1;
     }
 
@@ -311,7 +311,11 @@ public class GameManager1 : MonoBehaviour
                 if (itemId == CrownReference.ItemID) itemCollected = false;
             }
 
-            if (itemCollected) _gameState = GameState.UnlockHiddenLiar;
+            if (itemCollected)
+            {
+                _dialogueSystem.SetContainer("NancyInternalDialogue");
+                _gameState = GameState.UnlockHiddenLiar;
+            }
         }
         // Finger Interrogation
         else if (stateTracker[5] == 0)
@@ -498,14 +502,15 @@ public class GameManager1 : MonoBehaviour
         if (title == "Film Reel")
             ReelFound = true;
     }*/
-
+    /*
     IEnumerator DialogueStartup(DialogueContainerSO dialogueContainer)
     {
         yield return new WaitForSeconds(3f);
-        _dialogueSystem.SetContainer(dialogueContainer);
+        _dialogueSystem.SetContainer(dialogueContainer, );
         InterogationFinished = true;
     }
-
+    */
+    /*
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
     {
         _animator.SetTrigger("FadeIn");
@@ -519,6 +524,7 @@ public class GameManager1 : MonoBehaviour
         }
         _animator.SetTrigger("FadeOut");
     }
+    */
 
     IEnumerator FadeTransition()
     {
