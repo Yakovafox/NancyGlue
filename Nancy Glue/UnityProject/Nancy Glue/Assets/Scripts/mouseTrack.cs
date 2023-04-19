@@ -111,38 +111,7 @@ public class mouseTrack : MonoBehaviour
                         break;
                 }
             }
-            if (inv.characterItems.Count == 4)
-            {
-                SceneManager.LoadScene("MenuScene");
-                //reset character items here
-                inv.resetInv();
-            }
         }
-
-        /*
-        if (Input.GetKeyUp(KeyCode.I))
-        {
-            if (DialogueOpenCheck()) return;
-            Debug.Log("Checking if inv open");
-            if (UIOpen)
-            {
-                Debug.Log("inv open - closing inv");
-                canvas.SetActive(false);
-                UIOpen = false;
-            }
-            else
-            {
-                Debug.Log("inv closed - openeing inv");
-                
-                
-                canvas.SetActive(true);
-                UIOpen = true;
-                var text = FindObjectOfType<FontManager>();
-                text.InitList();
-            }
-
-        }
-        */
         BackToRootCamera();
     }
 
@@ -179,6 +148,7 @@ public class mouseTrack : MonoBehaviour
 
     private void BackToRootCamera()
     {
+        if (UIOpen || DialogueOpenCheck()) return;
         if(Input.GetMouseButtonDown(1))
         {
             var oldCamName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
