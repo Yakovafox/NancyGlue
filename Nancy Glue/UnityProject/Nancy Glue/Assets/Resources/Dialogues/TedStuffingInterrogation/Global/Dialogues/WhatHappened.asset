@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 279aede29e6d82244b4d7b8f2e014968, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4644114843d00e64bba6f398bdc5ca4d, type: 2}
   <dialogueText>k__BackingField: I didnt see who took it however, I did see something
     dart behind the couch as I was waking up.
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: DialogueName
+  m_Name: ISuggestMovingAlong
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: DialogueName
-  <characterName>k__BackingField: Ted Grizzly
+  <dialogueName>k__BackingField: ISuggestMovingAlong
+  <characterName>k__BackingField: Finger Monster B
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 66755943d97d4504dadd77ae8fc09c2d, type: 2}
-  <dialogueText>k__BackingField: '*UGH* Finally, I''ve been waiting here for ages..'
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a4979e07c267e941b0dcae617fb7258, type: 2}
+  <dialogueText>k__BackingField: I suggest you make yourself scarce, Scram!
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_b_sitting
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  <isStartingDialogue>k__BackingField: 1
+  <isStartingDialogue>k__BackingField: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1218d8eb535f85b49a04c1d58d44a768, type: 2}
-  <dialogueText>k__BackingField: '[Presents Stuffing], Only it could Ted, I have
-    it right here...'
+  <dialogueText>k__BackingField: '[Presents Stuffing], I did find this on the projector
+    though, maybe you know what it is?'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 86f1e3dc80e05f14ab47fcbc9f1d1fec, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 31e6df07ab3c0ce4d89a63baf404155a, type: 2}
   <dialogueText>k__BackingField: .. We dont actually have a laywer, come to think
     of it.
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting

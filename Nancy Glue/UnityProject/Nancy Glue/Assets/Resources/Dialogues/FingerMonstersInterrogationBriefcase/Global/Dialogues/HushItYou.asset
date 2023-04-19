@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c98343ee5f17ced41bc2e413b2d9688d, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: Hush it you!
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3

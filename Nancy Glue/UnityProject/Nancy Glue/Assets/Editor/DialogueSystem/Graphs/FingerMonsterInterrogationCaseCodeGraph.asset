@@ -15,55 +15,6 @@ MonoBehaviour:
   <fileName>k__BackingField: FingerMonsterInterrogationCaseCode
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 6705a338-d0bc-4901-b78b-1db46c7db2f0
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: DWAHJ, DHDHLOIJ. Iadjk!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5170.4, y: -471.19998}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
-    <dialogueName>k__BackingField: ImBackGuys
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hey guys, Im back.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 7389.6, y: -464.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
-    <dialogueName>k__BackingField: IFoundYourBriefcase
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: I found your briefcase, yes your briefcase. I know you
-      lot stole it, you are oozing with suspicion.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8071.2, y: -466.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
-    <dialogueName>k__BackingField: IWontPlayGames
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: I wont play games, whats the code for the breifcase?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: ecddb6a0-a9e9-4947-9b09-290c0647be35
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8784.8, y: -463.19998}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: ecddb6a0-a9e9-4947-9b09-290c0647be35
     <dialogueName>k__BackingField: WeDontKnow
     <characterName>k__BackingField: Finger Monster B
@@ -75,8 +26,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 654904eb-61c9-4827-9a7b-41ad421fd09e
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
-    <position>k__BackingField: {x: 9496.8, y: -481.59998}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 9497, y: -482}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: a9b4c03d-4ea4-460f-b215-2a7610e15c10
     <dialogueName>k__BackingField: OhYeah
@@ -87,8 +38,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: b4a73c53-786f-4951-a263-7e1831d08889
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10171.2, y: -864}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 10171, y: -864}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 654904eb-61c9-4827-9a7b-41ad421fd09e
     <dialogueName>k__BackingField: WeDontHaveALawyer
@@ -99,8 +50,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10176, y: 51.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 10176, y: 51}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: b4a73c53-786f-4951-a263-7e1831d08889
     <dialogueName>k__BackingField: Darn
@@ -111,8 +62,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10856.8, y: -868.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 10857, y: -869}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
     <dialogueName>k__BackingField: IWillTradeCrown
@@ -124,8 +75,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 11564, y: -7.999999}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 11564, y: -8}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 225f3b53-2701-4310-9b0f-0c97e8b01c22
     <dialogueName>k__BackingField: OhWowOkay
@@ -140,20 +91,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: a6ab6c2d-6446-41ad-a415-4de667088859
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
-    <position>k__BackingField: {x: 13009.6, y: -35.199997}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: a6ab6c2d-6446-41ad-a415-4de667088859
-    <dialogueName>k__BackingField: CrownC
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: CROWWWNNNNNNN! MWAH!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13703.2, y: 924.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 13010, y: -35}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 25ccbbed-604c-4dcb-bdf0-827c75065ab5
     <dialogueName>k__BackingField: CrownA
@@ -164,20 +103,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13708.8, y: -927.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 9de66a35-8e34-47bb-87b7-b47e453d9bf6
-    <dialogueName>k__BackingField: CrownB
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: Oh, why thank you! I'm glad I look like royalty to you!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13708.8, y: -7.199999}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 13709, y: -927}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
     <dialogueName>k__BackingField: Code
@@ -188,8 +115,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: fed506ae-c2db-4de7-8893-a8da4e73f921
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 12261.6, y: -11.199999}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 12262, y: -11}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: fed506ae-c2db-4de7-8893-a8da4e73f921
     <dialogueName>k__BackingField: CodeNote
@@ -197,10 +124,10 @@ MonoBehaviour:
     <text>k__BackingField: 'The briefcase code is: 1625'
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6d4cad6c-3500-474c-8d16-7f72ee7dc12a
+      <NodeID>k__BackingField: 225f3b53-2701-4310-9b0f-0c97e8b01c22
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 12299.2, y: 1063.2}
+    <position>k__BackingField: {x: 12299, y: 1063}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 6d4cad6c-3500-474c-8d16-7f72ee7dc12a
@@ -209,11 +136,36 @@ MonoBehaviour:
     <text>k__BackingField: They accepted that crown deal fast!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 225f3b53-2701-4310-9b0f-0c97e8b01c22
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 12966.4, y: 1057.6}
+    <position>k__BackingField: {x: 12966, y: 1058}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 310580bd-474b-4125-80c0-5e6ec71f4df3
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Finger Monsters
+    <text>k__BackingField: They are still arguing over this crown?! I dont think
+      they knew I had even gone!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 6982, y: 510}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 6705a338-d0bc-4901-b78b-1db46c7db2f0
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: DWAHJ, DHDHLOIJ. Iadjk!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5142, y: -471}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
     <dialogueName>k__BackingField: AguingC
@@ -224,8 +176,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5868.8, y: -472.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 5869, y: -473}
+    <spritePath>k__BackingField: CharacterSprites/fm_C_vest
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
     <dialogueName>k__BackingField: ArguingA
@@ -233,45 +185,93 @@ MonoBehaviour:
     <text>k__BackingField: MY CROWN! YTVE!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 310580bd-474b-4125-80c0-5e6ec71f4df3
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6550.4, y: -472.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 310580bd-474b-4125-80c0-5e6ec71f4df3
-    <dialogueName>k__BackingField: DialogueName
-    <characterName>k__BackingField: Finger Monsters
-    <text>k__BackingField: They are still arguing over this crown?! I dont think
-      they knew I had even gone!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
     <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 6982.4, y: 510.40002}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6550, y: -473}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
+    <dialogueName>k__BackingField: ImBackGuys
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hey guys, Im back.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 7390, y: -465}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
+    <dialogueName>k__BackingField: IFoundYourBriefcase
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I found your briefcase, yes your briefcase. I know you
+      lot stole it, you are oozing with suspicion.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8071, y: -466}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
+    <dialogueName>k__BackingField: IWontPlayGames
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I wont play games, whats the code for the breifcase?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ecddb6a0-a9e9-4947-9b09-290c0647be35
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8785, y: -463}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 9de66a35-8e34-47bb-87b7-b47e453d9bf6
+    <dialogueName>k__BackingField: CrownB
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: Oh, why thank you! I'm glad I look like royalty to you!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 13709, y: -7}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: a6ab6c2d-6446-41ad-a415-4de667088859
+    <dialogueName>k__BackingField: CrownC
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: CROWWWNNNNNNN! MWAH!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 13703, y: 925}
+    <spritePath>k__BackingField: CharacterSprites/fm_C_vest
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - Start
-  - ImBackGuys
-  - IFoundYourBriefcase
-  - IWontPlayGames
   - WeDontKnow
   - OhYeah
   - WeDontHaveALawyer
   - Darn
   - IWillTradeCrown
   - OhWowOkay
-  - CrownC
   - CrownA
-  - CrownB
   - Code
   - CodeNote
   - FastDealNote
+  - DialogueName
+  - Start
   - AguingC
   - ArguingA
-  - DialogueName
+  - ImBackGuys
+  - IFoundYourBriefcase
+  - IWontPlayGames
+  - CrownB
+  - CrownC
   <oldGroupedNames>k__BackingField:
     list: []

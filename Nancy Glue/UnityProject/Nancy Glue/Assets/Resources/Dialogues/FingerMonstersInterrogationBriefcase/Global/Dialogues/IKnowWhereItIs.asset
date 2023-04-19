@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 04efc48978bf90c4b833cc2e6eea0438, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e0cffbc3fe7a03439c03b5fd330a300, type: 2}
   <dialogueText>k__BackingField: The film reel was stashed in the hideout somewhere
     I dont know where.. besides its long gone no finding it there.
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting

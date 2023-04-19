@@ -17,8 +17,8 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 2
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: edb05c1be584871449e0d124ead24d5e, type: 2}
-  <dialogueText>k__BackingField: These guys are definitely invovled.
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 04efc48978bf90c4b833cc2e6eea0438, type: 2}
+  <dialogueText>k__BackingField: B said the reel was stashed in the hideout.
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

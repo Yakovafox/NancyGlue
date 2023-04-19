@@ -17,8 +17,9 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: Dialogue Text.
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: ce28496d0d31c774f88d8d5076186457, type: 2}
+  <dialogueText>k__BackingField: OI, what you doing here? Only we or royalty is allowed
+    here.
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_b_sitting
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

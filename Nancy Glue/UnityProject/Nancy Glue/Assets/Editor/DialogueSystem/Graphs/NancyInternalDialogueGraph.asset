@@ -30,8 +30,7 @@ MonoBehaviour:
   - <ID>k__BackingField: 972e794a-5186-4ea8-9ccd-132acee78bcd
     <dialogueName>k__BackingField: PhotoOfBelongTo
     <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hmm... There appearsr to be a photo of who it belongs
-      to.
+    <text>k__BackingField: Hmm... There appears to be a photo of who it belongs to.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: be21cf22-cde8-47ac-a68e-56fc3c92b556

@@ -27,23 +27,10 @@ MonoBehaviour:
     <position>k__BackingField: {x: -78, y: -79}
     <spritePath>k__BackingField: CharacterSprites/fm_A_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
-    <dialogueName>k__BackingField: WhatASaid
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: 'My friend here said that, you are more than welcome and
-      how can we help? '
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: aaa62689-29e0-4337-9fb4-76aeaa1e32fe
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2306, y: -99}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: aaa62689-29e0-4337-9fb4-76aeaa1e32fe
     <dialogueName>k__BackingField: GladCoOperation
     <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Im glad that you willbe co operating, I am investigating
+    <text>k__BackingField: Im glad that you will be co operating, I am investigating
       a stolen property case.
     <options>k__BackingField:
     - <Text>k__BackingField: I think that you are involved!
@@ -87,7 +74,7 @@ MonoBehaviour:
     <text>k__BackingField: GUYS! STOP. What was the crown doing at the scene??
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 4a22fdcd-31bb-43aa-b129-137a32199dee
+      <NodeID>k__BackingField: 38a328cd-71cc-487d-915d-75304120f3d9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 7595, y: -76}
@@ -100,7 +87,7 @@ MonoBehaviour:
       not us..
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
+      <NodeID>k__BackingField: 3cfee765-fa3e-45ac-9373-f512ac070531
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 8281, y: -75}
@@ -112,7 +99,7 @@ MonoBehaviour:
     <text>k__BackingField: CROWN! CROWN! CROWN! CRO...
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: fc1dab42-d7e7-4df7-abc8-a685b69dc2c7
+      <NodeID>k__BackingField: 1e137d49-3af8-4232-b402-282a3b007c63
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 9680, y: -74}
@@ -124,7 +111,7 @@ MonoBehaviour:
     <text>k__BackingField: .. We dont actually have a laywer, come to think of it.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: a35b83d5-8cd8-48a6-972c-88ff3a9da1c7
+      <NodeID>k__BackingField: 5ef43052-ec35-474b-88ba-de42d0fc9bd3
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 6737, y: -999}
@@ -172,7 +159,7 @@ MonoBehaviour:
     <text>k__BackingField: I have to take the translators words as true.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
     <position>k__BackingField: {x: 2098, y: 901}
@@ -184,7 +171,7 @@ MonoBehaviour:
     <text>k__BackingField: They arent the brightest bunch.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5ef43052-ec35-474b-88ba-de42d0fc9bd3
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
     <position>k__BackingField: {x: 7292, y: -1271}
@@ -196,22 +183,10 @@ MonoBehaviour:
     <text>k__BackingField: This one seems to really like the crown? Why exactly?
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 1e137d49-3af8-4232-b402-282a3b007c63
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
     <position>k__BackingField: {x: 10073, y: 977}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
-    <dialogueName>k__BackingField: definitelyInvolved
-    <characterName>k__BackingField: Finger Monsters
-    <text>k__BackingField: These guys are definitely invovled.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 3cfee765-fa3e-45ac-9373-f512ac070531
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 8649, y: 948}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 4a22fdcd-31bb-43aa-b129-137a32199dee
@@ -220,7 +195,7 @@ MonoBehaviour:
     <text>k__BackingField: They arent the brightest bunch.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 38a328cd-71cc-487d-915d-75304120f3d9
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
     <position>k__BackingField: {x: 7900, y: 968}
@@ -232,7 +207,7 @@ MonoBehaviour:
     <text>k__BackingField: Hush it you!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5a866488-baed-400d-a38c-6a2fc67dc475
+      <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 10379, y: -75}
@@ -274,7 +249,7 @@ MonoBehaviour:
       can in the colony.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 55ea6c8b-0c02-445d-8840-528d5af3c9d9
+      <NodeID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1549, y: -102}
@@ -311,7 +286,7 @@ MonoBehaviour:
       know where.. besides its long gone no finding it there.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6531e0df-0e02-4ce8-84bc-5f102f09b2c3
+      <NodeID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 8979, y: -74}
@@ -389,10 +364,34 @@ MonoBehaviour:
     <position>k__BackingField: {x: 6146, y: -76}
     <spritePath>k__BackingField: CharacterSprites/fm_c_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
+    <dialogueName>k__BackingField: WhatASaid
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: 'My friend here said that, you are more than welcome and
+      how can we help? '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: aaa62689-29e0-4337-9fb4-76aeaa1e32fe
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2306, y: -99}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
+    <dialogueName>k__BackingField: definitelyInvolved
+    <characterName>k__BackingField: Finger Monsters
+    <text>k__BackingField: B said the reel was stashed in the hideout.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6531e0df-0e02-4ce8-84bc-5f102f09b2c3
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 9382, y: 926}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start
-  - WhatASaid
   - GladCoOperation
   - PanicFromA
   - PanicFromB
@@ -406,7 +405,6 @@ MonoBehaviour:
   - TranslatorNote
   - BrightestBunchNote
   - crownNote
-  - definitelyInvolved
   - BrightestBunch2Note
   - HushItYou
   - MayBeAbleToUseNote
@@ -421,5 +419,7 @@ MonoBehaviour:
   - WhereIsIt
   - CrownCrownCrown
   - UhhGuys
+  - WhatASaid
+  - definitelyInvolved
   <oldGroupedNames>k__BackingField:
     list: []

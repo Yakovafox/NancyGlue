@@ -18,8 +18,8 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 58e1f55bea80277468d3658b1d7bbeea, type: 2}
-  <dialogueText>k__BackingField: No, I didnt however, I did find your stuffing all
-    over the projector.
+  <dialogueText>k__BackingField: I didnt find anything unfortunately, I was hoping
+    youd have a lead?
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
