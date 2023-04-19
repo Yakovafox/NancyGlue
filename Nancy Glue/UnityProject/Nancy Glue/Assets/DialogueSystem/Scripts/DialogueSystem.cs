@@ -159,8 +159,11 @@ namespace Dialogue
 
             if (nextDialogue == null)
             {
-                GameObject.Find(tracker.attachedNPC).transform.position = tracker.originalPosition;
-                gameObject.SetActive(false);
+                if (tracker != null)
+                {
+                    GameObject.Find(tracker.attachedNPC).transform.position = tracker.originalPosition;
+                    gameObject.SetActive(false);
+                }
 
                 return;
             }
@@ -260,7 +263,7 @@ namespace Dialogue
         
         // Setter for the dialogue continer
         // Used when dialogue is called to choose a graph
-        public void SetContainer(string containerName, NPCTracker attachedNPC)
+        public void SetContainer(string containerName, NPCTracker attachedNPC = null)
         {
             dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");
             tracker = attachedNPC;
