@@ -47,14 +47,10 @@ public class InterrogateButtonScript : MonoBehaviour
         oldCam.SwitchActiveCam();
         newCam.SwitchActiveCam();
         //yield return new WaitForSeconds(1);
-        Debug.LogError("Transtion");
         GameObject.Find(NPC.attachedNPC).transform.position = GameObject.Find("SeatLocation").transform.position;
-        Debug.LogError("Move NPC");
         _uiAnimator.SetBool("hide", true);
-        Debug.LogError("Hide UI");
         dialogue.SetContainer(NPC.GetCurrentInterContainer(), NPC);
         _transitionAnimator.SetTrigger("FadeOut");
-        Debug.LogError("Fade");
         yield return new WaitForSeconds(0);
     }
 }
