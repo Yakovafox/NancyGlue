@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 2
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 32a14e8f44f955c4e9871bcaf3bbc198, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: be7a870106a83bb4aba7ab215584f745, type: 2}
   <dialogueText>k__BackingField: 'The briefcase code is: 1625'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3

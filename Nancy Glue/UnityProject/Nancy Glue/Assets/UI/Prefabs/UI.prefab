@@ -2962,7 +2962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cd958a71e7fbb0344963cf938425d32f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 174c36dd4b9247148befaccb7f606b62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7315,6 +7315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8dd043c8f72e6943bf3a5db2f7e6a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
   _transitionAnimator: {fileID: 0}
   _uiAnimator: {fileID: 0}
 --- !u!1 &5848534921093658831
@@ -8889,7 +8890,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2bb35dfe8eb3fe045967d3313217df3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35e0e0d2d699cc247ace2fd65112bede, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

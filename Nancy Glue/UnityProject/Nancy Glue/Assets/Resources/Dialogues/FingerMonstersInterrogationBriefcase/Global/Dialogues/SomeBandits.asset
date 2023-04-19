@@ -17,7 +17,7 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e0cffbc3fe7a03439c03b5fd330a300, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: edb05c1be584871449e0d124ead24d5e, type: 2}
   <dialogueText>k__BackingField: Some Bandits, stole the film reel.. Not us though,
     definitely not us..
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting

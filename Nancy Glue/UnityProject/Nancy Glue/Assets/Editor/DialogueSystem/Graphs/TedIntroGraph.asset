@@ -26,7 +26,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 2723, y: 378}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
     <dialogueName>k__BackingField: TedStart
@@ -39,7 +39,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1969, y: 505}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
     <dialogueName>k__BackingField: NancyStart
@@ -51,7 +51,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1124, y: 468}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:

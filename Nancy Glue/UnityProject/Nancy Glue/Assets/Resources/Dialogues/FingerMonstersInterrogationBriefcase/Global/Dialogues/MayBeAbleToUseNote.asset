@@ -22,4 +22,4 @@ MonoBehaviour:
     They seems to be some strong attatchment to the crown!
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  <isStartingDialogue>k__BackingField: 0
+  <isStartingDialogue>k__BackingField: 1

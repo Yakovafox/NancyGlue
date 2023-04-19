@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: bf7cabb937684154db36f612ef5fbfdc, type: 2}
   <dialogueText>k__BackingField: Yeah yeah, Nancy Glue. Look I don't have time to
     deal with you. The projector booth's open, take a look around.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_Sprite_B
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

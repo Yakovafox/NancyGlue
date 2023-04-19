@@ -17,8 +17,8 @@ MonoBehaviour:
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 16aab7b16edffb2428a295d720c32d1a, type: 2}
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e1b056b70b8bf404fa16ed8661798b39, type: 2}
   <dialogueText>k__BackingField: MY CROWN! YTVE!
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_A_poloshirt
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

@@ -10,14 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: WhatNow
+  m_Name: SoWhatNow
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: WhatNow
+  <dialogueName>k__BackingField: SoWhatNow
   <characterName>k__BackingField: Ted Grizzly
-  <dialogueType>k__BackingField: 0
+  <dialogueType>k__BackingField: 1
   <dialogueChoices>k__BackingField:
-  - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 79957a32f50e9bf40b525119618c02c9, type: 2}
+  - <text>k__BackingField: I have a few questions...
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: c5ddacda4d779cb4bb07a6d2730b4612, type: 2}
+  - <text>k__BackingField: I found nothing
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5f26f78189338864f885117480c7ad3b, type: 2}
+  - <text>k__BackingField: '[Present Stuffing]'
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 46ef5e7968345aa40b89556fb0b904c1, type: 2}
   <dialogueText>k__BackingField: So what is it now?!?
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3

@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 5ad5df0af4f145f49a1dfca1cc3e12aa, type: 2}
   <dialogueText>k__BackingField: I will trade you the crown if you give up the code,
     that sounds...
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_bowtie
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
