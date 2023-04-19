@@ -61,6 +61,8 @@ public class NPCTracker : MonoBehaviour
 
     public void EvidenceCheck()
     {
+        if (Interrogations.Count == 0) return;
+
         ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
         bool itemCollected = true;
