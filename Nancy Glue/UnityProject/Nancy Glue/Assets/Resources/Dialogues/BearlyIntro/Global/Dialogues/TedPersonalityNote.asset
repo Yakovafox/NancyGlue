@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TedPersonalityNote
   m_EditorClassIdentifier: 
   <dialogueName>k__BackingField: TedPersonalityNote
-  <characterName>k__BackingField: Character Name
+  <characterName>k__BackingField: Ted Grizzly
   <dialogueType>k__BackingField: 2
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...

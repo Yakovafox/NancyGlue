@@ -23,6 +23,6 @@ MonoBehaviour:
   - <text>k__BackingField: '[Present Stuffing]'
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 46ef5e7968345aa40b89556fb0b904c1, type: 2}
   <dialogueText>k__BackingField: Ah, Nancy. Did you find it?
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/TedGrizzly_sprite_B
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

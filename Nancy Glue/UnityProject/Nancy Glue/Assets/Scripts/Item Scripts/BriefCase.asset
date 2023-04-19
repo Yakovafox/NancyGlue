@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e21c140adb7bd74f82b525df6ee8f12, type: 3}
+  m_Name: BriefCase
+  m_EditorClassIdentifier: 
+  _itemID: 6
+  _title: Briefcase
+  _description: A Briefcase, found in the Finger Monster lair
+  _icon: {fileID: 21300000, guid: badb59acf0438f246bf4b8478c32e29b, type: 3}

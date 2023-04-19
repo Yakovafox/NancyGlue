@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: UnderCouchLocal
   m_EditorClassIdentifier: 
   <dialogueName>k__BackingField: UnderCouchLocal
-  <characterName>k__BackingField: Character Name
+  <characterName>k__BackingField: Ted Grizzly
   <dialogueType>k__BackingField: 3
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: f3d09ab40a4996e4496eb2efdf8650b0, type: 2}
-  <dialogueText>k__BackingField: 'New Location: Under the couch'
+  <dialogueText>k__BackingField: 'New Location: Projector Booth'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

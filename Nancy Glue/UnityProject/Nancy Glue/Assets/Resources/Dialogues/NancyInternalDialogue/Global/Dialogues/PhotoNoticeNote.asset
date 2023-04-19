@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: DialogueName
+  m_Name: PhotoNoticeNote
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: DialogueName
+  <dialogueName>k__BackingField: PhotoNoticeNote
   <characterName>k__BackingField: Nancy Glue
-  <dialogueType>k__BackingField: 3
+  <dialogueType>k__BackingField: 2
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e03397d592da3b648acaee705f75b4fc, type: 2}
-  <dialogueText>k__BackingField: Hidden Lair
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: e591e98b7af8e154990403734c8a1ea1, type: 2}
+  <dialogueText>k__BackingField: A photo shows the crown belonging to a member of
+    the finger monsters.
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
