@@ -18,6 +18,7 @@ public class SuspectMugshot : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _detailNote1;
     [SerializeField] private TextMeshProUGUI _detailNote2;
     [SerializeField] private TextMeshProUGUI _detailNote3;
+    [SerializeField] private GameObject _interrogateButton; 
 
     [field: SerializeField] public NPCTracker _npcTracker { get; set; }
 
@@ -27,6 +28,7 @@ public class SuspectMugshot : MonoBehaviour
         _mainPage = transform.parent.parent.gameObject;
         _detailMugshot = transform.parent.parent.parent.GetChild(0).GetChild(1);
         _detailPage = transform.parent.parent.parent.GetChild(0).gameObject; //this is gross and I hate myself
+        _interrogateButton = _detailPage.transform.GetChild(3).gameObject;
 
         for (int i = 1; i < 4; i++)
         {
@@ -48,6 +50,17 @@ public class SuspectMugshot : MonoBehaviour
         _detailPage.SetActive(!_detailPage.activeSelf);
         _detailMugshot.GetChild(0).GetChild(0).GetComponent<Image>().sprite = MugshotSprite;
         _detailMugshot.GetChild(1).GetComponent<TextMeshProUGUI>().text = Name;
+
+        // Enable/Disable Interrogation
+        _npcTracker.EvidenceCheck();
+        if (_npcTracker.canBeQuestioned)
+        {
+            _interrogateButton.SetActive(true);
+        }
+        else
+        {
+            _interrogateButton.SetActive(false);
+        }
 
         if (_npcTracker.Notes.Count == 0)
         {
