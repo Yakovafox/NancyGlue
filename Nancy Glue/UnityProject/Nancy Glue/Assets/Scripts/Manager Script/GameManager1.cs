@@ -25,6 +25,7 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] public GameState _gameState;
     [SerializeField] private NPCTracker[] _npcTrackers;
     [SerializeField] private NPCTracker _AnatolyTracker;
+    [SerializeField] private NPCTracker _NancyTracker;
     [SerializeField] private ItemScriptableObject CrownReference;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
@@ -34,6 +35,7 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private Coroutine _zoneTransitionCoroutine;
     [SerializeField] private ZoneManager _zoneManager;
+    [SerializeField] private BriefcaseScript briefcase;
 
     private int[] stateTracker = new int[8] { 0,0,0,0,0,0,0,0 };
 
@@ -52,6 +54,7 @@ public class GameManager1 : MonoBehaviour
 #endif
         _npcTrackers = FindObjectsOfType<NPCTracker>();
         _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
+        _NancyTracker = GameObject.Find("NancyDialogue").GetComponent<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
         
@@ -143,7 +146,7 @@ public class GameManager1 : MonoBehaviour
     private void DriveInInit()
     {
         _zoneManager.DriveInCam.gameObject.SetActive(true);
-        _zoneManager.DriveInCam.SwitchableCameras[2].gameObject.SetActive(true);
+        _zoneManager.DriveInCam.SwitchableCameras[0].gameObject.SetActive(true);
         stateTracker[1] = 1;
     }
 
@@ -169,6 +172,7 @@ public class GameManager1 : MonoBehaviour
 
     private void FingerInterrogate1Init()
     {
+        Debug.LogError("Activating camera");
         _zoneManager.AlleyCam.SwitchableCameras[0].gameObject.SetActive(true);
         stateTracker[5] = 1;
     }
@@ -176,12 +180,14 @@ public class GameManager1 : MonoBehaviour
     private void FingerInterrogate2Init()
     {
         // Add dialogue and code for briefcase
+        briefcase.gameObject.SetActive(true);
         stateTracker[6] = 1;
     }
 
     private void OpenBriefcaseInit()
     {
         // Track that we have completed the tutorial case?
+        SceneManager.LoadScene("MenuScene");
         stateTracker[7] = 1;
     }
     #endregion
@@ -231,6 +237,7 @@ public class GameManager1 : MonoBehaviour
 
             case GameState.UnlockHiddenLiar:
                 UnlockHiddenLairInit();
+                _dialogueSystem.SetContainer(_NancyTracker.GetCurrentContainer(), _NancyTracker);
                 _gameState = GameState.Idle;
                 break;
 
@@ -313,7 +320,6 @@ public class GameManager1 : MonoBehaviour
 
             if (itemCollected)
             {
-                _dialogueSystem.SetContainer("NancyInternalDialogue");
                 _gameState = GameState.UnlockHiddenLiar;
             }
         }
@@ -322,9 +328,9 @@ public class GameManager1 : MonoBehaviour
         {
             foreach (var npc in _npcTrackers)
             {
-                if (npc.gameObject.name == "FingerMonsters")
+                if (npc.gameObject.name == "FingerMonsterA")
                 {
-                    if (npc.dialogueIterator > 1)
+                    if (npc.interrogationIterator > 0)
                     {
                         // Have you interrogated Ted
                         _gameState = GameState.FingerMonsterInterrogation;
@@ -337,11 +343,11 @@ public class GameManager1 : MonoBehaviour
         {
             foreach (var npc in _npcTrackers)
             {
-                if (npc.gameObject.name == "FingerMonsters")
+                if (npc.gameObject.name == "FingerMonsterA")
                 {
-                    if (npc.dialogueIterator > 3)
+                    if (npc.interrogationIterator > 1)
                     {
-                        // Have you interrogated Ted
+                        // Have you interrogated FingerMonsters
                         _gameState = GameState.FingerMonsterInterrogation2;
                     }
                 }
@@ -349,8 +355,12 @@ public class GameManager1 : MonoBehaviour
         }
         else if (stateTracker[7] == 0)
         {
+            Debug.Log(briefcase.Clicked);
             // Not sure what the trigger is here
-            _gameState = GameState.OpenBriefcase;
+            if(briefcase.Clicked)
+            {
+                _gameState = GameState.OpenBriefcase;
+            }
         }
     }
 

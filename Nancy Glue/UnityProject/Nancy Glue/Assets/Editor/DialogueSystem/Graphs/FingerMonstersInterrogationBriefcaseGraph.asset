@@ -24,37 +24,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 55aa3c8e-74a8-4700-b6e1-604b77c0b38d
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: -77.6, y: -79.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 55aa3c8e-74a8-4700-b6e1-604b77c0b38d
-    <dialogueName>k__BackingField: FinMonAIntrodction
-    <characterName>k__BackingField: Finger Monster A
-    <text>k__BackingField: pkodaji esyguf ben WKPDETH ODIAEF NIS;BHUE SGID !!!!!!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Uhm...
-      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
-    - <Text>k__BackingField: Can anyone translate?
-      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
-    - <Text>k__BackingField: I have no idea what you said, sorry
-      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 1
-    <position>k__BackingField: {x: 784, y: -101.600006}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
-    <dialogueName>k__BackingField: FinMonBIntroduction
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: Hi, Hello, I can translate. In fact im the only one that
-      can in the colony.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 55ea6c8b-0c02-445d-8840-528d5af3c9d9
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1548.8, y: -101.600006}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: -78, y: -79}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
     <dialogueName>k__BackingField: WhatASaid
@@ -66,8 +37,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: aaa62689-29e0-4337-9fb4-76aeaa1e32fe
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2305.6, y: -99.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 2306, y: -99}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: aaa62689-29e0-4337-9fb4-76aeaa1e32fe
     <dialogueName>k__BackingField: GladCoOperation
@@ -84,7 +55,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
     <position>k__BackingField: {x: 3076, y: -120}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 646fee57-2e1d-472c-ac73-7e8b7a8c9fd0
     <dialogueName>k__BackingField: PanicFromA
@@ -95,8 +66,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 29a48abe-7001-4054-a833-1e8af38a3159
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3880.8, y: -71.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 3881, y: -71}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 29a48abe-7001-4054-a833-1e8af38a3159
     <dialogueName>k__BackingField: PanicFromB
@@ -107,44 +78,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: c6fa157c-0688-495f-82e7-a8e02c92ace9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4653.6, y: -73.6}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: c6fa157c-0688-495f-82e7-a8e02c92ace9
-    <dialogueName>k__BackingField: PanicFromC
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: CROWN! CROWN! CROWN! CROWN! MINE!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 62fd836a-3dd8-4a71-a816-b69c90dc9d1d
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5400, y: -78.399994}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 7d502d65-0e04-4445-bd66-6fd2fc3446a3
-    <dialogueName>k__BackingField: UhhGuys
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Uhm.. Guys?..
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 73b8b30c-f84a-4a9c-872e-b6e5336c7410
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6144.8, y: -76}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 73b8b30c-f84a-4a9c-872e-b6e5336c7410
-    <dialogueName>k__BackingField: CrownCrownCrown
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: CROWN, CROWN, CROWN, CROWN...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: eeca6381-6600-4cf1-9edb-cbada924562b
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6859.2, y: -77.6}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 4654, y: -74}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: eeca6381-6600-4cf1-9edb-cbada924562b
     <dialogueName>k__BackingField: GUYS
@@ -155,8 +90,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 4a22fdcd-31bb-43aa-b129-137a32199dee
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 7595.2, y: -76}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 7595, y: -76}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 38a328cd-71cc-487d-915d-75304120f3d9
     <dialogueName>k__BackingField: SomeBandits
@@ -168,21 +103,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8280.8, y: -75.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 3cfee765-fa3e-45ac-9373-f512ac070531
-    <dialogueName>k__BackingField: IKnowWhereItIs
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: The film reel was stashed in the hideout somewhere I dont
-      know where.. besides its long gone no finding it there.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6531e0df-0e02-4ce8-84bc-5f102f09b2c3
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8979.2, y: -74.399994}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 8281, y: -75}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 6531e0df-0e02-4ce8-84bc-5f102f09b2c3
     <dialogueName>k__BackingField: CBeingC
@@ -193,56 +115,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: fc1dab42-d7e7-4df7-abc8-a685b69dc2c7
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 9680, y: -74.399994}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 2a6374e7-48f3-4ca3-86e3-e203c9cd3e46
-    <dialogueName>k__BackingField: CResponse
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: feubsuias dueawu, pfpf.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 73cee5df-c3c6-4357-8921-2a4b7b928f6c
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3891.2, y: -1015.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 73cee5df-c3c6-4357-8921-2a4b7b928f6c
-    <dialogueName>k__BackingField: AResponse
-    <characterName>k__BackingField: Finger Monster A
-    <text>k__BackingField: poijl hgsnuine deisujh, poiuhfesjk, fesnjb.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 493332e3-53a4-4a7a-8045-a33b98a91d0c
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4652.8, y: -1006.39996}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 493332e3-53a4-4a7a-8045-a33b98a91d0c
-    <dialogueName>k__BackingField: ATranslationPlease1
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: A translation please?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: a6be12b4-46d5-4e52-bb4a-338da7282817
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5351.2, y: -1002.39996}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 5ef43052-ec35-474b-88ba-de42d0fc9bd3
-    <dialogueName>k__BackingField: FilmReelSafe
-    <characterName>k__BackingField: Finger Monster A
-    <text>k__BackingField: FILM! FILM SAFE! KIFESopji.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: a24a2815-4e5a-4e8b-8a63-47264d288f65
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 7470.4, y: -1004}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 9680, y: -74}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 9e42e864-a025-405a-9258-cefeab5a1809
     <dialogueName>k__BackingField: WeDontActuallyHaveALawyer
@@ -253,8 +127,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: a35b83d5-8cd8-48a6-972c-88ff3a9da1c7
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6736.8, y: -999.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 6737, y: -999}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 0fee670a-fd06-4948-b4e2-5ddfddb7ff29
     <dialogueName>k__BackingField: YouIdiot
@@ -265,8 +139,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 38a328cd-71cc-487d-915d-75304120f3d9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8915.2, y: -1005.6}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 8915, y: -1006}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 62fd836a-3dd8-4a71-a816-b69c90dc9d1d
     <dialogueName>k__BackingField: ChaoticNote
@@ -277,7 +151,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 7d502d65-0e04-4445-bd66-6fd2fc3446a3
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 5977.6, y: 942.4}
+    <position>k__BackingField: {x: 5978, y: 942}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: a6be12b4-46d5-4e52-bb4a-338da7282817
@@ -289,8 +163,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 9e42e864-a025-405a-9258-cefeab5a1809
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6051.2, y: -1000}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 6051, y: -1000}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 55ea6c8b-0c02-445d-8840-528d5af3c9d9
     <dialogueName>k__BackingField: TranslatorNote
@@ -301,19 +175,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 67dbcb65-9ed6-41a6-ac40-411be5f481a9
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 2097.6, y: 900.8}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: a24a2815-4e5a-4e8b-8a63-47264d288f65
-    <dialogueName>k__BackingField: WhereIsIt
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Where is the film reel?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 0fee670a-fd06-4948-b4e2-5ddfddb7ff29
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8213.6, y: -1000}
+    <position>k__BackingField: {x: 2098, y: 901}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: a35b83d5-8cd8-48a6-972c-88ff3a9da1c7
@@ -325,7 +187,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 5ef43052-ec35-474b-88ba-de42d0fc9bd3
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 7292, y: -1271.2001}
+    <position>k__BackingField: {x: 7292, y: -1271}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: fc1dab42-d7e7-4df7-abc8-a685b69dc2c7
@@ -337,7 +199,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 1e137d49-3af8-4232-b402-282a3b007c63
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 10072.8, y: 976.8}
+    <position>k__BackingField: {x: 10073, y: 977}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 91153c5d-a72d-4fbf-a94f-51b1fe9788a6
@@ -349,7 +211,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 3cfee765-fa3e-45ac-9373-f512ac070531
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 8648.8, y: 948}
+    <position>k__BackingField: {x: 8649, y: 948}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 4a22fdcd-31bb-43aa-b129-137a32199dee
@@ -373,8 +235,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 5a866488-baed-400d-a38c-6a2fc67dc475
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10379.2, y: -75.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 10379, y: -75}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 5a866488-baed-400d-a38c-6a2fc67dc475
     <dialogueName>k__BackingField: MayBeAbleToUseNote
@@ -386,40 +248,178 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 2
-    <position>k__BackingField: {x: 11092.8, y: 49.600002}
+    <position>k__BackingField: {x: 11093, y: 50}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 55aa3c8e-74a8-4700-b6e1-604b77c0b38d
+    <dialogueName>k__BackingField: FinMonAIntrodction
+    <characterName>k__BackingField: Finger Monster A
+    <text>k__BackingField: pkodaji esyguf ben WKPDETH ODIAEF NIS;BHUE SGID !!!!!!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Uhm...
+      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
+    - <Text>k__BackingField: Can anyone translate?
+      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
+    - <Text>k__BackingField: I have no idea what you said, sorry
+      <NodeID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 1
+    <position>k__BackingField: {x: 721, y: -95}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: a8df8c45-c74e-4018-bbb2-c6659c20cf2b
+    <dialogueName>k__BackingField: FinMonBIntroduction
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: Hi, Hello, I can translate. In fact im the only one that
+      can in the colony.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 55ea6c8b-0c02-445d-8840-528d5af3c9d9
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1549, y: -102}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 2a6374e7-48f3-4ca3-86e3-e203c9cd3e46
+    <dialogueName>k__BackingField: CResponse
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: feubsuias dueawu, pfpf.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 73cee5df-c3c6-4357-8921-2a4b7b928f6c
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3891, y: -1015}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c6fa157c-0688-495f-82e7-a8e02c92ace9
+    <dialogueName>k__BackingField: PanicFromC
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: CROWN! CROWN! CROWN! CROWN! MINE!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 62fd836a-3dd8-4a71-a816-b69c90dc9d1d
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5400, y: -78}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 3cfee765-fa3e-45ac-9373-f512ac070531
+    <dialogueName>k__BackingField: IKnowWhereItIs
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: The film reel was stashed in the hideout somewhere I dont
+      know where.. besides its long gone no finding it there.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6531e0df-0e02-4ce8-84bc-5f102f09b2c3
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8979, y: -74}
+    <spritePath>k__BackingField: CharacterSprites/fm_B_sitting
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 73cee5df-c3c6-4357-8921-2a4b7b928f6c
+    <dialogueName>k__BackingField: AResponse
+    <characterName>k__BackingField: Finger Monster A
+    <text>k__BackingField: poijl hgsnuine deisujh, poiuhfesjk, fesnjb.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 493332e3-53a4-4a7a-8045-a33b98a91d0c
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4653, y: -1006}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 493332e3-53a4-4a7a-8045-a33b98a91d0c
+    <dialogueName>k__BackingField: ATranslationPlease1
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: A translation please?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: a6be12b4-46d5-4e52-bb4a-338da7282817
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5351, y: -1002}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 5ef43052-ec35-474b-88ba-de42d0fc9bd3
+    <dialogueName>k__BackingField: FilmReelSafe
+    <characterName>k__BackingField: Finger Monster A
+    <text>k__BackingField: FILM! FILM SAFE! KIFESopji.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: a24a2815-4e5a-4e8b-8a63-47264d288f65
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 7470, y: -1004}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: a24a2815-4e5a-4e8b-8a63-47264d288f65
+    <dialogueName>k__BackingField: WhereIsIt
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Where is the film reel?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 0fee670a-fd06-4948-b4e2-5ddfddb7ff29
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8214, y: -1000}
+    <spritePath>k__BackingField: CharacterSprites/fm_A_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 73b8b30c-f84a-4a9c-872e-b6e5336c7410
+    <dialogueName>k__BackingField: CrownCrownCrown
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: CROWN, CROWN, CROWN, CROWN...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: eeca6381-6600-4cf1-9edb-cbada924562b
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6859, y: -78}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 7d502d65-0e04-4445-bd66-6fd2fc3446a3
+    <dialogueName>k__BackingField: UhhGuys
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Uhm.. Guys?..
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 73b8b30c-f84a-4a9c-872e-b6e5336c7410
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6146, y: -76}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start
-  - FinMonAIntrodction
-  - FinMonBIntroduction
   - WhatASaid
   - GladCoOperation
   - PanicFromA
   - PanicFromB
-  - PanicFromC
-  - UhhGuys
-  - CrownCrownCrown
   - GUYS
   - SomeBandits
-  - IKnowWhereItIs
   - CBeingC
-  - CResponse
-  - AResponse
-  - ATranslationPlease1
-  - FilmReelSafe
   - WeDontActuallyHaveALawyer
   - YouIdiot
   - ChaoticNote
   - ALawyer
   - TranslatorNote
-  - WhereIsIt
   - BrightestBunchNote
   - crownNote
   - definitelyInvolved
   - BrightestBunch2Note
   - HushItYou
   - MayBeAbleToUseNote
+  - FinMonAIntrodction
+  - FinMonBIntroduction
+  - CResponse
+  - PanicFromC
+  - IKnowWhereItIs
+  - AResponse
+  - ATranslationPlease1
+  - FilmReelSafe
+  - WhereIsIt
+  - CrownCrownCrown
+  - UhhGuys
   <oldGroupedNames>k__BackingField:
     list: []

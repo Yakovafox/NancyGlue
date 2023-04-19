@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: fmGoAwayGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: fmGoAway
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 9c786aa1-9f39-4e14-b646-0e36ef3acc69
+    <dialogueName>k__BackingField: fingerMonsterGoAway
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: Dialogue Text.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6c74015a-81bc-419b-a68b-275296ee7a6e
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 313, y: -264}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 6c74015a-81bc-419b-a68b-275296ee7a6e
+    <dialogueName>k__BackingField: YeahGoAway
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: Dialogue Text.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1299, y: -89}
+    <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - fingerMonsterGoAway
+  - YeahGoAway
+  <oldGroupedNames>k__BackingField:
+    list: []

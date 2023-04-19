@@ -15,14 +15,14 @@ public class SaveLoadGameState : MonoBehaviour
     public Inventory inv;
     public CameraTrack CameraTracker;
     public NPCTracker[] NPCTrackers;
-    public GameManager gameManager;
+    public GameManager1 gameManager;
 
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 
         CameraTracker=FindObjectOfType<CameraTrack>();
         NPCTrackers = FindObjectsOfType<NPCTracker>();
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager1>();
 
     }
 
@@ -108,7 +108,7 @@ public class SaveLoadGameState : MonoBehaviour
 
             //load game state
 
-            gameManager._gameState = (GameManager.GameState)save.gameStage;
+            gameManager._gameState = (GameManager1.GameState)save.gameStage;
 
 
 

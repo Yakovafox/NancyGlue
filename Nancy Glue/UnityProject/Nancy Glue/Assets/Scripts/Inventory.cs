@@ -15,14 +15,14 @@ public class Inventory : MonoBehaviour
     public ItemDB itemDatabase;
     public invUI invUI;
     public SaveLoadGameState SLGS;
-    public GameManager gameManager;
+    public GameManager1 gameManager;
     //public UIInventory inventoryUI;
     
     private void Awake()
     {
         invUI = GameObject.Find("UIGridPanel").GetComponent<invUI>();
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
-        gameManager = GameObject.FindObjectOfType<GameManager>();
+        gameManager = GameObject.FindObjectOfType<GameManager1>();
     }
 
 

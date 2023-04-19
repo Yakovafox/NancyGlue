@@ -24,6 +24,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b376544fb53fd054e8ddec70b270e271, type: 2}
   <dialogueText>k__BackingField: Im glad that you willbe co operating, I am investigating
     a stolen property case.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

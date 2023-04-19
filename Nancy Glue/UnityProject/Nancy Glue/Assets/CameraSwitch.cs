@@ -24,7 +24,7 @@ public class CameraSwitch : MonoBehaviour
         _myMeshRenderer = GetComponent<MeshRenderer>();
         _myCollider = GetComponent<Collider>();
         _cameraTransform = transform.GetChild(0);
-        _returnTooltip = GameObject.Find("CameraReturnPrompt");
+        //_returnTooltip = GameObject.Find("CameraReturnPrompt");
     }
     void Start()
     {
@@ -56,6 +56,4 @@ public class CameraSwitch : MonoBehaviour
     {
         _returnTooltip.SetActive(!_isRoot); //Enable the tooltip if the camera is not a root camera.
     }
-
-
 }

@@ -66,14 +66,18 @@ public class mouseTrack : MonoBehaviour
 
                 switch (hitData.transform.tag)
                 {
+                    case ("briefcase"):
+                        hitData.transform.GetComponent<IClickable>().Clickable();
+                        break;
                     case ("Evidence"):
-                        var gm = FindObjectOfType<GameManager>();
+                        var gm = FindObjectOfType<GameManager1>();
                         var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
                         //Debug.Log("Clicked " + item.Title + ":"
                          //+ "\n " + item.Description + "\n Item ID: " + item.ItemID);
                         inv.GiveItem(item.ItemID);
-                        gm.EvidenceChecker(inv);
-                        gm.ReelPickUp(item.Title);
+                        //gm.EvidenceChecker(inv);
+                        //gm.ReelPickUp(item.Title);
+                        gm.UpdateScene(item.ItemID);
                         _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
                         break;
                     case ("NPC"):

@@ -69,7 +69,7 @@ public class NPCTracker : MonoBehaviour
 
     public void EvidenceCheck()
     {
-        if (Interrogations.Count == 0) return;
+        if (Interrogations.Count == interrogationIterator) return;
 
         ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
@@ -89,7 +89,7 @@ public class NPCTracker : MonoBehaviour
 
     public void AddNote(string note)
     {
-        if (!notes.Contains(note))
+        if (!notes.Contains(note) && notes.Count != 3)
         {
             notes.Add(note);
         }

@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e0cffbc3fe7a03439c03b5fd330a300, type: 2}
   <dialogueText>k__BackingField: Some Bandits, stole the film reel.. Not us though,
     definitely not us..
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

@@ -24,6 +24,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60794545781f4b74ba1ec1d0f1bcc5fb, type: 2}
   <dialogueText>k__BackingField: pkodaji esyguf ben WKPDETH ODIAEF NIS;BHUE SGID
     !!!!!!
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_A_standing
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0
