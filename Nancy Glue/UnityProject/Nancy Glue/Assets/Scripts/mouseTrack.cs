@@ -70,6 +70,9 @@ public class mouseTrack : MonoBehaviour
                         hitData.transform.GetComponent<IClickable>().Clickable();
                         break;
                     case ("Evidence"):
+                        var invEmptyText = GameObject.Find("BlankTextInventory");
+                        if (invEmptyText != null && invEmptyText.activeSelf)
+                            invEmptyText.SetActive(false);
                         var gm = FindObjectOfType<GameManager1>();
                         var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
                         //Debug.Log("Clicked " + item.Title + ":"
@@ -81,6 +84,9 @@ public class mouseTrack : MonoBehaviour
                         _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
                         break;
                     case ("NPC"):
+                        var susEmptyText = GameObject.Find("BlankTextSuspect");
+                        if (susEmptyText != null && susEmptyText.activeSelf)
+                            susEmptyText.SetActive(false);
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
                         //tracker.EvidenceCheck();
                         _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
