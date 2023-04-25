@@ -43,14 +43,17 @@ public class InterrogateButtonScript : MonoBehaviour
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
     {
         _transitionAnimator.SetTrigger("FadeIn");
+        Debug.LogError("Fade In");
         //yield return new WaitForSeconds(1);
         oldCam.SwitchActiveCam();
         newCam.SwitchActiveCam();
-        //yield return new WaitForSeconds(1);
-        GameObject.Find(NPC.attachedNPC).transform.position = GameObject.Find("SeatLocation").transform.position;
+        yield return new WaitForSeconds(1);
+        //GameObject.Find(NPC.attachedNPC).transform.position = GameObject.Find("SeatLocation").transform.position;
         _uiAnimator.SetBool("hide", true);
         dialogue.SetContainer(NPC.GetCurrentInterContainer(), NPC);
         _transitionAnimator.SetTrigger("FadeOut");
-        yield return new WaitForSeconds(0);
+        Debug.LogError("Fade Out");
+        //yield return new WaitForSeconds(0);
+        Debug.LogError("End Transition");
     }
 }
