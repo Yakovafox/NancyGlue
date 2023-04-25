@@ -35,6 +35,10 @@ namespace Dialogue
         [SerializeField] private TextMeshProUGUI characterNameUI;
         [SerializeField] private TextMeshProUGUI bodyTextUI;
 
+        // Audio
+        private AudioSource audioSourceMusic;
+        private AudioSource audioSourceSound;
+
         private DialogueSO currentDialogue;
         private bool scrollingText = false;
         private string displayedText = "";
@@ -73,11 +77,16 @@ namespace Dialogue
                     buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
                 }
             }
+
+            audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         }
 
         private void ShowText()
         {
             if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
+
+            audioSourceSound.clip = Resources.Load<AudioClip>(currentDialogue.dialogueAudioAssetPath);
+            audioSourceSound.Play();
 
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
@@ -164,6 +173,9 @@ namespace Dialogue
                     GameObject.Find(tracker.attachedNPC).transform.position = tracker.originalPosition;
                     gameObject.SetActive(false);
                 }
+
+                AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Interrogation_Music");
+                if (audioSourceMusic.clip != normalTrack) audioSourceMusic.clip = normalTrack;
 
                 return;
             }
