@@ -148,3 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70283c711d80a394492fb2408f2a7f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _spriteRenderer: {fileID: 1815635560214074272}
+  _sprites:
+  - {fileID: 21300000, guid: 641768cc76f70704eb2144e2b509454f, type: 3}
+  - {fileID: 21300000, guid: a24f3e2198749094e88046579c4e934f, type: 3}
+  - {fileID: 21300000, guid: 54c5e67d21ecfe042b611d4b209a6482, type: 3}
+  _timer: 0
+  _targetTimer: 0
+  _index: 0
