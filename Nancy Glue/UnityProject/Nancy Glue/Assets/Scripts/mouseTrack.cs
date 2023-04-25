@@ -123,25 +123,25 @@ public class mouseTrack : MonoBehaviour
 
     private void CursorChange(Ray ray)
     {
-        _cursor.transform.position = Input.mousePosition;
-        if (!Physics.Raycast(ray, out var hitData, _range))
+        //_cursor.transform.position = Input.mousePosition;
+        if (!Physics.Raycast(ray, out var hitData, _range) || UIOpen || _dialogueBox.activeSelf)
         {
-            Cursor.SetCursor(_sprites[0],Vector2.zero,CursorMode.ForceSoftware);
+            Cursor.SetCursor(_sprites[0], new Vector2(10, 10), CursorMode.Auto);
             return;
         }
         switch (hitData.transform.tag)
         {
             case "Finish" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[1], Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
                 break;
             case "NPC" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[2], Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[2], new Vector2(30,10), CursorMode.Auto);
                 break;
             case "Evidence" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[3], Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[3], new Vector2(32,32), CursorMode.Auto);
                 break;
             default:
-                Cursor.SetCursor(_sprites[0],Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[0],new Vector2(10,10), CursorMode.Auto);
                 break;
         }
     }
