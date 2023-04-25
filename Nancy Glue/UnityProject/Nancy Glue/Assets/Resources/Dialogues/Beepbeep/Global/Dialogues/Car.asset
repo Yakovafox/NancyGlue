@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Car
   m_EditorClassIdentifier: 
   <dialogueName>k__BackingField: Car
-  <characterName>k__BackingField: Thunder MacKing
+  <characterName>k__BackingField: Thunder McKing
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: BEEP BEEP! Kurrrchoo
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueText>k__BackingField: BEEP BEEP! Kerchoo
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/ThunderMcKing_Dialogue
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 1

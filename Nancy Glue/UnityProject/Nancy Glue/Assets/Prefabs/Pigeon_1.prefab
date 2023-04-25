@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6396205494103888352}
   - component: {fileID: 1815635560214074272}
   - component: {fileID: 4827558511243965213}
+  - component: {fileID: 2041190981427813498}
   m_Layer: 0
   m_Name: BillboardSprite
   m_TagString: Untagged
@@ -135,3 +136,15 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+--- !u!114 &2041190981427813498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267671280194039231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70283c711d80a394492fb2408f2a7f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

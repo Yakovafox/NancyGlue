@@ -70,6 +70,9 @@ public class mouseTrack : MonoBehaviour
                         hitData.transform.GetComponent<IClickable>().Clickable();
                         break;
                     case ("Evidence"):
+                        var invEmptyText = GameObject.Find("BlankTextInventory");
+                        if (invEmptyText != null && invEmptyText.activeSelf)
+                            invEmptyText.SetActive(false);
                         var gm = FindObjectOfType<GameManager1>();
                         var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
                         //Debug.Log("Clicked " + item.Title + ":"
@@ -81,6 +84,9 @@ public class mouseTrack : MonoBehaviour
                         _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
                         break;
                     case ("NPC"):
+                        var susEmptyText = GameObject.Find("BlankTextSuspect");
+                        if (susEmptyText != null && susEmptyText.activeSelf)
+                            susEmptyText.SetActive(false);
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
                         //tracker.EvidenceCheck();
                         _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
@@ -123,25 +129,35 @@ public class mouseTrack : MonoBehaviour
 
     private void CursorChange(Ray ray)
     {
-        _cursor.transform.position = Input.mousePosition;
-        if (!Physics.Raycast(ray, out var hitData, _range))
+        
+        //_cursor.transform.position = Input.mousePosition;
+        if (!Physics.Raycast(ray, out var hitData, _range) || UIOpen || _dialogueBox.activeSelf)
         {
-            Cursor.SetCursor(_sprites[0],Vector2.zero,CursorMode.ForceSoftware);
+            Cursor.SetCursor(_sprites[0], new Vector2(10, 10), CursorMode.Auto);
             return;
         }
         switch (hitData.transform.tag)
         {
             case "Finish" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[1], Vector2.zero, CursorMode.ForceSoftware);
+                var cam = hitData.transform;
+                var mainName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+                var mainCam = GameObject.Find(mainName).transform.parent.GetComponent<CameraSwitch>();
+                foreach(var switchableCam in mainCam.SwitchableCameras)
+                {
+                    if(cam == switchableCam)
+                        Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+
+                }
+                //Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
                 break;
             case "NPC" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[2], Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[2], new Vector2(30,10), CursorMode.Auto);
                 break;
             case "Evidence" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[3], Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[3], new Vector2(32,32), CursorMode.Auto);
                 break;
             default:
-                Cursor.SetCursor(_sprites[0],Vector2.zero, CursorMode.ForceSoftware);
+                Cursor.SetCursor(_sprites[0],new Vector2(10,10), CursorMode.Auto);
                 break;
         }
     }
