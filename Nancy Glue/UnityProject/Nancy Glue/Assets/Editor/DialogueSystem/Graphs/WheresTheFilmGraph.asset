@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: WheresTheFilmGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: WheresTheFilm
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 446d6d17-92be-408f-a19d-e8f62860ff2d
+    <dialogueName>k__BackingField: WheresTheFilm
+    <characterName>k__BackingField: John Doe
+    <text>k__BackingField: Wheres the film!? I paid good money to see this!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: f71369ca-b7c1-44be-af5b-e46992c1db0c
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4505.6, y: -645.60004}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Man
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: e3ec7875-1b5a-404d-a155-4d568c11d6a0
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hello, there, do you know where I can find th...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 446d6d17-92be-408f-a19d-e8f62860ff2d
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3830.4, y: -644.8}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Man
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: f71369ca-b7c1-44be-af5b-e46992c1db0c
+    <dialogueName>k__BackingField: ImWorkingOnIt
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I'm Working on it!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5174.4004, y: -648.8}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Man
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - WheresTheFilm
+  - Start
+  - ImWorkingOnIt
+  <oldGroupedNames>k__BackingField:
+    list: []

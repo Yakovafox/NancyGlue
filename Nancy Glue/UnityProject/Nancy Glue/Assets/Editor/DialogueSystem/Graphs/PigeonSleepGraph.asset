@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: PigeonSleepGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: PigeonSleep
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: a373f3bd-a8a4-499e-8eb4-103ac48c55eb
+    <dialogueName>k__BackingField: SleepingPigeon
+    <characterName>k__BackingField: Pigeon
+    <text>k__BackingField: ZZZZzzzzzz..... coo, coo, coo, coo...........
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 300, y: 31.2}
+    <spritePath>k__BackingField: StickerSprites/pigeon_1
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - SleepingPigeon
+  <oldGroupedNames>k__BackingField:
+    list: []

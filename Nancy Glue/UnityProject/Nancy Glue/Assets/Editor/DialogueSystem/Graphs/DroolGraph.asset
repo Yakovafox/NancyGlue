@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: DroolGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: Drool
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 6ba5474e-d044-4cb4-b84d-2bd9244eb77d
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Drooling Bean
+    <text>k__BackingField: '*Drools*'
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 451.2, y: -592.8}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Bean
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 81e5e508-d239-4454-853e-f840cb4e0efe
+    <dialogueName>k__BackingField: NancyRespondingBean
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Uhhh...OK?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1119.2, y: -616}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Bean
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - DialogueName
+  - NancyRespondingBean
+  <oldGroupedNames>k__BackingField:
+    list: []
