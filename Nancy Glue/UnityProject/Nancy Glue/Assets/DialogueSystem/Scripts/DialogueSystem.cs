@@ -298,13 +298,16 @@ namespace Dialogue
 
         private void OnEnable()
         {
-
+            var shutter = FindObjectOfType<ShutterScript>();
+            shutter.TriggerShutter();
         }
 
         private void OnDisable()
         {
             dialogueContainer = null;
             currentDialogue = null;
+            var shutter = FindObjectOfType<ShutterScript>();
+            shutter.TriggerShutter();
         }
     }
 }
