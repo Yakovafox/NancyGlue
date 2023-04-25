@@ -8,7 +8,7 @@ public class BriefcaseScript : MonoBehaviour, IClickable
     public SpriteRenderer spriteRenderer;
     public bool Clicked;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }

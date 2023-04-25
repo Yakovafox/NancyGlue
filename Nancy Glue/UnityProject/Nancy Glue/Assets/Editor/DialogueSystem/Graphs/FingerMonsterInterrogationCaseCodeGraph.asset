@@ -130,31 +130,6 @@ MonoBehaviour:
     <position>k__BackingField: {x: 12299, y: 1063}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 6d4cad6c-3500-474c-8d16-7f72ee7dc12a
-    <dialogueName>k__BackingField: FastDealNote
-    <characterName>k__BackingField: Finger Monsters
-    <text>k__BackingField: They accepted that crown deal fast!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 12966, y: 1058}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 310580bd-474b-4125-80c0-5e6ec71f4df3
-    <dialogueName>k__BackingField: DialogueName
-    <characterName>k__BackingField: Finger Monsters
-    <text>k__BackingField: They are still arguing over this crown?! I dont think
-      they knew I had even gone!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 6982, y: 510}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 6705a338-d0bc-4901-b78b-1db46c7db2f0
     <dialogueName>k__BackingField: Start
     <characterName>k__BackingField: Finger Monster B
@@ -263,8 +238,6 @@ MonoBehaviour:
   - CrownA
   - Code
   - CodeNote
-  - FastDealNote
-  - DialogueName
   - Start
   - AguingC
   - ArguingA
