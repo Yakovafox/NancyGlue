@@ -123,6 +123,7 @@ public class mouseTrack : MonoBehaviour
 
     private void CursorChange(Ray ray)
     {
+        
         //_cursor.transform.position = Input.mousePosition;
         if (!Physics.Raycast(ray, out var hitData, _range) || UIOpen || _dialogueBox.activeSelf)
         {
@@ -132,7 +133,16 @@ public class mouseTrack : MonoBehaviour
         switch (hitData.transform.tag)
         {
             case "Finish" when !UIOpen || !DialogueOpenCheck():
-                Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+                var cam = hitData.transform;
+                var mainName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+                var mainCam = GameObject.Find(mainName).transform.parent.GetComponent<CameraSwitch>();
+                foreach(var switchableCam in mainCam.SwitchableCameras)
+                {
+                    if(cam == switchableCam)
+                        Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+
+                }
+                //Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
                 break;
             case "NPC" when !UIOpen || !DialogueOpenCheck():
                 Cursor.SetCursor(_sprites[2], new Vector2(30,10), CursorMode.Auto);

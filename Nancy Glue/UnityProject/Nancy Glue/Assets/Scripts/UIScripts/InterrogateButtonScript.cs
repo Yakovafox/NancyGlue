@@ -38,6 +38,11 @@ public class InterrogateButtonScript : MonoBehaviour
         ZoneManager _zoneManager = FindObjectOfType<ZoneManager>();
         StartCoroutine(ZoneTransition(_zoneManager.CurrentCamera, _zoneManager.OfficeCam));
         _uiAnimator.gameObject.GetComponent<OpenCloseUI>().CloseUI();
+        var locationbuttons = FindObjectsOfType<LocationButton>();
+        foreach(var button in locationbuttons)
+        {
+            button.LocationCheck();
+        }
     }
 
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)

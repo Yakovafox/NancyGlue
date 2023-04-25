@@ -25,7 +25,6 @@ public class LocationButton : MonoBehaviour
         var colors = _button.colors;
         colors.normalColor = IsCurrentLocation ? _selectedColor : _unSelectedColor;
         _button.colors = colors;
-
     }
 
     public void ButtonClick()
@@ -63,5 +62,17 @@ public class LocationButton : MonoBehaviour
             _targetLocation.SwitchActiveCam();
         }
         */
+    }
+
+    public void LocationCheck()
+    {
+        if (IsCurrentLocation) return;
+        var locationButtons = FindObjectsOfType<LocationButton>();
+        foreach (var button in locationButtons)
+        {
+            if (button.gameObject != gameObject)
+                button.IsCurrentLocation = false;
+        }
+        IsCurrentLocation = true;
     }
 }

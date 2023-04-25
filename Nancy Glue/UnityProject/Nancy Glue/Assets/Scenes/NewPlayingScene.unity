@@ -2338,7 +2338,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119519844}
-  m_LocalRotation: {x: 0.01915768, y: 0.70684713, z: 0.019157676, w: -0.70684737}
+  m_LocalRotation: {x: 0.019157678, y: 0.7068472, z: 0.019157674, w: -0.7068473}
   m_LocalPosition: {x: -0, y: 0, z: -0.185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2406,7 +2406,7 @@ MonoBehaviour:
   _turnSpeed: 30
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -8132,7 +8132,7 @@ MonoBehaviour:
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -11025,7 +11025,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 86d62dc4bea1b8a458d6867c02f4568c, type: 2}
     - target: {fileID: 919132149155446097, guid: b03ba8caea3ec7e4793ccd288af74e87, type: 3}
       propertyPath: m_Name
-      value: Car
+      value: ThunderMcKing
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b03ba8caea3ec7e4793ccd288af74e87, type: 3}
       propertyPath: m_TagString
@@ -24785,7 +24785,7 @@ MonoBehaviour:
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -25107,7 +25107,7 @@ MonoBehaviour:
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -31916,7 +31916,7 @@ MonoBehaviour:
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -37276,7 +37276,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25392
+  m_Name: pb_Mesh27318
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -52933,6 +52933,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: <CharacterSprite>k__BackingField
+      value: 
+      objectReference: {fileID: 21300000, guid: d9aa432f0ef55a44dbaeaa8671a331d7, type: 3}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[2].Container
       value: 
       objectReference: {fileID: 11400000, guid: 18e751bd51ae47a43891d75babd2725e, type: 2}
@@ -54934,17 +54938,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogues:
   - Container: {fileID: 11400000, guid: 50d59641bb9435b418a554a8043acb6c, type: 2}
-    Trigger: 3
+    Trigger: 1
   Interrogations: []
   canBeQuestioned: 0
-  <CharName>k__BackingField: 
+  <CharName>k__BackingField: Thunder McKing
   <SpokenTo>k__BackingField: 0
   <CharacterSprite>k__BackingField: {fileID: 0}
   originalPosition: {x: 0, y: 0, z: 0}
   dialogueIterator: 0
   interrogationIterator: 0
-  attachedNPC: Car
-  notes: []
+  attachedNPC: ThunderMcKing
+  notes:
+  - Beeps a lot.
+  - What the hell does Kerchoo Mean?
+  - 'The owners made some strange mods to the car. '
 --- !u!1001 &1278857958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62823,7 +62830,7 @@ MonoBehaviour:
   _turnSpeed: 0
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -64737,7 +64744,7 @@ MonoBehaviour:
   _turnSpeed: 50
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0
@@ -101942,7 +101949,7 @@ MonoBehaviour:
   _turnSpeed: 30.1
   _mousePos: {x: 0, y: 0, z: 0}
   _screenBounds: {x: 0, y: 0}
-  _screenBuffer: 100
+  _screenBuffer: 30
   _lookLeft: 0
   _lookRight: 0
   _lookUp: 0

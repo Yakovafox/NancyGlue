@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] [Range(20,50)]private float _turnSpeed;
     [SerializeField] private Vector3 _mousePos;
     [SerializeField] private Vector2 _screenBounds;
-    [SerializeField][Range(50, 100)] private int _screenBuffer = 100;
+    [SerializeField][Range(20, 30)] private int _screenBuffer = 100;
     [SerializeField] private bool _lookLeft, _lookRight, _lookUp, _lookDown;
     [SerializeField] private Vector3 _initialRotation;
     public Vector3 InitialRotation { get => _initialRotation; }
