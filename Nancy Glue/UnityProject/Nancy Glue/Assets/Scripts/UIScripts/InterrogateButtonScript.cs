@@ -24,7 +24,6 @@ public class InterrogateButtonScript : MonoBehaviour
         _transitionAnimator = GameObject.Find("Transition").GetComponent<Animator>();
         _uiAnimator = GameObject.Find("ClipBoardBack").GetComponent<Animator>();
         dialogue = FindObjectOfType<DialogueSystem>(true);
-        //button.onClick.AddListener(BringForInterrogation);
     }
 
     public void SetNpc(NPCTracker npc)
@@ -34,23 +33,22 @@ public class InterrogateButtonScript : MonoBehaviour
 
     public void BringForInterrogation()
     {
-        //button.setAc
         ZoneManager _zoneManager = FindObjectOfType<ZoneManager>();
         StartCoroutine(ZoneTransition(_zoneManager.CurrentCamera, _zoneManager.OfficeCam));
-        _uiAnimator.gameObject.GetComponent<OpenCloseUI>().CloseUI();
     }
 
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
     {
         _transitionAnimator.SetTrigger("FadeIn");
-        //yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
         oldCam.SwitchActiveCam();
         newCam.SwitchActiveCam();
-        //yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
         GameObject.Find(NPC.attachedNPC).transform.position = GameObject.Find("SeatLocation").transform.position;
         _uiAnimator.SetBool("hide", true);
         dialogue.SetContainer(NPC.GetCurrentInterContainer(), NPC);
         _transitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(0);
+        _uiAnimator.gameObject.GetComponent<OpenCloseUI>().CloseUI();
     }
 }

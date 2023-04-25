@@ -172,7 +172,6 @@ public class GameManager1 : MonoBehaviour
 
     private void FingerInterrogate1Init()
     {
-        Debug.LogError("Activating camera");
         _zoneManager.AlleyCam.SwitchableCameras[0].gameObject.SetActive(true);
         stateTracker[5] = 1;
     }
