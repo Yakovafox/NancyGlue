@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: SneakyPigeon3Graph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: SneakyPigeon3
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 4e7dca11-8b06-4959-9894-942db5275c80
+    <dialogueName>k__BackingField: SneakyPigeon3
+    <characterName>k__BackingField: Sneaky Pigeons
+    <text>k__BackingField: We've mastered the ability of standing so incredibly still...
+      that we become invisible to the eye
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: e2b8c1fc-e151-43b1-bbbc-bd7a384f9ee3
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 271.2, y: 65.600006}
+    <spritePath>k__BackingField: StickerSprites/Pigeon_3
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: e2b8c1fc-e151-43b1-bbbc-bd7a384f9ee3
+    <dialogueName>k__BackingField: NancyRespondingPigeon3
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I can see you....
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 942.4, y: 65.600006}
+    <spritePath>k__BackingField: StickerSprites/Pigeon_3
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - SneakyPigeon3
+  - NancyRespondingPigeon3
+  <oldGroupedNames>k__BackingField:
+    list: []

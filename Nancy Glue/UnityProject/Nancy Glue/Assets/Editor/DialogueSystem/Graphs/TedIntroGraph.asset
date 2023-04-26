@@ -15,17 +15,16 @@ MonoBehaviour:
   <fileName>k__BackingField: TedIntro
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
-    <dialogueName>k__BackingField: TedEnd
-    <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: 'I need to see what the crowd want to watch, since the
-      other film''s went missing. '
+  - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
+    <dialogueName>k__BackingField: NancyStart
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hello I'm Nan...
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2723, y: 378}
+    <position>k__BackingField: {x: 1124, y: 468}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
   - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
@@ -47,16 +46,43 @@ MonoBehaviour:
       with you. The projector booth's open, take a look around.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
+      <NodeID>k__BackingField: adfbeec0-49b1-450e-8b86-c00ce3f3fc5f
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1969, y: 505}
+    <position>k__BackingField: {x: 2017.6, y: 412}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
+  - <ID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
+    <dialogueName>k__BackingField: TedEnd
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: 'I need to see what the crowd want to watch, since the
+      other film''s went missing. '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3500.8, y: 316.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: adfbeec0-49b1-450e-8b86-c00ce3f3fc5f
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Ted Said the projector booth is open, where is it?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 2
+    <position>k__BackingField: {x: 2731.2, y: 454.4}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - TedEnd
   - NancyStart
   - TedStart
+  - TedEnd
+  - DialogueName
+
   <oldGroupedNames>k__BackingField:
     list: []

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: JaneDOEWheresTheOwner
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: JaneDOEWheresTheOwner
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 3e9c9b3847776ad4ba1476c786123f84, type: 2}
+  - {fileID: 11400000, guid: 46a162ac15b51c6468963ecd29507f2f, type: 2}

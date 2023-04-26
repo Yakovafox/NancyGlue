@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: AHHHHHHHHHHHGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: AHHHHHHHHHHH
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: ebae4b39-531f-4609-b31f-124d37532b6d
+    <dialogueName>k__BackingField: PigeonScreaming
+    <characterName>k__BackingField: Mildly Angry Pigeon
+    <text>k__BackingField: AHHHHHHHHHHHHHHHHHHHHHHHHHHHH!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 284.80002, y: -264}
+    <spritePath>k__BackingField: StickerSprites/pigeon_2_sprite_2
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - PigeonScreaming
+  <oldGroupedNames>k__BackingField:
+    list: []

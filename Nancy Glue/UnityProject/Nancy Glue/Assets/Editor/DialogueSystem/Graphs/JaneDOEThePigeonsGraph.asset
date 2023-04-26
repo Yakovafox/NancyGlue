@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: JaneDOEThePigeonsGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: JaneDOEThePigeons
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 35e5ec9d-b19a-47ae-81e6-144440d6a3e8
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Not currently sorry im already busy. You arent wrong though!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6180, y: -644}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c24831c7-8b73-4583-abdf-4c8e858f9882
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Helloooo.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4747, y: -648}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
+    <dialogueName>k__BackingField: ThatTeddySeemsInCharge
+    <characterName>k__BackingField: Jane Doe
+    <text>k__BackingField: Hey detective, all these pigeons everywhere is getting
+      annoying! Can you help?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 35e5ec9d-b19a-47ae-81e6-144440d6a3e8
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5430, y: -650}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - DialogueName
+  - Start
+  - ThatTeddySeemsInCharge
+  <oldGroupedNames>k__BackingField:
+    list: []

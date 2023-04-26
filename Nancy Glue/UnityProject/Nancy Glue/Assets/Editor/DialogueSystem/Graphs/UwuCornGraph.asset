@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: UwuCornGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: UwuCorn
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: d492b7ff-4199-4ce6-99fe-35873b2eeab9
+    <dialogueName>k__BackingField: UwuCorn
+    <characterName>k__BackingField: UwuCorn
+    <text>k__BackingField: UWU
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 7ea6a7ff-d230-424d-8954-b5a16ceb0cb9
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 226.4, y: 142.40001}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Uwunicorn
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 7ea6a7ff-d230-424d-8954-b5a16ceb0cb9
+    <dialogueName>k__BackingField: NancyRespondingUnicorn
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: That was weird...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 911.2, y: 165.6}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Uwunicorn
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - UwuCorn
+  - NancyRespondingUnicorn
+  <oldGroupedNames>k__BackingField:
+    list: []

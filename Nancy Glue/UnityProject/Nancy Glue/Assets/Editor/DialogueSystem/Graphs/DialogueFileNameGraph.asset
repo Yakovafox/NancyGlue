@@ -15,46 +15,34 @@ MonoBehaviour:
   <fileName>k__BackingField: DialogueFileName
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: f2b51e3d-96b4-484a-bcae-74082f22c4f7
-    <dialogueName>k__BackingField: DialogueName
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: Dialogue Text.
+  - <ID>k__BackingField: eedad652-9a05-4515-86b0-b2798d6f2f03
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: AHA, found you. Yet another case solved!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 385c27ff-f195-4770-9fe2-2ee5b982a7ab
+      <NodeID>k__BackingField: 8a1863e6-1a90-4d4d-a1d9-5f6fe91dc9c4
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 276, y: 251}
-    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <position>k__BackingField: {x: 279.2, y: -245.59999}
+    <spritePath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 385c27ff-f195-4770-9fe2-2ee5b982a7ab
-    <dialogueName>k__BackingField: DialogueName2
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: Dialogue Text.
+  - <ID>k__BackingField: 8a1863e6-1a90-4d4d-a1d9-5f6fe91dc9c4
+    <dialogueName>k__BackingField: NowToGetTheCode
+    <characterName>k__BackingField: 
+    <text>k__BackingField: Now just to get the case code to unlock it! I'll need
+      to question the finger monsters about this though, hmm could be tricky.
     <options>k__BackingField:
-    - <Text>k__BackingField: New Option
-      <NodeID>k__BackingField: 76571ec7-8ac1-49f0-8ece-3fdb542d84b0
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 1
-    <position>k__BackingField: {x: 1086, y: 235}
-    <spritePath>k__BackingField: UI/Sprites/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 76571ec7-8ac1-49f0-8ece-3fdb542d84b0
-    <dialogueName>k__BackingField: DialogueName3
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: Dialogue Text.
-    <options>k__BackingField:
-    - <Text>k__BackingField: New Option
+    - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
-    <type>k__BackingField: 1
-    <position>k__BackingField: {x: 2014, y: 397}
-    <spritePath>k__BackingField: UI/Sprites/missing_texture
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1244.7999, y: -252.8}
+    <spritePath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - DialogueName
-  - DialogueName2
-  - DialogueName3
+  - Start
+  - NowToGetTheCode
   <oldGroupedNames>k__BackingField:
     list: []
