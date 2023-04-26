@@ -184,7 +184,7 @@ namespace Dialogue
                 if (audioSourceMusic.clip != normalTrack)
                 {
                     audioSourceMusic.clip = normalTrack;
-                    audioSourceSound.Play();
+                    audioSourceMusic.Play();
                 }
 
                 return;
