@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: e4299fa03eddbfd49be156348dcf6801, type: 2}
   <dialogueText>k__BackingField: Whats a crown doing here?
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Crown_with_photo
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <isStartingDialogue>k__BackingField: 0

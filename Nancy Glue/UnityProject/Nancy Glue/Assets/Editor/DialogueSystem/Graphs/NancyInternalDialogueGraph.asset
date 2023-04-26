@@ -26,31 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1531, y: -278}
     <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 972e794a-5186-4ea8-9ccd-132acee78bcd
-    <dialogueName>k__BackingField: PhotoOfBelongTo
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hmm... There appears to be a photo of who it belongs to.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: be21cf22-cde8-47ac-a68e-56fc3c92b556
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3086, y: -278}
-    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: bf40ab73-45c6-449c-85bf-e37a1c2c1528
-    <dialogueName>k__BackingField: WhatACrown
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Whats a crown doing here?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 760662da-c2ce-44e6-a482-f801e2484746
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 757, y: -277}
-    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: be21cf22-cde8-47ac-a68e-56fc3c92b556
     <dialogueName>k__BackingField: PhotoNoticeNote
     <characterName>k__BackingField: Nancy Glue
@@ -64,18 +40,6 @@ MonoBehaviour:
     <position>k__BackingField: {x: 3766, y: -276}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 53440d1e-b105-4ec5-a04a-abbd6b86df84
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: 'HUH, Whats this? '
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 9f4b1c57-a8ad-4ba3-b791-a9f269c1fb1a
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: -655, y: -269}
-    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 9f4b1c57-a8ad-4ba3-b791-a9f269c1fb1a
     <dialogueName>k__BackingField: CrownDialogue1
     <characterName>k__BackingField: Crown
@@ -87,7 +51,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 87, y: -278}
     <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: n/a
   - <ID>k__BackingField: f7f523ca-e50e-42aa-bf86-a9800f8caa5a
     <dialogueName>k__BackingField: CrownDialogue2
     <characterName>k__BackingField: Crown
@@ -99,7 +63,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 2285, y: -281}
     <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: n/a
   - <ID>k__BackingField: e9dc9887-a9ca-4683-80ad-6ad06c294846
     <dialogueName>k__BackingField: IShouldQuestionThem
     <characterName>k__BackingField: Nancy Glue
@@ -111,7 +75,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 5018, y: -274}
     <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 63c4e3a3-8af6-4bb4-a9f7-6d3a70554e98
     <dialogueName>k__BackingField: NewLocationShelfStreet
     <characterName>k__BackingField: Nancy Glue
@@ -124,16 +88,52 @@ MonoBehaviour:
     <position>k__BackingField: {x: 4356, y: -534}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 53440d1e-b105-4ec5-a04a-abbd6b86df84
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: 'HUH, Whats this? '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 9f4b1c57-a8ad-4ba3-b791-a9f269c1fb1a
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: -655, y: -269}
+    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
+  - <ID>k__BackingField: bf40ab73-45c6-449c-85bf-e37a1c2c1528
+    <dialogueName>k__BackingField: WhatACrown
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Whats a crown doing here?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 760662da-c2ce-44e6-a482-f801e2484746
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 757, y: -277}
+    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
+  - <ID>k__BackingField: 972e794a-5186-4ea8-9ccd-132acee78bcd
+    <dialogueName>k__BackingField: PhotoOfBelongTo
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hmm... There appears to be a photo of who it belongs to.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: be21cf22-cde8-47ac-a68e-56fc3c92b556
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3086, y: -278}
+    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - IWonder
-  - PhotoOfBelongTo
-  - WhatACrown
   - PhotoNoticeNote
-  - Start
   - CrownDialogue1
   - CrownDialogue2
   - IShouldQuestionThem
   - NewLocationShelfStreet
+  - Start
+  - WhatACrown
+  - PhotoOfBelongTo
   <oldGroupedNames>k__BackingField:
     list: []

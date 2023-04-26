@@ -27,7 +27,19 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 2723, y: 378}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
+  - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
+    <dialogueName>k__BackingField: NancyStart
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hello I'm Nan...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1124, y: 468}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/BarbieDetective/Feminine_Think-003
   - <ID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
     <dialogueName>k__BackingField: TedStart
     <characterName>k__BackingField: Ted Grizzly
@@ -40,23 +52,11 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1969, y: 505}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
-    <dialogueName>k__BackingField: NancyStart
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hello I'm Nan...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1124, y: 468}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - TedEnd
-  - TedStart
   - NancyStart
+  - TedStart
   <oldGroupedNames>k__BackingField:
     list: []

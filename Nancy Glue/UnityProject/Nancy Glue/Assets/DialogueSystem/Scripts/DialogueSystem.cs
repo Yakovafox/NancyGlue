@@ -78,6 +78,7 @@ namespace Dialogue
                 }
             }
 
+            audioSourceMusic = GameObject.Find("Player").GetComponents<AudioSource>()[0];
             audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         }
 
@@ -87,6 +88,7 @@ namespace Dialogue
 
             audioSourceSound.clip = Resources.Load<AudioClip>(currentDialogue.dialogueAudioAssetPath);
             audioSourceSound.Play();
+            audioSourceSound.loop = true;
 
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
@@ -140,6 +142,9 @@ namespace Dialogue
             {
                 if (!scrollingText) break;
 
+                float pitchAdjust = UnityEngine.Random.Range(-5, 20) / 10;
+                audioSourceSound.pitch = 1.5f + pitchAdjust;
+
                 displayedText += letter;
                 bodyTextUI.text = displayedText;
 
@@ -149,6 +154,7 @@ namespace Dialogue
             bodyTextUI.text = text;
             displayedText = "";
             scrollingText = false;
+            audioSourceSound.loop = false;
             StopCoroutine(TypewriterText(text));
         }
 
@@ -175,7 +181,11 @@ namespace Dialogue
                 }
 
                 AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Atmosphere_001");
-                if (audioSourceMusic.clip != normalTrack) audioSourceMusic.clip = normalTrack;
+                if (audioSourceMusic.clip != normalTrack)
+                {
+                    audioSourceMusic.clip = normalTrack;
+                    audioSourceSound.Play();
+                }
 
                 return;
             }

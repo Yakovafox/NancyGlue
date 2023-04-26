@@ -24,5 +24,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 46ef5e7968345aa40b89556fb0b904c1, type: 2}
   <dialogueText>k__BackingField: So what is it now?!?
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_005
   <isStartingDialogue>k__BackingField: 0

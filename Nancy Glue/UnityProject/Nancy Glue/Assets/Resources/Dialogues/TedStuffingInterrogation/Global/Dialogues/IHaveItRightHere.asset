@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: '[Presents Stuffing], I did find this on the projector
     though, maybe you know what it is?'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   <isStartingDialogue>k__BackingField: 0
