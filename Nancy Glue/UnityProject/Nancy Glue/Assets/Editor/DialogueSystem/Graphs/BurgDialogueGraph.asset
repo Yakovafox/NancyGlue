@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: BurgDialogueGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: BurgDialogue
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: ac1d77d5-c780-4e8a-a611-817999d9ce67
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Robot
+    <text>k__BackingField: So we meet again Nancy Glue... FOR THE LAST TIME!!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d5dd3a9d-ed6d-4227-982a-17167d44aefa
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 296, y: -33}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Robot
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: d5dd3a9d-ed6d-4227-982a-17167d44aefa
+    <dialogueName>k__BackingField: IDontHaveTheTime
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Sorry, I dont have the time Burg. Maybe next time!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d36105c4-79a1-4d0c-8c72-0e29bb120665
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 971, y: -34}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Robot
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: d36105c4-79a1-4d0c-8c72-0e29bb120665
+    <dialogueName>k__BackingField: Blast
+    <characterName>k__BackingField: Burg
+    <text>k__BackingField: Blast! Catch you next time!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1668, y: -33}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Robot
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - Start
+  - IDontHaveTheTime
+  - Blast
+  <oldGroupedNames>k__BackingField:
+    list: []
