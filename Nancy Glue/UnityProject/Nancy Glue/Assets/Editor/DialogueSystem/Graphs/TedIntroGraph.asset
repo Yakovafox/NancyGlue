@@ -21,68 +21,42 @@ MonoBehaviour:
     <text>k__BackingField: Hello I'm Nan...
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
+      <NodeID>k__BackingField: 6e8afb10-25bc-46fa-8626-a51ea6d51472
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1124, y: 468}
+    <position>k__BackingField: {x: 516, y: 464}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
-  - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
-    <dialogueName>k__BackingField: NancyStart
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hello I'm Nan...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1124, y: 468}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/BarbieDetective/Feminine_Think-003
-  - <ID>k__BackingField: 3d70e326-0154-465f-9402-4bcf2afc1e10
-    <dialogueName>k__BackingField: TedStart
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-003
+  - <ID>k__BackingField: 6e8afb10-25bc-46fa-8626-a51ea6d51472
+    <dialogueName>k__BackingField: TedGreeting
     <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: Yeah yeah, Nancy Glue. Look I don't have time to deal
+    <text>k__BackingField: Yeah yerah, Nancy Glue. Look I don't have time to deal
       with you. The projector booth's open, take a look around.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: adfbeec0-49b1-450e-8b86-c00ce3f3fc5f
+      <NodeID>k__BackingField: 08384596-4a51-4fcc-8547-97439562ae10
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2017.6, y: 412}
+    <position>k__BackingField: {x: 1267, y: 464}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
-  - <ID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
-    <dialogueName>k__BackingField: TedEnd
+  - <ID>k__BackingField: 08384596-4a51-4fcc-8547-97439562ae10
+    <dialogueName>k__BackingField: TedMissingFilm
     <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: 'I need to see what the crowd want to watch, since the
-      other film''s went missing. '
+    <text>k__BackingField: I need to see what the crowd want to watch, since the
+      other film's gone missing.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3500.8, y: 316.8}
+    <position>k__BackingField: {x: 2008, y: 464}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: adfbeec0-49b1-450e-8b86-c00ce3f3fc5f
-    <dialogueName>k__BackingField: DialogueName
-    <characterName>k__BackingField: Ted Grizzly
-    <text>k__BackingField: Ted Said the projector booth is open, where is it?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: d0c3ced4-ee1e-4b89-8774-1bb029db095d
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 2
-    <position>k__BackingField: {x: 2731.2, y: 454.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - NancyStart
-  - TedStart
-  - TedEnd
-  - DialogueName
-
+  - TedGreeting
+  - TedMissingFilm
   <oldGroupedNames>k__BackingField:
     list: []
