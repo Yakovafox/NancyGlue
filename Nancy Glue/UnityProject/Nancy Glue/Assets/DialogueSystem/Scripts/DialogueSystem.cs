@@ -68,14 +68,6 @@ namespace Dialogue
                 {
                     buttons[i].onClick.AddListener(delegate { OnOptionChosen(2); });
                 }
-                else if (i == 3)
-                {
-                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(3); });
-                }
-                else if (i == 4)
-                {
-                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
-                }
             }
 
             audioSourceMusic = GameObject.Find("Player").GetComponents<AudioSource>()[0];
@@ -105,7 +97,7 @@ namespace Dialogue
                 characterPortrait.color = focusColor;
             }
 
-            if (this.isActiveAndEnabled)
+            if (isActiveAndEnabled)
             {
                 scrollingText = true;
                 StartCoroutine(TypewriterText(currentDialogue.dialogueText));

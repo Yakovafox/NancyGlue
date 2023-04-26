@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IWonder
   m_EditorClassIdentifier: 
   <dialogueName>k__BackingField: IWonder
-  <characterName>k__BackingField: Character Name
+  <characterName>k__BackingField: Nancy Glue
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...

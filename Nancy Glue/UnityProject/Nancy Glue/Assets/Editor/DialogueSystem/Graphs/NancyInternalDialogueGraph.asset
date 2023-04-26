@@ -15,18 +15,6 @@ MonoBehaviour:
   <fileName>k__BackingField: NancyInternalDialogue
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 760662da-c2ce-44e6-a482-f801e2484746
-    <dialogueName>k__BackingField: IWonder
-    <characterName>k__BackingField: Character Name
-    <text>k__BackingField: I wonder if the theives dropped it...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: f7f523ca-e50e-42aa-bf86-a9800f8caa5a
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1531, y: -278}
-    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: be21cf22-cde8-47ac-a68e-56fc3c92b556
     <dialogueName>k__BackingField: PhotoNoticeNote
     <characterName>k__BackingField: Nancy Glue
@@ -124,9 +112,20 @@ MonoBehaviour:
     <position>k__BackingField: {x: 3086, y: -278}
     <spritePath>k__BackingField: StickerSprites/Crown_with_photo
     <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
+  - <ID>k__BackingField: 760662da-c2ce-44e6-a482-f801e2484746
+    <dialogueName>k__BackingField: IWonder
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I wonder if the theives dropped it...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: f7f523ca-e50e-42aa-bf86-a9800f8caa5a
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1501, y: -278}
+    <spritePath>k__BackingField: StickerSprites/Crown_with_photo
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - IWonder
   - PhotoNoticeNote
   - CrownDialogue1
   - CrownDialogue2
@@ -135,5 +134,6 @@ MonoBehaviour:
   - Start
   - WhatACrown
   - PhotoOfBelongTo
+  - IWonder
   <oldGroupedNames>k__BackingField:
     list: []

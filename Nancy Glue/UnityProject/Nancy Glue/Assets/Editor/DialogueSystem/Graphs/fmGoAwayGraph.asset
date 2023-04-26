@@ -26,7 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 2675, y: -91}
     <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-002
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_004
   - <ID>k__BackingField: 9c786aa1-9f39-4e14-b646-0e36ef3acc69
     <dialogueName>k__BackingField: StartIntruder
     <characterName>k__BackingField: Finger Monster C
@@ -51,7 +51,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1299, y: -91}
     <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-001
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster32-001
   - <ID>k__BackingField: 1919e05d-158e-48d9-b0d9-933245dffabf
     <dialogueName>k__BackingField: ISuggestMovingAlong
     <characterName>k__BackingField: Finger Monster B
@@ -63,7 +63,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1977, y: -90}
     <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-002
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - IWantedToAskQuestions
