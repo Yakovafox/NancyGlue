@@ -35,6 +35,10 @@ namespace Dialogue
         [SerializeField] private TextMeshProUGUI characterNameUI;
         [SerializeField] private TextMeshProUGUI bodyTextUI;
 
+        // Audio
+        private AudioSource audioSourceMusic;
+        private AudioSource audioSourceSound;
+
         private DialogueSO currentDialogue;
         private bool scrollingText = false;
         private string displayedText = "";
@@ -64,20 +68,19 @@ namespace Dialogue
                 {
                     buttons[i].onClick.AddListener(delegate { OnOptionChosen(2); });
                 }
-                else if (i == 3)
-                {
-                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(3); });
-                }
-                else if (i == 4)
-                {
-                    buttons[i].onClick.AddListener(delegate { OnOptionChosen(4); });
-                }
             }
+
+            audioSourceMusic = GameObject.Find("Player").GetComponents<AudioSource>()[0];
+            audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         }
 
         private void ShowText()
         {
             if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
+
+            audioSourceSound.clip = Resources.Load<AudioClip>(currentDialogue.dialogueAudioAssetPath);
+            audioSourceSound.Play();
+            audioSourceSound.loop = true;
 
             Debug.Log(characterNameUI);
             characterNameUI.text = currentDialogue.characterName;
@@ -94,7 +97,7 @@ namespace Dialogue
                 characterPortrait.color = focusColor;
             }
 
-            if (this.isActiveAndEnabled)
+            if (isActiveAndEnabled)
             {
                 scrollingText = true;
                 StartCoroutine(TypewriterText(currentDialogue.dialogueText));
@@ -131,6 +134,9 @@ namespace Dialogue
             {
                 if (!scrollingText) break;
 
+                float pitchAdjust = UnityEngine.Random.Range(-5, 20) / 10;
+                audioSourceSound.pitch = 1.5f + pitchAdjust;
+
                 displayedText += letter;
                 bodyTextUI.text = displayedText;
 
@@ -140,6 +146,7 @@ namespace Dialogue
             bodyTextUI.text = text;
             displayedText = "";
             scrollingText = false;
+            audioSourceSound.loop = false;
             StopCoroutine(TypewriterText(text));
         }
 
@@ -163,6 +170,13 @@ namespace Dialogue
                 {
                     GameObject.Find(tracker.attachedNPC).transform.position = tracker.originalPosition;
                     gameObject.SetActive(false);
+                }
+
+                AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Atmosphere_001");
+                if (audioSourceMusic.clip != normalTrack)
+                {
+                    audioSourceMusic.clip = normalTrack;
+                    audioSourceMusic.Play();
                 }
 
                 return;
@@ -292,19 +306,21 @@ namespace Dialogue
                 button.GetComponentInChildren<TMP_Text>().enabled = false;
             }
 
-            Debug.Log("Enable Dialogue");
             transform.gameObject.SetActive(true);
         }
 
         private void OnEnable()
         {
-
+            var shutter = FindObjectOfType<ShutterScript>();
+            shutter.TriggerShutter();
         }
 
         private void OnDisable()
         {
             dialogueContainer = null;
             currentDialogue = null;
+            var shutter = FindObjectOfType<ShutterScript>();
+            shutter.TriggerShutter();
         }
     }
 }

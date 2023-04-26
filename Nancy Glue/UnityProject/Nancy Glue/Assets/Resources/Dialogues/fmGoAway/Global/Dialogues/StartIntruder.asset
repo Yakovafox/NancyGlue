@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 21298ed2ff00a3c478a60e036817d99e, type: 2}
   <dialogueText>k__BackingField: WAIUDWA! INTRUDER! DWIAOH
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_c_standing
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-001
   <isStartingDialogue>k__BackingField: 1

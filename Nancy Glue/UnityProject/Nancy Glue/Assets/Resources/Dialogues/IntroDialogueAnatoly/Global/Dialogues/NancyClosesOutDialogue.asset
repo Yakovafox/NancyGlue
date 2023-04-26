@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <isStartingDialogue>k__BackingField: 0

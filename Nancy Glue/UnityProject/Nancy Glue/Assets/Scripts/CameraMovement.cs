@@ -17,7 +17,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] [Range(20,50)]private float _turnSpeed;
     [SerializeField] private Vector3 _mousePos;
     [SerializeField] private Vector2 _screenBounds;
-    [SerializeField][Range(50, 100)] private int _screenBuffer = 100;
+    [SerializeField][Range(20, 30)] private int _screenBuffer = 100;
     [SerializeField] private bool _lookLeft, _lookRight, _lookUp, _lookDown;
     [SerializeField] private Vector3 _initialRotation;
     public Vector3 InitialRotation { get => _initialRotation; }
@@ -32,9 +32,10 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera _virtualCam;
     [SerializeField] private CinemachineTrackedDolly _dollyCam;
     [SerializeField] private float _dollyMax, _dollyMin, _dollyCurrent, _targetOffsetZ, _targetOffsetY, _targetOffsetX;
-
+    public SaveLoadSettings SLS;
     public float AngleX { get => _angleX; set => _angleX = value; }
     public float AngleY { get => _angleY; set => _angleY = value; }
+    
 
     private void Awake()
     {
@@ -46,6 +47,7 @@ public class CameraMovement : MonoBehaviour
         _dialogueBox = dialogue.gameObject;
         _invUI = FindObjectOfType<invUI>().gameObject;
         _uiScript = FindObjectOfType<OpenCloseUI>();
+        SLS = FindObjectOfType<SaveLoadSettings>();
     }
 
     // Start is called before the first frame update
@@ -202,5 +204,24 @@ public class CameraMovement : MonoBehaviour
         _angleX = _initialRotation.x;
         _angleY = _initialRotation.y;
         _cameraTransform.eulerAngles = InitialRotation;
+        
+
     }
+
+    private void FixedUpdate()
+    {
+        
+
+        if (SLS.sensitivity + 30 == _turnSpeed)
+        {
+            //Debug.Log("no change in sens");
+        }
+        else
+        {
+            Debug.Log("Sens changed");
+            _turnSpeed = 30 + SLS.sensitivity;
+            Debug.Log("Set to "+_turnSpeed);
+        }
+    }
+
 }

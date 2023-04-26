@@ -25,9 +25,9 @@ public class MenuManager : MonoBehaviour
         FS = FindObjectOfType<FontScript>();
 
         //settings temp 
-        tempSettingsLoader.musivVol = 50;
-        tempSettingsLoader.sens = 0;
-        tempSettingsLoader.sfxVol = 50;
+        //tempSettingsLoader.musicVol = 50;
+        //tempSettingsLoader.sens = 0;
+        //tempSettingsLoader.sfxVol = 50;
 
 
     }

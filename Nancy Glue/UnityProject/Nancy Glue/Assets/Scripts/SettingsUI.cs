@@ -19,25 +19,29 @@ public class SettingsUI : MonoBehaviour
     public AudioMixer mixer;
     public Slider sfxVolSlider;
     public TMP_Text sfxVolSliderValue;
-
-    public int sens;
-    public int sfxVol;
-    public int musicVol;
+    public SaveLoadGameState SLGS;
+    public Button closeMenu;
+    //public int sens;
+    //public float sfxVol;
+    //public float musicVol;
 
 
     // Start is called before the first frame update
     void Start()
     {
         
-        reset.onClick.AddListener(resetValues);
+        reset.onClick.AddListener(resetSettings);
         mainMenu.onClick.AddListener(menu);
         exit.onClick.AddListener(exitApp);
+        closeMenu.onClick.AddListener(menuClosed);
     }
 
     private void Awake()
     {
         SLS = FindObjectOfType<SaveLoadSettings>();
-        initLoad();
+        SLGS = FindObjectOfType<SaveLoadGameState>();
+        firstLoad();
+        load();
     }
 
     private void FixedUpdate()
@@ -52,42 +56,41 @@ public class SettingsUI : MonoBehaviour
         sfxVolSliderValue.text = Mathf.RoundToInt((sfxVolSlider.value) * 100).ToString();
     }
 
-    void initLoad()
+    void firstLoad()
     {
-        //pull settings from menu sliders 
-        //temp for alpha
-        sensSlider.value = tempSettingsLoader.sens;
-        musicVol = tempSettingsLoader.musivVol;
-        sfxVol = tempSettingsLoader.sfxVol;
+        SLS.load();
     }
+
 
     void load()
     {
-        /*
+        //pull settings from SLS
+        
+        Debug.Log("loaded sens ui " + SLS.sensitivity);
         sensSlider.value = SLS.sensitivity;
-        sens = SLS.sensitivity;
-        Debug.Log("sens loaded " + SLS.sensitivity);
-
-        volSlider.value = (SLS.musicVolume) / 100;
-        musicVol = (SLS.musicVolume);
-        Debug.Log("Loaded music volume " + (SLS.musicVolume) / 100);
-        Debug.Log("Original mv value " + musicVol);
-        sfxVolSlider.value = (SLS.sfxVolume) / 100;
-        sfxVol = SLS.sfxVolume;
-        Debug.Log("Loaded SFX volume " + (SLS.sfxVolume) / 100);
-        Debug.Log("Original sfxV value " + sfxVol);
-        */
-        //TEMPORARY FOR ALPHA
-        sensSlider.value = tempSettingsLoader.sens;
-        musicVol = tempSettingsLoader.musivVol;
-        sfxVol = tempSettingsLoader.sfxVol;
-
-
+        volSlider.value = (SLS.musicVolume);
+        Debug.Log("Loaded music volume ui " + (SLS.musicVolume));
+        sfxVolSlider.value = SLS.sfxVolume;
+        Debug.Log("Loaded SFX volume ui " + (SLS.sfxVolume));
 
 
 
     }
-    public void resetValues()
+
+    
+    void save()
+    {
+        SLS.sensitivity = (int)sensSlider.value;
+        SLS.musicVolume = volSlider.value;
+
+        SLS.sfxVolume = sfxVolSlider.value;
+
+        SLS.save();
+    }
+
+
+
+    void resetSettings()
     {
         SLS.defaultSettings();
         load();
@@ -95,10 +98,29 @@ public class SettingsUI : MonoBehaviour
 
     public void menu()
     {
+        save();
+        SLS.save();
+        SLGS.SaveGame();
+        Debug.Log("game saved to " + Application.persistentDataPath);
         SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
     }
+
+    public void menuClosed()
+    {
+        save();
+        SLS.save();
+        SLGS.SaveGame();
+        Debug.Log("game saved to " + Application.persistentDataPath);
+       
+    }
+
+
     public void exitApp()
     {
+        save();
+        SLS.save();
+        SLGS.SaveGame();
+        Debug.Log("game saved to " + Application.persistentDataPath);
         Application.Quit();
     }
 }

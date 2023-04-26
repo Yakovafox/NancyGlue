@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8ccf213c6c1d9374aa9c4d6e6ce5cced, type: 2}
   <dialogueText>k__BackingField: Where is the film reel?
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_A_standing
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster-002
   <isStartingDialogue>k__BackingField: 0

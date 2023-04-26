@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8a4979e07c267e941b0dcae617fb7258, type: 2}
   <dialogueText>k__BackingField: I suggest you make yourself scarce, Scram!
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_b_sitting
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 0

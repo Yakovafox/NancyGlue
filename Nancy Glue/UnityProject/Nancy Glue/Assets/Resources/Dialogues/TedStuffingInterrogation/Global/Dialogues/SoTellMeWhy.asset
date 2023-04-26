@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: Stuck in the projector, So tell me Ted why was your
     stuffing stuck in the projector?
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   <isStartingDialogue>k__BackingField: 0
