@@ -174,7 +174,7 @@ namespace Dialogue
                     gameObject.SetActive(false);
                 }
 
-                AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Interrogation_Music");
+                AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Atmosphere_001");
                 if (audioSourceMusic.clip != normalTrack) audioSourceMusic.clip = normalTrack;
 
                 return;
@@ -304,7 +304,6 @@ namespace Dialogue
                 button.GetComponentInChildren<TMP_Text>().enabled = false;
             }
 
-            Debug.Log("Enable Dialogue");
             transform.gameObject.SetActive(true);
         }
 
