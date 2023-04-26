@@ -48,9 +48,9 @@ public class FontManager : MonoBehaviour
         //colour set
         for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
         {
-            Debug.Log("target colour" + SLS.fontColour);
+            //Debug.Log("target colour" + SLS.fontColour);
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
-            Debug.Log("setting colour to" + _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color);
+            //Debug.Log("setting colour to" + _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color);
         }
         //background set
         if (SLS.isBackgroundEnabled == 1)

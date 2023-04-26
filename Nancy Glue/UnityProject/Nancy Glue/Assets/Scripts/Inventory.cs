@@ -147,5 +147,7 @@ public class Inventory : MonoBehaviour
         //call the save
         SLGS.SaveGame();
         Debug.Log("game saved to " + Application.persistentDataPath);
+        //save settings to file 
+        
     }
 }

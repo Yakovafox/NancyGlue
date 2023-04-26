@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class tempSettingsLoader
 {
-    public static int sens { get; set; }
-    public static int musivVol { get; set; }
-    public static int sfxVol { get; set; }
+    //public static int sens { get; set; }
+    //public static float musicVol { get; set; }
+    //public static float sfxVol { get; set; }
 }
