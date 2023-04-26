@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: c5fc22fe96367c548a06a16337c69881, type: 2}
   <dialogueText>k__BackingField: '*UGH* Finally, I''ve been waiting here for ages..'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_002
   <isStartingDialogue>k__BackingField: 1

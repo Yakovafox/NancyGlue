@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: I wasn't gonna report it, it's an extra day off
     for me!
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_001
   <isStartingDialogue>k__BackingField: 0

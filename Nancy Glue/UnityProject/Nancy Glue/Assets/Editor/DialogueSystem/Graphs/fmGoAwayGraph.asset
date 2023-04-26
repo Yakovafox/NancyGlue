@@ -15,6 +15,30 @@ MonoBehaviour:
   <fileName>k__BackingField: fmGoAway
   <groups>k__BackingField: []
   <nodes>k__BackingField:
+  - <ID>k__BackingField: 1d4b12e5-4f77-4dde-b214-dfe3217382ce
+    <dialogueName>k__BackingField: IWantedToAskQuestions
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hey, I wanted to ask some questions... Hello? You there?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2675, y: -91}
+    <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-002
+  - <ID>k__BackingField: 9c786aa1-9f39-4e14-b646-0e36ef3acc69
+    <dialogueName>k__BackingField: StartIntruder
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: WAIUDWA! INTRUDER! DWIAOH
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6c74015a-81bc-419b-a68b-275296ee7a6e
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 474, y: -84}
+    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-001
   - <ID>k__BackingField: 6c74015a-81bc-419b-a68b-275296ee7a6e
     <dialogueName>k__BackingField: YeahGoAway
     <characterName>k__BackingField: Finger Monster B
@@ -27,19 +51,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1299, y: -91}
     <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 9c786aa1-9f39-4e14-b646-0e36ef3acc69
-    <dialogueName>k__BackingField: StartIntruder
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: WAIUDWA! INTRUDER! DWIAOH
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 6c74015a-81bc-419b-a68b-275296ee7a6e
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 474, y: -84}
-    <spritePath>k__BackingField: CharacterSprites/fm_c_standing
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-001
   - <ID>k__BackingField: 1919e05d-158e-48d9-b0d9-933245dffabf
     <dialogueName>k__BackingField: ISuggestMovingAlong
     <characterName>k__BackingField: Finger Monster B
@@ -51,24 +63,12 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1977, y: -90}
     <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 1d4b12e5-4f77-4dde-b214-dfe3217382ce
-    <dialogueName>k__BackingField: IWantedToAskQuestions
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Hey, I wanted to ask some questions... Hello? You there?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2675, y: -91}
-    <spritePath>k__BackingField: CharacterSprites/fm_b_sitting
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - YeahGoAway
-  - StartIntruder
-  - ISuggestMovingAlong
   - IWantedToAskQuestions
+  - StartIntruder
+  - YeahGoAway
+  - ISuggestMovingAlong
   <oldGroupedNames>k__BackingField:
     list: []

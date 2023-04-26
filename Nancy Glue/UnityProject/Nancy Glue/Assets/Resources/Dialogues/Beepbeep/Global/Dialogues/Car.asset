@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: BEEP BEEP! Kerchoo
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/ThunderMcKing_Dialogue
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 1

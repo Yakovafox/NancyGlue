@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: OI, what you doing here? Only we or royalty is allowed
     here.
   <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_b_sitting
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster3-001
   <isStartingDialogue>k__BackingField: 0
