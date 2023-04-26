@@ -8516,9 +8516,8 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 321ac6fa8da085a41b0f79f9efc97212, type: 2}
   sfxVolSlider: {fileID: 3756745991198138451}
   sfxVolSliderValue: {fileID: 6775188612096825052}
-  sens: 0
-  sfxVol: 0
-  musicVol: 0
+  SLGS: {fileID: 0}
+  closeMenu: {fileID: 9200458476065754860}
 --- !u!1 &6124265029990851281
 GameObject:
   m_ObjectHideFlags: 0

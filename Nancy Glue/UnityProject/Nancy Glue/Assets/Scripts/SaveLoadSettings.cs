@@ -6,8 +6,8 @@ using UnityEngine;
 public class SaveLoadSettings : MonoBehaviour
 {
 
-    public int sfxVolume=50;
-    public int musicVolume=50;
+    public float sfxVolume=0.555f;
+    public float musicVolume = 0.555f;
     public Color fontColour;
     public int sensitivity=0;
     public Color backgroundColour;
@@ -28,9 +28,9 @@ public class SaveLoadSettings : MonoBehaviour
 
     public void save()
     {
-        PlayerPrefs.SetInt("sfxVolume", sfxVolume);
+        PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
         Debug.Log("sfx vol to save to file "+ sfxVolume);
-        PlayerPrefs.SetInt("musicVolume",musicVolume);
+        PlayerPrefs.SetFloat("musicVolume",musicVolume);
         Debug.Log("Music vol to save to file " + musicVolume);
         PlayerPrefs.SetString("fontColour", ColorUtility.ToHtmlStringRGB(fontColour));
         PlayerPrefs.SetInt("fontStyle", fontStyle);
@@ -54,19 +54,19 @@ public class SaveLoadSettings : MonoBehaviour
         
         ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("backgroundColour"),out backgroundColour);
         isBackgroundEnabled = PlayerPrefs.GetInt("isBackgroundEnabled");
-        try { 
-            sfxVolume = PlayerPrefs.GetInt("sfxVolume");
-            musicVolume = PlayerPrefs.GetInt("musicVolume");
-            sensitivity = PlayerPrefs.GetInt("sensitivity");
-        }
-        catch { 
-            defaultSettings();
-            Debug.Log("failed to load settings from file");
-        }
+        
 
-        //sfxVolume = PlayerPrefs.GetInt("sfxVolume");
-        //musicVolume = PlayerPrefs.GetInt("musicVolume");
-        //sensitivity = PlayerPrefs.GetInt("sensitivity");
+
+        
+        
+        sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+        musicVolume = PlayerPrefs.GetFloat("musicVolume");
+        sensitivity = PlayerPrefs.GetInt("sensitivity");
+        
+        
+           
+
+        
     }
     public void Default()
     {
@@ -81,8 +81,13 @@ public class SaveLoadSettings : MonoBehaviour
     public void defaultSettings()
     {
         //revert to default settings
-        sfxVolume = 50;
-        musicVolume = 50;
+        sfxVolume = 0.555f; 
+        musicVolume = 0.555f;
         sensitivity = 0; 
+    }
+
+    private void OnApplicationQuit()
+    {
+        save();
     }
 }

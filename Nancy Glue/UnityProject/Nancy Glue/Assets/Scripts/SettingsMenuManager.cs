@@ -23,7 +23,9 @@ public class SettingsMenuManager : MonoBehaviour
     private void Awake()
     {
         SLS = FindObjectOfType<SaveLoadSettings>();
-        initLoad();
+        firstLoad();
+        //SLS.load();
+        load();
     }
     // Start is called before the first frame update
     void Start()
@@ -33,27 +35,32 @@ public class SettingsMenuManager : MonoBehaviour
         
     }
 
-    void initLoad()
+    void resetSettings()
     {
-        sfxVolSlider.value = 50/100;
-        volSlider.value= 50/100;
-        sensSlider.value = 0;
+        SLS.defaultSettings();
+        load();
     }
 
+    void firstLoad() 
+    {
+        SLS.load();
 
+
+
+    }
 
 
 
     void load()
     {
-        /*
+       
         Debug.Log("loaded sens" + SLS.sensitivity);
         sensSlider.value = SLS.sensitivity;
-        volSlider.value = (SLS.musicVolume)/100;
-        Debug.Log("Loaded music volume "+(SLS.musicVolume) / 100);
-        sfxVolSlider.value = (SLS.sfxVolume)/100;
-        Debug.Log("Loaded SFX volume "+(SLS.sfxVolume) / 100);
-        */
+        volSlider.value = (SLS.musicVolume);
+        Debug.Log("Loaded music volume "+(SLS.musicVolume));
+        sfxVolSlider.value = SLS.sfxVolume;
+        Debug.Log("Loaded SFX volume "+(SLS.sfxVolume));
+        
 
     }
 
@@ -77,28 +84,20 @@ public class SettingsMenuManager : MonoBehaviour
 
     void saveSettings()
     {
-        /*
+        
         SLS.sensitivity = (int)sensSlider.value;
-        SLS.musicVolume = Mathf.RoundToInt((volSlider.value) * 100);
-        Debug.Log("Saved target music vol "+Mathf.RoundToInt((volSlider.value) * 100));
-        SLS.sfxVolume= Mathf.RoundToInt((sfxVolSlider.value) * 100);
-        Debug.Log("Saved target music vol "+Mathf.RoundToInt((sfxVolSlider.value) * 100));
+        SLS.musicVolume = volSlider.value;
+        
+        SLS.sfxVolume= sfxVolSlider.value;
+        
         SLS.save();
-        */
-        //temp solution for alpha 
-        tempSettingsLoader.sens = (int)sensSlider.value;
-        tempSettingsLoader.musivVol= Mathf.RoundToInt((volSlider.value) * 100);
-        tempSettingsLoader.sfxVol= Mathf.RoundToInt((sfxVolSlider.value) * 100);
+        
         
 
+
     }
 
-    public void resetSettings()
-    {
-        //SLS.defaultSettings();
-        //load();
-        initLoad();
-    }
+    
 
 
 
