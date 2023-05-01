@@ -90,11 +90,13 @@ namespace Dialogue
             {
                 characterPortrait.color = fadeColor;
                 nancyPortrait.color = focusColor;
+                nancyPortrait.sprite = Resources.Load<Sprite>("CharacterSprites/Nancy_sprite_1_colour 1");
             }
             else
             {
                 nancyPortrait.color = fadeColor;
                 characterPortrait.color = focusColor;
+                nancyPortrait.sprite = Resources.Load<Sprite>("CharacterSprites/Nancy_sprite_2_colour 1");
             }
 
             if (isActiveAndEnabled)

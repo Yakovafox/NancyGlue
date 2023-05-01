@@ -82,6 +82,12 @@ public class mouseTrack : MonoBehaviour
                         //gm.ReelPickUp(item.Title);
                         gm.UpdateScene(item.ItemID);
                         _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
+
+                        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+                        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+                        audioSourceSound.pitch = 8.5f;
+                        audioSourceSound.Play();
+
                         break;
                     case ("NPC"):
                         var susEmptyText = GameObject.Find("BlankTextSuspect");
