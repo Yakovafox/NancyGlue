@@ -48,6 +48,11 @@ public class SuspectMugshot : MonoBehaviour
     }
     public void Clicked()
     {
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         _mainPage.SetActive(!_mainPage.activeSelf);
         _detailPage.SetActive(!_detailPage.activeSelf);
         _detailMugshot.GetChild(0).GetChild(0).GetComponent<Image>().sprite = MugshotSprite;

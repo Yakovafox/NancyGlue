@@ -49,6 +49,12 @@ public class InterrogateButtonScript : MonoBehaviour
     {
         _transitionAnimator.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1);
+
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Chair/Chair_Drag-003");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         oldCam.SwitchActiveCam();
         newCam.SwitchActiveCam();
         yield return new WaitForSeconds(1);
