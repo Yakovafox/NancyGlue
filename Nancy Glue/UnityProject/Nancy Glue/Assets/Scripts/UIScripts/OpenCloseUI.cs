@@ -57,6 +57,12 @@ public class OpenCloseUI : MonoBehaviour
     public void InventoryClicked()
     {
         OpenUI();
+
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         _inventoryUIPage.SetActive(true);
         _inventoryGrid.SetActive(true);
         _suspectsUIPage.SetActive(false);
@@ -94,6 +100,12 @@ public class OpenCloseUI : MonoBehaviour
     public void LocationClicked()
     {
         OpenUI();
+
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         _inventoryUIPage.SetActive(false);
         _suspectsUIPage.SetActive(false);
         _locationsUIPage.SetActive(true);
@@ -130,6 +142,12 @@ public class OpenCloseUI : MonoBehaviour
     public void SuspectClicked()
     {
         OpenUI();
+
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         _inventoryUIPage.SetActive(false);
         _suspectsUIPage.SetActive(true);
         _locationsUIPage.SetActive(false);
@@ -166,6 +184,12 @@ public class OpenCloseUI : MonoBehaviour
     public void SettingsClicked()
     {
         OpenUI();
+
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
         _inventoryUIPage.SetActive(false);
         _suspectsUIPage.SetActive(false);
         _locationsUIPage.SetActive(false);
@@ -211,20 +235,10 @@ public class OpenCloseUI : MonoBehaviour
             openCloseTab(_closeTabAnim);
             _closeHidden = true;
         }
-
-        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
-        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
-        audioSourceSound.pitch = 1.2f;
-        audioSourceSound.Play();
     }
 
     public void CloseUI()
     {
-        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
-        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
-        audioSourceSound.pitch = 1.2f;
-        audioSourceSound.Play();
-
         if (!IsOpen) return;
         _animator.SetTrigger("OpenClose");
         IsOpen = !IsOpen;
@@ -266,10 +280,6 @@ public class OpenCloseUI : MonoBehaviour
     private void openCloseTab(Animator targetTab)
     {
         targetTab.SetTrigger(_HideUIBoolHash);
-        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1]; 
-        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
-        audioSourceSound.pitch = 2.0f;
-        audioSourceSound.Play();
     }
 
 
