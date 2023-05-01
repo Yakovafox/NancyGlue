@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WhatNumber
   m_EditorClassIdentifier: 
   <dialogueName>k__BackingField: WhatNumber
-  <characterName>k__BackingField: Character Name
+  <characterName>k__BackingField: Nancy Glue
   <dialogueType>k__BackingField: 1
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: 1625
@@ -25,6 +25,6 @@ MonoBehaviour:
   - <text>k__BackingField: 1634
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 0e79068684ea5c24e8b2c5d51c8460ef, type: 2}
   <dialogueText>k__BackingField: Now what was the code?
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   <isStartingDialogue>k__BackingField: 0

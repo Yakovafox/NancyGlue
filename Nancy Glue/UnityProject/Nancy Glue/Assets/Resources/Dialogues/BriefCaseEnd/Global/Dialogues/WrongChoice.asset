@@ -18,7 +18,7 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 02e90dcd046f5634d80efea42177712f, type: 2}
-  <dialogueText>k__BackingField: Huh, mustnt be that...
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueText>k__BackingField: Huh, mustn't be that...
+  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   <isStartingDialogue>k__BackingField: 0

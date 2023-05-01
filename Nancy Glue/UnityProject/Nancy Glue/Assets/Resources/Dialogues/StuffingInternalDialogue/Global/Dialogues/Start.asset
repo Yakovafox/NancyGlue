@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7a164349427f2e24f9c398172a1bd999, type: 2}
   <dialogueText>k__BackingField: Is, this? Stuffing?
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/teds_fluff
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   <isStartingDialogue>k__BackingField: 1

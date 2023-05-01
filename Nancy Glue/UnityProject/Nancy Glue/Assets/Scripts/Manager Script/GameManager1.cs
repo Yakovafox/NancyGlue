@@ -14,19 +14,23 @@ public class GameManager1 : MonoBehaviour
         Intro,                          // Anatoly indroduces case. Doesn't need tracking but initialises the scene.
         DriveIn,                        // Need to talk to Ted. Used to track where you were for loading.
         UnlockProjector,                // Unlock after tealking to ted the first time. Tracks the projector room cameras.
+        CollectedStuffing,              // Used during gameplay to trigger dialogue
         GrizzlyInterrogation,           // Interrogate Ted. Track if this has been done to activate under couch cam.
         UnlockHiddenLiar,               // Unlock after crown has be picked up. Track to activate cameras in finger alley.
         FingerMonsterInterrogation,     // Interrogate after finding the crown and talking to them. Track to activate camera near briefcase.
+        CollectedBriefcase,             // Used during gameplay to trigger dialogue
         FingerMonsterInterrogation2,    // Interrogate after finding the briefcase. Track wheter crown has been picked up and if the player has handed it to one of them.
         OpenBriefcase,                  // Tracks if the chapter is complete.
+        End,
         Idle
     }
 
     [SerializeField] public GameState _gameState;
     [SerializeField] private NPCTracker[] _npcTrackers;
     [SerializeField] private NPCTracker _AnatolyTracker;
-    [SerializeField] private NPCTracker _NancyTracker;
+    [SerializeField] private ItemScriptableObject StuffingReference;
     [SerializeField] private ItemScriptableObject CrownReference;
+    [SerializeField] private ItemScriptableObject BriefcaseReference;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
     [SerializeField] private bool _introStarted;
@@ -37,7 +41,7 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] private ZoneManager _zoneManager;
     [SerializeField] private BriefcaseScript briefcase;
 
-    private int[] stateTracker = new int[8] { 0,0,0,0,0,0,0,0 };
+    private int[] stateTracker = new int[11] { 0,0,0,0,0,0,0,0,0,0,0 };
 
     public bool ReelFound;
     public bool InterogationFinished;
@@ -54,7 +58,6 @@ public class GameManager1 : MonoBehaviour
 #endif
         _npcTrackers = FindObjectsOfType<NPCTracker>();
         _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
-        _NancyTracker = GameObject.Find("NancyDialogue").GetComponent<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
         
@@ -99,23 +102,23 @@ public class GameManager1 : MonoBehaviour
         {
             UnlockProjectorInit();
         }
-        if (stateTracker[3] == 1)
+        if (stateTracker[4] == 1)
         {
             GrizzlyInterrogateInit();
         }
-        if (stateTracker[4] == 1)
+        if (stateTracker[5] == 1)
         {
             UnlockHiddenLairInit();
         }
-        if (stateTracker[5] == 1)
+        if (stateTracker[6] == 1)
         {
             FingerInterrogate1Init();
         }
-        if (stateTracker[6] == 1)
+        if (stateTracker[8] == 1)
         {
             FingerInterrogate2Init();
         }
-        if (stateTracker[7] == 1)
+        if (stateTracker[9] == 1)
         {
             OpenBriefcaseInit();
         }
@@ -161,33 +164,33 @@ public class GameManager1 : MonoBehaviour
     {
         _zoneManager.DriveInCam.SwitchableCameras[2].gameObject.SetActive(true);
         _zoneManager.DriveInCam.SwitchableCameras[2].GetComponent<CameraSwitch>().SwitchableCameras[0].gameObject.SetActive(true);
-        stateTracker[3] = 1;
+        stateTracker[4] = 1;
     }
 
     private void UnlockHiddenLairInit()
     {
         _zoneManager.AlleyCam.gameObject.SetActive(true);
-        stateTracker[4] = 1;
+        stateTracker[5] = 1;
     }
 
     private void FingerInterrogate1Init()
     {
         _zoneManager.AlleyCam.SwitchableCameras[0].gameObject.SetActive(true);
-        stateTracker[5] = 1;
+        stateTracker[6] = 1;
     }
 
     private void FingerInterrogate2Init()
     {
         // Add dialogue and code for briefcase
         briefcase.gameObject.SetActive(true);
-        stateTracker[6] = 1;
+        stateTracker[8] = 1;
     }
 
     private void OpenBriefcaseInit()
     {
         // Track that we have completed the tutorial case?
-        SceneManager.LoadScene("MenuScene");
-        stateTracker[7] = 1;
+        _dialogueSystem.SetContainer("BriefCaseEnd");
+        stateTracker[9] = 1;
     }
     #endregion
 
@@ -229,6 +232,12 @@ public class GameManager1 : MonoBehaviour
                 _gameState = GameState.Idle;
                 break;
 
+            case GameState.CollectedStuffing:
+                _dialogueSystem.SetContainer("StuffingInternalDialogue");
+                stateTracker[3] = 1;
+                _gameState = GameState.Idle;
+                break;
+
             case GameState.GrizzlyInterrogation:
                 GrizzlyInterrogateInit();
                 _gameState = GameState.Idle;
@@ -236,12 +245,18 @@ public class GameManager1 : MonoBehaviour
 
             case GameState.UnlockHiddenLiar:
                 UnlockHiddenLairInit();
-                _dialogueSystem.SetContainer(_NancyTracker.GetCurrentContainer(), _NancyTracker);
+                _dialogueSystem.SetContainer("NancyInternalDialogue");
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.FingerMonsterInterrogation:
                 FingerInterrogate1Init();
+                _gameState = GameState.Idle;
+                break;
+
+            case GameState.CollectedBriefcase:
+                _dialogueSystem.SetContainer("BriefcaseInternalDialogue");
+                stateTracker[7] = 1;
                 _gameState = GameState.Idle;
                 break;
 
@@ -252,6 +267,11 @@ public class GameManager1 : MonoBehaviour
 
             case GameState.OpenBriefcase:
                 OpenBriefcaseInit();
+                _gameState = GameState.Idle;
+                break;
+
+            case GameState.End:
+                SceneManager.LoadScene("MenuScene");
                 _gameState = GameState.Idle;
                 break;
         }
@@ -289,8 +309,26 @@ public class GameManager1 : MonoBehaviour
                 }
             }
         }
-        // Ted Interrogation
+        // Collect Stuffing
         else if (stateTracker[3] == 0)
+        {
+            ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
+
+            bool itemCollected = true;
+            foreach (ItemData item in itemsArray)
+            {
+                var itemId = item.EvidenceItem.ItemID;
+                Debug.Log("Searching items");
+                if (itemId == StuffingReference.ItemID) itemCollected = false;
+            }
+
+            if (itemCollected)
+            {
+                _gameState = GameState.CollectedStuffing;
+            }
+        }
+        // Ted Interrogation
+        else if (stateTracker[4] == 0)
         {
             foreach (var npc in _npcTrackers)
             {
@@ -305,7 +343,7 @@ public class GameManager1 : MonoBehaviour
             }
         }
         // Unlock Hidden Lair
-        else if (stateTracker[4] == 0)
+        else if (stateTracker[5] == 0)
         {
             ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
@@ -323,7 +361,7 @@ public class GameManager1 : MonoBehaviour
             }
         }
         // Finger Interrogation
-        else if (stateTracker[5] == 0)
+        else if (stateTracker[6] == 0)
         {
             foreach (var npc in _npcTrackers)
             {
@@ -337,8 +375,26 @@ public class GameManager1 : MonoBehaviour
                 }
             }
         }
+        // Collect Briefcase
+        else if (stateTracker[7] == 0)
+        {
+            ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
+
+            bool itemCollected = true;
+            foreach (ItemData item in itemsArray)
+            {
+                var itemId = item.EvidenceItem.ItemID;
+                Debug.Log("Searching items");
+                if (itemId == BriefcaseReference.ItemID) itemCollected = false;
+            }
+
+            if (itemCollected)
+            {
+                _gameState = GameState.CollectedBriefcase;
+            }
+        }
         // Finger Interrogation 2
-        else if (stateTracker[6] == 0)
+        else if (stateTracker[8] == 0)
         {
             foreach (var npc in _npcTrackers)
             {
@@ -352,13 +408,18 @@ public class GameManager1 : MonoBehaviour
                 }
             }
         }
-        else if (stateTracker[7] == 0)
+        else if (stateTracker[9] == 0)
         {
-            Debug.Log(briefcase.Clicked);
-            // Not sure what the trigger is here
             if(briefcase.Clicked)
             {
                 _gameState = GameState.OpenBriefcase;
+            }
+        }
+        else if (stateTracker[10] == 0)
+        {
+            if(!_dialogueSystem.inDialogue)
+            {
+                _gameState = GameState.End;
             }
         }
     }

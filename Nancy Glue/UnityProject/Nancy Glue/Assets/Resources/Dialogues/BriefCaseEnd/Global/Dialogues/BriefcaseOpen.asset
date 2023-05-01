@@ -19,6 +19,6 @@ MonoBehaviour:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: ce7eb53ff9cdc5f499d50bf8b05c4a08, type: 2}
   <dialogueText>k__BackingField: '*THUNK*'
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Evidence_Briefcase_Opened_Glow
+  <dialogueAudioAssetPath>k__BackingField: n/a
   <isStartingDialogue>k__BackingField: 0
