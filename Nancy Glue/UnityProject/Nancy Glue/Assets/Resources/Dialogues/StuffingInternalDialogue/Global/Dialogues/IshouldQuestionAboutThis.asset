@@ -22,5 +22,5 @@ MonoBehaviour:
     He's the only stuffing toy with access to this room, I should check my notes
     on him.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/teds_fluff
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   <isStartingDialogue>k__BackingField: 0

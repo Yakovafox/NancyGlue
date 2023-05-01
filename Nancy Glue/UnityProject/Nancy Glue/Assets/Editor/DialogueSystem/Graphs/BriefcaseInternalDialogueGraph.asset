@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 8a1863e6-1a90-4d4d-a1d9-5f6fe91dc9c4
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 279.2, y: -245.59999}
+    <position>k__BackingField: {x: 279, y: -246}
     <spritePath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   - <ID>k__BackingField: 8a1863e6-1a90-4d4d-a1d9-5f6fe91dc9c4
     <dialogueName>k__BackingField: NowToGetTheCode
     <characterName>k__BackingField: Nancy Glue
@@ -37,9 +37,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1244.7999, y: -252.8}
+    <position>k__BackingField: {x: 1245, y: -253}
     <spritePath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start

@@ -45,6 +45,7 @@ namespace Dialogue
         private float scrollSpeed = 0.025f;
 
         private NPCTracker tracker;
+        public bool inDialogue = false;
 
         [SerializeField] private Button[] buttons;
 
@@ -171,8 +172,10 @@ namespace Dialogue
                 if (tracker != null)
                 {
                     GameObject.Find(tracker.attachedNPC).transform.position = tracker.originalPosition;
-                    gameObject.SetActive(false);
                 }
+
+                gameObject.SetActive(false);
+                inDialogue = false;
 
                 AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Atmosphere_001");
                 if (audioSourceMusic.clip != normalTrack)
@@ -284,6 +287,7 @@ namespace Dialogue
         {
             dialogueContainer = Resources.Load<DialogueContainerSO>($"Dialogues/{containerName}/{containerName}");
             tracker = attachedNPC;
+            inDialogue = true;
 
             findStartingNode();
             EnableGameObj();
@@ -294,6 +298,7 @@ namespace Dialogue
         {
             dialogueContainer = dialogue;
             tracker = attachedNPC;
+            inDialogue = true;
 
             findStartingNode();
             EnableGameObj();

@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: fa3bff7d71e77f240bf55e4d2569a7c2, type: 2}
   <dialogueText>k__BackingField: AHA, found you. Yet another case solved!
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Evidence_Briefcase_Closed
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   <isStartingDialogue>k__BackingField: 1
