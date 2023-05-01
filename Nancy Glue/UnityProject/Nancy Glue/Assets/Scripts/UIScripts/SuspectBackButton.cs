@@ -17,6 +17,11 @@ public class SuspectBackButton : MonoBehaviour
 
     public void Clicked()
     {
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 0.9f;
+        audioSourceSound.Play();
+
         _detailPage.SetActive(!_detailPage.activeSelf);
         _mainPage.SetActive(!_mainPage.activeSelf);
     }

@@ -178,6 +178,7 @@ namespace Dialogue
                     audioSourceMusic.clip = normalTrack;
                     audioSourceMusic.Play();
                 }
+                audioSourceSound.loop = false;
 
                 return;
             }
