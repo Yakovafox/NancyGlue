@@ -36,8 +36,8 @@ public class MenuManager : MonoBehaviour
     {
         _isActive = false;
         _isSettingsActive = false;
-        _accessibilityMenu.SetActive(_isActive);
-        _settingsMenu.SetActive(_isSettingsActive);
+        //_accessibilityMenu.SetActive(_isActive);
+        //_settingsMenu.SetActive(_isSettingsActive);
         NewOrLoad.isLoad = false;
         Debug.Log("initd to false");
 
@@ -49,7 +49,8 @@ public class MenuManager : MonoBehaviour
     public void AccessibilitySettings()
     {
         _isActive = !_isActive;
-        _accessibilityMenu.SetActive(_isActive);
+        //_accessibilityMenu.SetActive(_isActive);
+        _accessibilityMenu.GetComponent<Animator>().SetTrigger("HideShow");
         _mainMenu.SetActive(!_isActive);
 
     }
@@ -57,7 +58,8 @@ public class MenuManager : MonoBehaviour
     public void Settings()
     {
         _isSettingsActive = !_isSettingsActive;
-        _settingsMenu.SetActive(_isSettingsActive);
+        //_settingsMenu.SetActive(_isSettingsActive);
+        _settingsMenu.GetComponent<Animator>().SetTrigger("HideShow");
         _mainMenu.SetActive(!_isSettingsActive);
     }
 
