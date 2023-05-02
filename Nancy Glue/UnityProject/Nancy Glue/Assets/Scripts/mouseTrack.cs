@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class mouseTrack : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class mouseTrack : MonoBehaviour
     [SerializeField] private ZoneManager _zoneManager;
     [SerializeField] private Tooltip _toolTip;
     [SerializeField] private SuspectPage _suspects;
+    [SerializeField] private bool _isOverUI;
     private void Awake()
     {
         _uiScript = FindObjectOfType<OpenCloseUI>();
@@ -50,6 +52,7 @@ public class mouseTrack : MonoBehaviour
 
     void Update()
     {
+        _isOverUI = EventSystem.current.IsPointerOverGameObject();
         UIOpen = _uiScript.IsOpen;
         if (Input.GetMouseButtonDown(0))
         {
@@ -59,7 +62,7 @@ public class mouseTrack : MonoBehaviour
             if (DialogueOpenCheck()) return;
 
             RaycastHit hitData;
-            if (Physics.Raycast(ray, out hitData, _range))
+            if (Physics.Raycast(ray, out hitData, _range) && !_isOverUI)
             {
                 worldPos = hitData.point;
 

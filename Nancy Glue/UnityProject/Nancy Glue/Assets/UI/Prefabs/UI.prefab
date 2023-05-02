@@ -2646,6 +2646,7 @@ MonoBehaviour:
   testPrefab: {fileID: 5191613086592594044, guid: 3f2d7c1da12e417469d435fb49a6bd9e, type: 3}
   ItemDB: {fileID: 0}
   grid: {fileID: 0}
+  SLGS: {fileID: 0}
 --- !u!95 &7920726742194506282
 Animator:
   serializedVersion: 4
@@ -5069,10 +5070,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 3349184126075282726}
   m_HandleRect: {fileID: 4973535101964275266}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5697,10 +5698,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 9114075184994665912}
   m_HandleRect: {fileID: 2380608103889326901}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6459,6 +6460,7 @@ MonoBehaviour:
   characterPortrait: {fileID: 7603408129615865450}
   characterNameUI: {fileID: 2566052671376641732}
   bodyTextUI: {fileID: 438693940005531705}
+  inDialogue: 0
   buttons:
   - {fileID: 1825700636672373829}
   - {fileID: 4923349809959289094}
@@ -8535,6 +8537,7 @@ MonoBehaviour:
   testPrefab: {fileID: 7556654151300070061, guid: ed064daa16270344bb4fbea8aa202eff, type: 3}
   ItemDB: {fileID: 0}
   grid: {fileID: 1581065562260167874}
+  SLGS: {fileID: 0}
 --- !u!1 &6564796324565141473
 GameObject:
   m_ObjectHideFlags: 0
