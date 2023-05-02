@@ -28,6 +28,13 @@ public class SuspectPage : MonoBehaviour
             }
             else
             {
+                Debug.Log("loaded sus list is not empty");
+                var susEmptyText = GameObject.Find("BlankTextSuspect");
+                if (susEmptyText != null && susEmptyText.activeSelf)
+                    susEmptyText.SetActive(false);
+
+
+
                 //load suspects into UI
                 for (int i = 0; i < SuspectNames.Length; i++)
                 {
@@ -37,6 +44,7 @@ public class SuspectPage : MonoBehaviour
                     Suspect.GetComponent<SuspectMugshot>()._npcTracker = tracker;
                     tracker.SpokenTo = true;
                     suspectList.Add(SuspectNames[i]);
+                    Debug.Log("loaded suspect " + SuspectNames[i]);
                 }
 
 
@@ -64,6 +72,7 @@ public class SuspectPage : MonoBehaviour
     public void saveNames()
     {
         SuspectNames = suspectList.Select(x => x).ToArray();
+        Debug.Log("saved suspects");
     }
 
 

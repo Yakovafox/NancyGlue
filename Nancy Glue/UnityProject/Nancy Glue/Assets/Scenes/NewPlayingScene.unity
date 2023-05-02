@@ -61231,6 +61231,7 @@ GameObject:
   - component: {fileID: 1433975704}
   - component: {fileID: 1433975705}
   - component: {fileID: 1433975706}
+  - component: {fileID: 1433975707}
   m_Layer: 0
   m_Name: Player
   m_TagString: MainCamera
@@ -61296,8 +61297,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0, y: 0.976296, z: 0, w: 0.2164397}
-  m_LocalPosition: {x: 1.803278, y: 3.4329758, z: -5.501091}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 10.03, y: 3.4329758, z: 9.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61387,6 +61388,7 @@ MonoBehaviour:
   _toolTip: {fileID: 0}
   _suspects: {fileID: 753831215}
   _isOverUI: 0
+  OverMovement: 0
 --- !u!114 &1433975702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61404,6 +61406,7 @@ MonoBehaviour:
   invUI: {fileID: 0}
   SLGS: {fileID: 1433975704}
   gameManager: {fileID: 0}
+  susPage: {fileID: 0}
 --- !u!82 &1433975703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -61516,6 +61519,7 @@ MonoBehaviour:
   CameraTracker: {fileID: 0}
   NPCTrackers: []
   gameManager: {fileID: 0}
+  suspectPage: {fileID: 0}
 --- !u!114 &1433975705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61626,6 +61630,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1433975707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433975695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af592d06b3a92a4b98afaafb69e15dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SuspectPrefab: {fileID: 2034070528580600840, guid: 9c731fa3226ae4145b1945ca3e581fcb, type: 3}
+  SuspectNames: []
+  SLGS: {fileID: 0}
+  suspectList: []
+  tracker: {fileID: 0}
 --- !u!43 &1435105499
 Mesh:
   m_ObjectHideFlags: 0

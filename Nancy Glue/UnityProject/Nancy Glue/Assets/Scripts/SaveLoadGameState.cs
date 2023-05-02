@@ -32,6 +32,7 @@ public class SaveLoadGameState : MonoBehaviour
 
     public void SaveGame()
     {
+        suspectPage.saveNames();
         // 1
         Save save = CreateSaveGameObject();
 
