@@ -218,9 +218,9 @@ public class CameraMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("Sens changed");
+            //Debug.Log("Sens changed");
             _turnSpeed = 30 + (SLS.sensitivity)*2;
-            Debug.Log("Set to "+_turnSpeed);
+            //Debug.Log("Set to "+_turnSpeed);
         }
     }
 

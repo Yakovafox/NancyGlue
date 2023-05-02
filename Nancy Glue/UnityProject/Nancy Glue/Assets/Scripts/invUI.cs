@@ -4,20 +4,53 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using System;
+
 public class invUI : MonoBehaviour
 {
     public GameObject testPrefab;
     public ItemDB ItemDB;
     public GameObject grid;
     public static Dictionary<int, ItemManager> itemsDict = new Dictionary<int, ItemManager>();
+    public SaveLoadGameState SLGS;
     // public SpriteRenderer spriteRenderer;
-    
+
+    private void Awake()
+    {
+        SLGS= GameObject.FindObjectOfType<SaveLoadGameState>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
        // spriteRenderer = testPrefab.GetComponent<SpriteRenderer>();
-       
+       if (NewOrLoad.isLoad)
+        {
+            //check if there are items in the saved inv 
+            SLGS.Load();
+            if (IsNullOrEmpty(SLGS.inv.savedIDs))
+            {
+                //if empty then we're good
+                Debug.Log("loaded inv is empty");
+            }
+            else
+            {
+                // set the empty inv text inactive
+                Debug.Log("loaded inv is not empty");
+                var invEmptyText = GameObject.Find("BlankTextInventory");
+                if (invEmptyText != null && invEmptyText.activeSelf)
+                    invEmptyText.SetActive(false);
+            }
+
+        }
     }
+
+    public static bool IsNullOrEmpty(  Array array)
+    {
+        return (array == null || array.Length == 0);
+    }
+
 
     // Update is called once per frame
     void Update()
