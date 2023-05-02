@@ -139,20 +139,12 @@ public class Inventory : MonoBehaviour
 
 
 
-    //save inv on quit
-    private void OnApplicationQuit()
+    
+   
+    public void SaveInv()
     {
-        //save item id's to list
-
-
         savedIDs = characterItems.Select(x => x.id).ToArray();
-        
-        
-
-        //call the save
-        SLGS.SaveGame();
-        Debug.Log("game saved to " + Application.persistentDataPath);
-        //save settings to file 
-        
     }
+
+
 }
