@@ -19,6 +19,8 @@ public class CameraSwitch : MonoBehaviour
 
     public GameObject _returnTooltip;
 
+    [SerializeField] private LocationButton _locationButton;
+
     private void Awake()
     {
         _myMeshRenderer = GetComponent<MeshRenderer>();
@@ -36,6 +38,8 @@ public class CameraSwitch : MonoBehaviour
     public void SwitchActiveCam()
     {
         _activeCam = !_activeCam;
+        if (_locationButton != null)
+            _locationButton.IsCurrentLocation = _activeCam;
         EnableDisableCam();
         EnableReturnTooltip();
         if (_activeCam)
