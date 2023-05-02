@@ -126,6 +126,10 @@ public class mouseTrack : MonoBehaviour
                     case ("Finish"):
                         SwitchToBranchCamera(hitData.transform);
                         break;
+                    case ("RandomDialogue"):
+                        var hit = hitData.transform.GetComponent<RandomDialogueScript>();
+                        hit.SelectRandomDialogue();
+                        break;
                 }
             }
         }

@@ -2331,7 +2331,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119519844}
-  m_LocalRotation: {x: 0.019157678, y: 0.7068472, z: 0.019157674, w: -0.7068473}
+  m_LocalRotation: {x: 0.019157674, y: 0.70684713, z: 0.01915767, w: -0.70684737}
   m_LocalPosition: {x: -0, y: 0, z: -0.185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -61297,8 +61297,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.03, y: 3.4329758, z: 9.93}
+  m_LocalRotation: {x: 0, y: 0.976296, z: 0, w: 0.2164397}
+  m_LocalPosition: {x: 1.803278, y: 3.4329758, z: -5.501091}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -61406,7 +61406,6 @@ MonoBehaviour:
   invUI: {fileID: 0}
   SLGS: {fileID: 1433975704}
   gameManager: {fileID: 0}
-  susPage: {fileID: 0}
 --- !u!82 &1433975703
 AudioSource:
   m_ObjectHideFlags: 0
@@ -91935,15 +91934,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5284193046193271244, guid: 632f591f57383f040af52b2919b1f831, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.503
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 5284193046193271244, guid: 632f591f57383f040af52b2919b1f831, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.561
+      value: 2.596
       objectReference: {fileID: 0}
     - target: {fileID: 5284193046193271244, guid: 632f591f57383f040af52b2919b1f831, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.848
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 5284193046193271244, guid: 632f591f57383f040af52b2919b1f831, type: 3}
       propertyPath: m_LocalRotation.w

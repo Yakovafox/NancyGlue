@@ -8,8 +8,8 @@ public class RandomDialogueScript : MonoBehaviour
 
     public void SelectRandomDialogue()
     {
-        var random = Random.Range(0, _dialogues.Length + 1);
-        var dSystem = FindObjectOfType<DialogueSystem>();
+        var random = Random.Range(0, _dialogues.Length);
+        var dSystem = FindObjectOfType<DialogueSystem>(true);
         dSystem.SetContainer(_dialogues[random], null);
     }
 }
