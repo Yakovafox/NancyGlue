@@ -233,7 +233,8 @@ public class GameManager1 : MonoBehaviour
                 break;
 
             case GameState.CollectedStuffing:
-                _dialogueSystem.SetContainer("StuffingInternalDialogue");
+
+                _dialogueSystem.SetContainer("StuffingInternalDialogue");//this is a problem on load - can this be skipped safely?
                 stateTracker[3] = 1;
                 _gameState = GameState.Idle;
                 break;
@@ -245,7 +246,7 @@ public class GameManager1 : MonoBehaviour
 
             case GameState.UnlockHiddenLiar:
                 UnlockHiddenLairInit();
-                _dialogueSystem.SetContainer("NancyInternalDialogue");
+                _dialogueSystem.SetContainer("NancyInternalDialogue");//this is a problem on load - can this be skipped safely?
                 _gameState = GameState.Idle;
                 break;
 
@@ -255,7 +256,7 @@ public class GameManager1 : MonoBehaviour
                 break;
 
             case GameState.CollectedBriefcase:
-                _dialogueSystem.SetContainer("BriefcaseInternalDialogue");
+                _dialogueSystem.SetContainer("BriefcaseInternalDialogue");//this is a problem on load - can this be skipped safely?
                 stateTracker[7] = 1;
                 _gameState = GameState.Idle;
                 break;
