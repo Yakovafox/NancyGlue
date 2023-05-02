@@ -32,6 +32,7 @@ public class SaveLoadGameState : MonoBehaviour
 
     public void SaveGame()
     {
+        inv.SaveInv();
         suspectPage.saveNames();
         // 1
         Save save = CreateSaveGameObject();
@@ -113,6 +114,18 @@ public class SaveLoadGameState : MonoBehaviour
 
             suspectPage.SuspectNames = save.suspectsTS;
 
+            for (int i=0; i < save.suspectsTS.Length; i++)
+            {
+                Debug.Log("save file suspect : "+i + save.suspectsTS[i]);
+                Debug.Log("loaded suspect" + i+ suspectPage.SuspectNames[i]);
+            }
+
+
+            
+            
+
+
+
             Debug.Log("Game Loaded");
 
             
@@ -122,7 +135,21 @@ public class SaveLoadGameState : MonoBehaviour
             Debug.Log("No game saved!");
         }
     }
-    
+    private void OnApplicationQuit()
+    {
+        //save item id's to list
+
+
+
+
+
+
+        //call the save
+        SaveGame();
+        Debug.Log("game saved to " + Application.persistentDataPath);
+        //save settings to file 
+
+    }
 }
 
 
