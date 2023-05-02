@@ -33,16 +33,16 @@ public class InterrogateButtonScript : MonoBehaviour
 
     public void BringForInterrogation()
     {
-        ZoneManager _zoneManager = FindObjectOfType<ZoneManager>();
-        StartCoroutine(ZoneTransition(_zoneManager.CurrentCamera, _zoneManager.OfficeCam));
-        AudioSource audioSource = GameObject.Find("Player").GetComponents<AudioSource>()[0];
-        audioSource.clip = Resources.Load<AudioClip>("Sfx/Music/Interrogation_Music");
-        audioSource.Play();
         var locationbuttons = FindObjectsOfType<LocationButton>();
         foreach(var button in locationbuttons)
         {
             button.LocationCheck();
         }
+        ZoneManager _zoneManager = FindObjectOfType<ZoneManager>();
+        StartCoroutine(ZoneTransition(_zoneManager.CurrentCamera, _zoneManager.OfficeCam));
+        AudioSource audioSource = GameObject.Find("Player").GetComponents<AudioSource>()[0];
+        audioSource.clip = Resources.Load<AudioClip>("Sfx/Music/Interrogation_Music");
+        audioSource.Play();
     }
 
     IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)

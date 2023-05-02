@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119519844}
-  m_LocalRotation: {x: 0.01915768, y: 0.70684713, z: 0.019157676, w: -0.70684737}
+  m_LocalRotation: {x: 0.019157665, y: 0.7068472, z: 0.019157661, w: -0.7068473}
   m_LocalPosition: {x: -0, y: 0, z: -0.185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2746,6 +2746,10 @@ PrefabInstance:
     - target: {fileID: 5161952399119509407, guid: 240d9561cb483944884edc3e9d7a40a0, type: 3}
       propertyPath: m_Name
       value: Anatoly
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161952399119509407, guid: 240d9561cb483944884edc3e9d7a40a0, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 6078781654480461493, guid: 240d9561cb483944884edc3e9d7a40a0, type: 3}
       propertyPath: _lockYRot
@@ -5757,9 +5761,9 @@ MonoBehaviour:
   _gameState: 0
   _npcTrackers: []
   _AnatolyTracker: {fileID: 0}
-  StuffingReference: {fileID: 0}
+  StuffingReference: {fileID: 11400000, guid: 25af4c5111781b244a0d1738bb2e93da, type: 2}
   CrownReference: {fileID: 11400000, guid: f704a4c7e7fb42c49b334f4ad18f6cd0, type: 2}
-  BriefcaseReference: {fileID: 0}
+  BriefcaseReference: {fileID: 11400000, guid: 2a15598fa290a324fbe45d9ade2b1291, type: 2}
   _dialogueSystem: {fileID: 0}
   _introStarted: 0
   _evidenceGameObjects: []
@@ -6813,6 +6817,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &339184981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5161952399119509407, guid: 240d9561cb483944884edc3e9d7a40a0, type: 3}
+  m_PrefabInstance: {fileID: 175573279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &339184983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339184981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904f378feef423548b824f9d335f708a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues: []
+  Interrogations: []
+  canBeQuestioned: 0
+  <CharName>k__BackingField: Anatoly
+  <SpokenTo>k__BackingField: 0
+  <CharacterSprite>k__BackingField: {fileID: 21300000, guid: 81589919d0170554c93c73cbb7f1d880, type: 3}
+  originalPosition: {x: 0, y: 0, z: 0}
+  dialogueIterator: 0
+  interrogationIterator: 0
+  attachedNPC: Anatoly
+  notes: []
 --- !u!1 &344092679
 GameObject:
   m_ObjectHideFlags: 0
@@ -19020,7 +19052,7 @@ GameObject:
   - component: {fileID: 728003458}
   m_Layer: 0
   m_Name: HallwayCam1
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45390,7 +45422,7 @@ GameObject:
   - component: {fileID: 1142223012}
   m_Layer: 0
   m_Name: HallCam
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59887,7 +59919,7 @@ GameObject:
   - component: {fileID: 1407997301}
   m_Layer: 0
   m_Name: HallCamParent
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59975,7 +60007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a171de4b6c06fb248858aef420b270fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activeCam: 1
+  _activeCam: 0
   _cameraTransform: {fileID: 0}
   _myMeshRenderer: {fileID: 0}
   _myCollider: {fileID: 0}
@@ -60773,8 +60805,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433975695}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.03, y: 3.4329758, z: -5.35}
+  m_LocalRotation: {x: 0, y: 0.976296, z: 0, w: 0.2164397}
+  m_LocalPosition: {x: 1.803278, y: 3.4329758, z: -5.501091}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
