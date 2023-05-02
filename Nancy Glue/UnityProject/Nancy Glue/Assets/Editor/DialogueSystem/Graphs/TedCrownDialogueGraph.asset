@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: TedCrownDialogueGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: TedCrownDialogue
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 6e8afb10-25bc-46fa-8626-a51ea6d51472
+    <dialogueName>k__BackingField: IhaveAJob
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Y'know I have a job to do right?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6f4eac35-384a-4c42-b9b1-1db2f10ea4d4
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1180, y: 462.4}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
+  - <ID>k__BackingField: 6f4eac35-384a-4c42-b9b1-1db2f10ea4d4
+    <dialogueName>k__BackingField: PleaseTakeALook
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Please take a look Ted. [Present's crown]
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 08384596-4a51-4fcc-8547-97439562ae10
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1867.2, y: 463.19998}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-001
+  - <ID>k__BackingField: 08384596-4a51-4fcc-8547-97439562ae10
+    <dialogueName>k__BackingField: IKnowWhoThisBelongsTo
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: Oh, I know who that belongs to. Those no good monsters,
+      they've been protesting all day instead of being here at work!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 3081f838-637a-4730-97fd-ebce11364a0e
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2548, y: 465.59998}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_002
+  - <ID>k__BackingField: 3081f838-637a-4730-97fd-ebce11364a0e
+    <dialogueName>k__BackingField: IfYouSeeThemw
+    <characterName>k__BackingField: Ted Grizzly
+    <text>k__BackingField: They usually hang around the secret lair, whereever that
+      is... Oh, and if you find them tell them they are FIRED, if they arent here
+      by the end of today!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: e7a80b15-df6d-452e-9bad-9263e2d4c031
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3251.2, y: 459.19998}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
+  - <ID>k__BackingField: e7a80b15-df6d-452e-9bad-9263e2d4c031
+    <dialogueName>k__BackingField: Harsh
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Thats Harsh, Thanks Ted!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3968, y: 460.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-003
+  - <ID>k__BackingField: 4774bcbc-bb03-4fbe-a626-5aa8b62c61d6
+    <dialogueName>k__BackingField: NancyStart
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hey Ted, I found this can you take a look please?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 6e8afb10-25bc-46fa-8626-a51ea6d51472
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 516, y: 464}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-003
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - IhaveAJob
+  - PleaseTakeALook
+  - IKnowWhoThisBelongsTo
+  - IfYouSeeThemw
+  - Harsh
+  - NancyStart
+  <oldGroupedNames>k__BackingField:
+    list: []
