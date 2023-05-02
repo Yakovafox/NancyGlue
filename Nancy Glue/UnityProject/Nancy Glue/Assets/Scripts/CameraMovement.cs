@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform _rootCamera; //transform for the root camera.
     [SerializeField] private Transform _cameraTransform; //transform for the current camera.
     [SerializeField] private List<Transform> _switchableCameras; //transforms for cameras that can be switched to.
-    [SerializeField] [Range(0,90)] private float _yRotLimit; //Limit rotation on the Y Axis
+    [SerializeField] [Range(0,180)] private float _yRotLimit; //Limit rotation on the Y Axis
     [SerializeField] [Range(0,45)] private float _xRotLimit; //Limit Rotation on the X Axis
     [SerializeField] [Range(20,50)]private float _turnSpeed;
     [SerializeField] private Vector3 _mousePos;
