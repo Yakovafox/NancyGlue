@@ -16,13 +16,15 @@ public class Inventory : MonoBehaviour
     public invUI invUI;
     public SaveLoadGameState SLGS;
     public GameManager1 gameManager;
+    public SuspectPage susPage;
     //public UIInventory inventoryUI;
-    
+
     private void Awake()
     {
         invUI = GameObject.Find("UIGridPanel").GetComponent<invUI>();
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
         gameManager = GameObject.FindObjectOfType<GameManager1>();
+        susPage = GameObject.FindObjectOfType<SuspectPage>();
     }
 
 
@@ -144,6 +146,9 @@ public class Inventory : MonoBehaviour
 
 
         savedIDs = characterItems.Select(x => x.id).ToArray();
+        
+        susPage.saveNames();
+
         //call the save
         SLGS.SaveGame();
         Debug.Log("game saved to " + Application.persistentDataPath);

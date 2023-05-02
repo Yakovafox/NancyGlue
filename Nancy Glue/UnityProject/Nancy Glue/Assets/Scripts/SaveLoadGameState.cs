@@ -16,14 +16,14 @@ public class SaveLoadGameState : MonoBehaviour
     public CameraTrack CameraTracker;
     public NPCTracker[] NPCTrackers;
     public GameManager1 gameManager;
-
+    public SuspectPage suspectPage;
     private void Awake()
     {
         inv= FindObjectOfType<Inventory>(); 
         CameraTracker=FindObjectOfType<CameraTrack>();
         NPCTrackers = FindObjectsOfType<NPCTracker>();
         gameManager = FindObjectOfType<GameManager1>();
-
+        suspectPage = FindObjectOfType<SuspectPage>();
     }
 
 
@@ -78,7 +78,7 @@ public class SaveLoadGameState : MonoBehaviour
         save.dialogueIntIteratorsToSave = tempIntIterators;
         save.NPCnames = tempNames;
         save.gameStage = (int)gameManager._gameState;
-
+        save.suspectsTS = suspectPage.SuspectNames;
         return save;
     }
     public void Load()
@@ -110,7 +110,7 @@ public class SaveLoadGameState : MonoBehaviour
 
             gameManager._gameState = (GameManager1.GameState)save.gameStage;
 
-
+            suspectPage.SuspectNames = save.suspectsTS;
 
             Debug.Log("Game Loaded");
 
