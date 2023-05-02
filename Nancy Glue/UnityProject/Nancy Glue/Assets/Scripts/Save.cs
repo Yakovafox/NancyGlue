@@ -11,4 +11,5 @@ public class Save
     public int[] dialogueIntIteratorsToSave;
     public string[] NPCnames;
     public int gameStage;
+    public string[] suspectsTS;
 }

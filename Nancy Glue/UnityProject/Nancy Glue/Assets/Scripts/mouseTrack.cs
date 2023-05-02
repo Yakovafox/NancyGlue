@@ -110,6 +110,7 @@ public class mouseTrack : MonoBehaviour
                             Suspect.name = Suspect.GetComponent<SuspectMugshot>().Name;
                             Suspect.GetComponent<SuspectMugshot>()._npcTracker = tracker;
                             tracker.SpokenTo = true;
+                            _suspects.suspectList.Add(Suspect.name);
                         }
                         var text = FindObjectOfType<FontManager>();
                         text.InitList();
