@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: NancyRespondingBean
+  m_Name: PleaseTakeALook
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: NancyRespondingBean
+  <dialogueName>k__BackingField: PleaseTakeALook
   <characterName>k__BackingField: Nancy Glue
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: Uhhh...OK?
-  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Sticker_Bean
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 855d2c47a6e99bb49a5a74b4af21c6e7, type: 2}
+  <dialogueText>k__BackingField: Please take a look Ted. [Present's crown]
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_Flip
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-001
   <isStartingDialogue>k__BackingField: 0

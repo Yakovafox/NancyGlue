@@ -13,6 +13,12 @@ public class MenuManager : MonoBehaviour
     //SaveLoadGameState _loadGameState;
     SaveLoadSettings SLS;
     FontScript FS;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource SFX_AS;
+    [SerializeField] private AudioClip _clickSound;
+    [SerializeField] private AudioClip _pageSound;
+
     private void Awake()
     {
         Cursor.visible = true;
@@ -23,6 +29,8 @@ public class MenuManager : MonoBehaviour
         _settingsMenu = GameObject.Find("SettingsMenu");
         SLS= FindObjectOfType<SaveLoadSettings>();
         FS = FindObjectOfType<FontScript>();
+
+        SFX_AS = this.GetComponent<AudioSource>();
 
         //settings temp 
         //tempSettingsLoader.musicVol = 50;
@@ -48,6 +56,8 @@ public class MenuManager : MonoBehaviour
 
     public void AccessibilitySettings()
     {
+        SFX_AS.clip = _clickSound;
+        SFX_AS.Play();
         _isActive = !_isActive;
         //_accessibilityMenu.SetActive(_isActive);
         _accessibilityMenu.GetComponent<Animator>().SetTrigger("HideShow");
@@ -57,6 +67,8 @@ public class MenuManager : MonoBehaviour
 
     public void Settings()
     {
+        SFX_AS.clip = _clickSound;
+        SFX_AS.Play();
         _isSettingsActive = !_isSettingsActive;
         //_settingsMenu.SetActive(_isSettingsActive);
         _settingsMenu.GetComponent<Animator>().SetTrigger("HideShow");
@@ -69,17 +81,22 @@ public class MenuManager : MonoBehaviour
 
     public void NewGame()
     {
-        
+        SFX_AS.clip = _clickSound;
+        SFX_AS.Play();
         SceneManager.LoadScene("NewPlayingScene", LoadSceneMode.Single);
     }
 
     public void ExitGame()
     {
+        SFX_AS.clip = _clickSound;
+        SFX_AS.Play();
         Application.Quit();
     }
 
     public void LoadGame()
     {
+        SFX_AS.clip = _clickSound;
+        SFX_AS.Play();
         NewOrLoad.isLoad = true;
         Debug.Log("set to true");
         SceneManager.LoadScene("NewPlayingScene", LoadSceneMode.Single);

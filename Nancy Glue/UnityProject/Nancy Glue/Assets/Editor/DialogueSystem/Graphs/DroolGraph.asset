@@ -21,7 +21,7 @@ MonoBehaviour:
     <text>k__BackingField: '*Drools*'
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 
+      <NodeID>k__BackingField: 81e5e508-d239-4454-853e-f840cb4e0efe
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 451.2, y: -592.8}
@@ -36,7 +36,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1119.2, y: -616}
+    <position>k__BackingField: {x: 1116.7999, y: -593.60004}
     <spritePath>k__BackingField: StickerSprites/Sticker_Bean
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
