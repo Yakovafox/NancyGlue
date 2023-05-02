@@ -31,6 +31,7 @@ public class mouseTrack : MonoBehaviour
     [SerializeField] private Tooltip _toolTip;
     [SerializeField] private SuspectPage _suspects;
     [SerializeField] private bool _isOverUI;
+    [SerializeField] public bool OverMovement;
     private void Awake()
     {
         _uiScript = FindObjectOfType<OpenCloseUI>();
@@ -153,9 +154,13 @@ public class mouseTrack : MonoBehaviour
                 var mainCam = GameObject.Find(mainName).transform.parent.GetComponent<CameraSwitch>();
                 foreach(var switchableCam in mainCam.SwitchableCameras)
                 {
-                    if(cam == switchableCam)
+                    if (cam == switchableCam)
+                    {
                         Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
-
+                        OverMovement = true;
+                    }
+                    else
+                        OverMovement = false;
                 }
                 //Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
                 break;

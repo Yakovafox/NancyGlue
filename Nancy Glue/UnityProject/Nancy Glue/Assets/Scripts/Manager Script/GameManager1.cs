@@ -202,7 +202,7 @@ public class GameManager1 : MonoBehaviour
             if(target == eviId)
             {
                 Destroy(_evidenceGameObjects[i]);
-                Debug.Log("destroyed item" + _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID);
+                //Debug.Log("destroyed item" + _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID);
                 _evidenceGameObjects.RemoveAt(i);
                 break;
             }
@@ -319,7 +319,7 @@ public class GameManager1 : MonoBehaviour
             foreach (ItemData item in itemsArray)
             {
                 var itemId = item.EvidenceItem.ItemID;
-                Debug.Log("Searching items");
+                //Debug.Log("Searching items");
                 if (itemId == StuffingReference.ItemID) itemCollected = false;
             }
 
@@ -352,7 +352,7 @@ public class GameManager1 : MonoBehaviour
             foreach (ItemData item in itemsArray)
             {
                 var itemId = item.EvidenceItem.ItemID;
-                Debug.Log("Searching items");
+                //Debug.Log("Searching items");
                 if (itemId == CrownReference.ItemID) itemCollected = false;
             }
 
@@ -385,7 +385,7 @@ public class GameManager1 : MonoBehaviour
             foreach (ItemData item in itemsArray)
             {
                 var itemId = item.EvidenceItem.ItemID;
-                Debug.Log("Searching items");
+                //Debug.Log("Searching items");
                 if (itemId == BriefcaseReference.ItemID) itemCollected = false;
             }
 
