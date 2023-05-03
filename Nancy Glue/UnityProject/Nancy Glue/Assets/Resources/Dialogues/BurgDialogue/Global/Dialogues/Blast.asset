@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: Blast! Catch you next time!
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Sticker_Robot
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonster/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 0

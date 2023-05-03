@@ -26,19 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 296, y: -33}
     <spritePath>k__BackingField: StickerSprites/Sticker_Robot
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: d5dd3a9d-ed6d-4227-982a-17167d44aefa
-    <dialogueName>k__BackingField: IDontHaveTheTime
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Sorry, I dont have the time Burg. Maybe next time!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: d36105c4-79a1-4d0c-8c72-0e29bb120665
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 971, y: -34}
-    <spritePath>k__BackingField: StickerSprites/Sticker_Robot
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonster/Finger_Monster2-002
   - <ID>k__BackingField: d36105c4-79a1-4d0c-8c72-0e29bb120665
     <dialogueName>k__BackingField: Blast
     <characterName>k__BackingField: Burg
@@ -50,11 +38,23 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1668, y: -33}
     <spritePath>k__BackingField: StickerSprites/Sticker_Robot
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonster/Finger_Monster2-002
+  - <ID>k__BackingField: d5dd3a9d-ed6d-4227-982a-17167d44aefa
+    <dialogueName>k__BackingField: IDontHaveTheTime
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Sorry, I dont have the time Burg. Maybe next time!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: d36105c4-79a1-4d0c-8c72-0e29bb120665
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 971, y: -34}
+    <spritePath>k__BackingField: StickerSprites/Sticker_Robot
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_005
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start
-  - IDontHaveTheTime
   - Blast
+  - IDontHaveTheTime
   <oldGroupedNames>k__BackingField:
     list: []

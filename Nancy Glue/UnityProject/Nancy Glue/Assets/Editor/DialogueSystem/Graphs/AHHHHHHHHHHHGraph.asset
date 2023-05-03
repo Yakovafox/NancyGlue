@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 284.80002, y: -264}
+    <position>k__BackingField: {x: 285, y: -264}
     <spritePath>k__BackingField: StickerSprites/pigeon_2_sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Pigeons/Pigeon_Sounds-004
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - PigeonScreaming

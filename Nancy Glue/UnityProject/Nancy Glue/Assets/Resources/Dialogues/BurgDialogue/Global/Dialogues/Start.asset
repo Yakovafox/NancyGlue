@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 2f5f556070b84284eaba5d654443f554, type: 2}
   <dialogueText>k__BackingField: So we meet again Nancy Glue... FOR THE LAST TIME!!
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Sticker_Robot
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonster/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 1
