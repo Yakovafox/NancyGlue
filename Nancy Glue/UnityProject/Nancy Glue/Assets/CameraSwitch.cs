@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraSwitch : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class CameraSwitch : MonoBehaviour
     public GameObject _returnTooltip;
 
     [SerializeField] private LocationButton _locationButton;
+    [SerializeField] private Sprite[] _cameraIcons;
 
     private void Awake()
     {
@@ -38,6 +40,16 @@ public class CameraSwitch : MonoBehaviour
     public void SwitchActiveCam()
     {
         _activeCam = !_activeCam;
+
+        var cameraOnDolly = _cameraTransform.GetComponent<CameraMovement>().OnDolly;
+        var image = GameObject.Find("CameraIcon").GetComponent<Image>();
+        if (cameraOnDolly)
+        {
+            image.sprite = _cameraIcons[1];
+        }
+        else
+            image.sprite = _cameraIcons[0];
+        
         if (_locationButton != null)
             _locationButton.IsCurrentLocation = _activeCam;
         EnableDisableCam();

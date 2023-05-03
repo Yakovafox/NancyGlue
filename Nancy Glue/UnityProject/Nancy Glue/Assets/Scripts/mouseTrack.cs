@@ -183,7 +183,7 @@ public class mouseTrack : MonoBehaviour
                 {
                     if (cam == switchableCam)
                     {
-                        Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+                        Cursor.SetCursor(_sprites[4], new Vector2(32, 6), CursorMode.Auto);
                         OverMovement = true;
                     }
                     else

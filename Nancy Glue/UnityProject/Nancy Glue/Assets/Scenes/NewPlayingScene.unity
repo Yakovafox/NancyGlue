@@ -2299,7 +2299,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119519844}
-  m_LocalRotation: {x: 0.00070418575, y: 0.7071065, z: 0.00070418575, w: -0.7071065}
+  m_LocalRotation: {x: 0.0007042101, y: 0.7071065, z: 0.0007042101, w: -0.7071065}
   m_LocalPosition: {x: -0, y: 0, z: -0.185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2508,6 +2508,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 0}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!43 &147443088
 Mesh:
   m_ObjectHideFlags: 0
@@ -2732,6 +2735,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 56229174}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!23 &155404265
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7356,6 +7362,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!43 &376892690
 Mesh:
   m_ObjectHideFlags: 0
@@ -19290,6 +19299,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 943452152}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &723418048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21910,6 +21922,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 943452152}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!23 &794417320
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22193,6 +22208,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 943452152}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &810391323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24903,6 +24921,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!23 &862377400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47260,6 +47281,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &1183920123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48021,6 +48045,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &1207765258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60851,6 +60878,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 0}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!1001 &1414356066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62363,6 +62393,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 56229174}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!23 &1464748123
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62599,6 +62632,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &1479091516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99852,6 +99888,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!65 &2019056976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102453,6 +102492,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 2080714600}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!23 &2079864198
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -102628,6 +102670,9 @@ MonoBehaviour:
   _canSwitch: 0
   _returnTooltip: {fileID: 1622911014}
   _locationButton: {fileID: 0}
+  _cameraIcons:
+  - {fileID: 21300000, guid: d5daed9f9d6699c4288b347d6da6ad1b, type: 3}
+  - {fileID: 21300000, guid: 146539bf2f5bc844ead886126efa556a, type: 3}
 --- !u!1001 &2091364761
 PrefabInstance:
   m_ObjectHideFlags: 0
