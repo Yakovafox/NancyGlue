@@ -11,7 +11,8 @@ public class NPCTracker : MonoBehaviour
     {
         talking,
         END,
-        evidence
+        evidence,
+        phoney
     }
 
     [Serializable]

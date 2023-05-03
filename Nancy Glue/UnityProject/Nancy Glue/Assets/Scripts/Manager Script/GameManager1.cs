@@ -28,6 +28,7 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] public GameState _gameState;
     [SerializeField] private NPCTracker[] _npcTrackers;
     [SerializeField] private NPCTracker _AnatolyTracker;
+    [SerializeField] private NPCTracker _PhoneyTracker;
     [SerializeField] private ItemScriptableObject StuffingReference;
     [SerializeField] private ItemScriptableObject CrownReference;
     [SerializeField] private ItemScriptableObject BriefcaseReference;
@@ -236,40 +237,47 @@ public class GameManager1 : MonoBehaviour
 
             case GameState.UnlockProjector:
                 UnlockProjectorInit();
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.CollectedStuffing:
 
                 _dialogueSystem.SetContainer("StuffingInternalDialogue");//this is a problem on load - can this be skipped safely?
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 stateTracker[3] = 1;
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.GrizzlyInterrogation:
                 GrizzlyInterrogateInit();
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.UnlockHiddenLiar:
                 UnlockHiddenLairInit();
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 _dialogueSystem.SetContainer("NancyInternalDialogue");//this is a problem on load - can this be skipped safely?
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.FingerMonsterInterrogation:
                 FingerInterrogate1Init();
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.CollectedBriefcase:
                 _dialogueSystem.SetContainer("BriefcaseInternalDialogue");//this is a problem on load - can this be skipped safely?
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 stateTracker[7] = 1;
                 _gameState = GameState.Idle;
                 break;
 
             case GameState.FingerMonsterInterrogation2:
                 FingerInterrogate2Init();
+                _PhoneyTracker.ProgressDialogue(NPCTracker.ProgressTriggers.phoney);
                 _gameState = GameState.Idle;
                 break;
 
