@@ -15,30 +15,6 @@ MonoBehaviour:
   <fileName>k__BackingField: FingerMonsterInterrogationCaseCode
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: a9b4c03d-4ea4-460f-b215-2a7610e15c10
-    <dialogueName>k__BackingField: OhYeah
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: I thought you didnt have a lawyer?
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: b4a73c53-786f-4951-a263-7e1831d08889
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10171, y: -864}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
-  - <ID>k__BackingField: 654904eb-61c9-4827-9a7b-41ad421fd09e
-    <dialogueName>k__BackingField: WeDontHaveALawyer
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: We dont actually have a lawyer come to think of it...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 10176, y: 51}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   - <ID>k__BackingField: b4a73c53-786f-4951-a263-7e1831d08889
     <dialogueName>k__BackingField: Darn
     <characterName>k__BackingField: Finger Monster B
@@ -49,21 +25,8 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 10857, y: -869}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
     <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
-  - <ID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
-    <dialogueName>k__BackingField: IWillTradeCrown
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: I will trade you the crown if you give up the code, that
-      sounds...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 11564, y: -8}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 225f3b53-2701-4310-9b0f-0c97e8b01c22
     <dialogueName>k__BackingField: OhWowOkay
     <characterName>k__BackingField: Nancy Glue
@@ -78,20 +41,8 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
     <position>k__BackingField: {x: 13010, y: -35}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_1
     <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
-  - <ID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
-    <dialogueName>k__BackingField: Code
-    <characterName>k__BackingField: Finger Monsters
-    <text>k__BackingField: 1625!!!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: fed506ae-c2db-4de7-8893-a8da4e73f921
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 12262, y: -11}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   - <ID>k__BackingField: fed506ae-c2db-4de7-8893-a8da4e73f921
     <dialogueName>k__BackingField: CodeNote
     <characterName>k__BackingField: Briefcase
@@ -104,55 +55,6 @@ MonoBehaviour:
     <position>k__BackingField: {x: 12299, y: 1063}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 6705a338-d0bc-4901-b78b-1db46c7db2f0
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Finger Monster B
-    <text>k__BackingField: DWAHJ, DHDHLOIJ. Iadjk!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5142, y: -471}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
-  - <ID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
-    <dialogueName>k__BackingField: AguingC
-    <characterName>k__BackingField: Finger Monster C
-    <text>k__BackingField: CROWN! MINE! DIWJLAKN!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5869, y: -473}
-    <spritePath>k__BackingField: CharacterSprites/fm_C_vest
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
-    <dialogueName>k__BackingField: ArguingA
-    <characterName>k__BackingField: Finger Monster A
-    <text>k__BackingField: MY CROWN! YTVE!
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6550, y: -473}
-    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
-    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster-002
-  - <ID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
-    <dialogueName>k__BackingField: IFoundYourBriefcase
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: I found your briefcase, yes your briefcase. I know you
-      lot stole it, you are oozing with suspicion.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 8071, y: -466}
-    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
     <dialogueName>k__BackingField: IWontPlayGames
     <characterName>k__BackingField: Nancy Glue
@@ -163,7 +65,7 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 8785, y: -463}
-    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_A_group
     <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 9de66a35-8e34-47bb-87b7-b47e453d9bf6
     <dialogueName>k__BackingField: CrownB
@@ -175,8 +77,32 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 13709, y: -7}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
     <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
+  - <ID>k__BackingField: 654904eb-61c9-4827-9a7b-41ad421fd09e
+    <dialogueName>k__BackingField: WeDontHaveALawyer
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: We dont actually have a lawyer come to think of it...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 10176, y: 51}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
+  - <ID>k__BackingField: a9b4c03d-4ea4-460f-b215-2a7610e15c10
+    <dialogueName>k__BackingField: OhYeah
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I thought you didnt have a lawyer?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: b4a73c53-786f-4951-a263-7e1831d08889
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 10171, y: -864}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_1
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: a6ab6c2d-6446-41ad-a415-4de667088859
     <dialogueName>k__BackingField: CrownC
     <characterName>k__BackingField: Finger Monster C
@@ -186,9 +112,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13703, y: 925}
-    <spritePath>k__BackingField: CharacterSprites/fm_C_vest
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <position>k__BackingField: {x: 13701, y: 925}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_C_group_talking
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-003
   - <ID>k__BackingField: ecddb6a0-a9e9-4947-9b09-290c0647be35
     <dialogueName>k__BackingField: WeDontKnow
     <characterName>k__BackingField: Finger Monster B
@@ -201,8 +127,32 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 1
     <position>k__BackingField: {x: 9497, y: -482}
-    <spritePath>k__BackingField: CharacterSprites/fm_B_bowtie
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
     <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
+  - <ID>k__BackingField: 6705a338-d0bc-4901-b78b-1db46c7db2f0
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Finger Monster B
+    <text>k__BackingField: DWAHJ, DHDHLOIJ. Iadjk!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5142, y: -471}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_fighting_sad
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
+  - <ID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
+    <dialogueName>k__BackingField: Code
+    <characterName>k__BackingField: Finger Monsters
+    <text>k__BackingField: 1625!!!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: fed506ae-c2db-4de7-8893-a8da4e73f921
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 12262, y: -11}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   - <ID>k__BackingField: 25ccbbed-604c-4dcb-bdf0-827c75065ab5
     <dialogueName>k__BackingField: CrownA
     <characterName>k__BackingField: Finger Monster A
@@ -212,8 +162,20 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13709, y: -930}
-    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <position>k__BackingField: {x: 13707, y: -930}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_A_group_talking
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
+  - <ID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
+    <dialogueName>k__BackingField: ArguingA
+    <characterName>k__BackingField: Finger Monster A
+    <text>k__BackingField: MY CROWN! YTVE!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 6550, y: -473}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_fighting_sad
     <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster-002
   - <ID>k__BackingField: 924b84a1-37cc-4f7a-a629-072ee7d97c0f
     <dialogueName>k__BackingField: ImBackGuys
@@ -225,26 +187,64 @@ MonoBehaviour:
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 7351, y: -466}
-    <spritePath>k__BackingField: CharacterSprites/fm_A_poloshirt
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_A_group
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_001
+  - <ID>k__BackingField: 25855bd9-5bb9-4628-b091-5dcc6391268c
+    <dialogueName>k__BackingField: IFoundYourBriefcase
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I found your briefcase, yes your briefcase. I know you
+      lot stole it, you are oozing with suspicion.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 5afd75d8-cd48-4c2b-9a8a-b7bfb893f481
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 8071, y: -466}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_A_group
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_002
+  - <ID>k__BackingField: 0000a90f-4bf5-4ab9-b5bc-1b73cc7a3066
+    <dialogueName>k__BackingField: IWillTradeCrown
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I will trade you the crown if you give up the code, that
+      sounds...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 2e8dc510-a534-4715-82d7-014b9cd28bf4
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 11562, y: -8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_1
     <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
+  - <ID>k__BackingField: ec9a2b75-3f8a-4b76-aa8a-439d3b995228
+    <dialogueName>k__BackingField: AguingC
+    <characterName>k__BackingField: Finger Monster C
+    <text>k__BackingField: CROWN! MINE! DIWJLAKN!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 5d944281-570a-40bd-9aee-9450c1e15df2
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 5869, y: -473}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/fm_fighting_sad
+    <audioPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - OhYeah
-  - WeDontHaveALawyer
   - Darn
-  - IWillTradeCrown
   - OhWowOkay
-  - Code
   - CodeNote
-  - Start
-  - AguingC
-  - ArguingA
-  - IFoundYourBriefcase
   - IWontPlayGames
   - CrownB
+  - WeDontHaveALawyer
+  - OhYeah
   - CrownC
   - WeDontKnow
+  - Start
+  - Code
   - CrownA
+  - ArguingA
   - ImBackGuys
+  - IFoundYourBriefcase
+  - IWillTradeCrown
+  - AguingC
   <oldGroupedNames>k__BackingField:
     list: []

@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7ca6a25c0f291814b9672ff923597ade, type: 2}
   <dialogueText>k__BackingField: We dont actually have a lawyer come to think of
     it...
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_bowtie
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   <isStartingDialogue>k__BackingField: 0

@@ -24,6 +24,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 60794545781f4b74ba1ec1d0f1bcc5fb, type: 2}
   <dialogueText>k__BackingField: pkodaji esyguf ben WKPDETH ODIAEF NIS;BHUE SGID
     !!!!!!
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_A_standing
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_A_group_talking
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster-002
   <isStartingDialogue>k__BackingField: 0

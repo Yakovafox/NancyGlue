@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 9244a2cbeb35b794f8bf94ae3e7fbe86, type: 2}
   <dialogueText>k__BackingField: 'My friend here said that, you are more than welcome
     and how can we help? '
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 0

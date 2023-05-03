@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 31e6df07ab3c0ce4d89a63baf404155a, type: 2}
   <dialogueText>k__BackingField: .. We dont actually have a laywer, come to think
     of it.
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-002
   <isStartingDialogue>k__BackingField: 0
