@@ -2,6 +2,7 @@ using Dialogue.ScriptableObjects;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class NPCTracker : MonoBehaviour
@@ -69,7 +70,7 @@ public class NPCTracker : MonoBehaviour
 
     public void EvidenceCheck()
     {
-        if (Interrogations.Count == interrogationIterator) return;
+        if (interrogationIterator >= Interrogations.Count) return;
 
         ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
 
@@ -95,11 +96,13 @@ public class NPCTracker : MonoBehaviour
         }
     }
 
-    public void onLoadGame(string name, int iterator)
+    public void onLoadGame(string name, int diaIterator, int intIterator, string[] saveNotes)
     {
         if (name == attachedNPC)
         {
-            dialogueIterator = iterator;
+            dialogueIterator = diaIterator;
+            interrogationIterator = intIterator;
+            notes = saveNotes.ToList();
         }
         else
         {

@@ -13,4 +13,5 @@ public class Save
     public int gameStage;
     public string[] suspectsTS;
     public int[] gameStageArray;
+    public string[][] notes;
 }
