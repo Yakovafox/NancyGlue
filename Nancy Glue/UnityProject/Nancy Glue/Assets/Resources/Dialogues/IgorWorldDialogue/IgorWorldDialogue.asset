@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: IgorWorldDialogue
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: IgorWorldDialogue
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 1c8e2de1b3276bd418d645b612fb632c, type: 2}
+  - {fileID: 11400000, guid: edddbdee55c5add4ab7720e99074c957, type: 2}
+  - {fileID: 11400000, guid: 4f8af69cac984744a921395c6268a30b, type: 2}
+  - {fileID: 11400000, guid: 1256e7b4e33cf534987de673b087e29f, type: 2}
+  - {fileID: 11400000, guid: 13ee83db65a7bad4daf7c007d797e55e, type: 2}
+  - {fileID: 11400000, guid: 688a15e0da4febf46b6c22cdec80ce04, type: 2}
+  - {fileID: 11400000, guid: 1519565eb3e7bd043b323b779d3828f6, type: 2}
