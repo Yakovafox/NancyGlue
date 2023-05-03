@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: AnatolyWorldDialogue1
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: AnatolyWorldDialogue1
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: 543f755b111fc7d4c8ddd9b45d2c145e, type: 2}
+  - {fileID: 11400000, guid: 395462e86fd7e984d9ae6ba46a671c7d, type: 2}
+  - {fileID: 11400000, guid: fc371d97befdf7e4e84516e7f6d0fe3f, type: 2}
+  - {fileID: 11400000, guid: 44a447466e54606469a9abe2d1d9f572, type: 2}

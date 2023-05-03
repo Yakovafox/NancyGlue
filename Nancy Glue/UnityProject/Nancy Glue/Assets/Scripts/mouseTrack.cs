@@ -115,6 +115,10 @@ public class mouseTrack : MonoBehaviour
                         var zoneManager = FindObjectOfType<ZoneManager>();
                         zoneManager.SpeakToNPC(hitData.transform.name);
                         break;
+                    case ("Phoney"):
+                        NPCTracker phoney = hitData.transform.GetComponent<NPCTracker>();
+                        _dialogueSystemScript.SetContainer(phoney.GetCurrentContainer(), phoney);
+                        break;
                     case ("Interactable"):
                         Debug.Log("Clicked Interactable");
                         break;
@@ -183,7 +187,7 @@ public class mouseTrack : MonoBehaviour
                 {
                     if (cam == switchableCam)
                     {
-                        Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+                        Cursor.SetCursor(_sprites[4], new Vector2(32, 6), CursorMode.Auto);
                         OverMovement = true;
                     }
                     else
@@ -193,6 +197,9 @@ public class mouseTrack : MonoBehaviour
                 break;
             case "NPC" when !UIOpen || !DialogueOpenCheck():
                 Cursor.SetCursor(_sprites[2], new Vector2(30,10), CursorMode.Auto);
+                break;
+            case "Phoney" when !UIOpen || !DialogueOpenCheck():
+                Cursor.SetCursor(_sprites[2], new Vector2(30, 10), CursorMode.Auto);
                 break;
             case "Evidence" when !UIOpen || !DialogueOpenCheck():
                 Cursor.SetCursor(_sprites[3], new Vector2(32,32), CursorMode.Auto);

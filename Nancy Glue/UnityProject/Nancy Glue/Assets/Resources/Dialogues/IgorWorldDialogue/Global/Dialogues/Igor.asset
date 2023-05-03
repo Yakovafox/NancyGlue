@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: DialogueName
+  m_Name: Igor
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: DialogueName
-  <characterName>k__BackingField: Phoney
+  <dialogueName>k__BackingField: Igor
+  <characterName>k__BackingField: Igor
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: That's a nice looking crown, Boss! You'll need to
-    see if you can find those finger monsters to bring in for questions.
-  <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  <isStartingDialogue>k__BackingField: 1
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 1519565eb3e7bd043b323b779d3828f6, type: 2}
+  <dialogueText>k__BackingField: Igor...
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/ND4_Igor_Overworld_Clr
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks_003
+  <isStartingDialogue>k__BackingField: 0

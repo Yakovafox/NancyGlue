@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: AnatolyWorldDialogue1Graph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: AnatolyWorldDialogue1
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: b67c4141-eb44-473e-839d-5d46b37b0b95
+    <dialogueName>k__BackingField: HaveYouFoundIt
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: Have you found the film reel yet?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 851de37c-be73-4b98-9eaa-77330aa0b4b5
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 11891.2, y: -3748.8}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks_005
+  - <ID>k__BackingField: ae93f35f-b400-4263-8876-5693adbe98b1
+    <dialogueName>k__BackingField: WhatAreYouStandingaroundFor
+    <characterName>k__BackingField: Anatoly
+    <text>k__BackingField: Well, what are you standing around for! Dont keep me waiting.
+      My daughter is in distress!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 13251.2, y: -3749.5999}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks_002
+  - <ID>k__BackingField: 851de37c-be73-4b98-9eaa-77330aa0b4b5
+    <dialogueName>k__BackingField: Nope
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: No, not yet... sorry to say.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: ae93f35f-b400-4263-8876-5693adbe98b1
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 12572.8, y: -3743.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
+  - <ID>k__BackingField: 59235df8-b3df-4b7d-8fe3-c705badc34da
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Hi, Anatoly.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: b67c4141-eb44-473e-839d-5d46b37b0b95
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 11217.601, y: -3747.2}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - HaveYouFoundIt
+  - WhatAreYouStandingaroundFor
+  - Nope
+  - Start
+  <oldGroupedNames>k__BackingField:
+    list: []

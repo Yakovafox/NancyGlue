@@ -28,6 +28,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private GameObject _invUI;
     [SerializeField] private OpenCloseUI _uiScript;
     [SerializeField] private bool _onDolly;
+    public bool OnDolly => _onDolly;
     [SerializeField] private bool HorizontalDolly;
     [SerializeField] private CinemachineVirtualCamera _virtualCam;
     [SerializeField] private CinemachineTrackedDolly _dollyCam;

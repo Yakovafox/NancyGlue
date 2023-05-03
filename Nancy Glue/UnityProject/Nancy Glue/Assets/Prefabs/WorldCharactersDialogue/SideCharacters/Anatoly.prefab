@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2982282661247477961}
+  - component: {fileID: 7313785657157972656}
+  - component: {fileID: 8194010466666357349}
   m_Layer: 0
-  m_Name: Dog
-  m_TagString: Untagged
+  m_Name: Anatoly
+  m_TagString: RandomDialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +34,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7313785657157972656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161952399119509407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.65769064, y: 1.0331204, z: 0.52982026}
+  m_Center: {x: 0.011007607, y: 0.54343975, z: 0.007967979}
+--- !u!114 &8194010466666357349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5161952399119509407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912dc6218b3827c45ab6185d4dfb25f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogues:
+  - {fileID: 11400000, guid: eb361e50108ded14e88880c52d4ae632, type: 2}
+  - {fileID: 11400000, guid: 573612de8f3df6944b65c93705322e71, type: 2}
 --- !u!1 &9128959495357751144
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +136,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c710f74c72ef9754b9234df6acb3e89e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81589919d0170554c93c73cbb7f1d880, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,3 +165,4 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+  _yStart: 0

@@ -10,26 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
-  m_Name: PhoneyBringInFingerMonstersGraph
+  m_Name: DogWorldDialogueGraph
   m_EditorClassIdentifier: 
-  <fileName>k__BackingField: PhoneyBringInFingerMonsters
+  <fileName>k__BackingField: DogWorldDialogue
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 99e6aaa7-f19d-46fc-876e-620cc6dbef21
-    <dialogueName>k__BackingField: DialogueName
-    <characterName>k__BackingField: Phoney
-    <text>k__BackingField: That's a nice looking crown, Boss! You'll need to see
-      if you can find those finger monsters to bring in for questions.
+  - <ID>k__BackingField: 9681ee9b-69f2-4afc-8eb4-a4709c9fc128
+    <dialogueName>k__BackingField: Woof
+    <characterName>k__BackingField: Dog
+    <text>k__BackingField: '*WOOF*'
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 587, y: 1544}
-    <spritePath>k__BackingField: StickerSprites/Phoney
+    <position>k__BackingField: {x: 12680, y: -3798.4}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - DialogueName
+  - Woof
   <oldGroupedNames>k__BackingField:
     list: []
