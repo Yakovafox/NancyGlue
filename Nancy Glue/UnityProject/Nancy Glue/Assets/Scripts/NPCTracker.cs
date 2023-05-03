@@ -10,13 +10,15 @@ public class NPCTracker : MonoBehaviour
     public enum ProgressTriggers
     {
         talking,
-        END
+        END,
+        evidence
     }
 
     [Serializable]
     public struct DialogueInformation
     {
         public DialogueContainerSO Container;
+        public ItemScriptableObject EvidenceRequired;
         public ProgressTriggers Trigger;
     }
 
@@ -64,6 +66,18 @@ public class NPCTracker : MonoBehaviour
     {
         if (Dialogues[dialogueIterator].Trigger == trigger)
         {
+            if (trigger == ProgressTriggers.evidence)
+            {
+                ItemData[] itemsArray = (ItemData[])FindSceneObjectsOfType(typeof(ItemData));
+
+                bool itemCollected = true;
+                foreach (ItemData item in itemsArray)
+                {
+                    var itemId = item.EvidenceItem.ItemID;
+                    if (itemId == Dialogues[dialogueIterator].EvidenceRequired.ItemID) return;
+                }
+            }
+
             dialogueIterator++;
         }
     }

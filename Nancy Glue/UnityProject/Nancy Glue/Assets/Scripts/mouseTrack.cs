@@ -96,7 +96,7 @@ public class mouseTrack : MonoBehaviour
                         if (susEmptyText != null && susEmptyText.activeSelf)
                             susEmptyText.SetActive(false);
                         NPCTracker tracker = hitData.transform.GetComponent<NPCTracker>();
-                        //tracker.EvidenceCheck();
+                        tracker.ProgressDialogue(NPCTracker.ProgressTriggers.evidence);
                         _dialogueSystemScript.SetContainer(tracker.GetCurrentContainer(), tracker) ;
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
                         if (!tracker.SpokenTo)
