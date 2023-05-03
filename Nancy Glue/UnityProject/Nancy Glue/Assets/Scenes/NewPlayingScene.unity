@@ -32931,6 +32931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phoney
       objectReference: {fileID: 0}
+    - target: {fileID: 7658649448286395346, guid: fda53aca17f788947a27509bb7941eaf, type: 3}
+      propertyPath: m_TagString
+      value: Phoney
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: fda53aca17f788947a27509bb7941eaf, type: 3}
@@ -54407,6 +54411,10 @@ PrefabInstance:
       value: TedGrizzly
       objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Dialogues.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Interrogations.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -54416,6 +54424,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[2].Trigger
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Dialogues.Array.data[3].Trigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
@@ -54425,7 +54437,11 @@ PrefabInstance:
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[2].Container
       value: 
-      objectReference: {fileID: 11400000, guid: 18e751bd51ae47a43891d75babd2725e, type: 2}
+      objectReference: {fileID: 11400000, guid: b6482257dcd18094d85c792063128836, type: 2}
+    - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
+      propertyPath: Dialogues.Array.data[3].Container
+      value: 
+      objectReference: {fileID: 11400000, guid: ff67b36b6dbe79f42a0a60aaec9d5b70, type: 2}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Interrogations.Array.data[0].Container
       value: 
@@ -54437,11 +54453,11 @@ PrefabInstance:
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[1].EvidenceRequired
       value: 
-      objectReference: {fileID: 1280193977}
+      objectReference: {fileID: 0}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Dialogues.Array.data[2].EvidenceRequired
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f704a4c7e7fb42c49b334f4ad18f6cd0, type: 2}
     - target: {fileID: 4095165426792725277, guid: b9384e46549d93247ba753b97ad7a9aa, type: 3}
       propertyPath: Interrogations.Array.data[0].EvidenceRequired.Array.size
       value: 1
@@ -56498,11 +56514,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2315a70a657851f4f9dca9d8ee544f14, type: 3}
   m_PrefabInstance: {fileID: 1278857958}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1280193977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4040924930730284622, guid: 906a0aa18d875114792e0ad98fd28f3e, type: 3}
-  m_PrefabInstance: {fileID: 297035579}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1299615262
 GameObject:
