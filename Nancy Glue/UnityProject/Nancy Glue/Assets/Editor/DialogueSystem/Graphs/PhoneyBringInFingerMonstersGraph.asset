@@ -18,8 +18,8 @@ MonoBehaviour:
   - <ID>k__BackingField: 99e6aaa7-f19d-46fc-876e-620cc6dbef21
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Phoney
-    <text>k__BackingField: That's a nice looking crown boss. You'll need to see if
-      you can find those finger monsters to bring in for questions.
+    <text>k__BackingField: That's a nice looking crown, Boss! You'll need to see
+      if you can find those finger monsters to bring in for questions.
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 

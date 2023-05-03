@@ -18,7 +18,7 @@ MonoBehaviour:
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 0}
-  <dialogueText>k__BackingField: That's a nice looking crown boss. You'll need to
+  <dialogueText>k__BackingField: That's a nice looking crown, Boss! You'll need to
     see if you can find those finger monsters to bring in for questions.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
