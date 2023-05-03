@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: PhoneyGoToProjectorGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: PhoneyGoToProjector
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 2cf777ce-e0c4-4a89-876a-7b0a12dcb850
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Phoney
+    <text>k__BackingField: Have you been to the projector room yet, Boss? Mr Grizzly
+      opened it up for you.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 270, y: 409}
+    <spritePath>k__BackingField: StickerSprites/Phoney
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - DialogueName
+  <oldGroupedNames>k__BackingField:
+    list: []

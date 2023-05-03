@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: PhoneyNeedACodeGraph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: PhoneyNeedACode
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 94d1e9ea-dcfd-40bf-b505-dee5ceac2967
+    <dialogueName>k__BackingField: start
+    <characterName>k__BackingField: Phoney
+    <text>k__BackingField: Good job finding the briefcase, Boss. Seems it's locked
+      with a code though...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 820, y: 2314}
+    <spritePath>k__BackingField: StickerSprites/Phoney
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
+    <dialogueName>k__BackingField: DialogueName
+    <characterName>k__BackingField: Phoney
+    <text>k__BackingField: Maybe the Finger Monsters would know something?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1525, y: 2314}
+    <spritePath>k__BackingField: StickerSprites/Phoney
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - start
+  - DialogueName
+  <oldGroupedNames>k__BackingField:
+    list: []

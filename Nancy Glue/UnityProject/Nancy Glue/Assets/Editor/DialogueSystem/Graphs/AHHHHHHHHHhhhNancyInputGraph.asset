@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 61f46b16-7c78-47ab-a66d-7d83ad2456de
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1136, y: -217.59999}
+    <position>k__BackingField: {x: 1136, y: -218}
     <spritePath>k__BackingField: StickerSprites/pigeon_2_Sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 61f46b16-7c78-47ab-a66d-7d83ad2456de
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Pigeon
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1922.3999, y: -216.8}
+    <position>k__BackingField: {x: 1922, y: -217}
     <spritePath>k__BackingField: StickerSprites/pigeon_2_Sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Pigeons/Pigeon_Sounds-001
   - <ID>k__BackingField: 7b7d19a4-9451-47fa-b1f6-d35c9839d396
     <dialogueName>k__BackingField: Ahhh
     <characterName>k__BackingField: Mildly Angry Pigeon
@@ -50,7 +50,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 400, y: -216}
     <spritePath>k__BackingField: StickerSprites/pigeon_2_Sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Pigeons/Pigeon_Sounds-002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - NancyJeez

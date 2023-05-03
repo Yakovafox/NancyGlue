@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: AHHHHHHHHHHHHHHHHHHHHHHHHHHHH!
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/pigeon_2_sprite_2
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Pigeons/Pigeon_Sounds-004
   <isStartingDialogue>k__BackingField: 1

@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: bf8fac24-8f08-4ee0-a853-66ff34fb1e60
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 876.8, y: -115.2}
+    <position>k__BackingField: {x: 877, y: -115}
     <spritePath>k__BackingField: StickerSprites/Pigeon_2_sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Pigeons/Pigeon_Sounds-001
   - <ID>k__BackingField: bf8fac24-8f08-4ee0-a853-66ff34fb1e60
     <dialogueName>k__BackingField: NancyResponding
     <characterName>k__BackingField: Nancy Glue
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1725.6, y: -112.8}
+    <position>k__BackingField: {x: 1726, y: -113}
     <spritePath>k__BackingField: StickerSprites/Pigeon_2_sprite_2
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_004
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Start
