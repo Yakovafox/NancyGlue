@@ -122,10 +122,10 @@ public class CameraMovement : MonoBehaviour
         }
         //Debug.Log(_targetOffsetZ);
         if (_lookUp)
-            _targetOffsetZ = SetOffset(_targetOffsetZ, 1);
+            _targetOffsetY = SetOffset(_targetOffsetY, 1);
         else if (_lookDown)
-            _targetOffsetZ = SetOffset(_targetOffsetZ, -1);
-        _virtualCam.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.z = _targetOffsetZ;
+            _targetOffsetY = SetOffset(_targetOffsetY, -1);
+        _virtualCam.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.y = _targetOffsetY;
     }
 
     private void ForwardBackTrack()
