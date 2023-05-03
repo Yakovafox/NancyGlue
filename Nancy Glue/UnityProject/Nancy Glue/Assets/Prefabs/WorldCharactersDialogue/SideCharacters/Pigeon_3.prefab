@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5284193046193271244}
+  - component: {fileID: 286642354692934350}
   m_Layer: 0
   m_Name: Pigeon_3
-  m_TagString: Untagged
+  m_TagString: RandomDialogue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +33,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &286642354692934350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298562261740148917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912dc6218b3827c45ab6185d4dfb25f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogues:
+  - {fileID: 11400000, guid: 2ec1501153e96ac4f983217bf5444a41, type: 2}
+  - {fileID: 11400000, guid: f28df6d0f86f1324f88eef338e57d164, type: 2}
+  - {fileID: 11400000, guid: 73bf07e4d4a4da648b430afd383aec5d, type: 2}
 --- !u!1 &7267671280194039231
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,3 +152,4 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+  _yStart: 0
