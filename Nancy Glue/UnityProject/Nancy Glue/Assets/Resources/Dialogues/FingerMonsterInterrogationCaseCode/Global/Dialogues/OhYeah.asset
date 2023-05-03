@@ -19,6 +19,6 @@ MonoBehaviour:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: b52021a0038774645a6318a8986c71a7, type: 2}
   <dialogueText>k__BackingField: I thought you didnt have a lawyer?
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_bowtie
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_1
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <isStartingDialogue>k__BackingField: 0

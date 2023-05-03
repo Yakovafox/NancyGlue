@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 8e0cffbc3fe7a03439c03b5fd330a300, type: 2}
   <dialogueText>k__BackingField: The film reel was stashed in the hideout somewhere
     I dont know where.. besides its long gone no finding it there.
-  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/fm_B_sitting
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/fm_B_group_talking
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/FingerMonsters/Finger_Monster2-001
   <isStartingDialogue>k__BackingField: 0
