@@ -294,7 +294,7 @@ namespace Dialogue
             ShowText();
         }
 
-        public void SetContainer(DialogueContainerSO dialogue, NPCTracker attachedNPC)
+        public void SetContainer(DialogueContainerSO dialogue, NPCTracker attachedNPC = null)
         {
             dialogueContainer = dialogue;
             tracker = attachedNPC;
