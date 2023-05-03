@@ -124,6 +124,9 @@ public class mouseTrack : MonoBehaviour
                     case ("Finish"):
                         SwitchToBranchCamera(hitData.transform);
                         break;
+                    case ("InspectionCamera"):
+                        SwitchToBranchCamera(hitData.transform);
+                        break;
                     case ("RandomDialogue"):
                         var hit = hitData.transform.GetComponent<RandomDialogueScript>();
                         hit.SelectRandomDialogue();
@@ -142,7 +145,11 @@ public class mouseTrack : MonoBehaviour
 
     private void CursorChange(Ray ray)
     {
-        
+        if(_isOverUI)
+        {
+            Cursor.SetCursor(_sprites[0], new Vector2(10, 10), CursorMode.Auto);
+            return;
+        }
         //_cursor.transform.position = Input.mousePosition;
         if (!Physics.Raycast(ray, out var hitData, _range) || UIOpen || _dialogueBox.activeSelf)
         {
@@ -166,6 +173,22 @@ public class mouseTrack : MonoBehaviour
                     else
                         OverMovement = false;
                 }
+                break;
+            case "InspectionCamera" when !UIOpen || !DialogueOpenCheck():
+                if (Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera == null) return;
+                cam = hitData.transform;
+                mainName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
+                mainCam = GameObject.Find(mainName).transform.parent.GetComponent<CameraSwitch>();
+                foreach (var switchableCam in mainCam.SwitchableCameras)
+                {
+                    if (cam == switchableCam)
+                    {
+                        Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
+                        OverMovement = true;
+                    }
+                    else
+                        OverMovement = false;
+                }
                 //Cursor.SetCursor(_sprites[1], new Vector2(32, 6), CursorMode.Auto);
                 break;
             case "NPC" when !UIOpen || !DialogueOpenCheck():
@@ -173,6 +196,9 @@ public class mouseTrack : MonoBehaviour
                 break;
             case "Evidence" when !UIOpen || !DialogueOpenCheck():
                 Cursor.SetCursor(_sprites[3], new Vector2(32,32), CursorMode.Auto);
+                break;
+            case "RandomDialogue" when !UIOpen || !DialogueOpenCheck():
+                Cursor.SetCursor(_sprites[2], new Vector2(30, 10), CursorMode.Auto);
                 break;
             default:
                 Cursor.SetCursor(_sprites[0],new Vector2(10,10), CursorMode.Auto);
