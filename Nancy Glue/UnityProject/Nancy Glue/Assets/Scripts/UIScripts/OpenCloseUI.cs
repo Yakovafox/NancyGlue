@@ -26,22 +26,38 @@ public class OpenCloseUI : MonoBehaviour
     [SerializeField] private Animator _susTabAnim;
     [SerializeField] private Animator _locTabAnim;
     [SerializeField] private Animator _setTabAnim;
+    private Transform _invTab;
+    private Transform _susTab;
+    private Transform _locTab;
+    private Transform _setTab;
+    private Transform _closeTab;
+
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _HideUIBoolHash = Animator.StringToHash("Hide");
         _hiddenByDefaultHash = Animator.StringToHash("HiddenByDefault");
+        
         _closeTabAnim = transform.GetChild(0).GetComponent<Animator>();
+        _closeTabAnim.SetBool(_hiddenByDefaultHash, true);
+        /*
         _invTabAnim = transform.GetChild(4).GetComponent<Animator>();
         _susTabAnim = transform.GetChild(3).GetComponent<Animator>();
         _locTabAnim = transform.GetChild(2).GetComponent<Animator>();
         _setTabAnim = transform.GetChild(1).GetComponent<Animator>();
-        _closeTabAnim.SetBool(_hiddenByDefaultHash, true);
+
         _invTabAnim.SetBool(_hiddenByDefaultHash, false);
         _susTabAnim.SetBool(_hiddenByDefaultHash, false);
         _locTabAnim.SetBool(_hiddenByDefaultHash, false);
         _setTabAnim.SetBool(_hiddenByDefaultHash, false);
+        */
+        _closeTab= transform.GetChild(0);
+        _invTab= transform.GetChild(4);
+        _susTab= transform.GetChild(3);
+        _locTab= transform.GetChild(2);
+        _setTab= transform.GetChild(1);
+
     }
 
     private void Start()
@@ -65,11 +81,15 @@ public class OpenCloseUI : MonoBehaviour
 
         _inventoryUIPage.SetActive(true);
         _inventoryGrid.SetActive(true);
+        _invTab.SetSiblingIndex(4);
+        _susTab.SetSiblingIndex(3);
+        _locTab.SetSiblingIndex(2);
+        _setTab.SetSiblingIndex(1);
         _suspectsUIPage.SetActive(false);
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
-
+        /*
         switch (_invHidden)
         {
             case false when _susHidden:
@@ -95,6 +115,7 @@ public class OpenCloseUI : MonoBehaviour
                 openCloseTab(_invTabAnim);
                 break;
         }
+        */
     }
 
     public void LocationClicked()
@@ -105,13 +126,16 @@ public class OpenCloseUI : MonoBehaviour
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
         audioSourceSound.pitch = 1.2f;
         audioSourceSound.Play();
-
+        _invTab.SetSiblingIndex(2);
+        _susTab.SetSiblingIndex(3);
+        _locTab.SetSiblingIndex(4);
+        _setTab.SetSiblingIndex(1);
         _inventoryUIPage.SetActive(false);
         _suspectsUIPage.SetActive(false);
         _locationsUIPage.SetActive(true);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
-
+        /*
         switch (_locHidden)
         {
             case false when _susHidden:
@@ -137,6 +161,7 @@ public class OpenCloseUI : MonoBehaviour
                 openCloseTab(_locTabAnim);
                 break;
         }
+        */
     }
 
     public void SuspectClicked()
@@ -147,13 +172,16 @@ public class OpenCloseUI : MonoBehaviour
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
         audioSourceSound.pitch = 1.2f;
         audioSourceSound.Play();
-
+        _invTab.SetSiblingIndex(3);
+        _susTab.SetSiblingIndex(4);
+        _locTab.SetSiblingIndex(2);
+        _setTab.SetSiblingIndex(1);
         _inventoryUIPage.SetActive(false);
         _suspectsUIPage.SetActive(true);
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
-
+        /*
         switch (_susHidden)
         {
             case false when _invHidden:
@@ -179,12 +207,16 @@ public class OpenCloseUI : MonoBehaviour
                 openCloseTab(_susTabAnim);
                 break;
         }
+        */
     }
 
     public void SettingsClicked()
     {
         OpenUI();
-
+        _invTab.SetSiblingIndex(1);
+        _susTab.SetSiblingIndex(2);
+        _locTab.SetSiblingIndex(3);
+        _setTab.SetSiblingIndex(4);
         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
         audioSourceSound.pitch = 1.2f;
@@ -195,7 +227,7 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(true);
         _blankPage.SetActive(false);
-
+        /*
         switch (_setHidden)
         {
             case false when _susHidden:
@@ -221,6 +253,7 @@ public class OpenCloseUI : MonoBehaviour
                 openCloseTab(_setTabAnim);
                 break;
         }
+        */
     }
 
     private void OpenUI()
@@ -255,6 +288,7 @@ public class OpenCloseUI : MonoBehaviour
             _closeHidden = false;
         }
 
+        /*
         if (_invHidden)
         {
             _invHidden = false;
@@ -275,6 +309,7 @@ public class OpenCloseUI : MonoBehaviour
             _setHidden = false;
             openCloseTab(_setTabAnim);
         }
+        */
     }
 
     private void openCloseTab(Animator targetTab)
