@@ -34,14 +34,14 @@ public class GameManager1 : MonoBehaviour
     [SerializeField] private DialogueSystem _dialogueSystem;
 
     [SerializeField] private bool _introStarted;
-
+    [SerializeField] private Inventory _inv;
     [SerializeField] private List<GameObject> _evidenceGameObjects;
     [SerializeField] private Animator _animator;
     [SerializeField] private Coroutine _zoneTransitionCoroutine;
     [SerializeField] private ZoneManager _zoneManager;
     [SerializeField] private BriefcaseScript briefcase;
-
-    private int[] stateTracker = new int[11] { 0,0,0,0,0,0,0,0,0,0,0 };
+    public SaveLoadGameState SLGS;
+    public int[] stateTracker = new int[11] { 0,0,0,0,0,0,0,0,0,0,0 };
 
     public bool ReelFound;
     public bool InterogationFinished;
@@ -56,13 +56,15 @@ public class GameManager1 : MonoBehaviour
 #else
         Cursor.lockState = CursorLockMode.Confined;
 #endif
+        _inv = FindObjectOfType<Inventory>();
         _npcTrackers = FindObjectsOfType<NPCTracker>();
         _AnatolyTracker = GameObject.Find("AnatolyDialogue").GetComponent<NPCTracker>();
         _dialogueSystem = FindObjectOfType<DialogueSystem>();
 
         
         _evidenceGameObjects = GameObject.FindGameObjectsWithTag("Evidence").ToList();
-        _zoneManager = GetComponent<ZoneManager>(); 
+        _zoneManager = GetComponent<ZoneManager>();
+        SLGS = FindObjectOfType<SaveLoadGameState>();
     }
 
     // Start is called before the first frame update
@@ -72,6 +74,11 @@ public class GameManager1 : MonoBehaviour
         {
             //set in save load
             // Instatiate Level
+            SLGS.Load();
+
+
+
+
             LoadProgress();
         }
         else
@@ -88,7 +95,7 @@ public class GameManager1 : MonoBehaviour
     private void LoadProgress()
     {
         // Init Scene
-        DeactivateSceneCams();
+        //DeactivateSceneCams();
 
         if (stateTracker[0] == 1)
         {
@@ -201,10 +208,10 @@ public class GameManager1 : MonoBehaviour
             var eviId = _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID;
             if(target == eviId)
             {
+                _inv.GiveItem(eviId);
                 Destroy(_evidenceGameObjects[i]);
                 //Debug.Log("destroyed item" + _evidenceGameObjects[i].GetComponent<ItemData>().EvidenceItem.ItemID);
                 _evidenceGameObjects.RemoveAt(i);
-                break;
             }
         }
     }

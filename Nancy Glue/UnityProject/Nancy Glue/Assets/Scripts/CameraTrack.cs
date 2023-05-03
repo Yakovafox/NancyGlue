@@ -18,14 +18,19 @@ public class CameraTrack : MonoBehaviour
         //Load from file.
         foreach (var camera in _cameraScripts)
         {
+            //camera.gameObject.SetActive(true);
             if (camera.ActiveCam)
             {
                 camera.SwitchActiveCam();
+                Debug.Log(camera.gameObject + ": " + camera.gameObject.activeSelf);
                 break;
             }
         }
         var target = _cameraScripts.FirstOrDefault(obj => obj.name == targetName);
         target.SwitchActiveCam();
+        Debug.Log("TargetCam: " + target.gameObject + ": " + target.gameObject.activeSelf);
+        foreach (var camera in _cameraScripts)
+            Debug.Log(camera.gameObject + ": " + camera.gameObject.activeSelf);
     }
     public void OnSaveGame()
     {

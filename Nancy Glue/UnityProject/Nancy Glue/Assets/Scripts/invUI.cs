@@ -88,6 +88,7 @@ public class invUI : MonoBehaviour
         //testrun basic prefab 
         //add nested prefab to canvas
         //save to dict
+        if (itemsDict.ContainsKey(itemToAdd.id)) return;
         itemsDict.Add(itemOBJ.GetComponent<ItemManager>().id, itemOBJ.GetComponent<ItemManager>());
     }
 

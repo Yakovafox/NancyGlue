@@ -81,9 +81,7 @@ public class mouseTrack : MonoBehaviour
                         var item = hitData.transform.GetComponent<ItemData>().EvidenceItem;
                         //Debug.Log("Clicked " + item.Title + ":"
                          //+ "\n " + item.Description + "\n Item ID: " + item.ItemID);
-                        inv.GiveItem(item.ItemID);
-                        //gm.EvidenceChecker(inv);
-                        //gm.ReelPickUp(item.Title);
+                        //inv.GiveItem(item.ItemID);
                         gm.UpdateScene(item.ItemID);
                         _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
 
@@ -154,6 +152,7 @@ public class mouseTrack : MonoBehaviour
         switch (hitData.transform.tag)
         {
             case "Finish" when !UIOpen || !DialogueOpenCheck():
+                if (Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera == null) return;
                 var cam = hitData.transform;
                 var mainName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
                 var mainCam = GameObject.Find(mainName).transform.parent.GetComponent<CameraSwitch>();

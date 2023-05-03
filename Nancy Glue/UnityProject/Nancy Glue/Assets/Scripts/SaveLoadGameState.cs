@@ -81,6 +81,7 @@ public class SaveLoadGameState : MonoBehaviour
         save.NPCnames = tempNames;
         save.gameStage = (int)gameManager._gameState;
         save.suspectsTS = suspectPage.SuspectNames;
+        save.gameStageArray = gameManager.stateTracker;
         return save;
     }
     public void Load()
@@ -111,7 +112,7 @@ public class SaveLoadGameState : MonoBehaviour
             //load game state
 
             gameManager._gameState = (GameManager1.GameState)save.gameStage;
-
+            gameManager.stateTracker = save.gameStageArray;
             suspectPage.SuspectNames = save.suspectsTS;
 
             for (int i=0; i < save.suspectsTS.Length; i++)

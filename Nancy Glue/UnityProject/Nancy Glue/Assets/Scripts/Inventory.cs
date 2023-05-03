@@ -53,7 +53,8 @@ public class Inventory : MonoBehaviour
             //go through savedIDs
             for (int i = 0; i < savedIDs.Length; i++)
             {
-                GiveItem(savedIDs[i]);
+                LoadInv(savedIDs[i]);
+                //GiveItem(savedIDs[i]);
                 Debug.Log(savedIDs[i]);
             }
         }
@@ -69,10 +70,17 @@ public class Inventory : MonoBehaviour
         
     }
 
+    private void LoadInv(int id)
+    {
+        gameManager.UpdateScene(id);
+    }
+
     public void GiveItem(int id)
     {
         //check if item is already in inv
 
+        
+        /*
         foreach (Item item in characterItems)
         {
             if (item.id == id)
@@ -80,6 +88,7 @@ public class Inventory : MonoBehaviour
                 return;
             }
         }
+        */
         //if not
         Item itemToAdd = itemDatabase.GetItem(id);
         characterItems.Add(itemToAdd);
@@ -87,9 +96,6 @@ public class Inventory : MonoBehaviour
         invUI.addItemToUI(itemToAdd);
         Debug.Log("Added item: " + itemToAdd.title);
         Debug.Log("remove item from scene");
-        gameManager.UpdateScene(id);
-
-
     }
 
     public void GiveItem(string itemName)

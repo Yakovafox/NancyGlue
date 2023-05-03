@@ -12,4 +12,5 @@ public class Save
     public string[] NPCnames;
     public int gameStage;
     public string[] suspectsTS;
+    public int[] gameStageArray;
 }

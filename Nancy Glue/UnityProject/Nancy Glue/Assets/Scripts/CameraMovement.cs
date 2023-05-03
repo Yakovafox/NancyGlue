@@ -120,7 +120,7 @@ public class CameraMovement : MonoBehaviour
             _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
             _dollyCam.m_PathPosition = _dollyCurrent;
         }
-        Debug.Log(_targetOffsetZ);
+        //Debug.Log(_targetOffsetZ);
         if (_lookUp)
             _targetOffsetZ = SetOffset(_targetOffsetZ, 1);
         else if (_lookDown)
