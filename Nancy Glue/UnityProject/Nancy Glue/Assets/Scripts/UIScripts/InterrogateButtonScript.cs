@@ -19,11 +19,15 @@ public class InterrogateButtonScript : MonoBehaviour
     [SerializeField] private Animator _transitionAnimator;
     [SerializeField] private Animator _uiAnimator;
 
+    // Button state tracking
+    private bool clicked = false;
+
     private void Awake()
     {
         _transitionAnimator = GameObject.Find("Transition").GetComponent<Animator>();
         _uiAnimator = GameObject.Find("ClipBoardBack").GetComponent<Animator>();
         dialogue = FindObjectOfType<DialogueSystem>(true);
+        clicked = false;
     }
 
     public void SetNpc(NPCTracker npc)
@@ -33,13 +37,8 @@ public class InterrogateButtonScript : MonoBehaviour
 
     public void BringForInterrogation()
     {
-        /*
-        var locationbuttons = FindObjectsOfType<LocationButton>();
-        foreach(var button in locationbuttons)
-        {
-            button.LocationCheck();
-        }
-        */
+        if (clicked) return;
+        clicked = true;
         ZoneManager _zoneManager = FindObjectOfType<ZoneManager>();
         StartCoroutine(ZoneTransition(_zoneManager.CurrentCamera, _zoneManager.OfficeCam));
         AudioSource audioSource = GameObject.Find("Player").GetComponents<AudioSource>()[0];
@@ -65,6 +64,7 @@ public class InterrogateButtonScript : MonoBehaviour
         dialogue.SetContainer(NPC.GetCurrentInterContainer(), NPC);
         _transitionAnimator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(0);
+        clicked = false;
         _uiAnimator.gameObject.GetComponent<OpenCloseUI>().CloseUI();
     }
 }
