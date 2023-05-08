@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f968166e78df4a544b383153034eadba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d3b563e7e6132814da7ea4338b47bd23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+  _yStart: 0
 --- !u!1 &5702242034544962203
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogues:
   - Container: {fileID: 0}
+    EvidenceRequired: {fileID: 0}
     Trigger: 0
   Interrogations: []
   canBeQuestioned: 0
