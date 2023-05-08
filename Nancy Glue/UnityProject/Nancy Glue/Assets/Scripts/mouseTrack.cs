@@ -72,7 +72,6 @@ public class mouseTrack : MonoBehaviour
             }
             else if (_interactTimer < 0.65f)
             {
-                Debug.LogError(_interactTimer);
                 return;
             }
 
