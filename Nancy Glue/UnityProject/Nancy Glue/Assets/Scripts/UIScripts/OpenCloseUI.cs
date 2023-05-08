@@ -1,3 +1,4 @@
+using Dialogue;
 using UnityEngine;
 
 public class OpenCloseUI : MonoBehaviour
@@ -6,6 +7,7 @@ public class OpenCloseUI : MonoBehaviour
     [SerializeField] private Animator _animator;
     [field: SerializeField] public bool IsOpen { get; private set; }
     [field: SerializeField] public bool IsHidden { get; private set; }
+    private DialogueSystem _dialogueSystem;
     private int _HideUIBoolHash;
     [Header("Page Game Objects")]
     [SerializeField] private GameObject _inventoryUIPage;
@@ -38,7 +40,9 @@ public class OpenCloseUI : MonoBehaviour
         _animator = GetComponent<Animator>();
         _HideUIBoolHash = Animator.StringToHash("Hide");
         _hiddenByDefaultHash = Animator.StringToHash("HiddenByDefault");
-        
+        _dialogueSystem = GameObject.Find("DialogueBox").GetComponent<DialogueSystem>();
+
+
         _closeTabAnim = transform.GetChild(0).GetComponent<Animator>();
         _closeTabAnim.SetBool(_hiddenByDefaultHash, true);
         /*
@@ -65,7 +69,7 @@ public class OpenCloseUI : MonoBehaviour
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         HideUnHideUI();
     }
@@ -320,7 +324,8 @@ public class OpenCloseUI : MonoBehaviour
 
     private void HideUnHideUI()
     {
-        IsHidden = _dialogueUI.activeSelf;
+        IsHidden = _dialogueSystem.inDialogue;
+        //IsHidden = _dialogueUI.activeSelf;
         _animator.SetBool(_HideUIBoolHash, IsHidden);
     }
 }
