@@ -32,6 +32,8 @@ public class mouseTrack : MonoBehaviour
     [SerializeField] private SuspectPage _suspects;
     [SerializeField] private bool _isOverUI;
     [SerializeField] public bool OverMovement;
+    private float _interactTimer;
+
     private void Awake()
     {
         _uiScript = FindObjectOfType<OpenCloseUI>();
@@ -55,12 +57,24 @@ public class mouseTrack : MonoBehaviour
     {
         _isOverUI = EventSystem.current.IsPointerOverGameObject();
         UIOpen = _uiScript.IsOpen;
+        _interactTimer += Time.deltaTime;
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             if (UIOpen) return;
-            if (DialogueOpenCheck()) return;
+            
+
+            if (DialogueOpenCheck())
+            {
+                _interactTimer = 0;
+                return;
+            }
+            else if (_interactTimer < 0.65f)
+            {
+                Debug.LogError(_interactTimer);
+                return;
+            }
 
             RaycastHit hitData;
             if (Physics.Raycast(ray, out hitData, _range) && !_isOverUI)
