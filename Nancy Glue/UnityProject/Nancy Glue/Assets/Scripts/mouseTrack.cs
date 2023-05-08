@@ -83,7 +83,7 @@ public class mouseTrack : MonoBehaviour
                          //+ "\n " + item.Description + "\n Item ID: " + item.ItemID);
                         //inv.GiveItem(item.ItemID);
                         gm.UpdateScene(item.ItemID);
-                        _toolTip.OpenTooltip("Evidence Added:\n" + item.Title);
+                        _toolTip.EnqueueTooltip("Evidence Added:\n" + item.Title);
 
                         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
                         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
@@ -101,7 +101,7 @@ public class mouseTrack : MonoBehaviour
                         tracker.ProgressDialogue(NPCTracker.ProgressTriggers.talking);
                         if (!tracker.SpokenTo)
                         {
-                            _toolTip.OpenTooltip("New Suspect:\n" + tracker.CharName);
+                            _toolTip.EnqueueTooltip("New Suspect:\n" + tracker.CharName);
                             //add new Entry to the Suspect list
                             var Suspect = Instantiate(_suspects.SuspectPrefab, _suspects.transform.GetChild(0));
                             Suspect.GetComponent<SuspectMugshot>().SetData(tracker.CharName,tracker.CharacterSprite);
