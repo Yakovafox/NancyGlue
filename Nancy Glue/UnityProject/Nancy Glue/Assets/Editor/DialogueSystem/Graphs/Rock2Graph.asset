@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: Rock2Graph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: Rock2
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 5e55b9da-5dc7-42a9-8d21-6801b64e3ddb
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Rock
+    <text>k__BackingField: ...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: c1ed474b-3115-4df9-829b-9db9bdbe7abf
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 167, y: -223}
+    <spritePath>k__BackingField: StickerSprites/Evidence_Rock
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c1ed474b-3115-4df9-829b-9db9bdbe7abf
+    <dialogueName>k__BackingField: Mid
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: 'I think this is a.... '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: a69bfb18-1a27-4363-9d22-161eb3ed9a66
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 895, y: -226}
+    <spritePath>k__BackingField: StickerSprites/Evidence_Rock
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: a69bfb18-1a27-4363-9d22-161eb3ed9a66
+    <dialogueName>k__BackingField: End
+    <characterName>k__BackingField: The Pebble
+    <text>k__BackingField: IT DOESN'T MATTER WHAT YOU THINK!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1655, y: -225}
+    <spritePath>k__BackingField: CharacterSprites/PebbleMan
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - Start
+  - Mid
+  - End
+  <oldGroupedNames>k__BackingField:
+    list: []
