@@ -26,19 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 6180, y: -644}
     <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
-  - <ID>k__BackingField: c24831c7-8b73-4583-abdf-4c8e858f9882
-    <dialogueName>k__BackingField: Start
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: Helloooo.
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4747, y: -648}
-    <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_005
   - <ID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
     <dialogueName>k__BackingField: ThatTeddySeemsInCharge
     <characterName>k__BackingField: Jane Doe
@@ -52,10 +40,22 @@ MonoBehaviour:
     <position>k__BackingField: {x: 5430, y: -650}
     <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: c24831c7-8b73-4583-abdf-4c8e858f9882
+    <dialogueName>k__BackingField: Start
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Helloooo.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4747, y: -648}
+    <spritePath>k__BackingField: StickerSprites/Silhouette_Woman
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - DialogueName
-  - Start
   - ThatTeddySeemsInCharge
+  - Start
   <oldGroupedNames>k__BackingField:
     list: []
