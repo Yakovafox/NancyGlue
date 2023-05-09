@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: AnatolyIntroduction
+  m_Name: Woof
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: AnatolyIntroduction
-  <characterName>k__BackingField: Anatoly
+  <dialogueName>k__BackingField: Woof
+  <characterName>k__BackingField: Dog
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: d1135c83fe4705c46868c486d37f96a0, type: 2}
-  <dialogueText>k__BackingField: What is rather unexpected? Why didn't you call me
-    first!?
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-001
+    <NextDialogue>k__BackingField: {fileID: 0}
+  <dialogueText>k__BackingField: '*WOOF*, *WOOF*, *WOOF* *WOOF*'
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 0

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e207bf80812e9948bbf65a0ba4a3434, type: 3}
-  m_Name: NancyClosesOutDialogue
+  m_Name: StartNancy
   m_EditorClassIdentifier: 
-  <dialogueName>k__BackingField: NancyClosesOutDialogue
+  <dialogueName>k__BackingField: StartNancy
   <characterName>k__BackingField: Nancy Glue
   <dialogueType>k__BackingField: 0
   <dialogueChoices>k__BackingField:
   - <text>k__BackingField: Next Dialogue...
-    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 3c9516871852f8c4881919d4fa32f145, type: 2}
-  <dialogueText>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
-  <isStartingDialogue>k__BackingField: 0
+    <NextDialogue>k__BackingField: {fileID: 11400000, guid: 7e3ac12da43496842b723b3e14746311, type: 2}
+  <dialogueText>k__BackingField: Who, let the dogs out?
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <isStartingDialogue>k__BackingField: 1
