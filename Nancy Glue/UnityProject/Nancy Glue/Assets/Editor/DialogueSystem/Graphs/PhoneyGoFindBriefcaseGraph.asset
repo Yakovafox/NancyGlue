@@ -25,9 +25,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 685, y: 1928}
+    <position>k__BackingField: {x: 287, y: 1481}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - DialogueName

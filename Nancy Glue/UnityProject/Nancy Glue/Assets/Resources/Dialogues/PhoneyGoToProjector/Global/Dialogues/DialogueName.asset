@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: Have you been to the projector room yet, Boss? Mr
     Grizzly opened it up for you.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
   <isStartingDialogue>k__BackingField: 1

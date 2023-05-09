@@ -15,19 +15,6 @@ MonoBehaviour:
   <fileName>k__BackingField: PhoneyNeedACode
   <groups>k__BackingField: []
   <nodes>k__BackingField:
-  - <ID>k__BackingField: 94d1e9ea-dcfd-40bf-b505-dee5ceac2967
-    <dialogueName>k__BackingField: start
-    <characterName>k__BackingField: Phoney
-    <text>k__BackingField: Good job finding the briefcase, Boss. Seems it's locked
-      with a code though...
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 820, y: 2314}
-    <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Phoney
@@ -39,10 +26,23 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1525, y: 2314}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
+  - <ID>k__BackingField: 94d1e9ea-dcfd-40bf-b505-dee5ceac2967
+    <dialogueName>k__BackingField: start
+    <characterName>k__BackingField: Phoney
+    <text>k__BackingField: Good job finding the briefcase, Boss. Seems it's locked
+      with a code though...
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 815, y: 2314}
+    <spritePath>k__BackingField: StickerSprites/Phoney
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
-  - start
   - DialogueName
+  - start
   <oldGroupedNames>k__BackingField:
     list: []
