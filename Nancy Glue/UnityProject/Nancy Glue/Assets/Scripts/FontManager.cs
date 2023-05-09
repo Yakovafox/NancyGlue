@@ -11,11 +11,13 @@ public class FontManager : MonoBehaviour
     [SerializeField] private TMP_FontAsset[] _fonts = new TMP_FontAsset[2];
     [SerializeField] private GameObject[] _TMPGameObjectsGUI;
     [SerializeField] private GameObject[] _BackGroundGameObjectsGUI;
+    public GameObject[] diaBackground;
     private void Awake()
     {
         SLS=FindObjectOfType<SaveLoadSettings>();
         _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Text");
         _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
+        diaBackground = GameObject.FindGameObjectsWithTag("DiaBckGrnd");
     }
     void Start()
     {
@@ -53,6 +55,17 @@ public class FontManager : MonoBehaviour
             //Debug.Log("setting colour to" + _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color);
         }
         //background set
+
+        //dia background is always enabled
+        for (int i = 0; i < diaBackground.Length; i++)
+        {
+            diaBackground[i].SetActive(true);
+            if (SLS.isBackgroundEnabled == 1)
+            {
+                diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
+            }
+        }
+
         if (SLS.isBackgroundEnabled == 1)
         {
             for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
@@ -61,7 +74,7 @@ public class FontManager : MonoBehaviour
                 _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
             }
         }
-
+        
 
     }
 

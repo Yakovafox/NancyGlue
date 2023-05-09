@@ -7,7 +7,6 @@ public class OpenCloseUI : MonoBehaviour
     [SerializeField] private Animator _animator;
     [field: SerializeField] public bool IsOpen { get; private set; }
     [field: SerializeField] public bool IsHidden { get; private set; }
-    private DialogueSystem _dialogueSystem;
     private int _HideUIBoolHash;
     [Header("Page Game Objects")]
     [SerializeField] private GameObject _inventoryUIPage;
@@ -19,6 +18,10 @@ public class OpenCloseUI : MonoBehaviour
     [SerializeField] private GameObject _dialogueUI;
     [SerializeField] private GameObject _detailsPage;
     [SerializeField] private GameObject _mugshotPage;
+    [SerializeField] private GameObject _controlsPage;
+    [SerializeField] private GameObject _accesiPage;
+
+
 
     [Header("Tab Animators")] 
     [SerializeField] private int _hiddenByDefaultHash;
@@ -34,13 +37,12 @@ public class OpenCloseUI : MonoBehaviour
     private Transform _setTab;
     private Transform _closeTab;
 
-
+    //public FontManager fontManager;
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _HideUIBoolHash = Animator.StringToHash("Hide");
         _hiddenByDefaultHash = Animator.StringToHash("HiddenByDefault");
-        _dialogueSystem = GameObject.Find("DialogueBox").GetComponent<DialogueSystem>();
 
 
         _closeTabAnim = transform.GetChild(0).GetComponent<Animator>();
@@ -93,6 +95,9 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(false);
+
         /*
         switch (_invHidden)
         {
@@ -120,6 +125,7 @@ public class OpenCloseUI : MonoBehaviour
                 break;
         }
         */
+        
     }
 
     public void LocationClicked()
@@ -139,6 +145,8 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(true);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(false);
         /*
         switch (_locHidden)
         {
@@ -185,6 +193,8 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(false);
         _blankPage.SetActive(false);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(false);
         /*
         switch (_susHidden)
         {
@@ -231,6 +241,8 @@ public class OpenCloseUI : MonoBehaviour
         _locationsUIPage.SetActive(false);
         _settingsUIPage.SetActive(true);
         _blankPage.SetActive(false);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(false);
         /*
         switch (_setHidden)
         {
@@ -260,6 +272,40 @@ public class OpenCloseUI : MonoBehaviour
         */
     }
 
+    public void AcessiClicked()
+    {
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
+        _inventoryUIPage.SetActive(false);
+        _suspectsUIPage.SetActive(false);
+        _locationsUIPage.SetActive(false);
+        _settingsUIPage.SetActive(false);
+        _blankPage.SetActive(false);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(true);
+    }
+    public void controlsClicked()
+    {
+        AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
+        audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
+        audioSourceSound.pitch = 1.2f;
+        audioSourceSound.Play();
+
+        _inventoryUIPage.SetActive(false);
+        _suspectsUIPage.SetActive(false);
+        _locationsUIPage.SetActive(false);
+        _settingsUIPage.SetActive(false);
+        _blankPage.SetActive(false);
+        _controlsPage.SetActive(true);
+        _accesiPage.SetActive(false);
+    }
+
+
+
+
     private void OpenUI()
     {
         if (IsOpen) return;
@@ -283,6 +329,8 @@ public class OpenCloseUI : MonoBehaviour
         _suspectsUIPage.SetActive(true);
         _locationsUIPage.SetActive(true);
         _settingsUIPage.SetActive(true);
+        _controlsPage.SetActive(false);
+        _accesiPage.SetActive(false);
         _detailsPage.SetActive(false);
         _mugshotPage.SetActive(true);
         _blankPage.SetActive(true);
@@ -314,6 +362,9 @@ public class OpenCloseUI : MonoBehaviour
             openCloseTab(_setTabAnim);
         }
         */
+
+
+
     }
 
     private void openCloseTab(Animator targetTab)
@@ -324,8 +375,7 @@ public class OpenCloseUI : MonoBehaviour
 
     private void HideUnHideUI()
     {
-        IsHidden = _dialogueSystem.inDialogue;
-        //IsHidden = _dialogueUI.activeSelf;
+        IsHidden = _dialogueUI.activeSelf;
         _animator.SetBool(_HideUIBoolHash, IsHidden);
     }
 }

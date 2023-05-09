@@ -21,11 +21,9 @@ public class SettingsUI : MonoBehaviour
     public TMP_Text sfxVolSliderValue;
     public SaveLoadGameState SLGS;
     public Button closeMenu;
-    //public int sens;
-    //public float sfxVol;
-    //public float musicVol;
-
-
+    public Button accesibility;
+    public Button controls;
+    public OpenCloseUI OCUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,15 +32,42 @@ public class SettingsUI : MonoBehaviour
         mainMenu.onClick.AddListener(menu);
         exit.onClick.AddListener(exitApp);
         closeMenu.onClick.AddListener(menuClosed);
+        accesibility.onClick.AddListener(Accesibility);
+        controls.onClick.AddListener(Controls);
+        
+        
+
+
+
+
     }
 
     private void Awake()
     {
         SLS = FindObjectOfType<SaveLoadSettings>();
         SLGS = FindObjectOfType<SaveLoadGameState>();
+        OCUI = FindObjectOfType<OpenCloseUI>();
         firstLoad();
         load();
     }
+
+
+
+    public void Accesibility()
+    {
+        OCUI.AcessiClicked();
+    }
+
+    public void Controls(){
+        OCUI.controlsClicked();
+    }
+
+    
+
+    
+
+
+    
 
     private void FixedUpdate()
     {
