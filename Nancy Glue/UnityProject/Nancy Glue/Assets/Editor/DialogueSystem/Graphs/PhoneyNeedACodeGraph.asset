@@ -27,7 +27,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 820, y: 2314}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
   - <ID>k__BackingField: 176068e1-0b32-47af-bce1-8954c51a7452
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Phoney
@@ -39,7 +39,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1525, y: 2314}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - start

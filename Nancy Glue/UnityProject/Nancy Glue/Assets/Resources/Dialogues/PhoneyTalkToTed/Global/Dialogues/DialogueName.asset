@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: Hey, Boss. Have you talked to Mr Grizzly yet? I
     think he's waiting for you down at Bearly Pictures.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
   <isStartingDialogue>k__BackingField: 1

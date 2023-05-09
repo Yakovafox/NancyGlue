@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: We've done it, Boss! All that's left now is to crack
     this case wide open.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
   <isStartingDialogue>k__BackingField: 1
