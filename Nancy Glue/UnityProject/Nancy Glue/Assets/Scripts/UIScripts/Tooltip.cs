@@ -40,7 +40,6 @@ public class Tooltip : MonoBehaviour
         if (_timer <= LIFESPAN) //if timer not at threshold, increase and return.
         {
             _timer += Time.deltaTime;
-            Debug.LogError(_timer);
 
             return;
         }
