@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 42c6ce89d0aae12449380e59bb1861a8, type: 2}
   <dialogueText>k__BackingField: Hi, there, do you know where I can find the manager?
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Silhouette_Man
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_003
   <isStartingDialogue>k__BackingField: 1

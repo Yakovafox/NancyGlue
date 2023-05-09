@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 457de8c85a380c3498035497b4df27b5, type: 2}
   <dialogueText>k__BackingField: UWU
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Sticker_Uwunicorn
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BarbieDetective/Feminine_Think-003
   <isStartingDialogue>k__BackingField: 1

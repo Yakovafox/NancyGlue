@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 7ea6a7ff-d230-424d-8954-b5a16ceb0cb9
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 226.4, y: 142.40001}
+    <position>k__BackingField: {x: 226, y: 142}
     <spritePath>k__BackingField: StickerSprites/Sticker_Uwunicorn
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/BarbieDetective/Feminine_Think-003
   - <ID>k__BackingField: 7ea6a7ff-d230-424d-8954-b5a16ceb0cb9
     <dialogueName>k__BackingField: NancyRespondingUnicorn
     <characterName>k__BackingField: Nancy Glue
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 911.2, y: 165.6}
+    <position>k__BackingField: {x: 911, y: 166}
     <spritePath>k__BackingField: StickerSprites/Sticker_Uwunicorn
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - UwuCorn

@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: That was weird...
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Sticker_Uwunicorn
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_003
   <isStartingDialogue>k__BackingField: 0

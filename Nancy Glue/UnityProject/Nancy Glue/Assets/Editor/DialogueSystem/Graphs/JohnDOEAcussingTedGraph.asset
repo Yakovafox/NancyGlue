@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4747.2, y: -648}
+    <position>k__BackingField: {x: 4747, y: -648}
     <spritePath>k__BackingField: StickerSprites/Silhouette_Man
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_003
   - <ID>k__BackingField: 35e5ec9d-b19a-47ae-81e6-144440d6a3e8
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Nancy Glue
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 6161.6, y: -652}
+    <position>k__BackingField: {x: 6162, y: -652}
     <spritePath>k__BackingField: StickerSprites/Silhouette_Man
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_005
   - <ID>k__BackingField: e79cea82-5d80-4092-9319-f559159bdf29
     <dialogueName>k__BackingField: ThatTeddySeemsInCharge
     <characterName>k__BackingField: John Doe
@@ -48,7 +48,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 35e5ec9d-b19a-47ae-81e6-144440d6a3e8
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 5429.6, y: -650.4}
+    <position>k__BackingField: {x: 5430, y: -650}
     <spritePath>k__BackingField: StickerSprites/Silhouette_Man
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []

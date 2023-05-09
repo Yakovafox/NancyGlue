@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: I will... come back later then...
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Silhouette_Man
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thiking_005
   <isStartingDialogue>k__BackingField: 0

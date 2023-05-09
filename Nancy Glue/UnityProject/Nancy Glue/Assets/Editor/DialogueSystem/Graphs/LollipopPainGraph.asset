@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1156.7999, y: 59.999996}
+    <position>k__BackingField: {x: 1157, y: 60}
     <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_002
   - <ID>k__BackingField: 73bbbd97-1163-4143-a2c9-cd59041fe939
     <dialogueName>k__BackingField: LollipopPain
     <characterName>k__BackingField: Lollipop in Pain
@@ -36,7 +36,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 476355cc-a28f-410d-8ed5-9ff1890e624b
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 452, y: 53.600002}
+    <position>k__BackingField: {x: 452, y: 54}
     <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []

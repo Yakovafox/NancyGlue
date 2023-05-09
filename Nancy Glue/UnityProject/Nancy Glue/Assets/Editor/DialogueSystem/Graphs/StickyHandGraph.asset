@@ -24,7 +24,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: cf925c30-69fd-4057-8bb7-9ad302d26e50
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 173.59999, y: 214.40001}
+    <position>k__BackingField: {x: 174, y: 214}
     <spritePath>k__BackingField: StickerSprites/StickyHand
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: cf925c30-69fd-4057-8bb7-9ad302d26e50
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 939.2, y: 223.2}
+    <position>k__BackingField: {x: 939, y: 223}
     <spritePath>k__BackingField: StickerSprites/StickyHand
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_005
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - StickyHand
