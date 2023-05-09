@@ -23,10 +23,7 @@ public class SettingsUI : MonoBehaviour
     public Button closeMenu;
     public Button accesibility;
     public Button controls;
-    public GameObject controlScreen;
-    public GameObject accesibilityScreen;
-    public Button returnFromControls;
-    
+    public OpenCloseUI OCUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,51 +34,40 @@ public class SettingsUI : MonoBehaviour
         closeMenu.onClick.AddListener(menuClosed);
         accesibility.onClick.AddListener(Accesibility);
         controls.onClick.AddListener(Controls);
-        returnFromControls.onClick.AddListener(ReturnFromSubSettings);
+        
         
 
 
 
 
     }
-
-    public void Accesibility()
-    {
-        accesibilityScreen.SetActive(true);
-        //view accesibility settings
-        disableSettingsButtons();
-    }
-
-    public void Controls(){
-        controlScreen.SetActive(true);
-        //view controls
-        disableSettingsButtons();
-    }
-
-    void disableSettingsButtons()
-    {
-        
-    }
-    void enableSettingsButtons()
-    {
-        
-    }
-
-    public void ReturnFromSubSettings()
-    {
-        accesibilityScreen.SetActive(false);
-        controlScreen.SetActive(false);
-        enableSettingsButtons();
-    }
-
 
     private void Awake()
     {
         SLS = FindObjectOfType<SaveLoadSettings>();
         SLGS = FindObjectOfType<SaveLoadGameState>();
+        OCUI = FindObjectOfType<OpenCloseUI>();
         firstLoad();
         load();
     }
+
+
+
+    public void Accesibility()
+    {
+        OCUI.AcessiClicked();
+    }
+
+    public void Controls(){
+        OCUI.controlsClicked();
+    }
+
+    
+
+    
+
+
+    
 
     private void FixedUpdate()
     {

@@ -15,8 +15,8 @@ public class FontScript : MonoBehaviour
     private void Awake()
     {
         _activeFontIndex = 0;
-        _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Respawn");
-        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("Finish");
+        _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Text");
+        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
         _FontEnableButton = GameObject.Find("FontEnableButton");
         _dropDown = FindObjectOfType<TMP_Dropdown>();
 
