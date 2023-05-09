@@ -19,7 +19,7 @@ public class BriefcaseScript : MonoBehaviour, IClickable
 
     public void Clickable()
     {
-        spriteRenderer.sprite = _sprites[1];
+        //spriteRenderer.sprite = _sprites[1];
         Clicked = true;
     }
 }
