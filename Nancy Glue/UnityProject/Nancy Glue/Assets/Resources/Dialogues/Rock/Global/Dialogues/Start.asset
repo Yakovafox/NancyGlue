@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: d660fc58c90343e4e9ede0bf5e09e321, type: 2}
   <dialogueText>k__BackingField: '*Sniff Sniff*'
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Evidence_Rock
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   <isStartingDialogue>k__BackingField: 1

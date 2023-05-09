@@ -38,7 +38,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 167, y: -223}
     <spritePath>k__BackingField: StickerSprites/Evidence_Rock
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   - <ID>k__BackingField: c1ed474b-3115-4df9-829b-9db9bdbe7abf
     <dialogueName>k__BackingField: Mid
     <characterName>k__BackingField: Nancy Glue
@@ -50,7 +50,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 895, y: -226}
     <spritePath>k__BackingField: StickerSprites/Evidence_Rock
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_004
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - End
