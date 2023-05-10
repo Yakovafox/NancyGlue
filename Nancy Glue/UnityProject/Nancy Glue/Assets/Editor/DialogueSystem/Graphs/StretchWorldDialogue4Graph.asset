@@ -26,7 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 1234, y: -336}
     <spritePath>k__BackingField: CharacterSprites/Man
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   - <ID>k__BackingField: 549705a4-67b9-46b2-93b7-c009689393b3
     <dialogueName>k__BackingField: DialogueName
     <characterName>k__BackingField: Stretch

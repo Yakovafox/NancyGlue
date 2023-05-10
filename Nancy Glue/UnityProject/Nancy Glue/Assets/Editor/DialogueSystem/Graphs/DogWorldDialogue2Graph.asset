@@ -24,9 +24,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 13297.601, y: -4018.4}
+    <position>k__BackingField: {x: 13298, y: -4018}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-002
   - <ID>k__BackingField: ad4ce4c1-36c6-44fc-84d6-082132a1a3d8
     <dialogueName>k__BackingField: StartNancy
     <characterName>k__BackingField: Nancy Glue
@@ -36,9 +36,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 9681ee9b-69f2-4afc-8eb4-a4709c9fc128
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 12585.601, y: -4028}
+    <position>k__BackingField: {x: 12572, y: -4022}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_002
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Woof

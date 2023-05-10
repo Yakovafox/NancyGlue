@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 202693256}
   m_Layer: 5
   m_Name: Sensitivity_BG
-  m_TagString: TextBckGrnd
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4721,7 +4721,7 @@ GameObject:
   - component: {fileID: 834067696}
   m_Layer: 5
   m_Name: MusicVolume_BG
-  m_TagString: TextBckGrnd
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10469,7 +10469,7 @@ GameObject:
   - component: {fileID: 2112310664}
   m_Layer: 5
   m_Name: TitleBG
-  m_TagString: TextBckGrnd
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

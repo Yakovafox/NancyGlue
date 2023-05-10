@@ -26,7 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 12680, y: -3798}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-007
+    <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-004
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - Woof

@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: Just a bunchof dusty old film reels, not the one
     I am looking for though.
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/film_reel
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_001
   <isStartingDialogue>k__BackingField: 1

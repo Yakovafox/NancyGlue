@@ -27,7 +27,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 948, y: -130}
     <spritePath>k__BackingField: CharacterSprites/Man
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_002
   - <ID>k__BackingField: c53587f5-7a10-4eef-9368-d71d32ea609f
     <dialogueName>k__BackingField: TheOnlyCrime
     <characterName>k__BackingField: Stretch

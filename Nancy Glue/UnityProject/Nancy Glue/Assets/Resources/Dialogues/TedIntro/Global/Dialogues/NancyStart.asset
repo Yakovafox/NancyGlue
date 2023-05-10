@@ -19,6 +19,6 @@ MonoBehaviour:
   - <text>k__BackingField: Next Dialogue...
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 358bbf0893551cb42ab3db3abc08f477, type: 2}
   <dialogueText>k__BackingField: Hello I'm Nan...
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_flip
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-003
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-002
   <isStartingDialogue>k__BackingField: 1

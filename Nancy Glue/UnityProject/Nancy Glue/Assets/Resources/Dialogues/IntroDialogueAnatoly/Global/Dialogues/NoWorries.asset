@@ -21,5 +21,5 @@ MonoBehaviour:
   <dialogueText>k__BackingField: No worries! Don't forget you can always come back
     and we can discuss what you have so far if you get stuck boss!
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
   <isStartingDialogue>k__BackingField: 0
