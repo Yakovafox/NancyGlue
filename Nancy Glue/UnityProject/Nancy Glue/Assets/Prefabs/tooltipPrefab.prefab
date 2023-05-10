@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535afa02eea480443ae6d4afdda777c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timer: 0
+  _closed: 0
+  _animator: {fileID: 0}
+  _toolTipText: {fileID: 0}
 --- !u!1 &4120044657187131905
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +62,7 @@ GameObject:
   - component: {fileID: 2926179349806382443}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +139,7 @@ GameObject:
   - component: {fileID: 8363296456096977176}
   m_Layer: 5
   m_Name: Tooltip
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
