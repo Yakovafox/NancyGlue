@@ -115,7 +115,7 @@ public class SettingsUI : MonoBehaviour
 
 
 
-    void resetSettings()
+    public void resetSettings()
     {
         SLS.defaultSettings();
         load();

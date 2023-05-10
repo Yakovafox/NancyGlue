@@ -9,8 +9,8 @@ public class FontManager : MonoBehaviour
     // Start is called before the first frame update
     public SaveLoadSettings SLS;
     [SerializeField] private TMP_FontAsset[] _fonts = new TMP_FontAsset[2];
-    [SerializeField] private GameObject[] _TMPGameObjectsGUI;
-    [SerializeField] private GameObject[] _BackGroundGameObjectsGUI;
+    [SerializeField] public GameObject[] _TMPGameObjectsGUI;
+    [SerializeField] public GameObject[] _BackGroundGameObjectsGUI;
     public GameObject[] diaBackground;
     private void Awake()
     {
@@ -59,11 +59,16 @@ public class FontManager : MonoBehaviour
         //dia background is always enabled
         for (int i = 0; i < diaBackground.Length; i++)
         {
-            diaBackground[i].SetActive(true);
+            //diaBackground[i].SetActive(true);
             if (SLS.isBackgroundEnabled == 1)
             {
                 diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
             }
+            //else
+            {
+            //    diaBackground[i].GetComponent<Image>().color = Color.white;
+            }
+           // Debug.Log("dia background " + i + "set");
         }
 
         if (SLS.isBackgroundEnabled == 1)
@@ -73,16 +78,25 @@ public class FontManager : MonoBehaviour
                 _BackGroundGameObjectsGUI[i].SetActive(true);
                 _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
             }
+            
         }
-        
+        else
+        {
+            for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
+            {
+                _BackGroundGameObjectsGUI[i].SetActive(false);
+            }
+        }
+
+
 
     }
 
     public void InitList()
     {
 
-        _TMPGameObjectsGUI = GameObject.FindGameObjectsWithTag("Text");
-        _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
+        
+
         //Debug.Log("1");
         load();
     }
