@@ -25,7 +25,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 2810dc10-1a18-4e88-a881-8dd06f21f9e7
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 644, y: 875.2}
+    <position>k__BackingField: {x: 644, y: 875}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-002
   - <ID>k__BackingField: 2810dc10-1a18-4e88-a881-8dd06f21f9e7
@@ -37,7 +37,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 380304a8-0628-4b74-91ce-147d74846e09
     <groupID>k__BackingField: 
     <type>k__BackingField: 3
-    <position>k__BackingField: {x: 644, y: 1769.6001}
+    <position>k__BackingField: {x: 644, y: 1770}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 380304a8-0628-4b74-91ce-147d74846e09
@@ -50,7 +50,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1314.3999, y: 875.2}
+    <position>k__BackingField: {x: 1314, y: 875}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-004
   - <ID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
@@ -63,7 +63,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: c6a5c1c3-5761-46e8-bdca-aea888d1b437
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: -72, y: 875.2}
+    <position>k__BackingField: {x: -72, y: 875}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-006
   - <ID>k__BackingField: 3ef6c41d-8a05-45a4-9a9c-47b7351bebaa
@@ -75,7 +75,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: eb6a0885-fb31-49e3-971b-298d76f0efc8
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: -28.8, y: -284.80002}
+    <position>k__BackingField: {x: -29, y: -285}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-003
   - <ID>k__BackingField: e1b98f24-7482-4664-97ef-9ac66e5f01d5
@@ -88,21 +88,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 7b57b3fc-e689-4db0-83ec-28a2049a3a80
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1314.3999, y: -284.80002}
+    <position>k__BackingField: {x: 1314, y: -285}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-001
-  - <ID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
-    <dialogueName>k__BackingField: NancyClosesOutDialogue
-    <characterName>k__BackingField: Nancy Glue
-    <text>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
-    <options>k__BackingField:
-    - <Text>k__BackingField: Next Dialogue...
-      <NodeID>k__BackingField: 61e6e1e9-392d-4ec1-b0fb-a40cc390e06a
-    <groupID>k__BackingField: 
-    <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1993.6, y: 875.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: eb6a0885-fb31-49e3-971b-298d76f0efc8
     <dialogueName>k__BackingField: IntroDialogue2
     <characterName>k__BackingField: Nancy Glue
@@ -112,7 +100,7 @@ MonoBehaviour:
       <NodeID>k__BackingField: e1b98f24-7482-4664-97ef-9ac66e5f01d5
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 644, y: -284.80002}
+    <position>k__BackingField: {x: 644, y: -285}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
     <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Sigh_002
   - <ID>k__BackingField: d13c666e-c1f7-4604-af50-20a8a1233508
@@ -124,9 +112,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 6f0a192f-a2a3-4bce-80cb-09f4cdbfdf9f
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 3439.2, y: 872}
+    <position>k__BackingField: {x: 3439, y: 872}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   - <ID>k__BackingField: 6f0a192f-a2a3-4bce-80cb-09f4cdbfdf9f
     <dialogueName>k__BackingField: NoWorries
     <characterName>k__BackingField: Phoney
@@ -137,9 +125,9 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4140, y: 873.6}
+    <position>k__BackingField: {x: 4140, y: 874}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-003
   - <ID>k__BackingField: 61e6e1e9-392d-4ec1-b0fb-a40cc390e06a
     <dialogueName>k__BackingField: PhoneyIntroduction
     <characterName>k__BackingField: Phoney
@@ -149,9 +137,21 @@ MonoBehaviour:
       <NodeID>k__BackingField: d13c666e-c1f7-4604-af50-20a8a1233508
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 2756, y: 872.8}
+    <position>k__BackingField: {x: 2756, y: 873}
     <spritePath>k__BackingField: StickerSprites/Phoney
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
+  - <ID>k__BackingField: 6a01007f-a804-457c-a42a-340ddd02d3d6
+    <dialogueName>k__BackingField: NancyClosesOutDialogue
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: 'I''ll see what I can find out. I''ll be in touch. '
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 61e6e1e9-392d-4ec1-b0fb-a40cc390e06a
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1994, y: 875}
+    <spritePath>k__BackingField: UI/Sprites/Dialogue/ND1_Anatoly_Dialogue_Clr
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think_003
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
   - CrimeDescribed
@@ -160,10 +160,10 @@ MonoBehaviour:
   - SetupCrime
   - IntroDialogueStart
   - IntroDialogue3
-  - NancyClosesOutDialogue
   - IntroDialogue2
   - HeSureDoes
   - NoWorries
   - PhoneyIntroduction
+  - NancyClosesOutDialogue
   <oldGroupedNames>k__BackingField:
     list: []

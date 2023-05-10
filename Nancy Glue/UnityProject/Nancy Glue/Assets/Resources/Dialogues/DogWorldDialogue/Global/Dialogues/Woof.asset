@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: '*WOOF*'
   <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/ND3_Dialogue_Clr
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-007
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/RussianDolls/Doll_Clicks-004
   <isStartingDialogue>k__BackingField: 1

@@ -75,7 +75,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 3488, y: -32}
     <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_001
   - <ID>k__BackingField: 88a49992-2ebe-491b-9cdb-9ed04f32ef06
     <dialogueName>k__BackingField: LollipopNoWait
     <characterName>k__BackingField: Lollipop in Pain

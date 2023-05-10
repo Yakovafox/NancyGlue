@@ -20,5 +20,5 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 080f2e8301d3f6641b6cebd736ce7f19, type: 2}
   <dialogueText>k__BackingField: 'Hey Nancy, Anatoly seems very annoyed this time! '
   <dialogueSpriteAssetPath>k__BackingField: StickerSprites/Phoney
-  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/Phoney/Phone_Alarm-002
   <isStartingDialogue>k__BackingField: 0

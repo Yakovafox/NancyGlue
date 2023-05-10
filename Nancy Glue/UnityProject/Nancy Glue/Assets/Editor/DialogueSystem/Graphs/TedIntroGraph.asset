@@ -26,7 +26,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 516, y: 464}
     <spritePath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
-    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-003
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Think-002
   - <ID>k__BackingField: 6e8afb10-25bc-46fa-8626-a51ea6d51472
     <dialogueName>k__BackingField: TedGreeting
     <characterName>k__BackingField: Ted Grizzly

@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: I need to see what the crowd want to watch, since
     the other film's gone missing.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_flip
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_002
   <isStartingDialogue>k__BackingField: 0

@@ -38,7 +38,7 @@ MonoBehaviour:
     <type>k__BackingField: 0
     <position>k__BackingField: {x: 895, y: -226}
     <spritePath>k__BackingField: StickerSprites/Evidence_Rock
-    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_002
   - <ID>k__BackingField: a69bfb18-1a27-4363-9d22-161eb3ed9a66
     <dialogueName>k__BackingField: End
     <characterName>k__BackingField: The Pebble
