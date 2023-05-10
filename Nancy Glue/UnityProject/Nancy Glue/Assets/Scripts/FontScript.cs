@@ -12,6 +12,7 @@ public class FontScript : MonoBehaviour
     [SerializeField] private GameObject _FontEnableButton;
     [SerializeField] private TMP_Dropdown _dropDown;
     public SaveLoadSettings SLS;
+    public GameObject[] diaBackground;
     private void Awake()
     {
         _activeFontIndex = 0;
@@ -19,6 +20,7 @@ public class FontScript : MonoBehaviour
         _BackGroundGameObjectsGUI = GameObject.FindGameObjectsWithTag("TextBckGrnd");
         _FontEnableButton = GameObject.Find("FontEnableButton");
         _dropDown = FindObjectOfType<TMP_Dropdown>();
+        diaBackground = GameObject.FindGameObjectsWithTag("DiaBckGrnd");
 
         for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
         {
@@ -78,6 +80,16 @@ public class FontScript : MonoBehaviour
         }
         SLS.backgroundColour = newcolor;
         SLS.isBackgroundEnabled = 1;
+
+        for (int i = 0; i < diaBackground.Length; i++)
+        {
+            
+            diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
+           
+
+        }
+
+
     }
 
     /*private void ChangeText()
@@ -111,6 +123,17 @@ public class FontScript : MonoBehaviour
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
         }
 
+        for (int i = 0; i < diaBackground.Length; i++)
+        {
+            //diaBackground[i].SetActive(true);
+            if (SLS.isBackgroundEnabled == 1)
+            {
+                diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
+            }
+            
+        }
+
+
         //background colour is more complex
         if (SLS.isBackgroundEnabled == 1)
         {
@@ -141,6 +164,14 @@ public class FontScript : MonoBehaviour
             _BackGroundGameObjectsGUI[i].SetActive(false);
             Debug.Log("resetting background");
         }
+        for (var i = 0; i < diaBackground.Length; i++)
+        {
+
+            diaBackground[i].GetComponent<Image>().color = Color.white;
+        }
+
+
+
     }
 
 

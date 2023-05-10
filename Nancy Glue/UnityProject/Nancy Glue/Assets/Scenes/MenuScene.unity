@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 50002189}
   m_Layer: 5
   m_Name: SFX_BG
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 74341326}
   m_Layer: 5
   m_Name: Exit Game
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 202693256}
   m_Layer: 5
   m_Name: Sensitivity_BG
-  m_TagString: Untagged
+  m_TagString: TextBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,7 +1593,7 @@ GameObject:
   - component: {fileID: 279602776}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2078,7 +2078,7 @@ GameObject:
   - component: {fileID: 407496426}
   m_Layer: 5
   m_Name: LoadGame
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 415511551}
   m_Layer: 5
   m_Name: NewGame
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2833,7 +2833,7 @@ GameObject:
   - component: {fileID: 537707794}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4363,6 +4363,7 @@ MonoBehaviour:
   _FontEnableButton: {fileID: 0}
   _dropDown: {fileID: 0}
   SLS: {fileID: 0}
+  diaBackground: []
 --- !u!114 &767248371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4644,7 +4645,7 @@ GameObject:
   - component: {fileID: 800408680}
   m_Layer: 5
   m_Name: BackGround_TextBox (1)
-  m_TagString: TextBckGrnd
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4720,7 +4721,7 @@ GameObject:
   - component: {fileID: 834067696}
   m_Layer: 5
   m_Name: MusicVolume_BG
-  m_TagString: Untagged
+  m_TagString: TextBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5792,7 +5793,7 @@ GameObject:
   - component: {fileID: 1138996934}
   m_Layer: 5
   m_Name: SilderValue
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6554,7 +6555,7 @@ GameObject:
   - component: {fileID: 1225091622}
   m_Layer: 5
   m_Name: Test Title
-  m_TagString: Untagged
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7096,7 +7097,7 @@ GameObject:
   - component: {fileID: 1328262937}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8049,7 +8050,7 @@ GameObject:
   - component: {fileID: 1612334731}
   m_Layer: 5
   m_Name: SilderValue
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8522,7 +8523,7 @@ GameObject:
   - component: {fileID: 1696966255}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8868,7 +8869,7 @@ GameObject:
   - component: {fileID: 1846501600}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9291,7 +9292,7 @@ GameObject:
   - component: {fileID: 1918686560}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Respawn
+  m_TagString: Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9428,7 +9429,7 @@ GameObject:
   - component: {fileID: 1928917365}
   m_Layer: 5
   m_Name: Accessibilty
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10243,7 +10244,7 @@ GameObject:
   - component: {fileID: 2054008042}
   m_Layer: 5
   m_Name: Settings
-  m_TagString: Untagged
+  m_TagString: DiaBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10468,7 +10469,7 @@ GameObject:
   - component: {fileID: 2112310664}
   m_Layer: 5
   m_Name: TitleBG
-  m_TagString: Untagged
+  m_TagString: TextBckGrnd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

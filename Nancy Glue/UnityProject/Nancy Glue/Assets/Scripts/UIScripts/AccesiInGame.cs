@@ -113,7 +113,7 @@ public class AccesiInGame : MonoBehaviour
             fontManager._BackGroundGameObjectsGUI[i].SetActive(false);
             
         }
-        for (var i = 0; i < fontManager._BackGroundGameObjectsGUI.Length; i++)
+        for (var i = 0; i < fontManager.diaBackground.Length; i++)
         {
 
             fontManager.diaBackground[i].GetComponent<Image>().color = Color.white;
