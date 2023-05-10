@@ -115,7 +115,6 @@ public class SaveLoadGameState : MonoBehaviour
             //load dialogue data
             for (int i = 0; i < NPCTrackers.Length; i++)
             {
-                Debug.LogError($"Name: {save.NPCnames[i]}   Dialogue Iterator: {save.dialogueDiaIteratorsToSave[i]}   Interrogation Interator: {save.dialogueIntIteratorsToSave[i]}   Notes: {save.notes[i]}");
                 GameObject.Find(save.NPCnames[i]).GetComponent<NPCTracker>().onLoadGame(save.NPCnames[i], save.dialogueDiaIteratorsToSave[i], save.dialogueIntIteratorsToSave[i], save.notes[i]);
             }
 
