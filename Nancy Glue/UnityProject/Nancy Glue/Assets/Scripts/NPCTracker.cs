@@ -113,8 +113,10 @@ public class NPCTracker : MonoBehaviour
 
     public void onLoadGame(string name, int diaIterator, int intIterator, string[] saveNotes)
     {
+        Debug.LogError($"Attached Name: {attachedNPC}   Name: {name}");
         if (name == attachedNPC)
         {
+            Debug.LogError($"Name: {name}   Dialogue Iterator: {diaIterator}   Interrogation Interator: {intIterator}   Notes: {saveNotes}");
             dialogueIterator = diaIterator;
             interrogationIterator = intIterator;
             notes = saveNotes.ToList();
