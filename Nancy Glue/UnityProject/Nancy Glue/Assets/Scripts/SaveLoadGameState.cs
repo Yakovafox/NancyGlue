@@ -101,6 +101,15 @@ public class SaveLoadGameState : MonoBehaviour
             file.Close();
             
             inv.savedIDs = save.inventoryTS;
+
+            gameManager._gameState = (GameManager1.GameState)save.gameStage;
+            gameManager.stateTracker = save.gameStageArray;
+            suspectPage.SuspectNames = save.suspectsTS;
+
+            FindObjectOfType<invUI>().LoadInvUI();
+            FindObjectOfType<GameManager1>().LoadProgress();
+            FindObjectOfType<SuspectPage>().LoadSuspectPage();
+            FindObjectOfType<Inventory>().LoadInventory();
             CameraTracker.OnLoadGame(save.SavedCameraName);
             
             //load dialogue data
@@ -110,10 +119,6 @@ public class SaveLoadGameState : MonoBehaviour
             }
 
             //load game state
-
-            gameManager._gameState = (GameManager1.GameState)save.gameStage;
-            gameManager.stateTracker = save.gameStageArray;
-            suspectPage.SuspectNames = save.suspectsTS;
 
             for (int i=0; i < save.suspectsTS.Length; i++)
             {

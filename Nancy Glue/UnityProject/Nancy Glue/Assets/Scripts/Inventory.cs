@@ -27,47 +27,31 @@ public class Inventory : MonoBehaviour
         
     }
 
-
+    /*
     void Start()
     {
-
-        /*
-        INV LOADING NEEDS TO GO IN UI
-        //read inv ids from file 
-        string[] lines = File.ReadAllLines("Inv.txt");
-        int[] idsToLoad = Array.ConvertAll(lines, int.Parse);
-        //add items to characterInv
-
-        for (int i=0; i < idsToLoad.Length; i++)
-        {
-            GiveItem(idsToLoad[i]);
-            Debug.Log("loaded inventory, added item with id: " + idsToLoad[i]);
-        }
-
-        */
-        Debug.Log("check for load");
         if (NewOrLoad.isLoad == true)
         {
-            Debug.Log("loading");
             SLGS.Load();
             //go through savedIDs
             for (int i = 0; i < savedIDs.Length; i++)
             {
                 LoadInv(savedIDs[i]);
-                //GiveItem(savedIDs[i]);
-                Debug.Log(savedIDs[i]);
             }
         }
         else
             resetInv();
-            Debug.Log("new game");
 
 
     }
+    */
 
-    void Update()
+    public void LoadInventory()
     {
-        
+        for (int i = 0; i < savedIDs.Length; i++)
+        {
+            LoadInv(savedIDs[i]);
+        }
     }
 
     private void LoadInv(int id)

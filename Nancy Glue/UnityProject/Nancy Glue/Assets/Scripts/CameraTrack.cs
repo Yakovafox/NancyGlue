@@ -10,7 +10,7 @@ public class CameraTrack : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        _cameraScripts = FindObjectsOfType<CameraSwitch>();
+        _cameraScripts = FindObjectsOfType<CameraSwitch>(true);
     }
 
     public void OnLoadGame(string targetName)

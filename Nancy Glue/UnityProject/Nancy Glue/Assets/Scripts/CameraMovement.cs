@@ -25,7 +25,6 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform _hitBoxTransform;
     [SerializeField] private float _angleX, _angleY;
     [SerializeField] private GameObject _dialogueBox;
-    [SerializeField] private GameObject _invUI;
     [SerializeField] private OpenCloseUI _uiScript;
     [SerializeField] private bool _onDolly;
     public bool OnDolly => _onDolly;
@@ -46,7 +45,6 @@ public class CameraMovement : MonoBehaviour
         _initialRotation = new Vector3(_cameraTransform.eulerAngles.x, _cameraTransform.eulerAngles.y, 0);
         var dialogue = FindObjectOfType<DialogueSystem>(true);
         _dialogueBox = dialogue.gameObject;
-        _invUI = FindObjectOfType<invUI>().gameObject;
         _uiScript = FindObjectOfType<OpenCloseUI>();
         SLS = FindObjectOfType<SaveLoadSettings>();
     }

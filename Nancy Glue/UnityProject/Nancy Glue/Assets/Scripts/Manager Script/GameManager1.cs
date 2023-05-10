@@ -73,16 +73,9 @@ public class GameManager1 : MonoBehaviour
     {
         if (NewOrLoad.isLoad)
         {
-            //set in save load
-            // Instatiate Level
             SLGS.Load();
-
-
-
-
-            LoadProgress();
         }
-        else
+        else 
         {
             _gameState = GameState.Intro;
             IntroInit();
@@ -93,7 +86,7 @@ public class GameManager1 : MonoBehaviour
     }
 
     #region Load Progress
-    private void LoadProgress()
+    public void LoadProgress()
     {
         // Init Scene
         //DeactivateSceneCams();
@@ -129,22 +122,6 @@ public class GameManager1 : MonoBehaviour
         if (stateTracker[9] == 1)
         {
             OpenBriefcaseInit();
-        }
-    }
-
-    private void DeactivateSceneCams()
-    {
-        foreach(Transform camera in _zoneManager.OfficeCam.SwitchableCameras)
-        {
-            camera.gameObject.SetActive(false);
-        }
-        foreach(Transform camera in _zoneManager.AlleyCam.SwitchableCameras)
-        {
-            camera.gameObject.SetActive(false);
-        }
-        foreach(Transform camera in _zoneManager.DriveInCam.SwitchableCameras)
-        {
-            camera.gameObject.SetActive(false);
         }
     }
 
