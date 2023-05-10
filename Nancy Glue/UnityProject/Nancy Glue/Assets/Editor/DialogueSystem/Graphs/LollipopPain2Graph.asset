@@ -78,14 +78,14 @@ MonoBehaviour:
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 88a49992-2ebe-491b-9cdb-9ed04f32ef06
     <dialogueName>k__BackingField: LollipopNoWait
-    <characterName>k__BackingField: Character Name
+    <characterName>k__BackingField: Lollipop in Pain
     <text>k__BackingField: No, please wait!
     <options>k__BackingField:
     - <Text>k__BackingField: Next Dialogue...
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 4225, y: -14}
+    <position>k__BackingField: {x: 4235, y: -39}
     <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
