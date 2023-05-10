@@ -103,6 +103,7 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+  _yStart: 0
 --- !u!1 &5607122000917023777
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ GameObject:
   m_Layer: 0
   m_Name: ThunderMacKing
   m_TagString: NPC
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -164,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogues:
   - Container: {fileID: 11400000, guid: 50d59641bb9435b418a554a8043acb6c, type: 2}
+    EvidenceRequired: {fileID: 0}
     Trigger: 1
   Interrogations: []
   canBeQuestioned: 0

@@ -287,7 +287,7 @@ public class GameManager1 : MonoBehaviour
                 break;
 
             case GameState.End:
-                SceneManager.LoadScene("MenuScene");
+                SceneManager.LoadScene("CreditsScene");
                 _gameState = GameState.Idle;
                 break;
         }

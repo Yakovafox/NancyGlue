@@ -24,8 +24,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 549705a4-67b9-46b2-93b7-c009689393b3
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1234.3999, y: -336}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 1234, y: -336}
+    <spritePath>k__BackingField: CharacterSprites/Man
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: 549705a4-67b9-46b2-93b7-c009689393b3
     <dialogueName>k__BackingField: DialogueName
@@ -37,8 +37,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1963.2, y: -340}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 1963, y: -340}
+    <spritePath>k__BackingField: CharacterSprites/Man
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:
