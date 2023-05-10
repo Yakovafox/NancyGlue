@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb153734a9928564ca708b34da2393d4, type: 3}
+  m_Name: StickyHand2
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: StickyHand2
+  <dialogueGroups>k__BackingField:
+    list: []
+  <ungroupedDialogues>k__BackingField:
+  - {fileID: 11400000, guid: d963df442eec46c488d4b66bbba291d8, type: 2}
+  - {fileID: 11400000, guid: 710ed7db84d156141b2e8ca9a7960ac4, type: 2}
+  - {fileID: 11400000, guid: 093f68e66d8b14d4c9830c2fed518dfa, type: 2}
+  - {fileID: 11400000, guid: d14c8a06838e68441a111a1bad5567b9, type: 2}

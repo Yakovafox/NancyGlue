@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf491a0a583d424cac6c0226cdf544f, type: 3}
+  m_Name: LollipopPain2Graph
+  m_EditorClassIdentifier: 
+  <fileName>k__BackingField: LollipopPain2
+  <groups>k__BackingField: []
+  <nodes>k__BackingField:
+  - <ID>k__BackingField: 73bbbd97-1163-4143-a2c9-cd59041fe939
+    <dialogueName>k__BackingField: ThankGod
+    <characterName>k__BackingField: Lollipop in Pain
+    <text>k__BackingField: Oh thank god. I thought it was those Monsters coming back.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 476355cc-a28f-410d-8ed5-9ff1890e624b
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 452, y: 54}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 476355cc-a28f-410d-8ed5-9ff1890e624b
+    <dialogueName>k__BackingField: NancyRespondingLolly
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: Are you alright?
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: f698b420-d220-4fc5-ac90-8fec1532a8e1
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1157, y: 61}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/NancyGlue/Child_Thinking_002
+  - <ID>k__BackingField: f698b420-d220-4fc5-ac90-8fec1532a8e1
+    <dialogueName>k__BackingField: LollipopBeenHere
+    <characterName>k__BackingField: Lollipop in Pain
+    <text>k__BackingField: They've kept me here for so long. Feels like I've been
+      here for years.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 341c3a68-cdb9-4dd6-b7d8-40d4e76ae83a
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 1939, y: -33}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 341c3a68-cdb9-4dd6-b7d8-40d4e76ae83a
+    <dialogueName>k__BackingField: LollipopPlease
+    <characterName>k__BackingField: Lollipop in Pain
+    <text>k__BackingField: Before they come back. Please! Get me out of here.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: dafc7514-b8e7-4c39-88ab-f177efb61a43
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 2726, y: -32}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: dafc7514-b8e7-4c39-88ab-f177efb61a43
+    <dialogueName>k__BackingField: NancyDecline
+    <characterName>k__BackingField: Nancy Glue
+    <text>k__BackingField: I'm here for something else. Sorry.
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 88a49992-2ebe-491b-9cdb-9ed04f32ef06
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 3488, y: -32}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  - <ID>k__BackingField: 88a49992-2ebe-491b-9cdb-9ed04f32ef06
+    <dialogueName>k__BackingField: LollipopNoWait
+    <characterName>k__BackingField: Character Name
+    <text>k__BackingField: No, please wait!
+    <options>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue...
+      <NodeID>k__BackingField: 
+    <groupID>k__BackingField: 
+    <type>k__BackingField: 0
+    <position>k__BackingField: {x: 4225, y: -14}
+    <spritePath>k__BackingField: StickerSprites/Lolly_pop_in_pain
+    <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
+  <oldGroupNames>k__BackingField: []
+  <oldUngroupedNames>k__BackingField:
+  - ThankGod
+  - NancyRespondingLolly
+  - LollipopBeenHere
+  - LollipopPlease
+  - NancyDecline
+  - LollipopNoWait
+  <oldGroupedNames>k__BackingField:
+    list: []
