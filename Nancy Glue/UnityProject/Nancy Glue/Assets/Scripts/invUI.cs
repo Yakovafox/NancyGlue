@@ -22,11 +22,12 @@ public class invUI : MonoBehaviour
 
 
     // Start is called before the first frame update
+    /*
     void Start()
     {
        // spriteRenderer = testPrefab.GetComponent<SpriteRenderer>();
        if (NewOrLoad.isLoad)
-        {
+       {
             //check if there are items in the saved inv 
             SLGS.Load();
             if (IsNullOrEmpty(SLGS.inv.savedIDs))
@@ -43,6 +44,18 @@ public class invUI : MonoBehaviour
                     invEmptyText.SetActive(false);
             }
 
+       }
+    }
+    */
+
+    public void LoadInvUI()
+    {
+        if (!IsNullOrEmpty(SLGS.inv.savedIDs))
+        {
+            // set the empty inv text inactive
+            var invEmptyText = GameObject.Find("BlankTextInventory");
+            if (invEmptyText != null && invEmptyText.activeSelf)
+                invEmptyText.SetActive(false);
         }
     }
 
