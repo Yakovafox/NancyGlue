@@ -54,13 +54,29 @@ public class SaveLoadSettings : MonoBehaviour
         
         ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("backgroundColour"),out backgroundColour);
         isBackgroundEnabled = PlayerPrefs.GetInt("isBackgroundEnabled");
-        
 
 
-        
-        
-        sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
-        musicVolume = PlayerPrefs.GetFloat("musicVolume");
+
+        if (PlayerPrefs.HasKey("sfxVolume"))
+        {
+            sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("sfxVolume", 0.555f);
+            sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
+        }
+        if (PlayerPrefs.HasKey("musicVolume"))
+        {
+            musicVolume = PlayerPrefs.GetFloat("musicVolume");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("musicVolume", 0.555f);
+            musicVolume = PlayerPrefs.GetFloat("musicVolume");
+        }
+
+       
         sensitivity = PlayerPrefs.GetInt("sensitivity");
         
         
