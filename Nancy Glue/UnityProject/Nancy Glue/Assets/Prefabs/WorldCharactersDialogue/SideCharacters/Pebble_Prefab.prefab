@@ -116,9 +116,9 @@ GameObject:
   - component: {fileID: 67584280672645414}
   - component: {fileID: 7506864443328075295}
   m_Layer: 0
-  m_Name: Rock_Prefab
+  m_Name: Pebble_Prefab
   m_TagString: RandomDialogue
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -149,7 +149,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.8, y: 1.7, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7506864443328075295
 MonoBehaviour:

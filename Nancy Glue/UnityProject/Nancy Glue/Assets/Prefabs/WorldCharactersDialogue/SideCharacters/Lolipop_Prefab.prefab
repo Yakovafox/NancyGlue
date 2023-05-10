@@ -118,7 +118,7 @@ GameObject:
   m_Layer: 0
   m_Name: Lolipop_Prefab
   m_TagString: RandomDialogue
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -149,8 +149,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.556623, y: 19.618044, z: 1}
-  m_Center: {x: 0.04798484, y: -0.14395428, z: 0}
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6303785865464171697
 MonoBehaviour:
   m_ObjectHideFlags: 0

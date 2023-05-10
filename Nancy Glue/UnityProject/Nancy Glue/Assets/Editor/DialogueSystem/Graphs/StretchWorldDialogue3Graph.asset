@@ -25,8 +25,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: c53587f5-7a10-4eef-9368-d71d32ea609f
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 948, y: -130.4}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 948, y: -130}
+    <spritePath>k__BackingField: CharacterSprites/Man
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   - <ID>k__BackingField: c53587f5-7a10-4eef-9368-d71d32ea609f
     <dialogueName>k__BackingField: TheOnlyCrime
@@ -38,8 +38,8 @@ MonoBehaviour:
       <NodeID>k__BackingField: 
     <groupID>k__BackingField: 
     <type>k__BackingField: 0
-    <position>k__BackingField: {x: 1673.6, y: -131.2}
-    <spritePath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+    <position>k__BackingField: {x: 1674, y: -131}
+    <spritePath>k__BackingField: CharacterSprites/Man
     <audioPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <oldGroupNames>k__BackingField: []
   <oldUngroupedNames>k__BackingField:

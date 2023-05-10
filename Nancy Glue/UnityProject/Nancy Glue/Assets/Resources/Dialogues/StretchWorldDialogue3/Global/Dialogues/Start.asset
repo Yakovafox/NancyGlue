@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4a7944eff2d801746b1ce6bb19c2d343, type: 2}
   <dialogueText>k__BackingField: '*pfft* *pfft* *pfft* Evidence, Evidence, Gotta
     solve the Crime Nancy...'
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/missing_texture
+  <dialogueSpriteAssetPath>k__BackingField: CharacterSprites/Man
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/speaking.mp3
   <isStartingDialogue>k__BackingField: 1

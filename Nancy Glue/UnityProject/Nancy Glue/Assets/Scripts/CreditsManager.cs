@@ -10,7 +10,7 @@ public class CreditsManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.anyKeyDown)
         {
             SceneManager.LoadScene(Menu_Scene);
         }
