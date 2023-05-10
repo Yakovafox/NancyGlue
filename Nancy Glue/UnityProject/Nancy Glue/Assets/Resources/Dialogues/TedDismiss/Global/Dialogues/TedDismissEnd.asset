@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 0}
   <dialogueText>k__BackingField: Go check the projector room. can't miss it. top
     of the couch. Leave me alone!
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_flip
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_004
   <isStartingDialogue>k__BackingField: 0

@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 6f9e115534cf6a84a882179179be24a1, type: 2}
   <dialogueText>k__BackingField: It's not probably related and I was feeling woozy
     but could be related.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_flip
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_004
   <isStartingDialogue>k__BackingField: 0

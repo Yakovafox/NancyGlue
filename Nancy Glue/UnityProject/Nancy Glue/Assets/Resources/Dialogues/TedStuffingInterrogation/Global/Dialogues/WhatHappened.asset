@@ -20,6 +20,6 @@ MonoBehaviour:
     <NextDialogue>k__BackingField: {fileID: 11400000, guid: 4644114843d00e64bba6f398bdc5ca4d, type: 2}
   <dialogueText>k__BackingField: I didnt see who took it however, I did see something
     dart behind the couch as I was waking up.
-  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr
+  <dialogueSpriteAssetPath>k__BackingField: UI/Sprites/Dialogue/Grizzly_Dialogue_Clr_flip
   <dialogueAudioAssetPath>k__BackingField: Sfx/Dialogue/BigTed/Dog_Toy_Squeak_003
   <isStartingDialogue>k__BackingField: 0

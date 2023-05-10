@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a9afdd33614ff44ebb69c9e295e4f9b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3a0ee9c5a8c35442be22e524cfeaca5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   _xRot: 0
   _yRot: 0
   _zRot: 0
+  _yStart: 0
 --- !u!1 &4020173114654441402
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,20 +165,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialogues:
   - Container: {fileID: 11400000, guid: 90ed75603c84a2644be4c37eaa6595a5, type: 2}
-    Trigger: 0
     EvidenceRequired: {fileID: 0}
+    Trigger: 0
   - Container: {fileID: 11400000, guid: b2237136ab20da944ae3a9819ada9d09, type: 2}
+    EvidenceRequired: {fileID: 0}
     Trigger: 0
-    EvidenceRequired: {fileID: 0}
   - Container: {fileID: 11400000, guid: 63141ffc56724d648aa9bf6dc37d9440, type: 2}
-    Trigger: 1
     EvidenceRequired: {fileID: 0}
-  CanQuestionAt: 2
-  npcScripts: []
+    Trigger: 1
+  Interrogations: []
   canBeQuestioned: 0
   <CharName>k__BackingField: Ted Grizzly
   <SpokenTo>k__BackingField: 0
   <CharacterSprite>k__BackingField: {fileID: 21300000, guid: 70a7171062a1ed844acbb2f62a061f6e, type: 3}
+  originalPosition: {x: 0, y: 0, z: 0}
   dialogueIterator: 0
+  interrogationIterator: 0
   attachedNPC: Teddy
   notes: []
