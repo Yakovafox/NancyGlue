@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24705884, g: 0.3921569, b: 0.5803922, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -187,9 +187,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
   <MugshotSprite>k__BackingField: {fileID: 0}
-  <Note1>k__BackingField: 
-  <Note2>k__BackingField: 
-  <Note3>k__BackingField: 
+  <Notes>k__BackingField: []
+  _mainPage: {fileID: 0}
+  _detailPage: {fileID: 0}
+  _detailMugshot: {fileID: 0}
+  _detailNotes: []
+  _detailNote1: {fileID: 0}
+  _detailNote2: {fileID: 0}
+  _detailNote3: {fileID: 0}
+  _interrogateButton: {fileID: 0}
+  _interrogateButtonScript: {fileID: 0}
+  <_npcTracker>k__BackingField: {fileID: 0}
 --- !u!114 &3726254487450605551
 MonoBehaviour:
   m_ObjectHideFlags: 0
