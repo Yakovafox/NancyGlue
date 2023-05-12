@@ -65,7 +65,7 @@ public class SuspectPage : MonoBehaviour
         if (IsNullOrEmpty(SuspectNames))
         {
             //if empty then we're good
-            Debug.LogError("loaded sus list is empty");
+            Debug.Log("loaded sus list is empty");
         }
         else
         {

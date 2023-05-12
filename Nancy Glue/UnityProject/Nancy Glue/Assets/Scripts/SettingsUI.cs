@@ -63,22 +63,30 @@ public class SettingsUI : MonoBehaviour
     }
 
     
-
+    public void mVolChanged()
+    {
+        mixer.SetFloat("musicVol", Mathf.Log10(volSlider.value) * 20);
+        
+    }
     
-
+    public void sfxVolCHnaged()
+    {
+        mixer.SetFloat("SFXVol", Mathf.Log10(sfxVolSlider.value) * 20);
+       
+    }
 
     
 
     private void FixedUpdate()
     {
         sliderValue.text = sensSlider.value.ToString();
-
-        mixer.SetFloat("musicVol", Mathf.Log10(volSlider.value) * 20);
-
         volSliderValue.text = Mathf.RoundToInt((volSlider.value) * 100).ToString();
-
-        mixer.SetFloat("SFXVol", Mathf.Log10(sfxVolSlider.value) * 20);
         sfxVolSliderValue.text = Mathf.RoundToInt((sfxVolSlider.value) * 100).ToString();
+
+
+
+
+
     }
 
     void firstLoad()

@@ -5,14 +5,17 @@ using UnityEngine;
 
 public class SaveLoadSettings : MonoBehaviour
 {
-
-    public float sfxVolume=0.555f;
-    public float musicVolume = 0.555f;
+    public float sfxVolume;
+    public float musicVolume;
     public Color fontColour;
-    public int sensitivity=0;
+    public int sensitivity;
     public Color backgroundColour;
     public int fontStyle;
     public int isBackgroundEnabled;
+    
+
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +40,7 @@ public class SaveLoadSettings : MonoBehaviour
         PlayerPrefs.SetString("backgroundColour", ColorUtility.ToHtmlStringRGB(backgroundColour));
         PlayerPrefs.SetInt("isBackgroundEnabled",isBackgroundEnabled);
         PlayerPrefs.SetInt("sensitivity", sensitivity);
-        Debug.Log("sens to file "+sensitivity);
+        //Debug.Log("sens to file "+sensitivity);
         PlayerPrefs.Save();
         Debug.Log("saved settings");//write path later
     }
@@ -46,7 +49,9 @@ public class SaveLoadSettings : MonoBehaviour
         
         if (!ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("fontColour"), out fontColour))
         {
+            Debug.Log("font colour not found, loading all defaults");
             Default();
+            defaultSettings();
             return;
         }
         
@@ -57,27 +62,15 @@ public class SaveLoadSettings : MonoBehaviour
 
 
 
-        if (PlayerPrefs.HasKey("sfxVolume"))
-        {
-            sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("sfxVolume", 0.555f);
-            sfxVolume = PlayerPrefs.GetFloat("sfxVolume");
-        }
-        if (PlayerPrefs.HasKey("musicVolume"))
-        {
-            musicVolume = PlayerPrefs.GetFloat("musicVolume");
-        }
-        else
-        {
-            PlayerPrefs.SetFloat("musicVolume", 0.555f);
-            musicVolume = PlayerPrefs.GetFloat("musicVolume");
-        }
+
+        sfxVolume = PlayerPrefs.GetFloat("sfxVolume",0.555f);
+        Debug.Log("sfx vol loaded from file " + sfxVolume);
+
+        musicVolume = PlayerPrefs.GetFloat("musicVolume", 0.555f); 
+        
 
        
-        sensitivity = PlayerPrefs.GetInt("sensitivity");
+        sensitivity = PlayerPrefs.GetInt("sensitivity",0);
         
         
            
