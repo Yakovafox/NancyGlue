@@ -7793,7 +7793,7 @@ MonoBehaviour:
     m_Options:
     - m_Text: Default Font
       m_Image: {fileID: 0}
-    - m_Text: Readable Font
+    - m_Text: Dyslexia Friendly
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
