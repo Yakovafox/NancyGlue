@@ -22,6 +22,7 @@ namespace Dialogue.Elements
             defaultBorderWidth = contentContainer.style.borderBottomWidth.value;
         }
 
+        // Apply error formatting 
         public void SetErrorStyle(Color color)
         {
             contentContainer.style.borderBottomColor = color;
@@ -31,6 +32,7 @@ namespace Dialogue.Elements
             contentContainer.style.borderBottomWidth = 2f;
         }
 
+        // Remove error formatting
         public void ResetStyle()
         {
             contentContainer.style.borderBottomColor = defaultBorderColor;

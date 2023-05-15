@@ -7,6 +7,8 @@ using UnityEngine.UIElements;
 
 namespace Dialogue.Utilities
 {
+    // Utilities used in other scripts
+    // Saves wrting it out each time
     public static class DialogueElementUtility
     {
         public static Button CreateButton(string text, Action onClick = null)

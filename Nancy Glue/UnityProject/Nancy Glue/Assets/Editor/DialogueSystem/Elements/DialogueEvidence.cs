@@ -26,6 +26,7 @@ namespace Dialogue.Elements
                 Text = "Next Dialogue..."
             };
 
+            // Add a cool colour for the container to make it immediately discernable from a standard node
             extensionContainer.style.backgroundColor = new Color(49f / 255f, 49f / 255f, 120f / 255f);
 
             Options.Add(optionData);
@@ -38,8 +39,11 @@ namespace Dialogue.Elements
             {
                 TextField target = (TextField)callback.target;
 
+                // Remove whitespace and special characters to create a viable name for saving
                 target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
 
+                // Track repaeted node names
+                // This stops save conflicts
                 if (string.IsNullOrEmpty(target.value))
                 {
                     if (!string.IsNullOrEmpty(name))
@@ -55,6 +59,7 @@ namespace Dialogue.Elements
                     }
                 }
 
+                // Manage whether it is grouped
                 if (group == null)
                 {
                     graphView.RemoveUngroupedNode(this);
@@ -75,6 +80,7 @@ namespace Dialogue.Elements
                 graphView.AddGroupedNode(this, currentGroup);
             });
 
+            // Add style sheet formating
             dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden");
             dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden:textfield");
             dialogueNameTextField.AddToClassList("dialogue-node__textfield_hidden:hidden");
@@ -113,7 +119,6 @@ namespace Dialogue.Elements
 
             TextField textInputField = DialogueElementUtility.CreateLimitedTextArea(Text, 50, null, callback =>
             {
-                //if (callback.newValue.Length >= 50) callback.newValue.Substring(0, 50);
                 Text = callback.newValue;
             });
 
