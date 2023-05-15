@@ -15,4 +15,4 @@ MonoBehaviour:
   _itemID: 2
   _title: Film Reel
   _description: The film reel I was hired to find. Wonder what's on it.
-  _icon: {fileID: 21300000, guid: 3af4ec1de499aff4c9b641b25857cd9e, type: 3}
+  _icon: {fileID: 21300000, guid: e79689a67eb4aed46a149ceb1de977a7, type: 3}

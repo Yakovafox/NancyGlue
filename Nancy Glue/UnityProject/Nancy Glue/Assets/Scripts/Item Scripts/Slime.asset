@@ -15,4 +15,4 @@ MonoBehaviour:
   _itemID: 3
   _title: Slime
   _description: Some green slime. It's gooby and kinda gross.
-  _icon: {fileID: 21300000, guid: 6016bafc309ff5740ac1bb147540fe9c, type: 3}
+  _icon: {fileID: 21300000, guid: f7c7cadaa71515f47937731e2b1442a0, type: 3}
