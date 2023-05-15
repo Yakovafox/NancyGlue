@@ -14,6 +14,7 @@ namespace Dialogue.Utilities
     using Windows;
     using Dialogue.Data;
 
+    // Save and load for graphs
     public static class IOUtility
     {
         private static DialogueGraphView graphView;
@@ -50,14 +51,18 @@ namespace Dialogue.Utilities
         #region Save
         public static void Save()
         {
+            // Create require folders
             CreateStaticFolders();
 
+            // Get the elements from the graph ready to save
             GetElementsFromGraphView();
 
+            // Create the scriptable object to save the graph
             GraphSaveDataSO graphData = CreateAsset<GraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", $"{graphFileName}Graph");
-
             graphData.Init(graphFileName);
 
+            // Create the scriptable object to save the accessible graph to
+            // This one is used to access the graph in the main project
             DialogueContainerSO dialogueContainer = CreateAsset<DialogueContainerSO>(containerFolderPath, graphFileName);
 
             dialogueContainer.Init(graphFileName);
@@ -74,6 +79,7 @@ namespace Dialogue.Utilities
             SerializableDictionary<string, List<string>> groupedNodeNames = new SerializableDictionary<string, List<string>>();
             List<string> ungroupedNodeNames = new List<string>();
 
+            // Loop though each node saving it
             foreach (DialogueNode node in nodes)
             {
                 SaveNodeToGraph(node, graphData);
@@ -91,6 +97,7 @@ namespace Dialogue.Utilities
 
             UpdateDialogueChoiceConections();
 
+            // Update old data to track what needs to be saved
             UpdateOldGroupedNodes(groupedNodeNames, graphData);
             UpdateOldUngroupedNodes(ungroupedNodeNames, graphData);
         }
@@ -99,6 +106,7 @@ namespace Dialogue.Utilities
         {
             DialogueSO dialogue;
 
+            // Save differently depending on if it is grouped or not
             if (node.group != null)
             {
                 dialogue = CreateAsset<DialogueSO>($"{containerFolderPath}/Groups/{node.group.title}/Dialogues", node.DialogueName);
@@ -123,6 +131,7 @@ namespace Dialogue.Utilities
         {
             List<DialogueChoiceData> dialogueChoices = new List<DialogueChoiceData>();
 
+            // Save each connection to another node
             foreach (ChoiceSaveData nodeChoice in nodeChoices)
             {
                 DialogueChoiceData choiceData = new DialogueChoiceData()
@@ -140,6 +149,7 @@ namespace Dialogue.Utilities
         {
             List<ChoiceSaveData> choices = CloneNodeOptions(node.Options);
 
+            // Create a new save data with the node info
             NodeSaveData nodeData = new NodeSaveData()
             {
                 ID = node.ID,
@@ -161,6 +171,7 @@ namespace Dialogue.Utilities
         {
             List<string> groupNames = new List<string>();
 
+            // Itterate through each group to save
             foreach (DialogueGroup group in groups)
             {
                 SaveGroupToGraph(group, graphData);
@@ -176,6 +187,7 @@ namespace Dialogue.Utilities
         {
             string groupName = group.title;
 
+            // Create folders for nodes within the group
             CreateFolder($"{containerFolderPath}/Groups", groupName);
             CreateFolder($"{containerFolderPath}/Groups/{groupName}", "Dialogues");
 
@@ -192,6 +204,7 @@ namespace Dialogue.Utilities
 
         private static void SaveGroupToGraph(DialogueGroup group, GraphSaveDataSO graphData)
         {
+            // Create new save data for the group
             GroupSaveData groupData = new GroupSaveData()
             {
                 ID = group.ID,
@@ -216,6 +229,7 @@ namespace Dialogue.Utilities
         {
             GraphSaveDataSO graphData = LoadAsset<GraphSaveDataSO>("Assets/Editor/DialogueSystem/Graphs", graphFileName);
 
+            // Dislpay a message if things go wrong
             if (graphData == null)
             {
                 EditorUtility.DisplayDialog(
@@ -227,6 +241,7 @@ namespace Dialogue.Utilities
                 return;
             }
 
+            // Update the filename so you it doesn't save the wrong graph after loading
             DialogueEditorWindow.UpdateFileName(graphData.fileName);
 
             LoadGroups(graphData.groups);
@@ -236,6 +251,7 @@ namespace Dialogue.Utilities
 
         private static void LoadNodes(List<NodeSaveData> nodes)
         {
+            // Itterate through each node needing to be loaded
             foreach (NodeSaveData nodeData in nodes)
             {
                 List<ChoiceSaveData> options = CloneNodeOptions(nodeData.options);
@@ -256,6 +272,7 @@ namespace Dialogue.Utilities
 
                 loadedNodes.Add(node.ID, node);
 
+                // If ungrouped don't try to load it into one
                 if (string.IsNullOrEmpty(nodeData.groupID))
                 {
                     continue;
@@ -271,6 +288,7 @@ namespace Dialogue.Utilities
 
         private static void LoadConnections()
         {
+            // For each connection on a node loade it
             foreach(KeyValuePair<string, DialogueNode> loadedNode in loadedNodes)
             {
                 foreach (Port optionPort in loadedNode.Value.outputContainer.Children())
@@ -309,6 +327,7 @@ namespace Dialogue.Utilities
         #endregion
 
         #region Create
+        // Create required folder structure
         private static void CreateStaticFolders()
         {
             CreateFolder("Assets/Editor/DialogueSystem", "Graphs");
@@ -384,6 +403,9 @@ namespace Dialogue.Utilities
         #endregion
 
         #region Utilities
+        /// -- UPDATES --
+        /// Updates are used to track the changes needing to be saved
+        /// This also cleans file sturcture to remove old items that have been deleted
         public static void UpdateDialogueChoiceConections()
         {
             foreach (DialogueNode node in nodes)
