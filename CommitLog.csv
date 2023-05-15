@@ -1,0 +1,603 @@
+a5737f6c,Jonathan-01,Merge pull request #117 from Yakovafox/BugFixes,Comments,87 minutes ago
+6d337e2c,Jonathan Tee,Comments,,88 minutes ago
+f87a61b7,Jonathan-01,Merge pull request #116 from Yakovafox/BugFixes,Added commentary,2 hours ago
+28b169dc,Jonathan Tee,Added commentary,,2 hours ago
+214ccff4,randal22,icon centring,,3 hours ago
+a9e81372,randal22,comments and spelling fixes,,3 hours ago
+cfddb915,randal22,Merge branch 'main' of https://github.com/Yakovafox/NancyGlue,,5 hours ago
+1d0a2f94,randal22,final audio fixes and removal of old files,,5 hours ago
+0fdddd38,Ryan Miller,evidence icon changes.,,6 hours ago
+053d2347,Ryan Miller,Merge branch 'main' of https://github.com/Yakovafox/NancyGlue,,6 hours ago
+68e2021e,Ryan Miller,fixes,-fixed credits scaling for credit scene
+-Changed suspect background colour for suspect details page.
+,6 hours ago
+67e592a6,Jonathan-01,Merge pull request #115 from Yakovafox/BugFixes,Extended timer on interaction after dialogue,6 hours ago
+c49fdeb1,Jonathan Tee,Extended timer on interaction after dialogue,,6 hours ago
+6e31151f,randal22,Merge pull request #114 from Yakovafox/suspectListLoad+volumeFixes,Suspect list load+volume fixes,Fri 06:03
+3496d20f,randal22,Update UI.prefab,,Fri 06:01
+c466d7bd,randal22,Cannot replicate suspect load bugs,,Fri 05:58
+9e866b59,randal22,finally fixed volume defaulting to 0 on fresh installs,also updated suspect bckground to black
+,Fri 05:46
+e618cd38,randal22,Update UI.prefab,,Fri 03:21
+7ffa172a,randal22,Ui icons updated,,Fri 03:18
+2d93da6c,Yakovafox,Merge pull request #113 from Yakovafox/GoldSubmissionFixes,Sound additions to graphs and Fix to menu txtBoxBg,Thu 00:50
+0ef69cda,Yakovafox,Sound additions and Fix to menu txtBoxBg,,Thu 00:50
+1a0bfc7c,RYAN MILLER,Gold Master,,Wed May 10 17:23
+59b41037,randal22,fixes,,Wed May 10 16:27
+d0a40f89,RYAN MILLER,added splash screen. Dialogue fix for anatoly,,Wed May 10 16:11
+2407f035,randal22,defaulting to 0 volume fix,,Wed May 10 16:04
+4e1708ee,JonathanTee,Removed Debug Lines,,Wed May 10 15:49
+1e817e5f,Jonathan-01,Merge pull request #112 from Yakovafox/BugFixes,Save/Load definitely working this time,Wed May 10 15:48
+c119c08c,JonathanTee,Save/Load definitely working this time,I promise
+,Wed May 10 15:47
+4fe833b4,randal22,Merge pull request #111 from Yakovafox/UI-tweaks,fixes and tweaks,Wed May 10 15:38
+06e6e468,RYAN MILLER,changed Teds dialogue sprite,,Wed May 10 15:37
+18e8825e,randal22,fixes and tweaks,,Wed May 10 15:36
+932a308a,Jonathan-01,Merge pull request #107 from Yakovafox/BugFixes,Save/Load mostly fixed,Wed May 10 14:42
+89d7b47c,JonathanTee,Save/Load mostly fixed,,Wed May 10 14:42
+e7f36ec2,RYAN MILLER,updated lollipop graph,,Wed May 10 14:31
+0388bf38,RMiller0918,Merge pull request #106 from Yakovafox/Asset-Implementation-2,asset implementation,Wed May 10 12:58
+42080879,RYAN MILLER,asset implementation,,Wed May 10 12:58
+3f57c82b,randal22,Merge pull request #105 from Yakovafox/accesi-fixes,major fixes,Wed May 10 12:56
+d54f8a93,randal22,major fixes,,Wed May 10 12:56
+fd2ce087,RMiller0918,Merge pull request #104 from Yakovafox/Asset-Implementation-2,Asset implementation 2,Wed May 10 11:44
+8c8aa6c7,RYAN MILLER,Updated Scene with more assets,,Wed May 10 11:44
+988aa997,Yakovafox,Merge pull request #103 from Yakovafox/FlavourDialogue2,New Flavour Dialogue,Wed May 10 11:30
+7c25aeaa,Yakovafox,New Flavour Dialogue,+ Added film reel dialogue.
++ Added 4 new dialogues for stretch.
++ Added 5 new dialogues for both John Doe and Jane Doe (10 Total dialogue).
+,Wed May 10 11:29
+c8b59a7b,Ryan Miller,Implementing final assets,,Tue May 9 21:30
+4e40ba00,JonathanTee,Added more sfx to dialogue,,Tue May 9 15:55
+7441c9a4,Yakovafox,Merge pull request #102 from Yakovafox/CreditsBranch,Credits added.,Tue May 9 15:50
+2c37d17b,Yakovafox,Credits added.,+Credits scene made.
++Scrolling text animation.
++Added Text and titles to the credits scene.
++Added Abertay Logo to the project files, also added to the credits scene.
++ Changes to intro graph to add Phoney into the conversation.
++ Changes to Briefcase end graph to fit the story elements better.
++ Added dog dialogue 2.
+,Tue May 9 15:50
+2b9684a6,JonathanTee,Dilaogue sfx,Added more sfx to dialogue.
+,Tue May 9 15:44
+a8b18da1,RMiller0918,Merge pull request #101 from Yakovafox/Asset-Implementation,Asset implementation,Tue May 9 15:10
+d86f15b3,RYAN MILLER,Update NewPlayingScene.unity,,Tue May 9 15:10
+91431cb7,randal22,Merge pull request #100 from Yakovafox/ctrls+accesi-in-game,Ctrls+accesi in game,Tue May 9 15:07
+fece6f44,randal22,mostly working except colour pickers,,Tue May 9 15:06
+43f9648e,RYAN MILLER,asset implementation,,Tue May 9 15:05
+10066e4e,JonathanTee,Sfx added to random dialogue,,Tue May 9 14:43
+23b44d61,JonathanTee,Phoney has been given the right to speak,Added sfx to his dialogue.
+,Tue May 9 13:59
+3429a404,JonathanTee,Sounds added for phoney,1 graph changed to check commits work correctly.
+,Tue May 9 13:41
+92d8dd11,RYAN MILLER,Lighting Changes,-fixed issue with lighting UVs on Sofa
+,Tue May 9 12:13
+394e7048,Jonathan-01,Merge pull request #99 from Yakovafox/JonathanChanges,Update Tooltip.cs,Tue May 9 11:31
+11bd6408,JonathanTee,Update Tooltip.cs,Removed debug line
+,Tue May 9 11:30
+b0f62b07,randal22,basic pages and buttons,,Tue May 9 05:45
+e481dd1b,Ryan Miller,Asset implementation for final build,,Mon May 8 20:20
+60f3a913,Jonathan-01,Merge pull request #98 from Yakovafox/JonathanChanges,Removed debug line,Mon May 8 14:35
+2b1a3e04,Jonathan Tee,Removed debug line,,Mon May 8 14:34
+da584fde,Jonathan-01,Merge pull request #97 from Yakovafox/JonathanChanges,Bug 0008 Fixed,Mon May 8 14:02
+8ca4400d,Jonathan Tee,Bug 0008 Fixed,Just added a delay to interactions after dialogue so you can't mess it up.
+,Mon May 8 13:57
+943708be,Jonathan-01,Merge pull request #96 from Yakovafox/JonathanChanges,Bug 0010,Mon May 8 12:50
+9eb57510,Jonathan Tee,Bug 0010,Tooltip no longer gets stuck on screen. Uses a queue to go through all tooltips needing to be shown.
+,Mon May 8 12:49
+70f767b1,Jonathan-01,Merge pull request #95 from Yakovafox/JonathanChanges,Bug 0013 - fixed,Mon May 8 11:35
+62af478c,Jonathan Tee,Bug 0013 - fixed,No longer trapped in the void if you press the interrogate button too enthusiastically.
+,Mon May 8 11:34
+6508c2a2,Jonathan-01,Merge pull request #94 from Yakovafox/JonathanChanges,Jonathan changes,Wed May 3 17:35
+b74f4b02,JonathanTee,Changed to new BGM,,Wed May 3 17:35
+9d7b9d23,JonathanTee,Merge branch 'main' into JonathanChanges,,Wed May 3 17:32
+d27a891b,Jonathan-01,Merge pull request #93 from Yakovafox/JonathanChanges,Jonathan changes,Wed May 3 17:32
+45da3efa,JonathanTee,Updated Finger Monster Sprites,Added fighting asset
+,Wed May 3 17:30
+5642badd,Yakovafox,Merge pull request #92 from Yakovafox/SideCharacterPrefabSetup,BunchOfSideCharacters,Wed May 3 17:17
+6aadfff7,RYAN MILLER,BetaBuild Final Changes,,Wed May 3 16:55
+b74e9711,Yakovafox,BunchOfSideCharacters,- Side characters set up as prefabs.
+- Dialogue made for in world anatoly and family. (WorldDialogue.)
+,Wed May 3 16:51
+ea0cd293,RYAN MILLER,camera icon added,added in icons to show which kind of camera the player is using.
+,Wed May 3 16:42
+e8610fc1,JonathanTee,Updated Phoney Text,There was a typo
+,Wed May 3 16:27
+490affc7,JonathanTee,Merge branch 'main' into JonathanChanges,,Wed May 3 16:24
+ceaede38,Jonathan-01,Merge pull request #91 from Yakovafox/JonathanChanges,Jonathan changes,Wed May 3 16:24
+f74363e9,JonathanTee,Phoney Helpline,,Wed May 3 16:23
+ccd6b535,JonathanTee,Merge branch 'main' into JonathanChanges,,Wed May 3 16:09
+7918af18,Jonathan-01,Merge pull request #90 from Yakovafox/JonathanChanges,Jonathan changes,Wed May 3 16:09
+1fff6151,JonathanTee,Dialogue tidying,Also updated sprite assets
+,Wed May 3 16:08
+60b3c304,RYAN MILLER,Scene Changes,-adding decorative building sprites
+,Wed May 3 16:02
+0dd2c32f,randal22,Merge pull request #89 from Yakovafox/ui-changes,ui tabs overhaul,Wed May 3 16:00
+67220a29,randal22,ui tabs overhaul,,Wed May 3 15:55
+0d272fa7,JonathanTee,Should Track Phoney Now,Fingers crossed. Need an update to the scene.
+,Wed May 3 15:40
+f3f1f382,JonathanTee,Added Phoney Dialogue,Should help to guide the player when they get lost
+,Wed May 3 15:24
+ef3cb948,Jonathan-01,Merge pull request #88 from Yakovafox/JonathanChanges,Save+Load of notes and interrogation,Wed May 3 13:29
+799ae329,JonathanTee,Save+Load of notes and interrogation,We did it boys
+,Wed May 3 13:29
+c32a100b,RYAN MILLER,Update NewPlayingScene.unity,,Wed May 3 13:04
+197d91de,RYAN MILLER,Multifixes,-Suspects loading properly
+-Inventory Loading properly
+-Camera issues fixed
+,Wed May 3 12:52
+2d203e0d,RYAN MILLER,added random dialogue support.,,Tue May 2 19:06
+5fda05e1,randal22,Merge pull request #87 from Yakovafox/suspect-list-saving-+-loading,mostly working,Tue May 2 19:04
+3c3cf5e0,randal22,mostly working,,Tue May 2 19:04
+2793920c,RYAN MILLER,removes Line renderer Scripts,,Tue May 2 18:29
+5872f716,randal22,suspect issues,,Tue May 2 18:23
+b439041f,randal22,Merge pull request #86 from Yakovafox/suspect-list-save-load,save load suspects initial,Tue May 2 18:00
+bd5ca176,RYAN MILLER,fixed camera flow. Sorted Cursors,,Tue May 2 18:00
+585e35d1,randal22,init,,Tue May 2 17:57
+bb9b1306,randal22,slider fix in scene,,Tue May 2 16:49
+d0544212,RMiller0918,Merge pull request #85 from Yakovafox/CameraChanges,Added more cameras for scene transitions,Tue May 2 16:20
+ead5bfa9,RYAN MILLER,Added more cameras for scene transitions,-more cameras added in locations around the room.
+-player can now travel through locations instead of using location buttons
+-location buttons fixed to show the correct location.
+,Tue May 2 16:19
+8c45fbe6,Yakovafox,Merge pull request #84 from Yakovafox/RandomDialogue&MenuAudio,Audio added to menu,Tue May 2 15:14
+5b916917,Yakovafox,Audio added to menu,+ Audio added to the main menu.
++ Changes to Menu Manager script.
++ Changes to Beans Dialogue.
++ Added dialogue for Ted and crown.
+,Tue May 2 15:13
+1b1f319b,randal22,Merge pull request #83 from Yakovafox/sens-fix-and-inv-text-fix,fixes,Tue May 2 15:08
+24a2ace9,randal22,fixes,,Tue May 2 15:08
+d4461b4b,randal22,sens fix mixer attachment,,Tue May 2 12:07
+76853d13,RYAN MILLER,scene changes,-changed cursor settings to get rid of warnings
+-removed Igor's hat and glasses disguise.
+,Tue May 2 11:12
+178d08c9,RYAN MILLER,turned off animation exit time,,Tue May 2 09:52
+38dc1d99,Yakovafox,Merge pull request #82 from Yakovafox/MainMenuRE-DO,Menu RE-DO,Mon May 1 22:07
+a5aeb3ef,Yakovafox,Menu RE-DO,+ Added a bunch of menu assets (CityScape, Title, CityScapeW/Title).
+
++ Complete Re-do to the Menu.
++ Animations for Settings and accesibility menus.
++ Changes to Settings menu and Accessibility menu.
++ Additions to MenuManagerScript (Animations).
+,Mon May 1 22:06
+a6a48a28,Jonathan-01,Merge pull request #81 from Yakovafox/JonathanChanges,Jonathan changes,Mon May 1 20:54
+ba820ecf,Jonathan Tee,States updated,Internal dialogues now play when picking up key evidence. Also added ending dialogue after opening the briefcase.
+,Mon May 1 20:53
+541aa796,Jonathan-01,Merge pull request #80 from Yakovafox/JonathanChanges,Nancy changes sprite when talking,Mon May 1 18:38
+ecc48bb6,Jonathan Tee,Merge branch 'main' into JonathanChanges,,Mon May 1 18:38
+0afa551a,Jonathan Tee,Nancy changes sprite when talking,Also pick-up sound
+,Mon May 1 18:38
+3e130131,Jonathan-01,Merge pull request #79 from Yakovafox/JonathanChanges,Audio Update,Mon May 1 11:18
+e499f90c,Jonathan Tee,Audio Update,also fixed a typo
+,Mon May 1 11:17
+7bee18d1,Jonathan-01,Merge pull request #78 from Yakovafox/JonathanChanges,Jonathan changes,Mon May 1 10:48
+418c1b27,Jonathan Tee,UI sounds,UI now plays sounds when interacted with.
+,Mon May 1 10:47
+2508a9ce,Jonathan Tee,Merge branch 'main' into JonathanChanges,,Mon May 1 10:07
+992e8025,Ryan Miller,Added objects into the scene,Added different characters and objects into the scene.
+Rejigged the Under couch segment. Crown now in jam instead of on a dust bunny's head.
+Moved the camera in front of the couch further back. Players should now get a better view into the under couch entryway
+added the door prefab to the wall. Moved phoney into the ajar door as almost a jump scare easter egg.
+Placed the Finger monsters above the cinema almost as the protest point for them.
+Placed the nesting doll family near Ted's location, dialogue to be added to them.
+,Fri Apr 28 13:49
+f20b6b17,Jonathan Tee,Update DialogueSystem.cs,,Wed Apr 26 23:19
+15589953,Jonathan Tee,TedIntro Fixed,,Wed Apr 26 16:11
+913ae249,Yakovafox,Merge pull request #77 from Yakovafox/Flavour-Dialogue,Flavour dialogue,Wed Apr 26 15:51
+0ea2e5f3,Yakovafox,Merge branch 'main' into Flavour-Dialogue,,Wed Apr 26 15:51
+a33e4f0f,Yakovafox,FlavourDialogue,- Added one more Jane Doe Dialogue.
+- Added Rock dialogue.
+- Cards Dialogue.
+- Burg Robot Dialogue.
+,Wed Apr 26 15:39
+48d82361,Jonathan Tee,Update UI.prefab,,Wed Apr 26 15:38
+b9998caf,randal22,Merge pull request #76 from Yakovafox/sensitivity+sound,Update CameraMovement.cs,Wed Apr 26 15:36
+01561e60,Jonathan Tee,Fixed multiple choice node,,Wed Apr 26 15:35
+373f25f7,randal22,Update CameraMovement.cs,,Wed Apr 26 15:34
+6038fb10,Jonathan Tee,Some bugs fixed,,Wed Apr 26 13:31
+e09dcaea,Jonathan Tee,Update NewPlayingScene.unity,,Wed Apr 26 13:02
+a12e11cf,Jonathan-01,Merge pull request #75 from Yakovafox/JonathanChanges,Jonathan changes,Wed Apr 26 12:59
+f1bba22a,Jonathan Tee,Audio added to graphs,,Wed Apr 26 12:58
+6b579cb3,RMiller0918,Merge pull request #74 from Yakovafox/UI-changes-from-alpha,UI changes from alpha,Wed Apr 26 12:49
+4dee9446,Ryan Miller,Changes to level,-added items into the scene
+,Wed Apr 26 12:48
+7691c028,randal22,Merge pull request #73 from Yakovafox/settings-fixes2,fixed,Wed Apr 26 12:47
+bb0e8cf4,randal22,fixed,,Wed Apr 26 12:46
+dcc074fc,Jonathan Tee,Update DialogueSystem.cs,,Wed Apr 26 10:56
+4c740ce8,Yakovafox,Flavour Dialogue.,Dialogue made for:
+
+- Pigeon Sleeping.
+- Pigeon AHHHHHH with variations of this.
+- Pigeon Mastering the art of not moving.
+- Sticky hand Dialogue.
+- Uwunicorn Dialogue.
+- Bean Dialogue.
+- Lolipop Dialogue.
+- Various Dialogues for John Doe (Silhouette man).
+- Various Dialogues for Jane Doe (Silhouette Woman).
+- Internal Dialogue for stuffing.
+- Internal Dialogue for Briefcase.
+- Changes to Ted's Introduction dialouge.
+- Changes to Ted's Interrogation Dialogue.
+,Tue Apr 25 17:25
+1e19ad57,RYAN MILLER,Added objects and scripts,,Tue Apr 25 17:00
+49aec6a3,JonathanTee,Merge branch 'main' into JonathanChanges,,Tue Apr 25 16:07
+e2ec5132,RMiller0918,Merge pull request #72 from Yakovafox/UI-changes-from-alpha,UI changes from alpha,Tue Apr 25 15:31
+ad3d1339,RMiller0918,Merge branch 'main' into UI-changes-from-alpha,,Tue Apr 25 15:31
+8bf2fef4,RYAN MILLER,More changes to UI,-added text for inv and suspect tabs when the screen is empty.
+,Tue Apr 25 15:29
+cc1e3db7,JonathanTee,Audio music/sounds,Might work but needs testing.
+Uni PCs need wired headphones.
+,Tue Apr 25 15:19
+1464e300,JonathanTee,Added Sound Assets,,Tue Apr 25 14:49
+17d4cccb,Jonathan-01,Merge pull request #71 from Yakovafox/JonathanChanges,Jonathan changes,Tue Apr 25 13:08
+b201d20b,JonathanTee,Final Dialogue Now Shows,,Tue Apr 25 13:07
+7c21c95f,RYAN MILLER,recent changes,,Tue Apr 25 11:45
+0c6d6541,JonathanTee,QuickChanges,,Tue Apr 25 11:44
+de0e0cf4,Ryan Miller,ui quality of life changes,_added shutter BG for dialogue
+-tabs go away for active ui page
+-close ui tab goes down when ui is collapsed
+-page headings added to UI
+,Tue Apr 25 01:15
+1af6ed69,Yakovafox,Merge pull request #70 from Yakovafox/FingerMonster-&-Character-setup,Bug Fixes, Tidying, Setup Characters,Wed Apr 19 23:55
+afab2341,Yakovafox,Bug Fixes, Tidying, Setup Characters,- Fixes to Finger Monster Dialogue, all three graphs.
+ - Changes to Ted's stuffing interrogation dialogue to make sense to the game, and transpired events.
+ - Addition and change of UI icons on the UI, map and X button.
+- Addition of glue investigations sign in the interrogation room.
+- Tidying and grammar checks done to dialogue graphs.
+,Wed Apr 19 23:54
+188e2929,Ryan Miller,Game end fix,fixed an issue where picking up all evidence items in the scene ends the game. Remant code from 1st build.
+fixed issue where player could go back to root camera when UI or dialogue is open.
+,Wed Apr 19 22:16
+64b47c7b,RYAN MILLER,alpha build,,Wed Apr 19 17:35
+c6b97426,JonathanTee,Merge branch 'main' of https://github.com/Yakovafox/NancyGlue,,Wed Apr 19 15:44
+40a3a362,JonathanTee,Update InterrogateButtonScript.cs,,Wed Apr 19 15:44
+b79b92f0,RMiller0918,Merge pull request #69 from Yakovafox/GameManagerNew,Game manager new,Wed Apr 19 15:43
+3afe8a80,RYAN MILLER,Alpha push,,Wed Apr 19 15:43
+b7726c1a,JonathanTee,Update UI.prefab,,Wed Apr 19 15:39
+f64bd18b,RYAN MILLER,Merge branch 'main' into GameManagerNew,,Wed Apr 19 15:06
+b9f7f1e9,randal22,BackButtonFix,,Wed Apr 19 15:01
+a3c05a76,JonathanTee,Merge branch 'main' into GameManagerNew,,Wed Apr 19 15:00
+9aa30ad2,RMiller0918,Merge pull request #68 from Yakovafox/AlphaBuildScene,Alpha build scene,Wed Apr 19 14:43
+3f5ed0d0,RYAN MILLER,more changes,,Wed Apr 19 14:42
+ff38a61b,Jonathan-01,Merge pull request #67 from Yakovafox/InterrogateButton,NPCs now talk and get interrogated,Wed Apr 19 14:28
+0f84cbb6,JonathanTee,NPCs now talk and get interrogated,,Wed Apr 19 14:27
+fd2faafd,RYAN MILLER,Adding Assets,Added in the rest of the finished stickers into the asset folder.
+changed finger monsters to respective character sprites
+,Wed Apr 19 14:08
+434c81a5,randal22,Merge pull request #66 from Yakovafox/settings-UI,broken settings backbone,Wed Apr 19 14:07
+17ee6647,randal22,broken settings backbone,,Wed Apr 19 14:07
+fb114a55,Jonathan-01,Merge pull request #65 from Yakovafox/InterrogateButton,ButtonAdded,Wed Apr 19 11:13
+b8e5a959,JonathanTee,ButtonAdded,,Wed Apr 19 11:12
+2028e4f2,randal22,settings main menu fixes,,Wed Apr 19 10:58
+0337c070,JonathanTee,Update GameManager1.cs,,Wed Apr 19 10:22
+8326267a,JonathanTee,Update NPCTracker.cs,,Wed Apr 19 10:17
+c3e373c9,JonathanTee,Update NewPlayingScene.unity,,Wed Apr 19 10:15
+93c86d50,JonathanTee,Started new GameManager script,,Tue Apr 18 20:06
+d985c5f3,randal22,Merge pull request #64 from Yakovafox/settings-in-menu,saving yes loading no,Tue Apr 18 16:42
+cfa056ad,RYAN MILLER,couple of additions.,added an animation and object attached.
+Removed mixers
+,Tue Apr 18 16:42
+813fdd9a,randal22,saving yes loading no,,Tue Apr 18 16:41
+c8b839e7,JonathanTee,Tidied,,Tue Apr 18 16:16
+476904f5,Yakovafox,Merge pull request #63 from Yakovafox/Dialogue-Write-Up,Dialogues Written Out,Tue Apr 18 15:53
+6300371a,JonathanTee,Update NPCTracker.cs,,Tue Apr 18 15:46
+ed189dd5,RMiller0918,Merge pull request #62 from Yakovafox/MainSceneLevelDesign,Main scene level design,Tue Apr 18 15:29
+28639f49,RMiller0918,Merge branch 'main' into MainSceneLevelDesign,,Tue Apr 18 15:29
+0a2ee964,Yakovafox,Dialogues Written Out,- Wrote out all required Dialogues.
+- Removed the dialogue changes me and Jonathan made at midnight during easter break.
++ Anatoly Intro dialogue.
++ TedGrizzly Intro.
++ Buzz Off Ted Grizzly.
++ Nancy Glue Internal dialogue.
++ Interrogate Ted dialogue.
++ Finger Monster Interrogate 1.
++ Finger Monster Interrogate 2.
++ Briefcase Dialogue END.
+,Tue Apr 18 15:27
+eff02b24,RYAN MILLER,Made changes to UI,Fixed issue with character notes in UI
+,Tue Apr 18 15:20
+ed2968f4,JonathanTee,Multiple Choice Now Working,,Tue Apr 18 15:19
+a0633b09,JonathanTee,Update GameManager.cs,,Tue Apr 18 12:03
+9f6244f4,Ryan Miller,Adding Stickers and character billboards to scene,-added in currently finished stickers into the Assets folder
+-added currently finished character billboards into the game
+-Changed Ted from teddy model to billboarded sprite
+-Added Cursors into the game
+-Modified cursor code in mouse track to edit cursor directly and not change a canvas sprite
+-Waiting on hand cursor for item pickup
+-modified look at camera script for billboards. Characters with this script will rotate in the direction of the main camera, can be locked on any axis.
+-Implementing final level designs for item placement.
+-Fixed issue where player could skip speaking to ted by clicking on hit box for projector room.
+,Mon Apr 17 22:55
+a6d278b1,RMiller0918,Merge pull request #61 from Yakovafox/MainSceneChanges,menu swapping to new scene fix,Mon Apr 17 09:53
+b705a4cc,Ryan Miller,menu swapping to new scene fix,,Mon Apr 17 09:52
+be9f9736,RMiller0918,Merge pull request #60 from Yakovafox/MainSceneChanges,Suspect Page Finished,Sat Apr 15 22:14
+df607a3f,Ryan Miller,Suspect Page Finished,Finished the Suspects page for the UI.
+When talking to an NPC for the first time a new entry is added in the suspect pool
+the new entry is a button. Clicking it opens the suspect data page, which shows the character mugshot and any notes that the player has on the character.
+,Sat Apr 15 22:13
+a32d2a59,RMiller0918,Merge pull request #59 from Yakovafox/MainSceneChanges,Multiple changes made,Sat Apr 15 14:24
+d1b945ff,Ryan Miller,Multiple changes made,added in location buttons into the UI
+Player can now travel between 3 locations
+- Office (Glue Investigations)
+- Drive in (Bearly Pictures)
+- Finger Monster Alley (Shelf Street)
+
+Removed the purple cubes for travelling within a location. Larger colliders to allow players to require less accuracy when moving between zones
+Projector room redone for the minute. Added in the actual projector model and added in a sticker version of Grizzly's stuffing onto the back.
+
+Added controls for camera's on a track and dolly. Currently moving cameras tracking offset to allow the player to look up and down when on a Left/Right Track. Will do the opposite for Forward/Back Tracks.
+,Sat Apr 15 14:24
+e9dc0915,Jonathan Tee,Update DialogueSystem.cs,,Thu Apr 13 14:33
+925276c0,Jonathan Tee,Update DialogueSystem.cs,,Thu Apr 13 14:27
+4ea71fe8,RMiller0918,Merge pull request #58 from Yakovafox/ImplementingFinishedAssets,Implementing finished assets,Thu Apr 13 12:12
+b3f7432c,Ryan Miller,setting up scene,,Thu Apr 13 12:12
+16833066,Jonathan Tee,Dialogue Graph Fixed,Limits in place and sorted bugs that had appeared.
+,Thu Apr 13 00:35
+1300e717,Ryan Miller,Added assets to library,added in the unwrapped furniture assets.
+,Tue Apr 11 12:48
+b4652b85,RMiller0918,Merge pull request #56 from Yakovafox/WorkingOnUI,Working on UI,Tue Apr 11 10:28
+e451798b,Yakovafox,Merge pull request #57 from Yakovafox/Dialogue-Writing-&-Accessibility-Tweak,ColourPickerChange,Fri Apr 7 22:13
+376c4cb6,Jonathan Tee,Fixed Dialogue Graph,,Fri Apr 7 19:53
+d2300ac1,Yakovafox,ColourPickerChange,- Added new version of the Colour Picker, Square version.
+- Changed to add it into the menu scene.
+,Mon Apr 3 13:47
+ac20ccb5,Ryan Miller,Made Changes to main scene.,-added new UI prefab into main scene.
+,Wed Mar 29 22:44
+9cfd8101,Ryan Miller,Changes to UI,Added in more animation states for the UI transitions.
+-UI will now hide when the Dialogue box is open and appear again after dialogue has ended.
+-Transitions are smoothed out so the UI doesn't appear straight away.
+- Combined objects from previous UI prefabs. Meaning UI, Dialogue, Cursor, and transition elements are all part of the same Prefab.
+,Wed Mar 29 22:41
+a68cd85f,Jonathan-01,Merge pull request #55 from Yakovafox/NoteTracking,Notes are tracked in NPC tracker,Wed Mar 29 17:41
+5c197fbe,Jonathan Tee,Notes are tracked in NPC tracker,Also added character limits to nodes
+,Wed Mar 29 17:41
+381f9a71,RMiller0918,Merge pull request #54 from Yakovafox/Adding-Prefabs,Adding prefabs,Wed Mar 29 16:05
+d83d65f3,Ryan Miller,Working On UI,Started work on the full UI implementation.
+-currently animates to open or close.
+-needs access to NPC details in order to set Character notes.
+,Wed Mar 29 16:04
+c5b8d671,randal22,Merge pull request #53 from Yakovafox/Dia-save-load-2,dia loading finished,Wed Mar 29 16:04
+b7b74a8f,randal22,dia loading finished,,Wed Mar 29 16:04
+cf289a5b,randal22,fixed dialogue save load,,Wed Mar 29 15:25
+46a45c42,randal22,Merge pull request #52 from Yakovafox/dia-saveLoad,Dia save load,Wed Mar 29 14:14
+f61fc45d,randal22,Merge branch 'main' into dia-saveLoad,,Wed Mar 29 14:13
+ea17c618,randal22,loading dialogue,,Wed Mar 29 14:10
+381a048a,Jonathan-01,Merge pull request #51 from Yakovafox/DialogueTracking,Dialogue Tracks Now,Wed Mar 29 14:09
+d0455b2e,Jonathan Tee,Dialogue Tracks Now,Progression through triggers.
+Should replace the NPCscript attachment.
+,Wed Mar 29 14:03
+390e2c84,randal22,saving in progress,,Wed Mar 29 12:33
+9f28dbe1,randal22,setup,,Tue Mar 28 16:05
+65ec717d,RYAN MILLER,Started work on UI prefab,,Tue Mar 28 15:34
+3b13cc73,RYAN MILLER,Added prefabs,,Tue Mar 28 14:51
+aea73533,Jonathan-01,Merge pull request #50 from Yakovafox/DialogueTracking,Update NPCTracker.cs,Tue Mar 28 14:14
+a5262b50,JonathanTee,Update NPCTracker.cs,,Tue Mar 28 14:14
+1c71ab64,Jonathan-01,Merge pull request #49 from Yakovafox/DialogueTracking,Basic dialogue tracking,Tue Mar 28 13:36
+c4181ee5,JonathanTee,Basic dialogue tracking,Added a simple dialogue tracking system script.
+,Tue Mar 28 13:35
+33d1af27,randal22,Merge pull request #48 from Yakovafox/camer-loading,camera loading,Tue Mar 28 12:53
+34499aa6,randal22,camera loading,,Tue Mar 28 12:52
+92471c2c,RMiller0918,Merge pull request #47 from Yakovafox/newScene,New scene,Mon Mar 27 14:57
+0a76e478,Ryan Miller,finished floor plan,,Mon Mar 27 14:57
+6037fc67,Ryan Miller,Modular additions,,Mon Mar 27 14:44
+82dda7c8,Ryan Miller,more changes,,Mon Mar 27 14:34
+7058deb5,Ryan Miller,Added Assets,added in the currently finished 3d assets to the project. Made a new scene containing a floor plan for the art to team to take and remodel into a single object.
+,Mon Mar 27 14:19
+df5e747d,Jonathan-01,Merge pull request #46 from Yakovafox/MultiFix,Multi fix,Wed Mar 22 21:28
+ae38296a,RMiller0918,Merge pull request #45 from Yakovafox/meh,Finished 2nd build,Wed Mar 22 16:49
+6682dd46,RYAN MILLER,Finished 2nd build,,Wed Mar 22 16:48
+5a92d7cc,JonathanTee,Update DialogueSystem.cs,,Wed Mar 22 16:34
+9756a94c,JonathanTee,MultiBranch dialogue is fixed,,Wed Mar 22 16:32
+d49ac4fd,RMiller0918,Merge pull request #44 from Yakovafox/meh,meh,Wed Mar 22 16:03
+8ea3a350,RYAN MILLER,meh,,Wed Mar 22 16:03
+2807ea81,randal22,Merge pull request #43 from Yakovafox/fixesAccesi,fixes,Wed Mar 22 15:30
+4a476f78,randal22,fixes,,Wed Mar 22 15:30
+ce7550d8,Yakovafox,Merge pull request #42 from Yakovafox/Dialogue-Graph-Setup,Dialogue SetUp (Second Build),Wed Mar 22 14:40
+67a1e620,Yakovafox,Dialogue SetUp (Second Build),- Added a Dialogue graph for Bearly Introduction.
+- Added a Dialogue graph for Ted's Confession.
+- Added a Dialogue graph for the return of the Film Reel.
+- Added Character portraits to go alongside the Dialogue.
+,Wed Mar 22 14:33
+d43a8725,RMiller0918,Merge pull request #41 from Yakovafox/secondBuild,Second build,Wed Mar 22 14:01
+4002cb08,RYAN MILLER,Revert "Merge branch 'secondBuild' of https://github.com/Yakovafox/NancyGlue into secondBuild",This reverts commit 61c875ef0becbf3b055e5d8129b7d9cd090480ba, reversing
+changes made to f2b7ce92458c8081cf900c76eea404302d74fa7d.
+,Wed Mar 22 14:00
+61c875ef,RYAN MILLER,Merge branch 'secondBuild' of https://github.com/Yakovafox/NancyGlue into secondBuild,,Wed Mar 22 13:59
+f2b7ce92,RYAN MILLER,Not finished yet but pulling,,Wed Mar 22 13:59
+668b1620,RYAN MILLER,Not finished yet but pulling,,Wed Mar 22 13:57
+24f05eab,randal22,Merge pull request #39 from Yakovafox/settings-fixes,accessibility fixes,Wed Mar 22 13:56
+fcc60745,randal22,accessibility fixes,,Wed Mar 22 13:56
+7b48215a,Jonathan-01,Merge pull request #38 from Yakovafox/JonathanBranch-Buttons,Jonathan branch buttons,Wed Mar 22 13:52
+0f6ba6af,JonathanTee,Added paint stroke to multi choice,Apparently had a change to block out. Possibly due to changing the inspector.
+Change to blockout was discarded.
+,Wed Mar 22 13:47
+e4896f70,JonathanTee,Multiple choice node now has buttons,,Wed Mar 22 13:17
+40d36b13,Jonathan-01,Merge pull request #37 from Yakovafox/JonathanBranch1-tooltip,Tooltip and script made,Wed Mar 22 11:56
+325fc3d6,JonathanTee,Tooltip and script made,,Wed Mar 22 11:55
+43884a5f,JonathanTee,Fade outs,,Tue Mar 21 17:04
+3048001a,Jonathan-01,Merge pull request #36 from Yakovafox/Dialogue-Prefab-and-UI-elements,Update DialogueSystem.cs,Tue Mar 21 16:53
+fa337992,JonathanTee,Update DialogueSystem.cs,,Tue Mar 21 16:53
+2815b1e5,randal22,Merge pull request #35 from Yakovafox/settings,Settings,Tue Mar 21 16:50
+06c0bcf7,randal22,font mana setup,,Tue Mar 21 16:49
+08ba1464,RYAN MILLER,Added UI to Dialog Prefab object in hierarchy.,,Tue Mar 21 16:49
+9bd2d644,randal22,save+load acc settings in menu,,Tue Mar 21 16:27
+c52dc9a3,Jonathan-01,Merge pull request #34 from Yakovafox/Dialogue-Prefab-and-UI-elements,Dialogue fixed,Tue Mar 21 16:22
+4cd2ea8e,JonathanTee,Dialogue fixed,,Tue Mar 21 16:21
+bd059d9b,Jonathan-01,Merge pull request #33 from Yakovafox/Dialogue-Prefab-and-UI-elements,Dialogue letter-by-letter,Tue Mar 21 15:28
+db21998e,Jonathan-01,Merge branch 'main' into Dialogue-Prefab-and-UI-elements,,Tue Mar 21 15:27
+1fdd075a,JonathanTee,Dialogue letter-by-letter,Added typing style dialogue text.
+,Tue Mar 21 15:26
+a043831a,RYAN MILLER,Transitions added,,Tue Mar 21 15:22
+a5b8cff4,Yakovafox,Merge pull request #32 from Yakovafox/Accessibility-Functions,Accessibility functions,Tue Mar 21 15:08
+ba658acd,Yakovafox,Improvements to Accessibility Font settings,- Changes to font script allowing player to use a drop down to select font instead of a toggle.
+- Changes to positioning and readability of the colour pickers.
+,Tue Mar 21 15:04
+6d900577,randal22,Merge pull request #31 from Yakovafox/settingsSaveLoadPrep,prep,Tue Mar 21 15:01
+d2d41630,randal22,prep,,Tue Mar 21 15:00
+21cd03b2,Jonathan-01,Merge pull request #30 from Yakovafox/Dialogue-Prefab-and-UI-elements,New Prefab made,Tue Mar 21 13:38
+38bdaf6b,JonathanTee,New Prefab made,New Dialogue Prefab
+,Tue Mar 21 13:29
+8f1cefd1,randal22,Merge pull request #29 from Yakovafox/load-fix,fixes,Tue Mar 21 13:07
+a2030f5d,randal22,Merge branch 'main' into load-fix,,Tue Mar 21 13:07
+cae2b9af,randal22,fixes,,Tue Mar 21 13:05
+5591e7c3,RYAN MILLER,minor updates to Game Manager,,Tue Mar 21 12:57
+d3251fe6,RYAN MILLER,Updated Sprites,,Tue Mar 21 12:48
+18d0f61f,RMiller0918,Merge pull request #28 from Yakovafox/ImprovedGameLoop,Improved game loop,Tue Mar 21 12:14
+e43889ee,RYAN MILLER,Added More stuff. Bug fixes,,Tue Mar 21 12:10
+b3b9ff04,Ryan Miller,New playable changes,- added custom cursor. Need to turn old one off.
+- added range limit on ray cast for picking up objects, talking to characters and moving cameras. Set to 5.5f as that works best for the space of the level.
+- added initial dialogue graph for setting up the narrative.
+- need to add in the location button so we can switch between segments.
+- issue with sprites not displaying properly for dialogue
+- started a game manager script. Keeps track of current stage of the game. for this playable the following states are to be implemented
+-- Intro
+-- Drive-in Investigation
+-- Grizzly Interrogation
+--Drive-in Revisit
+--Film Reel Found.
+,Mon Mar 20 22:22
+2cc7885a,Yakovafox,BackGroundColourChange,- Added onto the Font script.
+- Added onto the Menu scene.
+- Added functionality to be able to change the colour of textboxes.
+,Mon Mar 20 15:37
+2a385d3e,RMiller0918,Merge pull request #27 from Yakovafox/Scriptable-Object-Test,Scriptable object test,Mon Mar 20 14:01
+00559ee8,Ryan Miller,Update ItemData.cs,,Mon Mar 20 13:48
+26b704d4,Ryan Miller,Implemented Scriptable Objects.,-added a scriptable object class called "ItemScriptableObject" stores the following data:
+-- Item Id (int)
+-- Item Title (string)
+-- Item Description (string)
+-- Item Icon (sprite)
+-added a new constructor for the Item class. Uses an ItemScriptableObject as part of the constructor. Pulls data from said scriptable object.
+- the ItemDB script now pools a list of items by grabbing objects with the EvidenceItem tag. by accessing the ItemData script, the scriptable object data is accessed and added to the database.
+,Mon Mar 20 12:54
+a60e7bee,Yakovafox,Colour wheel accessiblity,- Added a script to change the colour on a colour wheel.
+- Implemented the changeFontColor function to the Font script.
+- Added colour wheel to project.
+,Wed Mar 15 17:00
+1cb1b3fd,Jonathan-01,Merge pull request #26 from Yakovafox/DialogueSystem,Location Node Added,Wed Mar 15 15:31
+ba6965a4,JonathanTee,Location Node Added,,Wed Mar 15 15:30
+27458153,JonathanTee,Evidence Node changed to Note Node,,Wed Mar 15 14:29
+5677c02c,RYAN MILLER,File paths and prefab updated,,Wed Mar 15 12:56
+37be5e63,RYAN MILLER,Changed Dialogue System file structure,,Wed Mar 15 12:43
+6e3bed5b,RYAN MILLER,Cam Fix (again),- camera resets to initial rotation when switching between cameras.
+,Wed Mar 15 11:39
+abf294cb,randal22,Merge pull request #25 from Yakovafox/save-load,Save load,Tue Mar 14 18:04
+ed5dc20f,randal22,inv,,Tue Mar 14 18:04
+5af3d805,randal22,Create Inv.txt,,Tue Mar 14 18:03
+5944dd2d,randal22,save load framework finished,,Tue Mar 14 18:02
+e5f8a98e,randal22,save load working - needs menu integration,,Tue Mar 14 17:33
+1ee0c295,RYAN MILLER,DialoguesFix + Phoney Skybox,,Tue Mar 14 17:24
+6783d9d7,RYAN MILLER,Dialogue Raycast fix,no longer fires rays when dialogue boxes are active.
+,Tue Mar 14 17:08
+a70cd73e,RMiller0918,Merge pull request #23 from Yakovafox/Camera-System,Camera System Updated,Tue Mar 14 16:46
+c94d636b,RYAN MILLER,Camera System Finished,- changed how cameras interact with each other.
+- each camera has a root or a series of cameras they can switch to.
+- right click returns to the root camera.
+,Tue Mar 14 16:45
+b3edd7bb,RYAN MILLER,CameraBounds Changes,changed the max limit for y Rotations from 45 to 90
+,Tue Mar 14 13:06
+3e2cc5dd,RMiller0918,Merge pull request #22 from Yakovafox/Camera-Fix,Camera fix,Tue Mar 14 12:54
+976c050d,RYAN MILLER,Keyboard control implemented,- Speed value added.
+- Input added, allows for mouse or keyboard controls for turning camera.
+- refactored angle clamp method.
+,Tue Mar 14 12:48
+4a84416d,randal22,Merge pull request #21 from Yakovafox/Inv-Fixes,fixed inv bugs from first playable,Tue Mar 14 12:26
+6e6f3e8c,randal22,fixed inv bugs from first playable,,Tue Mar 14 12:25
+1205199d,Ryan Miller,Camera System Fix., - Fixed issue with camera's not clamping on viewing angles.
+,Mon Mar 13 17:46
+95a231c8,RYAN MILLER,First Playable,Playable is a stretch
+,Wed Mar 8 16:52
+d24e121b,randal22,tags,,Wed Mar 8 16:04
+986eb528,randal22,Merge pull request #20 from Yakovafox/new-evid-code,db changes for item,Wed Mar 8 15:45
+39997ede,randal22,db changes for item,,Wed Mar 8 15:44
+71a49702,RMiller0918,Merge pull request #19 from Yakovafox/AddingObjects,added base objects,Wed Mar 8 15:43
+f3f8d5f5,RYAN MILLER,added base objects,,Wed Mar 8 15:43
+a75b37d5,RYAN MILLER,Dialogue System on click integration.,,Wed Mar 8 14:54
+008950d9,RMiller0918,Merge pull request #18 from Yakovafox/AddingAssets,Imported 3d assets,Wed Mar 8 13:46
+be77ef9d,randal22,dialogue initial merge,,Wed Mar 8 13:45
+c3d0ff3e,RYAN MILLER,Imported 3d assets,Models for Teddy and nesting doll NPC's added to project assets.
+,Wed Mar 8 13:35
+5100e5c2,randal22,ui safe guarding,,Wed Mar 8 12:06
+7c321d4e,RYAN MILLER,Camera Movement Working.,,Wed Mar 8 11:45
+7a31990f,RMiller0918,Merge pull request #17 from Yakovafox/Player-Movement,Integrated Mouse Tracking in scene,Wed Mar 8 11:14
+9cced96c,RYAN MILLER,Integrated Mouse Tracking in scene,-Made changes to allow mouse tracking script in the main scene.
+-Objects can be tagged and removed from the scene upon clicking.
+,Wed Mar 8 11:13
+5d4d7bb9,RMiller0918,Merge pull request #16 from Yakovafox/CameraSystem,Camera system,Tue Mar 7 17:40
+d60cab64,RYAN MILLER,level change,,Tue Mar 7 17:40
+eae8b8dd,RYAN MILLER,Camera Rotation system added.,-issue with limiting camera rotations.
+,Tue Mar 7 17:34
+504757e4,randal22,asset upload,,Tue Mar 7 17:14
+7f046ae8,randal22,Create .gitignore,,Tue Mar 7 16:51
+433b29bf,randal22,Merge pull request #15 from Yakovafox/UI-system,UI system,Tue Mar 7 16:44
+2fbd1860,randal22,Merge branch 'main' into UI-system,,Tue Mar 7 16:44
+cbd0c2e3,randal22,fixes and test assets,,Tue Mar 7 16:20
+5151ea00,Ryan Miller,unsaved change.,,Mon Mar 6 22:38
+2a78dede,Ryan Miller,Setup Base Cameras,-camera's in place for most sections.
+-Doll house segment missing.
+-Camera movement system to be built.
+,Mon Mar 6 22:15
+d87f51ae,randal22,prefab start,,Mon Mar 6 20:26
+d0f2bf23,RMiller0918,Merge pull request #14 from Yakovafox/MenuButtonFunctionality,Added Button Functionality - Set up scene Transition.,Mon Mar 6 11:21
+1d3afde3,Ryan Miller,Added Button Functionality,New Game loads the blockout scene
+Exit Game now closes app.
+Load Game not functional - waiting for save states to be implemented. Button can be removed as required.
+,Mon Mar 6 11:19
+ec43eca4,RMiller0918,Merge pull request #13 from Yakovafox/Building-Main-Menu-Functionality,Initial Main Menu Prototype built,Thu Mar 2 21:50
+1d67cde9,Ryan Miller,Main Menu prototype,set up main menu. Functionality between scenes to be added later.
+Load Game will be implemented later when save states are added.
+implemented button support for font change.
+,Thu Mar 2 21:48
+e71f6624,Ryan Miller,Refactored code and initial Font script,-Set up initial script for changing the font for text objects in game.
+-Currently set up for changing TMP UI text fields.
+-Will be expanded to work on standard TMP Text fields
+-Refactored Code for the Accessibility menu. Boolean value flipped and assigned directly to SetActive.
+,Wed Mar 1 16:52
+f7dfb701,randal22,ui inv canvas start,,Tue Feb 28 17:51
+a69accfb,randal22,prefab setup,,Tue Feb 28 16:51
+17970ae6,Yakovafox,Merge pull request #12 from Yakovafox/Menu/DefualtText,Menu/defualt text,Tue Feb 28 15:21
+0a07bf4a,Yakovafox,Merge branch 'main' into Menu/DefualtText,,Tue Feb 28 15:19
+ed11566b,Yakovafox,Intergrating the Menu Font,- Menu font implemented and turned into style sheet.
+- Implemented a script that will swap from accessibility to back, Menu Manager.
+,Tue Feb 28 15:17
+2dcb1b2e,randal22,basic ui temp assets,,Tue Feb 28 15:15
+4955aa34,RMiller0918,Merge pull request #10 from Yakovafox/CameraTests,Added Cinemachine,Tue Feb 28 15:13
+daf8ab65,RYAN MILLER,Added Cinemachine,Added cinemachine (again?)
+,Tue Feb 28 15:12
+3647950c,randal22,Merge pull request #9 from Yakovafox/inventory,Inventory,Tue Feb 28 14:40
+ee24928b,randal22,Merge branch 'main' into inventory,,Tue Feb 28 14:40
+6ffefc14,randal22,fix attempt,,Tue Feb 28 14:34
+94544f29,randal22,inv loading temp fix,,Tue Feb 28 14:01
+341380bb,RMiller0918,Merge pull request #6 from Yakovafox/Level-Blockout,Level blockout,Mon Feb 27 21:13
+6cd007e3,Ryan Miller,Blockout Work Continued,First version of floor plan done. General Sections in place.
+,Mon Feb 27 21:12
+98ee7634,randal22,save/load inv,basic inv interaction with mouse track
+,Wed Feb 22 20:32
+abb701da,Yakovafox,Text Intergration,- Messing around with text that may fit for the game, created a menu scene for this.
+- Added TMPro
+- Added different text templates and converted them to atlases
+,Wed Feb 22 18:12
+5692508f,RYAN MILLER,blockoutUpdate,,Wed Feb 22 15:17
+3c2c1a7e,RMiller0918,Merge pull request #5 from Yakovafox/Level-Blockout,Added Pro Builder,Wed Feb 22 10:57
+65d1755e,RYAN MILLER,Added Pro Builder,,Wed Feb 22 10:56
+ab4ac049,RMiller0918,Merge pull request #4 from Yakovafox/Level-Blockout,Level block out,Tue Feb 21 16:27
+9fa10f7a,RYAN MILLER,Blockout test,trying simple blockouts with unity cube objects.
+,Tue Feb 21 16:26
+387525a8,randal22,Merge pull request #3 from Yakovafox/point+click,Point+click system,Tue Feb 21 16:09
+ccc606fe,randal22,Update SampleScene.unity,,Tue Feb 21 16:08
+50e37e03,randal22,object tags setup,,Tue Feb 21 16:02
+3caadfb3,randal22,basic mouse click,,Tue Feb 21 15:23
+5b1b9c10,RYAN MILLER,Setup Branch,,Tue Feb 21 13:32
+c7a6d533,RMiller0918,Merge pull request #2 from Yakovafox/Level-Blockout,blank scene,Tue Feb 21 13:29
+beb1ee7a,RYAN MILLER,blank scene,,Tue Feb 21 13:29
+008b0bac,randal22,Merge pull request #1 from Yakovafox/Colour-Blind-Shader,colour blind setup,Tue Feb 21 13:07
+7a6dc81e,randal22,colour blind setup,,Tue Feb 21 13:06
+05fd1092,randal22,unity setup,,Tue Feb 21 12:55
+91394131,randal22,FIX,,Tue Feb 21 12:49
+81c1df68,RYAN MILLER,git Ignore fix,,Tue Feb 21 12:37
+4bb29ac6,randal22,unity setup,,Wed Feb 15 14:15
+adb91a35,randal22,Create .gitignore,,Tue Feb 14 17:42
+f6884b26,randal22,Delete .gitignore,,Tue Feb 14 16:48
+1e21bc92,randal22,Create .gitignore,,Tue Feb 14 16:27
