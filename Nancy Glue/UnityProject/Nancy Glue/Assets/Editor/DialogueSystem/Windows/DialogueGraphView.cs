@@ -23,6 +23,7 @@ namespace Dialogue.Windows
 
         private int repeatedNames = 0;
 
+        // Repeated names has a fancy setter to disable and enable saving based on whether there is an error
         public int RepeatedNames {
             get 
             {
@@ -68,6 +69,7 @@ namespace Dialogue.Windows
             AddStyles();
         }
 
+        // Function to find compatible ports for nodes
         public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
         {
             List<Port> compatiblePorts = new List<Port>();
@@ -224,6 +226,7 @@ namespace Dialogue.Windows
                 List<Edge> edgesToDelete = new List<Edge>();
                 List<DialogueNode> nodesToDelete = new List<DialogueNode>();
 
+                // Add elements needing deleted to a deletion list
                 foreach (GraphElement element in selection)
                 {
                     if (element is DialogueNode node)
@@ -253,6 +256,7 @@ namespace Dialogue.Windows
 
                 DeleteElements(edgesToDelete);
 
+                // Delete all elements marked for deletion
                 foreach (DialogueGroup group in groupsToDelete)
                 {
                     List<DialogueNode> groupNodes = new List<DialogueNode>();
@@ -290,6 +294,7 @@ namespace Dialogue.Windows
             };
         }
 
+        // On adding something to a group through the drag/drop
         private void OnGroupElementsAdd()
         {
             elementsAddedToGroup = (group, elements) =>
@@ -310,6 +315,7 @@ namespace Dialogue.Windows
             };
         }
 
+        // Removing an element from a group through shift dragging
         private void OnGroupElementRemoved()
         {
             elementsRemovedFromGroup = (group, elements) =>
@@ -330,6 +336,7 @@ namespace Dialogue.Windows
             };
         }
 
+        // On renaming a group change everything over to the new group
         private void onGroupRenamed()
         {
             groupTitleChanged = (group, newTitle) =>
@@ -403,6 +410,7 @@ namespace Dialogue.Windows
 
         // node management
         #region node management
+        // Remove a group and add contained nodes to ungrouped nodes
         private void RemoveGroup(DialogueGroup group)
         {
             string oldGroupName = group.oldTitle.ToLower();
@@ -428,6 +436,7 @@ namespace Dialogue.Windows
             }
         }
 
+        // Add a node to a group and remove it from ungrouped nodes list
         public void AddGroupedNode(DialogueNode node, DialogueGroup group)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -465,6 +474,7 @@ namespace Dialogue.Windows
             }
         }
 
+        // remove a node from a group and add it to ungrouped nodes list
         public void RemoveGroupedNode(DialogueNode node, DialogueGroup group)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -497,6 +507,7 @@ namespace Dialogue.Windows
             }
         }
 
+        // Add a node external to a group
         public void AddUngroupedNode(DialogueNode node)
         {
             string nodeName = node.DialogueName.ToLower();
@@ -527,6 +538,7 @@ namespace Dialogue.Windows
             }
         }
 
+        // Add a node within a group
         public void RemoveUngroupedNode(DialogueNode node)
         {
             string nodeName = node.DialogueName.ToLower();

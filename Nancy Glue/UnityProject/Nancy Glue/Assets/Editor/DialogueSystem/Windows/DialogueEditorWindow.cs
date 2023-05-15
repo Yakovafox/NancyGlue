@@ -40,11 +40,14 @@ namespace Dialogue.Windows
         {
             Toolbar toolbar = new Toolbar();
 
+            // Clean the filename of spaces and special characters
+            // This ensures a safe save path
             fileName = DialogueElementUtility.CreateTextField(defaultFileName, "File Name:", callback => 
             {
                 fileName.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
             });
 
+            // Create buttons on the toolbar
             saveButton = DialogueElementUtility.CreateButton("Save", () => Save());
 
             Button newGraphButton = DialogueElementUtility.CreateButton("New", () => NewGraph());
@@ -52,6 +55,7 @@ namespace Dialogue.Windows
             Button clearButton = DialogueElementUtility.CreateButton("Clear", () => Clear());
             Button resetButton = DialogueElementUtility.CreateButton("Reset", () => ResetGraph());
 
+            // Add buttons to the toolbar
             toolbar.Add(fileName);
             toolbar.Add(saveButton);
             toolbar.Add(loadButton);
@@ -70,6 +74,7 @@ namespace Dialogue.Windows
 
         private void Save()
         {
+            // Ensure a filename is provided
             if (string.IsNullOrEmpty(fileName.value))
             {
                 EditorUtility.DisplayDialog(

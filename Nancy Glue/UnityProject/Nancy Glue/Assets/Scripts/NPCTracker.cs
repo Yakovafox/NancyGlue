@@ -7,6 +7,8 @@ using UnityEngine;
 
 public class NPCTracker : MonoBehaviour
 {
+    // Enumerator for triggers
+    // Marks how a container will progress to the next one
     public enum ProgressTriggers
     {
         talking,
@@ -15,6 +17,7 @@ public class NPCTracker : MonoBehaviour
         phoney
     }
 
+    // Information on a container and whether it has required evidence to progress
     [Serializable]
     public struct DialogueInformation
     {
@@ -23,6 +26,7 @@ public class NPCTracker : MonoBehaviour
         public ProgressTriggers Trigger;
     }
 
+    // Interrogation information on the container used and which dialogue it progresses to after in default conversation
     [Serializable]
     public struct InterrogationInformation
     {
@@ -53,8 +57,9 @@ public class NPCTracker : MonoBehaviour
 
     private void Awake()
     {
-        originalPosition = transform.position;
-        attachedNPC = transform.name;
+        // Track name and original position
+        originalPosition = transform.position;  // Used to sit a character in teh chair during questioning
+        attachedNPC = transform.name;           // Used to ensure we are laoding to the correct tracker
     }
 
     public void Reset()
@@ -63,6 +68,8 @@ public class NPCTracker : MonoBehaviour
         attachedNPC = transform.name;
     }
 
+    // Progress dialogue through the state trigger
+    // Called at different points to determine when it should progress
     public void ProgressDialogue(ProgressTriggers trigger)
     {
         if (Dialogues[dialogueIterator].Trigger == trigger)
@@ -83,6 +90,7 @@ public class NPCTracker : MonoBehaviour
         }
     }
 
+    // Check whether the evidence reuired for interrogation has been gathered
     public void EvidenceCheck()
     {
         if (interrogationIterator >= Interrogations.Count) return;
@@ -103,6 +111,7 @@ public class NPCTracker : MonoBehaviour
         if (itemCollected) canBeQuestioned = true;
     }
 
+    // Add a note to the tracker so long as there is space
     public void AddNote(string note)
     {
         if (!notes.Contains(note) && notes.Count != 3)
@@ -111,6 +120,7 @@ public class NPCTracker : MonoBehaviour
         }
     }
 
+    // On loading apply the saved data
     public void onLoadGame(string name, int diaIterator, int intIterator, string[] saveNotes)
     {
         if (name == attachedNPC)
@@ -125,11 +135,13 @@ public class NPCTracker : MonoBehaviour
         }
     }
 
+    // Get the continer the tracker is currently on
     public DialogueContainerSO GetCurrentContainer()
     {
         return Dialogues[dialogueIterator].Container;
     }
 
+    // Get the interrogation container the tracker is currently on
     public DialogueContainerSO GetCurrentInterContainer()
     {
         int currentItterator = interrogationIterator;

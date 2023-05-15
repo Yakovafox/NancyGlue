@@ -24,8 +24,6 @@ namespace Dialogue.Elements
                 Text = "New Option"
             };
 
-            //extensionContainer.style.backgroundColor = new Color(79f / 255f, 29f / 255f, 80f / 255f);
-
             Options.Add(optionData);
         }
 
@@ -33,6 +31,7 @@ namespace Dialogue.Elements
         {
             base.Draw();
 
+            // Button to add new options
             Button addOption = DialogueElementUtility.CreateButton("Add Option", () =>
             {
                 ChoiceSaveData optionData = new ChoiceSaveData()
@@ -73,6 +72,7 @@ namespace Dialogue.Elements
 
             ChoiceSaveData choiceData = (ChoiceSaveData) userData;
 
+            // Add a removal button for added options
             Button deleteOption = DialogueElementUtility.CreateButton("X", () =>
             {
                 if (Options.Count == 1)
@@ -93,10 +93,10 @@ namespace Dialogue.Elements
 
             TextField optionText = DialogueElementUtility.CreateLimitedTextField(choiceData.Text, 15, null, callback => 
             {
-                //if (callback.newValue.Length >= 15) callback.newValue.Substring(0,15);
                 choiceData.Text = callback.newValue;
             });
 
+            // Add style sheet formatting
             optionText.AddToClassList("dialogue-node__textfield_hidden");
             optionText.AddToClassList("dialogue-node__textfield_hidden:textfield");
             optionText.AddToClassList("dialogue-node__textfield_hidden:hidden");

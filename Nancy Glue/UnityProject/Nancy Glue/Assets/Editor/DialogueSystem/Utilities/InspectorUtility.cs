@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Dialogue.Utilities
 {
-    
+    // Utility for drawing fields in the inspector
     public static class InspectorUtility
     {
         public static void DrawDisabledFields(Action action)

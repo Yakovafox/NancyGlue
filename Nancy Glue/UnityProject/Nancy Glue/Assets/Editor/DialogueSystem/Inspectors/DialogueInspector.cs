@@ -59,6 +59,7 @@ namespace Dialogue.Inspectors
 
             DialogueContainerSO dialogueContainer = (DialogueContainerSO) dialogueContainerProperty.objectReferenceValue;
 
+            // If there's no contianer then we can't show what it contains
             if (dialogueContainer == null)
             {
                 StopDrawing("Select a dialogue container to see the rest of the inspector");
@@ -66,6 +67,7 @@ namespace Dialogue.Inspectors
                 return;
             }
 
+            // Draw filter area to allow the application of seacrh filters
             DrawFiltersArea();
 
             bool currentStartingDialogueOnlyFilter = startingDialoguesOnlyProperty.boolValue;
@@ -76,6 +78,7 @@ namespace Dialogue.Inspectors
 
             string dialogueInfoMessage;
 
+            // Show selected kind of nodes
             if (groupedDialoguesProperty.boolValue)
             {
                 List<string> dialogueGroupNames = dialogueContainer.GetDialogueGroupNames();
@@ -106,6 +109,7 @@ namespace Dialogue.Inspectors
                 dialogueInfoMessage = "There are no" + (currentStartingDialogueOnlyFilter ? " starting" : "") + " ungrouped dialogues in this container.";
             }
 
+            // If there are no dialogues of the selected type
             if (dialogueNames.Count == 0)
             {
                 StopDrawing(dialogueInfoMessage);
@@ -140,6 +144,7 @@ namespace Dialogue.Inspectors
             InspectorUtility.DrawSpace(4);
         }
 
+        // Draw all relevant fields to the inspector
         private void DrawDialogueGroupArea(DialogueContainerSO dialogueContainer, List<string> dialogueGroupNames)
         {
             InspectorUtility.DrawHeader("Dialogue Group");
@@ -169,6 +174,7 @@ namespace Dialogue.Inspectors
             InspectorUtility.DrawSpace(4);
         }
 
+        // Draw all relevant fields to teh inspector
         private void DrawDialogueArea(List<string> dialogueNames, string dialogueFolderPath)
         {
             InspectorUtility.DrawHeader("Dialogue");
@@ -198,6 +204,7 @@ namespace Dialogue.Inspectors
             InspectorUtility.DrawSpace(4);
         }
 
+        // Draw the node information
         private void DrawUIElements()
         {
             InspectorUtility.DrawHeader("UI Elements");
@@ -210,6 +217,7 @@ namespace Dialogue.Inspectors
 
         }
 
+        // Stop drawing if somethign goes wrong
         private void StopDrawing(string message, MessageType messageType = MessageType.Info)
         {
             InspectorUtility.DrawHelpBox(message, messageType);
