@@ -15,4 +15,4 @@ MonoBehaviour:
   _itemID: 4
   _title: Stuffing
   _description: This fluffy stuffing was found in the Projector.
-  _icon: {fileID: 21300000, guid: 4fef2941b3b034c4ea54e28a6c9abfbb, type: 3}
+  _icon: {fileID: 21300000, guid: 32c5ffe005102b64b87bbcafa9d7a897, type: 3}
