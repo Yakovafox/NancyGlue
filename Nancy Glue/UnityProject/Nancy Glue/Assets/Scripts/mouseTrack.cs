@@ -70,7 +70,7 @@ public class mouseTrack : MonoBehaviour
                 _interactTimer = 0;
                 return;
             }
-            else if (_interactTimer < 0.65f)
+            else if (_interactTimer < 0.7f)
             {
                 return;
             }
