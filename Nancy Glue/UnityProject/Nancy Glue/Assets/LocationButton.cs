@@ -20,15 +20,21 @@ public class LocationButton : MonoBehaviour
         _selectedColor = _button.colors.selectedColor;
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() //updates the colour of the button based on the IsCurrentLocation variable.
     {
         var colors = _button.colors;
         colors.normalColor = IsCurrentLocation ? _selectedColor : _unSelectedColor;
         _button.colors = colors;
     }
 
+    
     public void ButtonClick()
     {
+        /*
+         * when clicked the player is moved to the appropriate starting camera for the location
+         * e.g. bearly pictures moves the player to the main camera between the drive in and the projector room.
+         * marks the location as the active location switching the colour
+         */
         CameraSwitch rootCamera;
         var cameraName = Camera.main.transform.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
         var cameraSwitch = GameObject.Find(cameraName).transform.parent;
@@ -46,24 +52,9 @@ public class LocationButton : MonoBehaviour
             _currentCamera.SwitchActiveCam();
             _targetLocation.SwitchActiveCam();
         }
-
-        /*
-        if (_currentCamera.RootCamera != null)
-        {
-            rootCamera = _currentCamera.RootCamera.GetComponent<CameraSwitch>();
-            if (rootCamera == _targetLocation) return;
-            _currentCamera.SwitchActiveCam();
-            _targetLocation.SwitchActiveCam();
-        }
-        else
-        {
-            if (_currentCamera == _targetLocation) return;
-            _currentCamera.SwitchActiveCam();
-            _targetLocation.SwitchActiveCam();
-        }
-        */
     }
 
+    //public call to check the current location of the player and update the location buttons appropriately
     public void LocationCheck()
     {
         if (IsCurrentLocation) return;

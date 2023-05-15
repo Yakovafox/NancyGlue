@@ -14,8 +14,8 @@ public class ShutterScript : MonoBehaviour
         _shutterHash = Animator.StringToHash("Shutter");
     }
 
-    // Update is called once per frame
-    public void TriggerShutter()
+    //public call to trigger between the Animation states
+    public void TriggerShutter() 
     {
         _animator.SetTrigger(_shutterHash);
     }

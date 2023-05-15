@@ -15,7 +15,7 @@ public class ColourPicker : MonoBehaviour
     [SerializeField] RectTransform Cursor;
     [SerializeField] Image Button;
     [SerializeField] Image cursorColor;
-
+    //handle mouse cursor colour selection
     public void PickColour(BaseEventData data)
     {
         PointerEventData pointer = data as PointerEventData;
@@ -23,7 +23,7 @@ public class ColourPicker : MonoBehaviour
         Cursor.position = pointer.position;
 
         Color pickedColor = colourChart.GetPixel((int)(Cursor.localPosition.x * (colourChart.width / transform.GetChild(0).GetComponent<RectTransform>().rect.width)), (int)(Cursor.localPosition.y * (colourChart.height / transform.GetChild(0).GetComponent<RectTransform>().rect.height)));
-        Debug.Log(pickedColor);
+        
         Button.color = pickedColor;
         cursorColor.color = pickedColor;
         ColourPickerEvent.Invoke(pickedColor);

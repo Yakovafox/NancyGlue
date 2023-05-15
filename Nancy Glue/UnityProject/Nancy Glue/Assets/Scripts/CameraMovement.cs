@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
     public float AngleY { get => _angleY; set => _angleY = value; }
     
 
-    private void Awake()
+    private void Awake() //find and store components needed for the script
     {
         _cameraTransform = GetComponent<Transform>();
         _virtualCam = GetComponent<CinemachineVirtualCamera>();
@@ -50,17 +50,20 @@ public class CameraMovement : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    void Start() //assigns values to specific variables.
     {
-        _screenBounds = new Vector2(Screen.width - _screenBuffer, Screen.height - _screenBuffer);
+        _screenBounds = new Vector2(Screen.width - _screenBuffer, Screen.height - _screenBuffer); //bounds will change based on the screen resolution.
         _isRoot = _rootCamera == null;
+        
+        //Stores the min and max values for the camera rotations.
         _cameraXMin = _initialRotation.x - _xRotLimit;
         _cameraXMax = _initialRotation.x + _xRotLimit;
         _cameraYMin = _initialRotation.y - _yRotLimit;
         _cameraYMax = _initialRotation.y + _yRotLimit;
         _angleX = _initialRotation.x;
         _angleY = _initialRotation.y;
-        if (_dollyCam != null)
+
+        if (_dollyCam != null) //assign values for track and dolly camera when marked as one.
         {
             _dollyMin = _dollyCam.m_Path.MinPos;
             _dollyMax = _dollyCam.m_Path.MaxPos;
@@ -74,9 +77,14 @@ public class CameraMovement : MonoBehaviour
         CheckBounds();
     }
 
-    private void CheckBounds()
+
+    /*
+     * Check if the player is meeting conditions for moving the camera
+     * Player can move the cursor to the edge of the screen or use WASD.
+     */
+    private void CheckBounds() 
     {
-        if (LockMovement()) return;
+        if (LockMovement()) return; //guard clause to prevent camera movement when set to be locked.
         _mousePos = Input.mousePosition;
         _lookLeft = _mousePos.x < _screenBuffer || Input.GetKey(KeyCode.A) ? true : false;
         _lookRight = _mousePos.x > _screenBounds.x || Input.GetKey(KeyCode.D) ? true : false;
@@ -105,7 +113,7 @@ public class CameraMovement : MonoBehaviour
         return offset;
     }
 
-    private void LeftRightTrack()
+    private void LeftRightTrack() //Moves the camera along the dolly path when the left and right conditions are met. camera can be rotated up/down on the x axis when looking up or down. 
     {
         if (_lookLeft && !_lookRight)
         {
@@ -119,7 +127,6 @@ public class CameraMovement : MonoBehaviour
             _dollyCurrent = Mathf.Clamp(_dollyCurrent, _dollyMin, _dollyMax);
             _dollyCam.m_PathPosition = _dollyCurrent;
         }
-        //Debug.Log(_targetOffsetZ);
         if (_lookUp)
             _targetOffsetY = SetOffset(_targetOffsetY, 1);
         else if (_lookDown)
@@ -127,7 +134,7 @@ public class CameraMovement : MonoBehaviour
         _virtualCam.GetCinemachineComponent<CinemachineComposer>().m_TrackedObjectOffset.y = _targetOffsetY;
     }
 
-    private void ForwardBackTrack()
+    private void ForwardBackTrack() //Moves the camera forward/back along the dolly path. 
     {
         if (_lookUp && !_lookDown)
         {
@@ -142,7 +149,8 @@ public class CameraMovement : MonoBehaviour
             _dollyCam.m_PathPosition = _dollyCurrent;
         }
     }
-    private void RotateLeftRight()
+
+    private void RotateLeftRight() //Rotate the camera left or right when conditions are met
     {
         if (!_lookLeft && !_lookRight) return;
         switch(_lookLeft)
@@ -158,7 +166,7 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
-    private void RotateUpDown()
+    private void RotateUpDown() //Rotate the camera up or down when conditions are met
     {
         if (!_lookUp && !_lookDown) return;
         switch (_lookUp)
@@ -174,7 +182,7 @@ public class CameraMovement : MonoBehaviour
         }
     }
 
-    private void Rotate(int x, int y)
+    private void Rotate(int x, int y) //Rotates the camera in desired direction based on X/Y inputs. Clamps the angle between the min and max rotation before applying euler angles.
     {
         if (x != 0)
             _angleX = AngleClamp(x, _angleX, _cameraXMin, _cameraXMax);
@@ -184,42 +192,35 @@ public class CameraMovement : MonoBehaviour
         _cameraTransform.eulerAngles = new Vector3(_angleX, _angleY, 0);
     }
 
-    private float AngleClamp(int axisDirection, float axisAngle, float clampMin, float clampMax)
+    private float AngleClamp(int axisDirection, float axisAngle, float clampMin, float clampMax) //Clamps the input axisAngle to the defined clampMin clampMax
     {
         axisAngle += (axisDirection * _turnSpeed) * Time.deltaTime;
         axisAngle = Mathf.Clamp(axisAngle, clampMin, clampMax);
         return axisAngle;
     }
 
-    private bool LockMovement()
+    private bool LockMovement() //return true if the dialogue box or UI is open.
     {
         var uiOpen = _uiScript.IsOpen || _dialogueBox.activeSelf;
         
         return uiOpen;
     }
 
-    private void OnEnable()
+    private void OnEnable() //Reset the camera to the initial 
     {
         _angleX = _initialRotation.x;
         _angleY = _initialRotation.y;
         _cameraTransform.eulerAngles = InitialRotation;
-        
-
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() //Updates the camera sensitivity based on the settings slider.
     {
-        
-
-        if (SLS.sensitivity + 30 == _turnSpeed)
+        if (_turnSpeed != (SLS.sensitivity )*2 + 30)
         {
-            //Debug.Log("no change in sens");
-        }
-        else
-        {
-            //Debug.Log("Sens changed");
+                   
+            
             _turnSpeed = 30 + (SLS.sensitivity)*2;
-            //Debug.Log("Set to "+_turnSpeed);
+            
         }
     }
 

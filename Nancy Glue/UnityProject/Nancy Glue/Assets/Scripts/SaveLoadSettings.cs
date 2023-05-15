@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+
+//saving and loading of settings and preferences 
+
 public class SaveLoadSettings : MonoBehaviour
 {
     public float sfxVolume;
@@ -13,43 +16,29 @@ public class SaveLoadSettings : MonoBehaviour
     public int fontStyle;
     public int isBackgroundEnabled;
     
-
-
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void save()
     {
         PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
-        Debug.Log("sfx vol to save to file "+ sfxVolume);
+        
         PlayerPrefs.SetFloat("musicVolume",musicVolume);
-        Debug.Log("Music vol to save to file " + musicVolume);
+        
         PlayerPrefs.SetString("fontColour", ColorUtility.ToHtmlStringRGB(fontColour));
         PlayerPrefs.SetInt("fontStyle", fontStyle);
         PlayerPrefs.SetString("backgroundColour", ColorUtility.ToHtmlStringRGB(backgroundColour));
         PlayerPrefs.SetInt("isBackgroundEnabled",isBackgroundEnabled);
         PlayerPrefs.SetInt("sensitivity", sensitivity);
-        //Debug.Log("sens to file "+sensitivity);
+        
         PlayerPrefs.Save();
-        Debug.Log("saved settings");//write path later
+        
     }
     public void load()
     {
         
         if (!ColorUtility.TryParseHtmlString("#" + PlayerPrefs.GetString("fontColour"), out fontColour))
         {
-            Debug.Log("font colour not found, loading all defaults");
+            
             Default();
             defaultSettings();
             return;
@@ -64,7 +53,7 @@ public class SaveLoadSettings : MonoBehaviour
 
 
         sfxVolume = PlayerPrefs.GetFloat("sfxVolume",0.555f);
-        Debug.Log("sfx vol loaded from file " + sfxVolume);
+        
 
         musicVolume = PlayerPrefs.GetFloat("musicVolume", 0.555f); 
         

@@ -57,6 +57,7 @@ namespace Dialogue
             for (int i = 0; i < buttons.Length; i++)
             {
                 // Set up buttons
+                // Would have used OnOptionChosen(i) but since i isn't a static value it caused issues
                 if (i == 0)
                 {
                     buttons[i].onClick.AddListener(delegate { OnOptionChosen(0); });
@@ -71,22 +72,27 @@ namespace Dialogue
                 }
             }
 
+            // Find appropriate audio sources
             audioSourceMusic = GameObject.Find("Player").GetComponents<AudioSource>()[0];
             audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         }
 
         private void ShowText()
         {
+            // If we're on a note or location node
             if (currentDialogue.dialogueType != DialogueType.SingleChoice && currentDialogue.dialogueType != DialogueType.MultiChoice) return;
 
+            // Start playing the set audio file
             audioSourceSound.clip = Resources.Load<AudioClip>(currentDialogue.dialogueAudioAssetPath);
             audioSourceSound.Play();
             audioSourceSound.loop = true;
 
-            Debug.Log(characterNameUI);
+            // Update character name and sprite
             characterNameUI.text = currentDialogue.characterName;
             characterPortrait.sprite = Resources.Load<Sprite>(currentDialogue.dialogueSpriteAssetPath);
 
+            // Based on who's talking grey out whoever isn't talking
+            // Also change Nancy's sprite when she's talking
             if (currentDialogue.characterName == "Nancy Glue")
             {
                 characterPortrait.color = fadeColor;
@@ -100,12 +106,13 @@ namespace Dialogue
                 nancyPortrait.sprite = Resources.Load<Sprite>("CharacterSprites/Nancy_sprite_2_colour 1");
             }
 
+            // Enable typewrite text to allow text to slowly appear rather than all at once
             if (isActiveAndEnabled)
             {
                 scrollingText = true;
                 StartCoroutine(TypewriterText(currentDialogue.dialogueText));
             }
-            else 
+            else
             {
                 bodyTextUI.text = currentDialogue.dialogueText;
             }
@@ -114,10 +121,10 @@ namespace Dialogue
             if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
                 for (int i = 0; i < currentDialogue.dialogueChoices.Count; i++)
-                {                                    
+                {
                     try
                     {
-                        buttons[i].enabled = true; 
+                        buttons[i].enabled = true;
                         buttons[i].image.enabled = true;
                         buttons[i].GetComponentInChildren<TMP_Text>().enabled = true;
                         buttons[i].GetComponentInChildren<TMP_Text>().text = $"{i + 1}. " + currentDialogue.dialogueChoices[i].text;
@@ -131,12 +138,16 @@ namespace Dialogue
 
         }
 
+        // Coroutine to typewrite text
         IEnumerator TypewriterText(string text)
         {
+            // Loop trhough each character in the text
             foreach (char letter in text.ToCharArray())
             {
+                // Skip to the end if scrolling is skipped
                 if (!scrollingText) break;
 
+                // Adjust aduio pitch of the audioSourceSound effect to add rudimentary 'speech'
                 float pitchAdjust = UnityEngine.Random.Range(-5, 20) / 10;
                 audioSourceSound.pitch = 1.5f + pitchAdjust;
 
@@ -155,11 +166,12 @@ namespace Dialogue
 
         private void OnOptionChosen(int choiceIndex)
         {
+            // If DisallowMultipleComponent choice set buttons to false before continuing
             if (currentDialogue.dialogueType == DialogueType.MultiChoice)
             {
                 foreach (Button button in buttons)
                 {
-                    button.enabled = false; 
+                    button.enabled = false;
                     button.image.enabled = false;
                     button.GetComponentInChildren<TMP_Text>().enabled = false;
                 }
@@ -167,6 +179,7 @@ namespace Dialogue
 
             DialogueSO nextDialogue = currentDialogue.dialogueChoices[choiceIndex].NextDialogue;
 
+            // If there's no continuing dialogue then exit dialogue
             if (nextDialogue == null)
             {
                 if (tracker != null)
@@ -177,6 +190,7 @@ namespace Dialogue
                 gameObject.SetActive(false);
                 inDialogue = false;
 
+                // Reset the soundtrack
                 AudioClip normalTrack = Resources.Load<AudioClip>("Sfx/Music/Atmosphere_001");
                 if (audioSourceMusic.clip != normalTrack)
                 {
@@ -195,6 +209,7 @@ namespace Dialogue
 
         private void Update()
         {
+            // Allow scroll skipping
             if (scrollingText && Input.anyKeyDown)
             {
                 scrollingText = false;
@@ -280,7 +295,7 @@ namespace Dialogue
                 }
             }
         }
-        
+
         // Setter for the dialogue continer
         // Used when dialogue is called to choose a graph
         public void SetContainer(string containerName, NPCTracker attachedNPC = null)
@@ -294,6 +309,7 @@ namespace Dialogue
             ShowText();
         }
 
+        // Overloaded setter
         public void SetContainer(DialogueContainerSO dialogue, NPCTracker attachedNPC = null)
         {
             dialogueContainer = dialogue;

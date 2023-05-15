@@ -179,7 +179,7 @@ public class GameManager1 : MonoBehaviour
     }
     #endregion
 
-    public void UpdateScene(int target)
+    public void UpdateScene(int target) //add the given item into the players inventory. Find the item with the corresponding ID in world and delete it. remove the item from the game managers list.
     {
         for(var i = 0; i < _evidenceGameObjects.Count; i++)
         {
@@ -417,182 +417,9 @@ public class GameManager1 : MonoBehaviour
         }
     }
 
-    #region IntroductionSegment
-    /*
-    private void IntroductionUpdate()
-    {
-        if (!_introStarted) return;
-        if (_dialogueSystem.gameObject.activeSelf) return;
-        StateSwitch(GameState.DriveInInvestigation, _zoneManager.OfficeCam, _zoneManager.DriveInCam);
-    }
-    */
-    #endregion
-    /*
-    private void DriveInUpdate1()
-    {
-        foreach(var npc in _npcTrackers)
-        {
-            if(npc.gameObject.name == "TedGrizzly")
-            {
-                if(npc.canBeQuestioned)
-                {
-                    _zoneManager.ConfrontedTed = true;
-                    var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
-                    Debug.Log(oldCam);
-                    var oldCamObj = GameObject.Find(oldCam);
-                    var camSwitch = oldCamObj.transform.parent.transform.GetComponent<CameraSwitch>();
-                    StateSwitch(GameState.GrizzlyInterrogation, camSwitch, _zoneManager.OfficeCam);
-                }
-                break;
-            }
-        }
-    }
-
-    private void GrizzlyInterrogation()
-    {
-        if (_dialogueSystem.gameObject.activeSelf) return;
-        if (InterogationFinished)
-            StateSwitch(GameState.SecondDriveInVisit, _zoneManager.OfficeCam, _zoneManager.DriveInCam);
-    }
-
-    private void DriveInUpdate2()
-    {
-        if (!ReelFound) return;
-        var oldCam = Camera.main.gameObject.GetComponent<CinemachineBrain>().ActiveVirtualCamera.Name;
-        Debug.Log(oldCam);
-        var oldCamObj = GameObject.Find(oldCam);
-        var camSwitch = oldCamObj.transform.parent.transform.GetComponent<CameraSwitch>();
-        StateSwitch(GameState.FilmReelFound, camSwitch, _zoneManager.OfficeCam);
-    }
-
-    private void FoundReelUpdate()
-    {
-        if (_dialogueSystem.gameObject.activeSelf) return;
-        if(InterogationFinished)
-            _zoneTransitionCoroutine = StartCoroutine(GameEnd());
-    }
-
-    private void NewStateSetup()
-    {
-        switch(_gameState)
-        {
-            case GameState.Introduction:
-                SetIntroDialogue();
-                break;
-            case GameState.DriveInInvestigation:
-                SetupDriveIn1();
-                break;
-            case GameState.GrizzlyInterrogation:
-                SetupGrizzlyInt();
-                break;
-            case GameState.SecondDriveInVisit:
-                SetupDriveIn2();
-                break;
-            case GameState.FilmReelFound:
-                SetupReelFound();
-                break;
-        }
-    }
-    */
-    #region gameState Setups
-    /*
-    private void SetIntroDialogue()
-    {
-
-        if (_introStarted) return;
-        _dialogueSystem.SetContainer(_AnatolyTracker.GetCurrentContainer());
-        /*
-         for (var i = 0; i < _npcTrackers.Length; i++)
-        {
-            if (_npcTrackers[i].name.Contains("Anatoly"))
-            {
-                _dialogueSystem.SetContainer(_npcTrackers[i].DialogueContainers[0]);
-                break;
-            }
-        }
-        *//*
-        _introStarted = true;
-    }
-
-    private void SetupDriveIn1()
-    {
-        var driveInRootCam = _zoneManager.DriveInCam;
-        var projRoomcam = driveInRootCam.SwitchableCameras[1];
-        projRoomcam.gameObject.SetActive(false);
-        projRoomcam = driveInRootCam.SwitchableCameras[2];
-        projRoomcam.gameObject.SetActive(false);
-    }
-    private void SetupGrizzlyInt()
-    {
-        var Teddy = GameObject.Find("TedGrizzly").transform;
-        var InterrogationSeat = GameObject.Find("SeatLocation").transform;
-        Teddy.transform.position = InterrogationSeat.position;
-        Teddy.transform.eulerAngles = new Vector3(Teddy.eulerAngles.x, InterrogationSeat.eulerAngles.y, Teddy.eulerAngles.z);
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(Teddy.GetComponent<NPCTracker>().GetCurrentInterContainer()));
-    }
-
-    private void SetupDriveIn2()
-    {
-        var driveInRootCam = _zoneManager.DriveInCam;
-        var underCouchCam = driveInRootCam.SwitchableCameras[2];
-        underCouchCam.gameObject.SetActive(true);
-        InterogationFinished = false;
-    }
-    private void SetupReelFound()
-    {
-        _AnatolyTracker.dialogueIterator++;
-        _zoneTransitionCoroutine = StartCoroutine(DialogueStartup(_AnatolyTracker.GetCurrentContainer()));
-    }
-
-    private void StateSwitch(GameState gameState, CameraSwitch oldCam, CameraSwitch newCam)
-    {
-        _gameState = gameState;
-        _zoneTransitionCoroutine = StartCoroutine(ZoneTransition(oldCam, newCam));
-        NewStateSetup();
-    }
-
-    public void EvidenceChecker(Inventory inv)
-    {
-        foreach(var npc in _npcTrackers)
-        {
-            Debug.Log(npc.name);
-            //npc.EvidenceCheck(inv);
-        }
-    }
-
-    public void ReelPickUp(string title)
-    {
-        if (title == "Film Reel")
-            ReelFound = true;
-    }*/
-    /*
-    IEnumerator DialogueStartup(DialogueContainerSO dialogueContainer)
-    {
-        yield return new WaitForSeconds(3f);
-        _dialogueSystem.SetContainer(dialogueContainer, );
-        InterogationFinished = true;
-    }
-    */
-    /*
-    IEnumerator ZoneTransition(CameraSwitch oldCam, CameraSwitch newCam)
-    {
-        _animator.SetTrigger("FadeIn");
-        yield return new WaitForSeconds(1);
-        oldCam.SwitchActiveCam();
-        newCam.SwitchActiveCam();
-        while (Camera.main.GetComponent<CinemachineBrain>().IsBlending)
-        {
-            yield return null;
-
-        }
-        _animator.SetTrigger("FadeOut");
-    }
-    */
-
     IEnumerator FadeTransition()
     {
         yield return new WaitForSeconds(2);
-        //SetIntroDialogue();
     }
 
     IEnumerator GameEnd()
@@ -601,5 +428,4 @@ public class GameManager1 : MonoBehaviour
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("MenuScene");
     }
-#endregion
 }

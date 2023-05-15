@@ -11,7 +11,7 @@ public class Item
     public Sprite icon;
 
     [SerializeField] private ItemScriptableObject _evidenceItem;
-
+    //simple class to contain item data
     public Item(int id, string title, string description)
     {
         this.id = id;
@@ -28,7 +28,7 @@ public class Item
         this.icon = Resources.Load<Sprite>("UI/Sprites/" + item.title);
     }
 
-    public Item(ItemScriptableObject evidenceItem)
+    public Item(ItemScriptableObject evidenceItem) //overload for Item class, implementing scriptable objects.
     {
         id = evidenceItem.ItemID;
         title = evidenceItem.Title;

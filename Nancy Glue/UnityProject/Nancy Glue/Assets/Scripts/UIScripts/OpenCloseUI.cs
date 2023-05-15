@@ -37,7 +37,7 @@ public class OpenCloseUI : MonoBehaviour
     private Transform _setTab;
     private Transform _closeTab;
 
-    //public FontManager fontManager;
+    
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -47,17 +47,7 @@ public class OpenCloseUI : MonoBehaviour
 
         _closeTabAnim = transform.GetChild(0).GetComponent<Animator>();
         _closeTabAnim.SetBool(_hiddenByDefaultHash, true);
-        /*
-        _invTabAnim = transform.GetChild(4).GetComponent<Animator>();
-        _susTabAnim = transform.GetChild(3).GetComponent<Animator>();
-        _locTabAnim = transform.GetChild(2).GetComponent<Animator>();
-        _setTabAnim = transform.GetChild(1).GetComponent<Animator>();
-
-        _invTabAnim.SetBool(_hiddenByDefaultHash, false);
-        _susTabAnim.SetBool(_hiddenByDefaultHash, false);
-        _locTabAnim.SetBool(_hiddenByDefaultHash, false);
-        _setTabAnim.SetBool(_hiddenByDefaultHash, false);
-        */
+        
         _closeTab= transform.GetChild(0);
         _invTab= transform.GetChild(4);
         _susTab= transform.GetChild(3);
@@ -71,12 +61,12 @@ public class OpenCloseUI : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    private void FixedUpdate() //check if the ui should be hidden or not
     {
         HideUnHideUI();
     }
 
-    public void InventoryClicked()
+    public void InventoryClicked() //opens the inventory page
     {
         OpenUI();
 
@@ -98,37 +88,11 @@ public class OpenCloseUI : MonoBehaviour
         _controlsPage.SetActive(false);
         _accesiPage.SetActive(false);
 
-        /*
-        switch (_invHidden)
-        {
-            case false when _susHidden:
-                _susHidden = false;
-                openCloseTab(_susTabAnim);
-                _invHidden = true;
-                openCloseTab(_invTabAnim);
-                break;
-            case false when _locHidden:
-                _locHidden = false;
-                openCloseTab(_locTabAnim);
-                _invHidden = true;
-                openCloseTab(_invTabAnim);
-                break;
-            case false when _setHidden:
-                _setHidden = false;
-                openCloseTab(_setTabAnim);
-                _invHidden = true;
-                openCloseTab(_invTabAnim);
-                break;
-            case false:
-                _invHidden = true;
-                openCloseTab(_invTabAnim);
-                break;
-        }
-        */
+        
         
     }
 
-    public void LocationClicked()
+    public void LocationClicked() //opens the locations page
     {
         OpenUI();
 
@@ -147,36 +111,10 @@ public class OpenCloseUI : MonoBehaviour
         _blankPage.SetActive(false);
         _controlsPage.SetActive(false);
         _accesiPage.SetActive(false);
-        /*
-        switch (_locHidden)
-        {
-            case false when _susHidden:
-                _susHidden = false;
-                openCloseTab(_susTabAnim);
-                _locHidden = true;
-                openCloseTab(_locTabAnim);
-                break;
-            case false when _invHidden:
-                _locHidden = true;
-                openCloseTab(_locTabAnim);
-                _invHidden = false;
-                openCloseTab(_invTabAnim);
-                break;
-            case false when _setHidden:
-                _setHidden = false;
-                openCloseTab(_setTabAnim);
-                _locHidden = true;
-                openCloseTab(_locTabAnim);
-                break;
-            case false:
-                _locHidden = true;
-                openCloseTab(_locTabAnim);
-                break;
-        }
-        */
+        
     }
 
-    public void SuspectClicked()
+    public void SuspectClicked() //opens the suspects page
     {
         OpenUI();
 
@@ -195,36 +133,10 @@ public class OpenCloseUI : MonoBehaviour
         _blankPage.SetActive(false);
         _controlsPage.SetActive(false);
         _accesiPage.SetActive(false);
-        /*
-        switch (_susHidden)
-        {
-            case false when _invHidden:
-                _susHidden = true;
-                openCloseTab(_susTabAnim);
-                _invHidden = false;
-                openCloseTab(_invTabAnim);
-                break;
-            case false when _locHidden:
-                _locHidden = false;
-                openCloseTab(_locTabAnim);
-                _susHidden = true;
-                openCloseTab(_susTabAnim);
-                break;
-            case false when _setHidden:
-                _setHidden = false;
-                openCloseTab(_setTabAnim);
-                _susHidden = true;
-                openCloseTab(_susTabAnim);
-                break;
-            case false:
-                _susHidden = true;
-                openCloseTab(_susTabAnim);
-                break;
-        }
-        */
+       
     }
 
-    public void SettingsClicked()
+    public void SettingsClicked() //opens the settings page
     {
         OpenUI();
         _invTab.SetSiblingIndex(1);
@@ -243,36 +155,10 @@ public class OpenCloseUI : MonoBehaviour
         _blankPage.SetActive(false);
         _controlsPage.SetActive(false);
         _accesiPage.SetActive(false);
-        /*
-        switch (_setHidden)
-        {
-            case false when _susHidden:
-                _susHidden = false;
-                openCloseTab(_susTabAnim);
-                _setHidden = true;
-                openCloseTab(_setTabAnim);
-                break;
-            case false when _locHidden:
-                _locHidden = false;
-                openCloseTab(_locTabAnim);
-                _setHidden = true;
-                openCloseTab(_setTabAnim);
-                break;
-            case false when _invHidden:
-                _setHidden = true;
-                openCloseTab(_setTabAnim);
-                _invHidden = false;
-                openCloseTab(_invTabAnim);
-                break;
-            case false:
-                _setHidden = true;
-                openCloseTab(_setTabAnim);
-                break;
-        }
-        */
+        
     }
 
-    public void AcessiClicked()
+    public void AcessiClicked() //opens the accessibility menu
     {
         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
@@ -287,7 +173,7 @@ public class OpenCloseUI : MonoBehaviour
         _controlsPage.SetActive(false);
         _accesiPage.SetActive(true);
     }
-    public void controlsClicked()
+    public void controlsClicked() //Opens the controls menu
     {
         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
@@ -306,7 +192,7 @@ public class OpenCloseUI : MonoBehaviour
 
 
 
-    private void OpenUI()
+    private void OpenUI() //Opens the UI
     {
         if (IsOpen) return;
         _animator.SetTrigger("OpenClose");
@@ -320,7 +206,7 @@ public class OpenCloseUI : MonoBehaviour
         }
     }
 
-    public void CloseUI()
+    public void CloseUI() //Closes the UI
     {
         if (!IsOpen) return;
         _animator.SetTrigger("OpenClose");
@@ -339,41 +225,15 @@ public class OpenCloseUI : MonoBehaviour
             openCloseTab(_closeTabAnim);
             _closeHidden = false;
         }
-
-        /*
-        if (_invHidden)
-        {
-            _invHidden = false;
-            openCloseTab(_invTabAnim);
-        }
-        else if (_susHidden)
-        {
-            _susHidden = false;
-            openCloseTab(_susTabAnim);
-        }
-        else if (_locHidden)
-        {
-            _locHidden = false;
-            openCloseTab(_locTabAnim);
-        }
-        else if (_setHidden)
-        {
-            _setHidden = false;
-            openCloseTab(_setTabAnim);
-        }
-        */
-
-
-
     }
 
-    private void openCloseTab(Animator targetTab)
+    private void openCloseTab(Animator targetTab) //Changes the target tab animator trigger
     {
         targetTab.SetTrigger(_HideUIBoolHash);
     }
 
 
-    private void HideUnHideUI()
+    private void HideUnHideUI() //switches between hiding and un-hiding the UI
     {
         IsHidden = _dialogueUI.activeSelf;
         _animator.SetBool(_HideUIBoolHash, IsHidden);

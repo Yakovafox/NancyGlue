@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//save data class
 [System.Serializable]
 public class Save
 {

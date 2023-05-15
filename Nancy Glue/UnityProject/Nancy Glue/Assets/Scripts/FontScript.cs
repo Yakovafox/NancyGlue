@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+//this script makes sure that the font settings are loaded and applied to all relevant elements in the menu
 
 public class FontScript : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class FontScript : MonoBehaviour
         }
 
         SLS = FindObjectOfType<SaveLoadSettings>();
-        //SLS.isBackgroundEnabled = 0;
+        
     }
 
     public void ChangeFonts()
@@ -43,13 +44,13 @@ public class FontScript : MonoBehaviour
                 _dyslexiaTextSelected = false;
                 break;
         }
-        //_dyslexiaTextSelected = _dropDown.value ; //flip boolean
+        
         _activeFontIndex = _dyslexiaTextSelected ? 1 : 0; //switch index value
         for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
         {
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[_dropDown.value]; //specifically for TMP UI text component. 
         }
-        //ChangeText();
+        
         if (_dyslexiaTextSelected)
         {
             SLS.fontStyle = 1;
@@ -92,13 +93,8 @@ public class FontScript : MonoBehaviour
 
     }
 
-    /*private void ChangeText()
-    {
-        var text = _FontEnableButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        text.text = _dyslexiaTextSelected ? "Enabled" : "Disabled";
-
-    }*/
-
+    
+    //load and apply accesibility settings 
     public void loadSettings()
     {
         if(SLS.fontStyle == 1)
@@ -125,7 +121,7 @@ public class FontScript : MonoBehaviour
 
         for (int i = 0; i < diaBackground.Length; i++)
         {
-            //diaBackground[i].SetActive(true);
+            
             if (SLS.isBackgroundEnabled == 1)
             {
                 diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
@@ -134,17 +130,19 @@ public class FontScript : MonoBehaviour
         }
 
 
-        //background colour is more complex
+        // check if background colour is enabled then set it
         if (SLS.isBackgroundEnabled == 1)
         {
             for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
             {
                 _BackGroundGameObjectsGUI[i].SetActive(true);
                 _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
-                Debug.Log("setting background");
+                
             }
         }
     }
+
+    //reset to defaults
     public void reset()
     {
         _dropDown.value = 0;
@@ -162,7 +160,7 @@ public class FontScript : MonoBehaviour
             
             _BackGroundGameObjectsGUI[i].GetComponent<Image>().color = SLS.backgroundColour;
             _BackGroundGameObjectsGUI[i].SetActive(false);
-            Debug.Log("resetting background");
+            
         }
         for (var i = 0; i < diaBackground.Length; i++)
         {

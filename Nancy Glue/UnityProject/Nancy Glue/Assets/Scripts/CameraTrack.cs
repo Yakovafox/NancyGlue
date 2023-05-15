@@ -15,26 +15,24 @@ public class CameraTrack : MonoBehaviour
 
     public void OnLoadGame(string targetName)
     {
-        //Load from file.
+        //Load last camera, switch off all cameras and turn on the loaded one
         foreach (var camera in _cameraScripts)
         {
-            //camera.gameObject.SetActive(true);
+            
             if (camera.ActiveCam)
             {
                 camera.SwitchActiveCam();
-                Debug.Log(camera.gameObject + ": " + camera.gameObject.activeSelf);
+                
                 break;
             }
         }
         var target = _cameraScripts.FirstOrDefault(obj => obj.name == targetName);
         target.SwitchActiveCam();
-        Debug.Log("TargetCam: " + target.gameObject + ": " + target.gameObject.activeSelf);
-        foreach (var camera in _cameraScripts)
-            Debug.Log(camera.gameObject + ": " + camera.gameObject.activeSelf);
+        
     }
     public void OnSaveGame()
     {
-        //Pull what camera is currently active.
+        //Pull what camera is currently active for saving
 
         foreach (var camera in _cameraScripts)
         {

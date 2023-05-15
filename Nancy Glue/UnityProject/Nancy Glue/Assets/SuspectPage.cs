@@ -15,51 +15,6 @@ public class SuspectPage : MonoBehaviour
         SLGS = GameObject.FindObjectOfType<SaveLoadGameState>();
     }
 
-    /*
-    private void Start()
-    {
-        if (NewOrLoad.isLoad)
-        {
-            //for
-
-
-            //check if there are items in the saved inv 
-            SLGS.Load();
-            if (IsNullOrEmpty(SLGS.suspectPage.SuspectNames))
-            {
-                //if empty then we're good
-                Debug.Log("loaded sus list is empty");
-            }
-            else
-            {
-                Debug.Log("loaded sus list is not empty");
-                var susEmptyText = GameObject.Find("BlankTextSuspect");
-                if (susEmptyText != null && susEmptyText.activeSelf)
-                    susEmptyText.SetActive(false);
-
-
-                //SuspectNames=SLGS.
-                //load suspects into UI
-                for (int i = 0; i < SLGS.suspectPage.SuspectNames.Length; i++)
-                {
-                    tracker = GameObject.Find(SLGS.suspectPage.SuspectNames[i]).GetComponent<NPCTracker>();
-
-                    var Suspect = Instantiate(SuspectPrefab, transform.GetChild(0));
-                    Suspect.GetComponent<SuspectMugshot>().SetData(tracker.CharName, tracker.CharacterSprite);
-                    Suspect.name = Suspect.GetComponent<SuspectMugshot>().Name;
-                    Suspect.GetComponent<SuspectMugshot>()._npcTracker = tracker;
-                    tracker.SpokenTo = true;
-                    suspectList.Add(SLGS.suspectPage.SuspectNames[i]);
-                    Debug.Log("loaded suspect " + SLGS.suspectPage.SuspectNames[i]);
-                }
-
-
-
-            }
-        }
-    }
-    */
-
     public void LoadSuspectPage()
     {
         if (IsNullOrEmpty(SuspectNames))

@@ -4,9 +4,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//this script makes sure that the font settings are loaded and applied to all relevant elements in the game
+
 public class FontManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public SaveLoadSettings SLS;
     [SerializeField] private TMP_FontAsset[] _fonts = new TMP_FontAsset[2];
     [SerializeField] public GameObject[] _TMPGameObjectsGUI;
@@ -23,15 +26,11 @@ public class FontManager : MonoBehaviour
     {
         load();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    //load settings
     public void load()
     {
-        Debug.Log("loading settings into dialogue");
+        
         SLS.load();
         //font set
         if (SLS.fontStyle == 1)
@@ -50,13 +49,13 @@ public class FontManager : MonoBehaviour
         //colour set
         for (var i = 0; i < _TMPGameObjectsGUI.Length; i++)
         {
-            //Debug.Log("target colour" + SLS.fontColour);
+            
             _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color = SLS.fontColour;
-            //Debug.Log("setting colour to" + _TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().color);
+            
         }
-        //background set
+        
 
-        //dia background is always enabled
+        //dia background is always enabled while using the same colour as the optional background
         for (int i = 0; i < diaBackground.Length; i++)
         {
             //diaBackground[i].SetActive(true);
@@ -64,13 +63,10 @@ public class FontManager : MonoBehaviour
             {
                 diaBackground[i].GetComponent<Image>().color = SLS.backgroundColour;
             }
-            //else
-            {
-            //    diaBackground[i].GetComponent<Image>().color = Color.white;
-            }
-           // Debug.Log("dia background " + i + "set");
+            
+           
         }
-
+        //check if enabled + set
         if (SLS.isBackgroundEnabled == 1)
         {
             for (var i = 0; i < _BackGroundGameObjectsGUI.Length; i++)
@@ -97,7 +93,7 @@ public class FontManager : MonoBehaviour
 
         
 
-        //Debug.Log("1");
+        
         load();
     }
 

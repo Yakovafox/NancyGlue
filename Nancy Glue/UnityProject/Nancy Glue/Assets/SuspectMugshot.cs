@@ -28,18 +28,16 @@ public class SuspectMugshot : MonoBehaviour
         _tmpText = GetComponentInChildren<TextMeshProUGUI>();
         _mainPage = transform.parent.parent.gameObject;
         _detailMugshot = transform.parent.parent.parent.GetChild(0).GetChild(1);
-        _detailPage = transform.parent.parent.parent.GetChild(0).gameObject; //this is gross and I hate myself
+        _detailPage = transform.parent.parent.parent.GetChild(0).gameObject;
         _interrogateButton = _detailPage.transform.GetChild(3).gameObject;
         _interrogateButtonScript = _interrogateButton.GetComponent<InterrogateButtonScript>();
 
-        for (int i = 1; i < 4; i++)
+        for (int i = 1; i < 4; i++) //assign the note objects
         {
-            _detailNotes.Add(_detailPage.transform.GetChild(0).GetChild(i).GetComponent<TextMeshProUGUI>());//so is this
-            //_detailNote2 = _detailPage.transform.GetChild(0).GetChild(2).GetComponent<TextMeshProUGUI>();//and this
-            //_detailNote3 = _detailPage.transform.GetChild(0).GetChild(3).GetComponent<TextMeshProUGUI>();//fml
+            _detailNotes.Add(_detailPage.transform.GetChild(0).GetChild(i).GetComponent<TextMeshProUGUI>());
         }
     }
-    public void SetData(string name, Sprite mugshot)
+    public void SetData(string name, Sprite mugshot) //sets the character data for the mugshot
     {
         Name = name;
         MugshotSprite = mugshot;
@@ -48,11 +46,13 @@ public class SuspectMugshot : MonoBehaviour
     }
     public void Clicked()
     {
+        //play sound effect
         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];
         audioSourceSound.clip = Resources.Load<AudioClip>("Sfx/SoundEffects/Paper/Paper_Shuffle_001");
         audioSourceSound.pitch = 1.2f;
         audioSourceSound.Play();
 
+        //disable the main page and enable the details page, set the details page mugshot to the suspects mugshot.
         _mainPage.SetActive(!_mainPage.activeSelf);
         _detailPage.SetActive(!_detailPage.activeSelf);
         _detailMugshot.GetChild(0).GetChild(0).GetComponent<Image>().sprite = MugshotSprite;
@@ -70,12 +70,12 @@ public class SuspectMugshot : MonoBehaviour
             _interrogateButton.SetActive(false);
         }
 
-        if (_npcTracker.Notes.Count == 0)
+        if (_npcTracker.Notes.Count == 0) //set the notes to blank if the character has no notes
         {
             foreach (var details in _detailNotes)
                 details.text = "";
         }
-        else
+        else //otherwise store each note on the page.
         {
             for (int i = 0; i < _npcTracker.Notes.Count; i++)
             {

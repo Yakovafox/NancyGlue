@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour
     public SaveLoadGameState SLGS;
     public GameManager1 gameManager;
     
-    //public UIInventory inventoryUI;
+    
 
     private void Awake()
     {
@@ -27,25 +27,8 @@ public class Inventory : MonoBehaviour
         
     }
 
-    /*
-    void Start()
-    {
-        if (NewOrLoad.isLoad == true)
-        {
-            SLGS.Load();
-            //go through savedIDs
-            for (int i = 0; i < savedIDs.Length; i++)
-            {
-                LoadInv(savedIDs[i]);
-            }
-        }
-        else
-            resetInv();
 
-
-    }
-    */
-
+    //load inv from save
     public void LoadInventory()
     {
         for (int i = 0; i < savedIDs.Length; i++)
@@ -53,35 +36,24 @@ public class Inventory : MonoBehaviour
             LoadInv(savedIDs[i]);
         }
     }
-
+    //remove loaded in items from scene
     private void LoadInv(int id)
     {
         gameManager.UpdateScene(id);
     }
-
+    //add item to inv by id
     public void GiveItem(int id)
     {
-        //check if item is already in inv
-
         
-        /*
-        foreach (Item item in characterItems)
-        {
-            if (item.id == id)
-            {
-                return;
-            }
-        }
-        */
-        //if not
         Item itemToAdd = itemDatabase.GetItem(id);
         characterItems.Add(itemToAdd);
-        Debug.Log("added item to characterItems");
+        
         invUI.addItemToUI(itemToAdd);
-        Debug.Log("Added item: " + itemToAdd.title);
-        Debug.Log("remove item from scene");
+        
+        
     }
 
+    //add item to inv by name
     public void GiveItem(string itemName)
     {
         //check if item is already in inv
@@ -97,14 +69,14 @@ public class Inventory : MonoBehaviour
         Item itemToAdd = itemDatabase.GetItem(itemName);
         characterItems.Add(itemToAdd);
         invUI.addItemToUI(itemToAdd);
-        Debug.Log("Added item: " + itemToAdd.title);
+        
     }
-
+    // check for item in inv by id
     public Item CheckForItem(int id)
     {
         return characterItems.Find(item => item.id == id);
     }
-
+    //remove item from inv by id
     public void RemoveItem(int id)
     {
         Item itemToRemove = CheckForItem(id);
@@ -115,7 +87,7 @@ public class Inventory : MonoBehaviour
             Debug.Log("Removed item: " + itemToRemove.title);
         }
     }
-
+    //wipe inv
     public void resetInv()
     {
         characterItems.Clear();
@@ -129,8 +101,8 @@ public class Inventory : MonoBehaviour
 
 
 
-    
-   
+
+    //prepare inv for save
     public void SaveInv()
     {
         savedIDs = characterItems.Select(x => x.id).ToArray();

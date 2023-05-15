@@ -9,7 +9,7 @@ public class SpriteSwap : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void Update()
+    private void Update() 
     {
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         RaycastHit hit;

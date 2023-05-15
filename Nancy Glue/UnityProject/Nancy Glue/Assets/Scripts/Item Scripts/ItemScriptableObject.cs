@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item",menuName = "Evidence Item")]
 public class ItemScriptableObject : ScriptableObject
 {
+    //Easier way to store new evidence items, adding IDs, titles, descriptions and a corresponding icon.
     [SerializeField] private int _itemID;
     public int ItemID => _itemID;
     [SerializeField] private string _title;

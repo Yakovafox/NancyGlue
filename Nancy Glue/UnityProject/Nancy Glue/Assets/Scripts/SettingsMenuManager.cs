@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Audio;
-
+//this script manages settings in the main menu
 public class SettingsMenuManager : MonoBehaviour
 {
     public Button back;
@@ -19,22 +19,21 @@ public class SettingsMenuManager : MonoBehaviour
     public TMP_Text sfxVolSliderValue;
 
 
-    //public int sliderVal;
     private void Awake()
     {
         SLS = FindObjectOfType<SaveLoadSettings>();
         firstLoad();
-        //SLS.load();
+        
         load();
     }
-    // Start is called before the first frame update
+    //add listeners to buttons
     void Start()
     {
         back.onClick.AddListener(saveSettings);
         reset.onClick.AddListener(resetSettings);
         
     }
-
+    //reset to default
     void resetSettings()
     {
         SLS.defaultSettings();
@@ -53,17 +52,14 @@ public class SettingsMenuManager : MonoBehaviour
 
     void load()
     {
-       
-        //Debug.Log("loaded sens" + SLS.sensitivity);
-        
+        //load settings
+
         sensSlider.value = SLS.sensitivity;
-        Debug.Log("set sens slider to" + sensSlider.value);
+        
         volSlider.value = (SLS.musicVolume);
-        Debug.Log("set vol slider to" + volSlider.value);
-        //Debug.Log("Loaded music volume "+(SLS.musicVolume));
+        
+        
         sfxVolSlider.value = SLS.sfxVolume;
-        Debug.Log("set sfx slider to" + sfxVolSlider.value);
-        //Debug.Log("Loaded SFX volume "+(SLS.sfxVolume));
        
 
     }
@@ -72,29 +68,17 @@ public class SettingsMenuManager : MonoBehaviour
     {
         sliderValue.text = sensSlider.value.ToString();
          
-        //mixer.SetFloat("musicVol", Mathf.Log10(volSlider.value) * 20);
-        
         volSliderValue.text = Mathf.RoundToInt((volSlider.value)*100).ToString();
 
-        //mixer.SetFloat("SFXVol", Mathf.Log10(sfxVolSlider.value) * 20);
         sfxVolSliderValue.text= Mathf.RoundToInt((sfxVolSlider.value) * 100).ToString();
+        
         mixer.SetFloat("SFXVol", Mathf.Log10(volSlider.value) * 20);
         mixer.SetFloat("musicVol", Mathf.Log10(volSlider.value) * 20);
+
+        //update values 
     }
 
-    public void mVolChanged()
-    {
-        mixer.SetFloat("musicVol", Mathf.Log10(volSlider.value) * 20);
-    }
-
-    public void sfxVolChanged()
-    {
-        mixer.SetFloat("SFXVol", Mathf.Log10(sfxVolSlider.value) * 20);
-    }
-
-
-
-
+    
 
     void saveSettings()
     {

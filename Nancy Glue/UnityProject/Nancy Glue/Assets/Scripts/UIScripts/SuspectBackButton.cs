@@ -15,6 +15,7 @@ public class SuspectBackButton : MonoBehaviour
         _detailPage = transform.parent.gameObject;
     }
 
+    //closes the Suspect detail page and returns the UI to the main Suspects page.
     public void Clicked()
     {
         AudioSource audioSourceSound = GameObject.Find("Player").GetComponents<AudioSource>()[1];

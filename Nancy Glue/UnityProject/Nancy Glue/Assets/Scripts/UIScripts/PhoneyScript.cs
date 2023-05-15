@@ -10,7 +10,7 @@ public class PhoneyScript : MonoBehaviour
     [SerializeField] private DialogueContainerSO[] _helpContainers;
     [SerializeField] private DialogueSystem _dialogueSystem;
 
-    public void GetHelpDialogue()
+    public void GetHelpDialogue() 
     {
         _dialogueSystem.SetContainer(_helpContainers[helpTracker]);
     }

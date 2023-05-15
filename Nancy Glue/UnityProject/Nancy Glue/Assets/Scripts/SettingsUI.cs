@@ -6,6 +6,8 @@ using TMPro;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
+//this script manages settings menu buttons and sliders in game
+
 public class SettingsUI : MonoBehaviour
 {
     public Button reset;
@@ -24,7 +26,7 @@ public class SettingsUI : MonoBehaviour
     public Button accesibility;
     public Button controls;
     public OpenCloseUI OCUI;
-    // Start is called before the first frame update
+    //button listeners
     void Start()
     {
         
@@ -35,10 +37,6 @@ public class SettingsUI : MonoBehaviour
         accesibility.onClick.AddListener(Accesibility);
         controls.onClick.AddListener(Controls);
         
-        
-
-
-
 
     }
 
@@ -75,17 +73,14 @@ public class SettingsUI : MonoBehaviour
        
     }
 
-    
+    //update slider values
 
     private void FixedUpdate()
     {
         sliderValue.text = sensSlider.value.ToString();
         volSliderValue.text = Mathf.RoundToInt((volSlider.value) * 100).ToString();
         sfxVolSliderValue.text = Mathf.RoundToInt((sfxVolSlider.value) * 100).ToString();
-
-
-
-
+        
 
     }
 
@@ -99,18 +94,12 @@ public class SettingsUI : MonoBehaviour
     {
         //pull settings from SLS
         
-        Debug.Log("loaded sens ui " + SLS.sensitivity);
+        
         sensSlider.value = SLS.sensitivity;
         volSlider.value = (SLS.musicVolume);
        
-        //mVolChanged();
-        Debug.Log("Loaded music volume ui " + (SLS.musicVolume));
         sfxVolSlider.value = SLS.sfxVolume;
         
-        //sfxVolChanged();
-        Debug.Log("Loaded SFX volume ui " + (SLS.sfxVolume));
-
-
 
     }
 
@@ -138,7 +127,7 @@ public class SettingsUI : MonoBehaviour
         save();
         SLS.save();
         SLGS.SaveGame();
-        Debug.Log("game saved to " + Application.persistentDataPath);
+        
         SceneManager.LoadScene("MenuScene", LoadSceneMode.Single);
     }
 
@@ -147,7 +136,7 @@ public class SettingsUI : MonoBehaviour
         save();
         SLS.save();
         SLGS.SaveGame();
-        Debug.Log("game saved to " + Application.persistentDataPath);
+        
        
     }
 
@@ -157,7 +146,7 @@ public class SettingsUI : MonoBehaviour
         save();
         SLS.save();
         SLGS.SaveGame();
-        Debug.Log("game saved to " + Application.persistentDataPath);
+        
         Application.Quit();
     }
 }

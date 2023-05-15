@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+//this script is for the accessibility menu in game, v similar to font script 
+
 public class AccesiInGame : MonoBehaviour
 {
     public Button back;
     public OpenCloseUI OCUI;
-    //public SaveLoadSettings SLS;
+    
     public FontManager fontManager;
     public Button reset;
     [SerializeField] private TMP_Dropdown _dropDown;
@@ -23,7 +26,7 @@ public class AccesiInGame : MonoBehaviour
     private void Awake()
     {
         OCUI = FindObjectOfType<OpenCloseUI>();
-        //SLS = FindObjectOfType<SaveLoadSettings>();
+        
         fontManager = FindObjectOfType<FontManager>();
         _dropDown = FindObjectOfType<TMP_Dropdown>();
     }
@@ -45,13 +48,13 @@ public class AccesiInGame : MonoBehaviour
                 _dyslexiaTextSelected = false;
                 break;
         }
-        //_dyslexiaTextSelected = _dropDown.value ; //flip boolean
+        
         _activeFontIndex = _dyslexiaTextSelected ? 1 : 0; //switch index value
         for (var i = 0; i < fontManager._TMPGameObjectsGUI.Length; i++)
         {
             fontManager._TMPGameObjectsGUI[i].GetComponent<TextMeshProUGUI>().font = _fonts[_dropDown.value]; //specifically for TMP UI text component. 
         }
-        //ChangeText();
+       
         if (_dyslexiaTextSelected)
         {
             fontManager.SLS.fontStyle = 1;

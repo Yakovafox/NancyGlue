@@ -28,7 +28,6 @@ public class CameraSwitch : MonoBehaviour
         _myMeshRenderer = GetComponent<MeshRenderer>();
         _myCollider = GetComponent<Collider>();
         _cameraTransform = transform.GetChild(0);
-        //_returnTooltip = GameObject.Find("CameraReturnPrompt");
     }
     void Start()
     {
@@ -39,6 +38,12 @@ public class CameraSwitch : MonoBehaviour
 
     public void SwitchActiveCam()
     {
+        /*
+         * switches the active camera in the game.
+         * Sets appropriate camera icon for dolly cameras and stationary cameras
+         * Disables or enables the camera appropriately to match the Active camera bool
+         */
+        
         _activeCam = !_activeCam;
 
         var cameraOnDolly = _cameraTransform.GetComponent<CameraMovement>().OnDolly;

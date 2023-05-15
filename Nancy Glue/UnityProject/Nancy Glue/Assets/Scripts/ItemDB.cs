@@ -26,10 +26,6 @@ public class ItemDB : MonoBehaviour
         return items.Find(item => item.title == itemName);
     }
 
-    
-
-
-    
     void BuildDB()
     {
         items = new List<Item>();
@@ -38,22 +34,6 @@ public class ItemDB : MonoBehaviour
         {
             items.Add(new Item(data.EvidenceItem));
         }
-        /*
-        var newItems = GameObject.FindGameObjectsWithTag("Evidence");
-        foreach (var item in newItems)
-        {
-            var itemScript = item.GetComponent<ItemData>();
-            items.Add(new Item(itemScript.EvidenceItem));
-        }
         
-        items = new List<Item>() {
-            new Item(0, "item_chalkline", "Chalkline desc"),
-            new Item(1,"item_crown", "It's a crown!"),
-            new Item(2,"item_reel", "It's a reel!"),
-            new Item(3,"item_slime_2", "It's slime!"),
-            new Item(4,"item_stuffing", "It's stuffing!")
-            
-        };
-        */
     }
 }

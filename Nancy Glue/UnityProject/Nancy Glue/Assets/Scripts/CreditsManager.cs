@@ -7,16 +7,16 @@ public class CreditsManager : MonoBehaviour
 {
     [SerializeField] private string Menu_Scene;
 
-
+    //if any key is pressed skip back to the main menu
     private void Update()
     {
         if (Input.anyKeyDown)
         {
-            SceneManager.LoadScene(Menu_Scene);
+            MainMenu();
         }
     }
 
-    public void MainMenu()
+    public void MainMenu() //calls for a scene Manager change.
     {
         SceneManager.LoadScene(Menu_Scene);
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class NewOrLoad
 {
-    // Start is called before the first frame update
+    //bool to check if new game option was selected in the main menu
     public static bool isLoad { get; set; }
     
 

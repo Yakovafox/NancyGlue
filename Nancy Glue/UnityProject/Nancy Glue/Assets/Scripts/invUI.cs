@@ -6,6 +6,8 @@ using TMPro;
 using Unity.VisualScripting;
 using System;
 
+//this script keeps the player inventory UI up top to date with the player inventory
+
 public class invUI : MonoBehaviour
 {
     public GameObject testPrefab;
@@ -13,46 +15,20 @@ public class invUI : MonoBehaviour
     public GameObject grid;
     public static Dictionary<int, ItemManager> itemsDict = new Dictionary<int, ItemManager>();
     public SaveLoadGameState SLGS;
-    // public SpriteRenderer spriteRenderer;
-
+    
     private void Awake()
     {
         SLGS= GameObject.FindObjectOfType<SaveLoadGameState>();
     }
 
 
-    // Start is called before the first frame update
-    /*
-    void Start()
-    {
-       // spriteRenderer = testPrefab.GetComponent<SpriteRenderer>();
-       if (NewOrLoad.isLoad)
-       {
-            //check if there are items in the saved inv 
-            SLGS.Load();
-            if (IsNullOrEmpty(SLGS.inv.savedIDs))
-            {
-                //if empty then we're good
-                Debug.Log("loaded inv is empty");
-            }
-            else
-            {
-                // set the empty inv text inactive
-                Debug.Log("loaded inv is not empty");
-                var invEmptyText = GameObject.Find("BlankTextInventory");
-                if (invEmptyText != null && invEmptyText.activeSelf)
-                    invEmptyText.SetActive(false);
-            }
 
-       }
-    }
-    */
-
+    //check if loaded inv is empty
     public void LoadInvUI()
     {
         if (!IsNullOrEmpty(SLGS.inv.savedIDs))
         {
-            // set the empty inv text inactive
+            // set the empty inv text inactive 
             var invEmptyText = GameObject.Find("BlankTextInventory");
             if (invEmptyText != null && invEmptyText.activeSelf)
                 invEmptyText.SetActive(false);
@@ -64,33 +40,23 @@ public class invUI : MonoBehaviour
         return (array == null || array.Length == 0);
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+ 
+    //add item to inventory UI by ID
     public void addItemToUI(Item itemToAdd)
     {
         
-        //check if item is already in inventory UI
-
-
-
         
-        //if not, add item to inventory
 
         
 
         GameObject itemOBJ = Instantiate(testPrefab, grid.transform);
-        //Debug.Log("itemOBJ: " + itemOBJ);
+        
         
         itemOBJ.GetComponent<ItemManager>().id = itemToAdd.id;
-        //Debug.Log("itemOBJ id: " + itemOBJ.GetComponent<ItemManager>().id);
+        
         itemOBJ.GetComponent<ItemManager>().title = itemToAdd.title;
         itemOBJ.GetComponent<ItemManager>().description = itemToAdd.description;
-        //icon can be set here directly
+        
         
         
         itemOBJ.GetComponent<ItemManager>().icon = itemToAdd.icon;
@@ -98,12 +64,14 @@ public class invUI : MonoBehaviour
         itemOBJ.transform.GetChild(0).GetComponent<Image>().sprite = itemToAdd.icon;
         itemOBJ.transform.GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = itemToAdd.title;
         itemOBJ.transform.GetChild(0).GetChild(1).GetComponent<TextMeshProUGUI>().text = itemToAdd.description;
-        //testrun basic prefab 
-        //add nested prefab to canvas
-        //save to dict
+        
+        //save to dict if not already there
         if (itemsDict.ContainsKey(itemToAdd.id)) return;
         itemsDict.Add(itemOBJ.GetComponent<ItemManager>().id, itemOBJ.GetComponent<ItemManager>());
     }
+
+
+    //remove item from inventory UI by ID
 
     public void removeItemFromUI(int targetId)
     {
@@ -114,6 +82,9 @@ public class invUI : MonoBehaviour
         itemsDict.Remove(targetId);
 
     }
+
+    //wipe inventory UI
+
     public void resetInvUi()
     {
         itemsDict.Clear();

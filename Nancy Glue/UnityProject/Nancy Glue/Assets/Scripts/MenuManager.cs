@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//this script manages the main menu buttons
+
+
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject _mainMenu; //Drop in mainMenu
@@ -10,7 +13,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _settingsMenu; //Drop in settings menu;
     [SerializeField] private bool _isActive;
     [SerializeField] private bool _isSettingsActive;
-    //SaveLoadGameState _loadGameState;
+    
     SaveLoadSettings SLS;
     FontScript FS;
 
@@ -32,10 +35,7 @@ public class MenuManager : MonoBehaviour
 
         SFX_AS = this.GetComponent<AudioSource>();
 
-        //settings temp 
-        //tempSettingsLoader.musicVol = 50;
-        //tempSettingsLoader.sens = 0;
-        //tempSettingsLoader.sfxVol = 50;
+        
 
 
     }
@@ -44,14 +44,13 @@ public class MenuManager : MonoBehaviour
     {
         _isActive = false;
         _isSettingsActive = false;
-        //_accessibilityMenu.SetActive(_isActive);
-        //_settingsMenu.SetActive(_isSettingsActive);
+        
         NewOrLoad.isLoad = false;
-        Debug.Log("initd to false");
+        
 
         SLS.load();
         FS.loadSettings();
-        Debug.Log("loaded settings");
+        
     }
 
     public void AccessibilitySettings()
@@ -59,7 +58,7 @@ public class MenuManager : MonoBehaviour
         SFX_AS.clip = _clickSound;
         SFX_AS.Play();
         _isActive = !_isActive;
-        //_accessibilityMenu.SetActive(_isActive);
+        
         _accessibilityMenu.GetComponent<Animator>().SetTrigger("HideShow");
         _mainMenu.SetActive(!_isActive);
 
@@ -70,7 +69,7 @@ public class MenuManager : MonoBehaviour
         SFX_AS.clip = _clickSound;
         SFX_AS.Play();
         _isSettingsActive = !_isSettingsActive;
-        //_settingsMenu.SetActive(_isSettingsActive);
+        
         _settingsMenu.GetComponent<Animator>().SetTrigger("HideShow");
         _mainMenu.SetActive(!_isSettingsActive);
     }
@@ -98,9 +97,9 @@ public class MenuManager : MonoBehaviour
         SFX_AS.clip = _clickSound;
         SFX_AS.Play();
         NewOrLoad.isLoad = true;
-        Debug.Log("set to true");
+        
         SceneManager.LoadScene("NewPlayingScene", LoadSceneMode.Single);
-        //_loadGameState.Load();
+        
     }
     
 }

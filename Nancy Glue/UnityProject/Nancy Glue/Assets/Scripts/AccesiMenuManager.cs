@@ -9,7 +9,8 @@ public class AccesiMenuManager : MonoBehaviour
     public Button reset;
     public SaveLoadSettings SLS;
     public FontScript FScript;
-    // Start is called before the first frame update
+
+    //add listeners for buttons
     void Start()
     {
         back.onClick.AddListener(saveSettings);
@@ -20,16 +21,12 @@ public class AccesiMenuManager : MonoBehaviour
         SLS = FindObjectOfType<SaveLoadSettings>();
         FScript = FindObjectOfType<FontScript>();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //font settings save 
     void saveSettings()
     {
         SLS.save();
     }
-
+    //reset to defaults
     void resetSettings()
     {
         SLS.Default();

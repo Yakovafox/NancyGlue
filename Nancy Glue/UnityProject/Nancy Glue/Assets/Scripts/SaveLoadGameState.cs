@@ -10,8 +10,7 @@ using UnityEngine;
 public class SaveLoadGameState : MonoBehaviour
 {
     
-    //string gameStageToSave;
-    //int camToSave;
+    
     public Inventory inv;
     public CameraTrack CameraTracker;
     public NPCTracker[] NPCTrackers;
@@ -34,17 +33,15 @@ public class SaveLoadGameState : MonoBehaviour
     {
         inv.SaveInv();
         suspectPage.saveNames();
-        // 1
+        
         Save save = CreateSaveGameObject();
-
-        // 2
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/gamesave.save");
         bf.Serialize(file, save);
         file.Close();
                       
         
-        Debug.Log("Game Saved");
+        
     }
 
 
@@ -57,8 +54,7 @@ public class SaveLoadGameState : MonoBehaviour
         save.inventoryTS = inv.savedIDs;
         CameraTracker.OnSaveGame();
         save.SavedCameraName = CameraTracker.CameraName;
-        Debug.Log("attempting to save dialogue data");
-        //NPCTrack.OnSaveGame();
+        
         int[] tempDiaIterators = new int[NPCTrackers.Length];
         int[] tempIntIterators = new int[NPCTrackers.Length];
         string[][] tempNotes = new string[NPCTrackers.Length][];
@@ -85,16 +81,13 @@ public class SaveLoadGameState : MonoBehaviour
         save.gameStageArray = gameManager.stateTracker;
         return save;
     }
+    
     public void Load()
     {
-        // 1
+        
         if (File.Exists(Application.persistentDataPath + "/gamesave.save"))
         {
-            
-            
-            //reset inv etc if not already done. 
 
-            // 2
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/gamesave.save", FileMode.Open);
             Save save = (Save)bf.Deserialize(file);
@@ -118,41 +111,17 @@ public class SaveLoadGameState : MonoBehaviour
                 GameObject.Find(save.NPCnames[i]).GetComponent<NPCTracker>().onLoadGame(save.NPCnames[i], save.dialogueDiaIteratorsToSave[i], save.dialogueIntIteratorsToSave[i], save.notes[i]);
             }
 
-            //load game state
-
-            for (int i=0; i < save.suspectsTS.Length; i++)
-            {
-                Debug.Log("save file suspect : "+i + save.suspectsTS[i]);
-                Debug.Log("loaded suspect" + i+ suspectPage.SuspectNames[i]);
-            }
-
-
-            
-            
-
-
-
-            Debug.Log("Game Loaded");
-
-            
+             
         }
-        else
-        {
-            Debug.Log("No game saved!");
-        }
+        
     }
     private void OnApplicationQuit()
     {
-        //save item id's to list
-
-
-
-
-
+        
 
         //call the save
         SaveGame();
-        Debug.Log("game saved to " + Application.persistentDataPath);
+        
         //save settings to file 
 
     }

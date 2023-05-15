@@ -16,6 +16,8 @@ public class pigeonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //switch through the different pigeon sprites based on a random timer.
+
         if (!_timerSet)
         {
             switch(_index)

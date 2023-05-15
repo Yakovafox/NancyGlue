@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//manager class for items
 public class ItemManager : MonoBehaviour
 {
     public int id;
