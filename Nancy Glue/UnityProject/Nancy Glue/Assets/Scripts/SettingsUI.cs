@@ -69,7 +69,7 @@ public class SettingsUI : MonoBehaviour
         
     }
     
-    public void sfxVolCHnaged()
+    public void sfxVolChanged()
     {
         mixer.SetFloat("SFXVol", Mathf.Log10(sfxVolSlider.value) * 20);
        
@@ -102,8 +102,12 @@ public class SettingsUI : MonoBehaviour
         Debug.Log("loaded sens ui " + SLS.sensitivity);
         sensSlider.value = SLS.sensitivity;
         volSlider.value = (SLS.musicVolume);
+       
+        //mVolChanged();
         Debug.Log("Loaded music volume ui " + (SLS.musicVolume));
         sfxVolSlider.value = SLS.sfxVolume;
+        
+        //sfxVolChanged();
         Debug.Log("Loaded SFX volume ui " + (SLS.sfxVolume));
 
 

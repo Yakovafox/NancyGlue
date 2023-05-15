@@ -8613,7 +8613,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3826028574430211711}
         m_TargetAssemblyTypeName: SettingsUI, Assembly-CSharp
-        m_MethodName: sfxVolCHnaged
+        m_MethodName: sfxVolChanged
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
